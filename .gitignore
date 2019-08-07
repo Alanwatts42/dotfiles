@@ -1,0 +1,7 @@
+# Dotfiles gitignore
+*
+# ignore all files, any files not ignored must be listed here with a !
+
+# files not to ignore
+!.*
+
