@@ -26,6 +26,9 @@ alias aptg-in="sudo apt-get -f install"
 alias apt-up="sudo apt update && sudo apt upgrade"
 alias apt-in="sudo apt install"
 alias apt-s="sudo apt search"
+alias purge="sudo apt-get purge"
+alias remove="sudo apt-get remove"
+
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias xlight="xrandr --output eDP-1 --brightness"

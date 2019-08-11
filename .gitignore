@@ -3,5 +3,13 @@
 # ignore all files, any files not ignored must be listed here with a !
 
 # files not to ignore
-!.*
-
+!.vimrc
+!.vim
+!.viminfo
+!.gitconfig
+!.purepower
+!.profile
+!.bashrc
+!.zshrc
+!.gitignore
+!.zplug

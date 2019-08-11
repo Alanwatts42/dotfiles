@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/tagbar
+~MSle0~/content
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -21,13 +21,35 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1565139920,,"wq"
+|2,0,1565514844,,"wq"
+:w
+|2,0,1565514838,,"w"
+:5042
+|2,0,1565512734,,"5042"
 :q
-|2,0,1565139919,,"q"
+|2,0,1565514206,,"q"
+:4890
+|2,0,1565508907,,"4890"
+:13966
+|2,0,1565187364,,"13966"
+:W
+|2,0,1565189661,,"W"
+:11445
+|2,0,1565184420,,"11445"
+:13416
+|2,0,1565174405,,"13416"
+:!mifi-go
+|2,0,1565182389,,"!mifi-go"
+:8171
+|2,0,1565181885,,"8171"
+:7705
+|2,0,1565173634,,"7705"
+:PlugInstall
+|2,0,1565150538,,"PlugInstall"
+:400
+|2,0,1565150042,,"400"
 :PlugInstall!
 |2,0,1565139787,,"PlugInstall!"
-:w
-|2,0,1565139782,,"w"
 :messages
 |2,0,1565138932,,"messages"
 :PlugUpdate!
@@ -56,8 +78,6 @@ $
 |2,0,1565102982,,"PlugUpdate"
 :'<,'>q
 |2,0,1565046637,,"'<,'>q"
-:PlugInstall
-|2,0,1565045874,,"PlugInstall"
 :Plug
 |2,0,1564982147,,"Plug"
 :PluginInstall
@@ -68,8 +88,6 @@ $
 |2,0,1564976754,,"361"
 :wq:wq
 |2,0,1564842358,,"wq:wq"
-:W
-|2,0,1564815083,,"W"
 :;q
 |2,0,1564658228,,";q"
 :WQ
@@ -146,6 +164,40 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/roard
+|2,1,1565172162,47,"roard"
+?/driver
+|2,1,1565171746,47,"driver"
+?/alsa
+|2,1,1565171740,47,"alsa"
+?/content
+|2,1,1565159513,47,"content"
+?/contents
+|2,1,1565159503,47,"contents"
+?/stereo
+|2,1,1565160704,47,"stereo"
+?/lapt
+|2,1,1565156988,47,"lapt"
+?/deb
+|2,1,1565155763,47,"deb"
+?/let g:
+|2,1,1565150569,47,"let g:"
+?/scrooloose
+|2,1,1565150423,47,"scrooloose"
+?/NERD
+|2,1,1565150397,47,"NERD"
+?/g:tagbar
+|2,1,1565150231,47,"g:tagbar"
+?/te
+|2,1,1565149944,47,"te"
+?/let g:pymode_
+|2,1,1565149839,47,"let g:pymode_"
+?/let g:pymode_python
+|2,1,1565149828,47,"let g:pymode_python"
+?/g:pymode
+|2,1,1565149771,47,"g:pymode"
+?/g:
+|2,1,1565149761,47,"g:"
 ?/tagbar
 |2,1,1565139431,47,"tagbar"
 ?/tagbar#autoopen
@@ -387,37 +439,98 @@ $
 
 # Registers:
 "0	LINE	0
-	# /usr/bin/python3
-|3,0,0,1,1,0,1565058243,"# /usr/bin/python3"
-"1@	LINE	0
-	P
-|3,2,1,1,1,0,1565139740,"P"
+	sudo mkdir -m 755 /var/lib/nfs/rpc_pipefs/nfs
+|3,0,0,1,1,0,1565513734,"sudo mkdir -m 755 /var/lib/nfs/rpc_pipefs/nfs"
+""1@	LINE	0
+	*.tmp
+|3,3,1,1,1,0,1565514837,"*.tmp"
 "2	LINE	0
-	#/usr/bin/python3
-|3,0,2,1,1,0,1565138826,"#/usr/bin/python3"
+	.*history*
+|3,0,2,1,1,0,1565514836,".*history*"
 "3	LINE	0
 	
-|3,0,3,1,1,0,1565138613,""
+|3,0,3,1,1,0,1565513674,""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1565138606,""
+	Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Starting Flush Journal to Persistent Storage...
+	Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Started Set the console keyboard layout.
+|3,0,4,1,2,0,1565513663,"Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Starting Flush Journal to Persistent Storage...","Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Started Set the console keyboard layout."
 "5	LINE	0
-	" ==File-Type Settings==
-|3,0,5,1,1,0,1565138527,"\" ==File-Type Settings=="
-"6	LINE	0
-	__author__ = "Benjamin Peterson <benjamin@python.org>"
-	__version__ = "1.11.0"
-|3,0,6,1,2,0,1565136366,"__author__ = \"Benjamin Peterson <benjamin@python.org>\"","__version__ = \"1.11.0\""
-"7	LINE	0
+	# /var/log/syslog.1
+	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:81): Error: driver_oss_open_device(*): Can not open OSS device: /dev/dsp: No such file or directory
+	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Starting Simple Desktop Display Manager...
+	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:404): Error: driver_oss_open(*): Can not open audio device
+	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Started Simple Desktop Display Manager.
+	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: output.c:454): Error: add_output(drv='oss', dev='(null)', opts='sync'): can not open output driver.
+	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: apcupsd.service: Can't open PID file /var/run/apcupsd.pid (yet?) after start: No such file or directory
 	
-|3,0,7,1,1,0,1565132298,""
-"8	CHAR	0
-	     " Python mode (docs, refactor,
-	lints...
-|3,0,8,0,2,0,1565059804,"     \" Python mode (docs, refactor,","lints..."
+	Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+	Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+	532
+<Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.AccessDenied: Rejected send message, 2 matched rules; type="method_call", sender=":1.38" (uid=133 pid=2230 comm="/usr/bin/pulseaudio --start --log-target=syslog " label="unconfined") interface="org.freedesktop.DBus.ObjectManager" member="GetManagedObjects" error name="(unset)" requested_reply="0" destination="org.bluez" (uid=0 pid=1287 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined")
+	Aug  6 23:07:25 evan-acer-es1533 apachectl[1796]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+	
+	# /var/log/syslog
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.config/pulse/cookie': No such file or directory
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.config/pulse/cookie': No such file or directory
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.pulse-cookie': No such file or directory
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.pulse-cookie': No such file or directory
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+	
+	uninstalled: roard and related packages that were causing some of the issues on boot. 
+	
+	`sudo shutdown -r now`
+	
+	# Aug 7 08:58:14
+	
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Timers.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt upgrade and clean activities.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt download activities.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping RealtimeKit Scheduling Policy Service...
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping ACPI event daemon...
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Graphical Interface.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Message of the Day.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Save/Restore Sound Card State...
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Authorization Manager...
+	Aug  7 08:56:46 evan-acer-es1533 blkmapd[372]: exit on signal(15)
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping pNFS block layout mapping daemon...
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: "Process crashed"
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper crashed (exit code 15)
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: "Process crashed"
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper exited with 15
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopping...
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopped.
+	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Display server stopping...
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Session 4 of user evan.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Discard unused blocks once a week.
+	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Accounts Service...
+	Aug  7 08:56:46 evan-acer-es1533 watchdog[2706]: stopping daemon (5.15)
+|3,0,5,1,50,0,1565513630,"# /var/log/syslog.1","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:81): Error: driver_oss_open_device(*): Can not open OSS device: /dev/dsp: No such file or directory","Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Starting Simple Desktop Display Manager...","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:404): Error: driver_oss_open(*): Can not open audio device",>86
+|<"Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Started Simple Desktop Display Manager.","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: output.c:454): Error: add_output(drv='oss', dev='(null)', opts='sync'): can not open output driver.","Aug  6 23:07:23 evan-acer-es1533 systemd[1]: apcupsd.service: Can't open PID file /var/run/apcupsd.pid (yet?) after start: No such file or directory","",>210
+|<"Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11","Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11",>553
+|<"Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.AccessDenied: Rejected send message, 2 matched rules; type=\"method_call\", sender=\":1.38\" (uid=133 pid=2230 comm=\"/usr/bin/pulseaudio --start --log-target=syslog \" label=\"unconfined\") interface=\"org.freedesktop.DBus.ObjectManager\" member=\"GetManagedObjects\" error name=\"(unset)\" requested_reply=\"0\" destination=\"org.bluez\" (uid=0 pid=1287 
+|<comm=\"/usr/lib/bluetooth/bluetoothd \" label=\"unconfined\")","Aug  6 23:07:25 evan-acer-es1533 apachectl[1796]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message","","# /var/log/syslog","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.config/pulse/cookie': No such file or directory",>179
+|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.config/pulse/cookie': No such file or directory","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.pulse-cookie': No such file or directory",>172
+|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.pulse-cookie': No such file or directory","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11",>202
+|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11","","uninstalled: roard and related packages that were causing some of the issues on boot. ","","`sudo shutdown -r now`","","# Aug 7 08:58:14","","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Timers.",>94
+|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt upgrade and clean activities.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt download activities.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping RealtimeKit Scheduling Policy Service...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping ACPI event daemon...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Graphical Interface.",>94
+|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily Cleanup of Temporary Directories.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Message of the Day.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Save/Restore Sound Card State...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Authorization Manager...","Aug  7 08:56:46 evan-acer-es1533 blkmapd[372]: exit on signal(15)",>91
+|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping pNFS block layout mapping daemon...","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: \"Process crashed\"","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper crashed (exit code 15)","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: \"Process crashed\"","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper exited with 15",>72
+|<"Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopping...","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopped.","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Display server stopping...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Session 4 of user evan.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Discard unused blocks once a week.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Accounts Service...",>73
+|<"Aug  7 08:56:46 evan-acer-es1533 watchdog[2706]: stopping daemon (5.15)"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1565200327,""
+"7	LINE	0
+	!.zplug
+|3,0,7,1,1,0,1565200325,"!.zplug"
+"8	LINE	0
+	
+|3,0,8,1,1,0,1565189051,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1565058397,""
+|3,0,9,1,1,0,1565182152,""
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -427,339 +540,649 @@ $
 "w	CHAR	0
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
-""-	CHAR	0
-	show classes, funcs, vars by scope (ctags)
-|3,1,36,0,1,0,1565139746,"show classes, funcs, vars by scope (ctags)"
+"-	CHAR	0
+	*
+|3,0,36,0,1,0,1565514745,"*"
 
 # File marks:
-'0  118  66  ~/.vimrc
-|4,48,118,66,1565139920,"~/.vimrc"
-'1  362  24  ~/.vimrc
-|4,49,362,24,1565139675,"~/.vimrc"
-'2  1  0  ~/test.py
-|4,50,1,0,1565139395,"~/test.py"
-'3  2  0  ~/.vim/ftplugin/python.vim
-|4,51,2,0,1565138911,"~/.vim/ftplugin/python.vim"
-'4  1  0  ~/.vim/ftplugin
-|4,52,1,0,1565138879,"~/.vim/ftplugin"
-'5  2  0  ~/test.py
-|4,53,2,0,1565138838,"~/test.py"
-'6  1  0  ~/test.py
-|4,54,1,0,1565138838,"~/test.py"
-'7  2  0  ~/test.py
-|4,55,2,0,1565138838,"~/test.py"
-'8  1  0  ~/test.py
-|4,56,1,0,1565138838,"~/test.py"
-'9  1  0  ~/.vim/templates/skeleton.py
-|4,57,1,0,1565138831,"~/.vim/templates/skeleton.py"
+'0  3  0  ~/.gitignore
+|4,48,3,0,1565514844,"~/.gitignore"
+'1  14  10  ~/.gitignore
+|4,49,14,10,1565514777,"~/.gitignore"
+'2  16  10  ~/.gitignore
+|4,50,16,10,1565514777,"~/.gitignore"
+'3  7  4  ~/.gitignore
+|4,51,7,4,1565514720,"~/.gitignore"
+'4  7  4  ~/.gitignore
+|4,52,7,4,1565514720,"~/.gitignore"
+'5  9  4  ~/.gitignore
+|4,53,9,4,1565514720,"~/.gitignore"
+'6  9  4  ~/.gitignore
+|4,54,9,4,1565514720,"~/.gitignore"
+'7  2688  0  /var/log/syslog
+|4,55,2688,0,1565514362,"/var/log/syslog"
+'8  1  0  /run/blkmapd.pid
+|4,56,1,0,1565514206,"/run/blkmapd.pid"
+'9  1  0  /run/blkmapd.pid
+|4,57,1,0,1565514176,"/run/blkmapd.pid"
 
 # Jumplist (newest first):
--'  118  66  ~/.vimrc
-|4,39,118,66,1565139920,"~/.vimrc"
--'  362  24  ~/.vimrc
-|4,39,362,24,1565139675,"~/.vimrc"
--'  363  6  ~/.vimrc
-|4,39,363,6,1565139444,"~/.vimrc"
--'  364  28  ~/.vimrc
-|4,39,364,28,1565139444,"~/.vimrc"
--'  365  26  ~/.vimrc
-|4,39,365,26,1565139444,"~/.vimrc"
--'  361  4  ~/.vimrc
-|4,39,361,4,1565139444,"~/.vimrc"
--'  362  6  ~/.vimrc
-|4,39,362,6,1565139444,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1565139431,"~/.vimrc"
--'  1  0  ~/test.py
-|4,39,1,0,1565139395,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565139395,"~/test.py"
--'  360  7  ~/.vimrc
-|4,39,360,7,1565138929,"~/.vimrc"
--'  359  4  ~/.vimrc
-|4,39,359,4,1565138924,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1565138923,"~/.vimrc"
--'  2  0  ~/.vim/ftplugin/python.vim
-|4,39,2,0,1565138911,"~/.vim/ftplugin/python.vim"
--'  2  0  ~/.vim/ftplugin/python.vim
-|4,39,2,0,1565138911,"~/.vim/ftplugin/python.vim"
--'  2  0  ~/.vim/ftplugin/python.vim
-|4,39,2,0,1565138911,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138893,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138893,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138893,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  1  0  ~/.vim/ftplugin
-|4,39,1,0,1565138879,"~/.vim/ftplugin"
--'  2  0  ~/test.py
-|4,39,2,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  2  0  ~/test.py
-|4,39,2,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/test.py
-|4,39,1,0,1565138838,"~/test.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/templates/skeleton.py
-|4,39,1,0,1565138831,"~/.vim/templates/skeleton.py"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  1  0  ~/.vim/ftplugin/python.vim
-|4,39,1,0,1565138779,"~/.vim/ftplugin/python.vim"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
--'  3  0  ~/teset.py
-|4,39,3,0,1565138729,"~/teset.py"
+-'  3  0  ~/.gitignore
+|4,39,3,0,1565514844,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1565514822,"~/.gitignore"
+-'  14  10  ~/.gitignore
+|4,39,14,10,1565514777,"~/.gitignore"
+-'  16  10  ~/.gitignore
+|4,39,16,10,1565514777,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1565514741,"~/.gitignore"
+-'  7  4  ~/.gitignore
+|4,39,7,4,1565514720,"~/.gitignore"
+-'  9  4  ~/.gitignore
+|4,39,9,4,1565514720,"~/.gitignore"
+-'  9  4  ~/.gitignore
+|4,39,9,4,1565514720,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1565514663,"~/.gitignore"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  2688  0  /var/log/syslog
+|4,39,2688,0,1565514362,"/var/log/syslog"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514206,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  1  0  /run/blkmapd.pid
+|4,39,1,0,1565514176,"/run/blkmapd.pid"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  6  0  ~/crashlog-1.md
+|4,39,6,0,1565514049,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  ~/crashlog-1.md
+|4,39,1,0,1565513622,"~/crashlog-1.md"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565512627,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565512627,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565512627,"/var/log/syslog"
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	*	1565514838	0
+	"	3	0
+	^	14	11
+	.	3	0
+	+	5	0
+	+	3	80
+	+	6	0
+	+	4	0
+	+	2	0
+	+	3	10
+	+	5	21
+	+	6	6
+	+	13	6
+	+	7	1
+	+	6	2
+	+	9	8
+	+	10	6
+	+	13	7
+	+	14	3
+	+	10	11
+	+	12	0
+	+	15	7
+	+	16	0
+	+	2	1
+	+	3	8
+	+	3	10
+	+	3	4
+	+	2	0
+	+	12	7
+	+	9	10
+	+	8	8
+	+	6	4
+	+	14	11
+	+	14	10
+	+	3	0
+
+> /run/blkmapd.pid
+	*	1565514204	0
+	"	1	0
+
+> ~/crashlog-1.md
+	*	1565513738	0
+	"	6	0
+	^	5	8
+	.	5	7
+	+	1	0
+	+	1	1
+	+	1	86
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	2
+	+	1	3
+	+	1	0
+	+	1	2
+	+	1	130
+	+	1	2
+	+	1	0
+	+	7	0
+	+	1	0
+	+	9	0
+	+	4	0
+	+	1	0
+	+	2	0
+	+	2	7
+	+	5	7
+
+> /var/log/syslog
+	*	1565513674	0
+	"	2688	0
+	.	2689	0
+	+	11044	4
+	+	11575	0
+	+	1	0
+	+	2689	0
+	k	13469	0
+
+> ~/install.log
+	*	1565510320	0
+	"	66	0
+
+> /var/log/syslog.1
+	*	1565510297	0
+	"	1669	47
+	^	12665	0
+	.	12665	0
+	+	12608	0
+	+	12665	0
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1565202130	0
+	"	1	0
+
+> ~/.git/hooks/pre-receive.sample
+	*	1565201257	0
+	"	7	33
+
+> ~/NERD_tree_1
+	*	1565199639	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.aliases
+	*	1565187975	0
+	"	29	6
+	^	30	33
+	.	30	33
+	+	4	0
+	+	97	17
+	+	96	33
+	+	4	0
+	+	1	16
+	+	4	0
+	+	1	0
+	+	2	3
+	+	1	0
+	+	6	0
+	+	4	0
+	+	1	39
+	+	2	2
+	+	2	1
+	+	2	2
+	+	2	1
+	+	3	0
+	+	2	0
+	+	45	19
+	+	44	15
+	+	44	0
+	+	44	21
+	+	44	23
+	+	44	27
+	+	44	22
+	+	45	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	45	30
+	+	44	0
+	+	20	46
+	+	21	0
+	+	16	28
+	+	17	8
+	+	20	8
+	+	17	8
+	+	35	0
+	+	31	0
+	+	29	32
+	+	30	33
+
+> ~/crashlog-1.vim
+	*	1565182154	0
+	"	8	0
+	.	11	0
+	+	2	0
+	+	9	0
+	+	10	17
+	+	11	0
+
+> ~/_reference/linux-dev-notes/hardware_fixes.md
+	*	1565181977	0
+	"	69	23599
+	^	68	16
+	.	69	23598
+	+	51	21
+	+	45	0
+	+	44	16
+	+	45	8
+	+	51	107
+	+	51	23
+	+	54	0
+	+	53	0
+	+	91	0
+	+	102	0
+	+	135	0
+	+	137	0
+	+	141	0
+	+	153	67
+	+	157	0
+	+	187	0
+	+	182	0
+	+	186	0
+	+	187	0
+	+	191	0
+	+	190	3
+	+	141	0
+	+	137	0
+	+	182	0
+	+	186	0
+	+	111	0
+	+	16	0
+	+	11	0
+	+	24	0
+	+	19	0
+	+	23	0
+	+	22	6
+	+	33	14
+	+	51	21
+	+	54	3
+	+	54	89
+	+	55	118
+	+	55	124
+	+	55	127
+	+	55	132
+	+	55	135
+	+	55	140
+	+	55	143
+	+	55	148
+	+	55	151
+	+	55	158
+	+	55	238
+	+	27	3
+	+	28	3
+	+	30	0
+	+	32	0
+	+	30	0
+	+	32	0
+	+	22	22
+	+	27	0
+	+	28	87
+	+	56	0
+	+	58	10
+	+	59	0
+	+	73	0
+	+	59	0
+	+	75	0
+	+	73	0
+	+	90	0
+	+	98	0
+	+	73	0
+	+	59	0
+	+	93	9
+	+	96	0
+	+	96	92
+	+	96	111
+	+	96	121
+	+	96	137
+	+	96	151
+	+	96	159
+	+	96	180
+	+	92	37
+	+	1	0
+	+	5	0
+	+	59	0
+	+	60	77
+	+	61	4
+	+	60	41
+	+	62	0
+	+	62	20
+	+	62	10
+	+	62	0
+	+	63	0
+	+	71	0
+	+	58	4
+	+	63	0
+	+	65	138
+	+	66	20
+	+	67	18
+	+	66	19
+	+	65	19
+	+	68	14
+	+	68	16
+	+	69	23598
+
+> /usr/share/pulseaudio/alsa-mixer/paths/analog-output.conf.common
+	*	1565162018	0
+	"	175	11
+
+> /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
+	*	1565160883	0
+	"	111	16
+
+> ~/soundcard-info.txt
+	*	1565159373	0
+	"	2	0
+	^	1	19
+	.	1	18
+	+	2	0
+	+	1	18
+
+> ~/sudo_alsa_force-reload.txt
+	*	1565158875	0
+	"	1	575
+
+> ~/_reference/linux-dev-notes/hardware_fixes..md
+	*	1565156979	0
+	"	1	0
+
+> /etc/trusted.gpg
+	*	1565156659	0
+	"	1	0
+
+> /etc/apt/sources.list.save
+	*	1565156585	0
+	"	51	0
+	.	52	0
+	+	52	0
+
+> /etc/apt/sources.list
+	*	1565156560	0
+	"	45	0
+	.	52	0
+	+	52	86
+	+	52	0
+
 > ~/.vimrc
-	*	1565139919	0
-	"	118	66
-	^	118	67
-	.	118	66
-	+	188	0
-	+	307	0
-	+	309	0
-	+	307	0
-	+	344	0
-	+	340	74
-	+	341	72
-	+	342	74
-	+	344	0
-	+	323	0
-	+	316	0
-	+	344	0
-	+	348	0
-	+	351	0
-	+	354	0
-	+	357	0
-	+	358	0
-	+	359	0
-	+	344	61
-	+	345	0
-	+	372	0
-	+	348	0
-	+	362	0
-	+	361	19
-	+	367	0
+	*	1565150640	0
+	"	165	0
+	^	164	25
+	.	165	0
 	+	368	0
-	+	367	21
-	+	373	20
-	+	375	0
+	+	367	19
+	+	373	0
 	+	374	0
-	+	378	0
-	+	376	19
-	+	377	0
+	+	373	21
+	+	379	20
+	+	381	0
 	+	380	0
-	+	379	15
-	+	380	0
-	+	379	0
-	+	380	0
-	+	379	26
-	+	369	0
-	+	467	0
-	+	86	0
+	+	384	0
+	+	382	19
+	+	383	0
+	+	386	0
+	+	385	15
+	+	386	0
+	+	385	0
+	+	386	0
+	+	385	26
+	+	375	0
+	+	473	0
 	+	87	0
-	+	271	32
-	+	190	32
-	+	173	27
-	+	172	27
-	+	171	27
-	+	170	27
-	+	177	24
+	+	88	0
+	+	275	32
+	+	194	32
+	+	177	27
+	+	176	27
+	+	175	27
+	+	174	27
+	+	181	24
+	+	182	24
+	+	180	24
+	+	179	24
 	+	178	24
+	+	177	24
 	+	176	24
 	+	175	24
 	+	174	24
-	+	173	24
-	+	172	24
-	+	171	24
-	+	170	24
+	+	194	28
+	+	193	28
+	+	192	28
+	+	191	28
 	+	190	28
-	+	189	28
-	+	188	28
-	+	187	28
-	+	186	28
-	+	185	24
-	+	186	24
-	+	187	24
-	+	188	24
 	+	189	24
 	+	190	24
-	+	339	0
-	+	437	0
-	+	430	71
-	+	434	0
-	+	114	36
+	+	191	24
+	+	192	24
+	+	193	24
+	+	194	24
+	+	343	0
+	+	443	0
+	+	436	71
+	+	440	0
 	+	115	36
-	+	111	36
-	+	110	37
+	+	116	36
+	+	112	36
+	+	111	37
+	+	110	36
 	+	109	36
-	+	108	36
-	+	114	40
-	+	114	39
-	+	115	0
-	+	114	30
-	+	152	0
-	+	114	48
-	+	136	18
-	+	143	0
-	+	145	0
-	+	147	0
-	+	381	27
-	+	382	42
-	+	457	64
-	+	119	5
-	+	118	72
-	+	119	5
-	+	119	0
+	+	115	40
+	+	115	39
+	+	116	0
+	+	115	30
+	+	153	0
+	+	115	48
+	+	137	18
+	+	144	0
+	+	146	0
+	+	148	0
+	+	387	27
+	+	388	42
+	+	463	64
+	+	120	5
+	+	119	72
+	+	120	5
 	+	120	0
-	+	118	66
+	+	121	0
+	+	119	66
+	+	344	21
+	+	346	0
+	+	345	1
+	+	345	0
+	+	346	0
+	+	347	2
+	+	345	1
+	+	346	1
+	+	347	1
+	+	345	1
+	+	346	1
+	+	347	1
+	+	345	21
+	+	347	20
+	+	370	65
+	+	370	70
+	+	371	49
+	+	373	26
+	+	79	27
+	+	78	23
+	+	79	64
+	+	165	0
+	+	164	24
+	+	165	0
 
 > ~/test.py
 	*	1565139233	0
@@ -890,10 +1313,6 @@ $
 	+	1421	0
 	m	29	0
 
-> /usr/share/vim/vim80/doc/help.txt
-	*	1565136935	0
-	"	2	0
-
 > ~/_projects/zipsaw/zipsaw.py
 	*	1565136173	0
 	"	1	0
@@ -976,20 +1395,6 @@ $
 > ~/.xsession-errors
 	*	1565132705	0
 	"	169	0
-
-> ~/.gitignore
-	*	1565132352	0
-	"	7	0
-	^	6	3
-	.	6	3
-	+	5	0
-	+	3	70
-	+	6	0
-	+	4	0
-	+	2	0
-	+	3	0
-	+	5	21
-	+	6	3
 
 > ~/zipsaw.py
 	*	1565103596	0
@@ -1319,49 +1724,6 @@ $
 > ~/vimrc/.zsh/.zsh_favlist
 	*	1564829091	0
 	"	22	0
-
-> ~/.aliases
-	*	1564826237	0
-	"	17	8
-	^	17	9
-	.	17	8
-	+	4	0
-	+	94	17
-	+	93	33
-	+	4	0
-	+	1	16
-	+	4	0
-	+	1	0
-	+	2	3
-	+	1	0
-	+	6	0
-	+	4	0
-	+	1	39
-	+	2	2
-	+	2	1
-	+	2	2
-	+	2	1
-	+	3	0
-	+	2	0
-	+	42	19
-	+	41	15
-	+	41	0
-	+	41	21
-	+	41	23
-	+	41	27
-	+	41	22
-	+	42	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	42	30
-	+	41	0
-	+	20	46
-	+	21	0
-	+	16	28
-	+	17	8
-	+	20	8
-	+	17	8
 
 > ~/.dircolors
 	*	1564825435	0
@@ -2100,93 +2462,3 @@ $
 > ~/.config/openbox/LXDE/rc.xml
 	*	1564085592	0
 	"	3	0
-
-> ~/.config/openbox/rc.xml
-	*	1564085555	0
-	"	4	15
-
-> /opt/retropie/configs/all/emulationstation/gamelists/n64/gamelist.xml
-	*	1564085295	0
-	"	48	0
-
-> /usr/share/vim/vim80/doc/pi_netrw.txt
-	*	1564085226	0
-	"	40	62
-
-> /usr/bin/pip3
-	*	1564043561	0
-	"	9	19
-	^	9	24
-	.	9	19
-	+	9	19
-
-> /usr/bin/zsh
-	*	1564043415	0
-	"	1	0
-
-> ~/.wbar
-	*	1564035771	0
-	"	1	3
-
-> ~/.shell
-	*	1564035385	0
-	"	1	0
-
-> ~/.shell.pre-oh-my-zsh
-	*	1564035379	0
-	"	1	0
-
-> ~/.zshrc.pre-oh-my-zsh
-	*	1564035355	0
-	"	47	0
-
-> ~/Downloads/dlinks-roms
-	*	1564010816	0
-	"	10	0
-	^	10	0
-	.	9	0
-	+	1	0
-	+	2	20
-	+	6	223
-	+	7	0
-	+	5	28
-	+	8	223
-	+	9	0
-
-> ~/_experimental/purepower.zsh
-	*	1564006073	0
-	"	369	44
-	^	404	45
-	.	404	44
-	+	404	44
-
-> /etc/zsh/zprofile
-	*	1563980210	0
-	"	1	0
-	^	13	0
-	.	13	0
-	+	9	0
-	+	10	14
-	+	12	10
-	+	13	0
-
-> /etc/zsh/newuser.zshrc.recommended
-	*	1563980198	0
-	"	36	7
-
-> /etc/zsh/zshrc
-	*	1563980129	0
-	"	112	1
-	^	112	2
-
-> /etc/zsh/zlogout
-	*	1563979935	0
-	"	1	0
-
-> /etc/zsh/zlogin
-	*	1563979928	0
-	"	1	0
-
-> ~/.zplug/init.zsh
-	*	1563953270	0
-	"	33	22

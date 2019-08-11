@@ -75,7 +75,8 @@ Plug 'w0rp/ale'    " javascript linter
 
 """ ==General Functionality==
 Plug 'ctrlpvim/ctrlp.vim'  " Fuzzy finder (files, mru, etc)
-Plug 'mbbill/undotree' " Undo history tool
+Plug 'mbbill/undotree'  " Undo history tool
+Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
 
 """ ==Look & Feel==
 Plug 'flazz/vim-colorschemes' " change colorshemes easier
@@ -159,6 +160,9 @@ if has("autocmd")
   augroup END
 endif
 
+" fix for ale disappearing cursor issue on lines where error was found
+let g:ale_echo_cursor = 0
+
 " ===========================
 " ==Useful General Settings==
 " ===========================
@@ -240,10 +244,6 @@ vnoremap <Leader>rc y:$s/<C-r>"/
 
 " Toggle relativenumber
 nnoremap <Leader>rnn :set relativenumber!<CR>
-
-
-" Set pymode to use python3 and not 'python' aka python2
-let g:pymode_python = 'python3'
 
 " --Screen-Splitting--
 " :sp <path to file you want to split screen with (vertically)
@@ -341,8 +341,10 @@ set scrolloff=10                " let 10 lines before cursor during scroll
 set exrc                        " enable usage of additional vimrc files
 set secure                      " .vimrc files cannot execute/create files
 
-""" ==gvim options== set guioptions-=m       " remove menubar set guioptions-=T       " remove toolbar
-set guioptions-=r       " remove right scrollbar
+""" ==gvim options== 
+"set guioptions-=m   " remove menubar set 
+"guioptions-=T       " remove toolbar
+"set guioptions-=r   " remove right scrollbar
 
 """ ===Plugin Settings & Reference===
 
@@ -365,8 +367,8 @@ autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
 
 "" -NERDTree settings-
-let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']     " Ignore files in NERDTree
-let NERDTreeWinSize=40
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
+let NERDTreeWinSize=40   " size of NERDTree window
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 nmap " :NERDTreeToggle<CR>
 
@@ -391,7 +393,7 @@ let g:pymode_rope_autoimport_generate=0
 let g:pymode_rope_guess_project=0
 
 " documentation
-let g:pymode_doc=0
+let g:pymode_doc=1
 let g:pymode_doc_bind='K'
 
 " lints
@@ -425,16 +427,16 @@ let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
 let g:pymode_syntax_docstrings=g:pymode_syntax_all
 
 " highlight 'long' lines (>= 80 symbols) in python files
-" augroup vimrc_autocmds
-"     autocmd!
-"     autocmd FileType python,rst,c,cpp highlight Excess ctermbg=DarkGrey guibg=White
-"     autocmd FileType python,rst,c,cpp match Excess /\%81v.*/
-"     autocmd FileType python,rst,c,cpp set nowrap
-"     autocmd FileType python,rst,c,cpp set colorcolumn=80
-" augroup END
+augroup vimrc_autocmds
+    autocmd!
+    autocmd FileType python,rst,c,cpp highlight Excess ctermbg=DarkGrey guibg=White
+    autocmd FileType python,rst,c,cpp match Excess /\%81v.*/
+    " autocmd FileType python,rst,c,cpp set nowrap
+    autocmd FileType python,rst,c,cpp set colorcolumn=80
+augroup END
 
 " code folding
-" let g:pymode_folding=0
+let g:pymode_folding=0
 
 " pep8 indents
 let g:pymode_indent=1
