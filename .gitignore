@@ -5,7 +5,8 @@
 # files not to ignore
 !.vimrc
 !.vim
-!.viminfo
+!README
+!crashlog-1.md
 !.gitconfig
 !.purepower
 !.profile

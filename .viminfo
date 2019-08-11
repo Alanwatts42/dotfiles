@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/content
+~MSle0~/alsa
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -21,13 +21,23 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1565514844,,"wq"
+|2,0,1565536284,,"wq"
 :w
-|2,0,1565514838,,"w"
+|2,0,1565536282,,"w"
+:'<,'>100
+|2,0,1565535116,,"'<,'>100"
+:'<,'>0
+|2,0,1565535103,,"'<,'>0"
+:12851
+|2,0,1565533062,,"12851"
+:10329
+|2,0,1565531819,,"10329"
+:q
+|2,0,1565531135,,"q"
+:7293
+|2,0,1565514973,,"7293"
 :5042
 |2,0,1565512734,,"5042"
-:q
-|2,0,1565514206,,"q"
 :4890
 |2,0,1565508907,,"4890"
 :13966
@@ -164,12 +174,12 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/alsa
+|2,1,1565534991,47,"alsa"
 ?/roard
 |2,1,1565172162,47,"roard"
 ?/driver
 |2,1,1565171746,47,"driver"
-?/alsa
-|2,1,1565171740,47,"alsa"
 ?/content
 |2,1,1565159513,47,"content"
 ?/contents
@@ -439,98 +449,35 @@ $
 
 # Registers:
 "0	LINE	0
-	sudo mkdir -m 755 /var/lib/nfs/rpc_pipefs/nfs
-|3,0,0,1,1,0,1565513734,"sudo mkdir -m 755 /var/lib/nfs/rpc_pipefs/nfs"
+	Aug 11 08:48:30 evan-acer-es1533 pulseaudio[3675]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+|3,0,0,1,1,0,1565531959,"Aug 11 08:48:30 evan-acer-es1533 pulseaudio[3675]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11"
 ""1@	LINE	0
-	*.tmp
-|3,3,1,1,1,0,1565514837,"*.tmp"
+	!.viminfo
+|3,3,1,1,1,0,1565536142,"!.viminfo"
 "2	LINE	0
-	.*history*
-|3,0,2,1,1,0,1565514836,".*history*"
+	
+|3,0,2,1,1,0,1565531965,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1565513674,""
+|3,0,3,1,1,0,1565531880,""
 "4	LINE	0
-	Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Starting Flush Journal to Persistent Storage...
-	Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Started Set the console keyboard layout.
-|3,0,4,1,2,0,1565513663,"Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Starting Flush Journal to Persistent Storage...","Aug 11 03:33:08 evan-acer-es1533 systemd[1]: Started Set the console keyboard layout."
+	
+|3,0,4,1,1,0,1565525641,""
 "5	LINE	0
-	# /var/log/syslog.1
-	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:81): Error: driver_oss_open_device(*): Can not open OSS device: /dev/dsp: No such file or directory
-	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Starting Simple Desktop Display Manager...
-	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:404): Error: driver_oss_open(*): Can not open audio device
-	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Started Simple Desktop Display Manager.
-	Aug  6 23:07:23 evan-acer-es1533 roard: (roard: output.c:454): Error: add_output(drv='oss', dev='(null)', opts='sync'): can not open output driver.
-	Aug  6 23:07:23 evan-acer-es1533 systemd[1]: apcupsd.service: Can't open PID file /var/run/apcupsd.pid (yet?) after start: No such file or directory
 	
-	Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
-	Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
-	532
-<Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.AccessDenied: Rejected send message, 2 matched rules; type="method_call", sender=":1.38" (uid=133 pid=2230 comm="/usr/bin/pulseaudio --start --log-target=syslog " label="unconfined") interface="org.freedesktop.DBus.ObjectManager" member="GetManagedObjects" error name="(unset)" requested_reply="0" destination="org.bluez" (uid=0 pid=1287 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined")
-	Aug  6 23:07:25 evan-acer-es1533 apachectl[1796]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
-	
-	# /var/log/syslog
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.config/pulse/cookie': No such file or directory
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.config/pulse/cookie': No such file or directory
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.pulse-cookie': No such file or directory
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.pulse-cookie': No such file or directory
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
-	Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
-	
-	uninstalled: roard and related packages that were causing some of the issues on boot. 
-	
-	`sudo shutdown -r now`
-	
-	# Aug 7 08:58:14
-	
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Timers.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt upgrade and clean activities.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt download activities.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping RealtimeKit Scheduling Policy Service...
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping ACPI event daemon...
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Graphical Interface.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily Cleanup of Temporary Directories.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Message of the Day.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Save/Restore Sound Card State...
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Authorization Manager...
-	Aug  7 08:56:46 evan-acer-es1533 blkmapd[372]: exit on signal(15)
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping pNFS block layout mapping daemon...
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: "Process crashed"
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper crashed (exit code 15)
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: "Process crashed"
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper exited with 15
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopping...
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopped.
-	Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Display server stopping...
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Session 4 of user evan.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Discard unused blocks once a week.
-	Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Accounts Service...
-	Aug  7 08:56:46 evan-acer-es1533 watchdog[2706]: stopping daemon (5.15)
-|3,0,5,1,50,0,1565513630,"# /var/log/syslog.1","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:81): Error: driver_oss_open_device(*): Can not open OSS device: /dev/dsp: No such file or directory","Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Starting Simple Desktop Display Manager...","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: driver_oss.c:404): Error: driver_oss_open(*): Can not open audio device",>86
-|<"Aug  6 23:07:23 evan-acer-es1533 systemd[1]: Started Simple Desktop Display Manager.","Aug  6 23:07:23 evan-acer-es1533 roard: (roard: output.c:454): Error: add_output(drv='oss', dev='(null)', opts='sync'): can not open output driver.","Aug  6 23:07:23 evan-acer-es1533 systemd[1]: apcupsd.service: Can't open PID file /var/run/apcupsd.pid (yet?) after start: No such file or directory","",>210
-|<"Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11","Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11",>553
-|<"Aug  6 23:07:24 evan-acer-es1533 pulseaudio[2230]: [pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.AccessDenied: Rejected send message, 2 matched rules; type=\"method_call\", sender=\":1.38\" (uid=133 pid=2230 comm=\"/usr/bin/pulseaudio --start --log-target=syslog \" label=\"unconfined\") interface=\"org.freedesktop.DBus.ObjectManager\" member=\"GetManagedObjects\" error name=\"(unset)\" requested_reply=\"0\" destination=\"org.bluez\" (uid=0 pid=1287 
-|<comm=\"/usr/lib/bluetooth/bluetoothd \" label=\"unconfined\")","Aug  6 23:07:25 evan-acer-es1533 apachectl[1796]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message","","# /var/log/syslog","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.config/pulse/cookie': No such file or directory",>179
-|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.config/pulse/cookie': No such file or directory","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/asterisk/.pulse-cookie': No such file or directory",>172
-|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/asterisk/.pulse-cookie': No such file or directory","Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11",>202
-|<"Aug  7 07:10:30 evan-acer-es1533 pulseaudio[19729]: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11","","uninstalled: roard and related packages that were causing some of the issues on boot. ","","`sudo shutdown -r now`","","# Aug 7 08:58:14","","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Timers.",>94
-|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt upgrade and clean activities.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily apt download activities.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping RealtimeKit Scheduling Policy Service...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping ACPI event daemon...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped target Graphical Interface.",>94
-|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Daily Cleanup of Temporary Directories.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Message of the Day.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Save/Restore Sound Card State...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Authorization Manager...","Aug  7 08:56:46 evan-acer-es1533 blkmapd[372]: exit on signal(15)",>91
-|<"Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping pNFS block layout mapping daemon...","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: \"Process crashed\"","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper crashed (exit code 15)","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Authentication error: \"Process crashed\"","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Auth: sddm-helper exited with 15",>72
-|<"Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopping...","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Socket server stopped.","Aug  7 08:56:46 evan-acer-es1533 sddm[1816]: Display server stopping...","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Session 4 of user evan.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopped Discard unused blocks once a week.","Aug  7 08:56:46 evan-acer-es1533 systemd[1]: Stopping Accounts Service...",>73
-|<"Aug  7 08:56:46 evan-acer-es1533 watchdog[2706]: stopping daemon (5.15)"
+|3,0,5,1,1,0,1565525633,""
 "6	LINE	0
 	
-|3,0,6,1,1,0,1565200327,""
+|3,0,6,1,1,0,1565525627,""
 "7	LINE	0
-	!.zplug
-|3,0,7,1,1,0,1565200325,"!.zplug"
+	
+|3,0,7,1,1,0,1565525620,""
 "8	LINE	0
 	
-|3,0,8,1,1,0,1565189051,""
+|3,0,8,1,1,0,1565525612,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1565182152,""
+|3,0,9,1,1,0,1565525605,""
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -541,240 +488,240 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 "-	CHAR	0
-	*
-|3,0,36,0,1,0,1565514745,"*"
+	t
+|3,0,36,0,1,0,1565533322,"t"
 
 # File marks:
-'0  3  0  ~/.gitignore
-|4,48,3,0,1565514844,"~/.gitignore"
-'1  14  10  ~/.gitignore
-|4,49,14,10,1565514777,"~/.gitignore"
-'2  16  10  ~/.gitignore
-|4,50,16,10,1565514777,"~/.gitignore"
-'3  7  4  ~/.gitignore
-|4,51,7,4,1565514720,"~/.gitignore"
-'4  7  4  ~/.gitignore
-|4,52,7,4,1565514720,"~/.gitignore"
-'5  9  4  ~/.gitignore
-|4,53,9,4,1565514720,"~/.gitignore"
-'6  9  4  ~/.gitignore
-|4,54,9,4,1565514720,"~/.gitignore"
-'7  2688  0  /var/log/syslog
-|4,55,2688,0,1565514362,"/var/log/syslog"
-'8  1  0  /run/blkmapd.pid
-|4,56,1,0,1565514206,"/run/blkmapd.pid"
-'9  1  0  /run/blkmapd.pid
-|4,57,1,0,1565514176,"/run/blkmapd.pid"
+'0  16  6  ~/.gitignore
+|4,48,16,6,1565536285,"~/.gitignore"
+'1  10508  0  /var/log/syslog
+|4,49,10508,0,1565535644,"/var/log/syslog"
+'2  10020  119  /var/log/syslog
+|4,50,10020,119,1565535087,"/var/log/syslog"
+'3  10020  119  /var/log/syslog
+|4,51,10020,119,1565535087,"/var/log/syslog"
+'4  10019  0  /var/log/syslog
+|4,52,10019,0,1565532600,"/var/log/syslog"
+'5  10019  0  /var/log/syslog
+|4,53,10019,0,1565532600,"/var/log/syslog"
+'6  10019  0  /var/log/syslog
+|4,54,10019,0,1565532600,"/var/log/syslog"
+'7  10019  0  /var/log/syslog
+|4,55,10019,0,1565532600,"/var/log/syslog"
+'8  24  13  ~/crashlog-1.md
+|4,56,24,13,1565532129,"~/crashlog-1.md"
+'9  6140  0  /var/log/syslog
+|4,57,6140,0,1565531137,"/var/log/syslog"
 
 # Jumplist (newest first):
--'  3  0  ~/.gitignore
-|4,39,3,0,1565514844,"~/.gitignore"
+-'  16  6  ~/.gitignore
+|4,39,16,6,1565536285,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1565514822,"~/.gitignore"
--'  14  10  ~/.gitignore
-|4,39,14,10,1565514777,"~/.gitignore"
--'  16  10  ~/.gitignore
-|4,39,16,10,1565514777,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1565514741,"~/.gitignore"
--'  7  4  ~/.gitignore
-|4,39,7,4,1565514720,"~/.gitignore"
--'  9  4  ~/.gitignore
-|4,39,9,4,1565514720,"~/.gitignore"
--'  9  4  ~/.gitignore
-|4,39,9,4,1565514720,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1565514663,"~/.gitignore"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  2688  0  /var/log/syslog
-|4,39,2688,0,1565514362,"/var/log/syslog"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514206,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  1  0  /run/blkmapd.pid
-|4,39,1,0,1565514176,"/run/blkmapd.pid"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  6  0  ~/crashlog-1.md
-|4,39,6,0,1565514049,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
--'  1  0  ~/crashlog-1.md
-|4,39,1,0,1565513622,"~/crashlog-1.md"
+|4,39,1,0,1565536133,"~/.gitignore"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
 -'  1  0  /var/log/syslog
-|4,39,1,0,1565512627,"/var/log/syslog"
+|4,39,1,0,1565535094,"/var/log/syslog"
 -'  1  0  /var/log/syslog
-|4,39,1,0,1565512627,"/var/log/syslog"
--'  1  0  /var/log/syslog
-|4,39,1,0,1565512627,"/var/log/syslog"
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10023  77  /var/log/syslog
+|4,39,10023,77,1565535067,"/var/log/syslog"
+-'  12318  82  /var/log/syslog
+|4,39,12318,82,1565535067,"/var/log/syslog"
+-'  12347  61  /var/log/syslog
+|4,39,12347,61,1565535067,"/var/log/syslog"
+-'  10023  77  /var/log/syslog
+|4,39,10023,77,1565535067,"/var/log/syslog"
+-'  12318  82  /var/log/syslog
+|4,39,12318,82,1565535067,"/var/log/syslog"
+-'  12347  61  /var/log/syslog
+|4,39,12347,61,1565535067,"/var/log/syslog"
+-'  10023  77  /var/log/syslog
+|4,39,10023,77,1565535067,"/var/log/syslog"
+-'  12318  82  /var/log/syslog
+|4,39,12318,82,1565535067,"/var/log/syslog"
+-'  12347  61  /var/log/syslog
+|4,39,12347,61,1565535067,"/var/log/syslog"
+-'  10023  77  /var/log/syslog
+|4,39,10023,77,1565535067,"/var/log/syslog"
+-'  12318  82  /var/log/syslog
+|4,39,12318,82,1565535067,"/var/log/syslog"
+-'  12347  61  /var/log/syslog
+|4,39,12347,61,1565535067,"/var/log/syslog"
+-'  9847  81  /var/log/syslog
+|4,39,9847,81,1565535065,"/var/log/syslog"
+-'  9809  61  /var/log/syslog
+|4,39,9809,61,1565535065,"/var/log/syslog"
+-'  9805  82  /var/log/syslog
+|4,39,9805,82,1565535065,"/var/log/syslog"
+-'  7127  77  /var/log/syslog
+|4,39,7127,77,1565535065,"/var/log/syslog"
+-'  7126  49  /var/log/syslog
+|4,39,7126,49,1565535065,"/var/log/syslog"
+-'  7125  49  /var/log/syslog
+|4,39,7125,49,1565535065,"/var/log/syslog"
+-'  7124  49  /var/log/syslog
+|4,39,7124,49,1565535065,"/var/log/syslog"
+-'  9847  81  /var/log/syslog
+|4,39,9847,81,1565535065,"/var/log/syslog"
+-'  9809  61  /var/log/syslog
+|4,39,9809,61,1565535065,"/var/log/syslog"
+-'  9805  82  /var/log/syslog
+|4,39,9805,82,1565535065,"/var/log/syslog"
+-'  7127  77  /var/log/syslog
+|4,39,7127,77,1565535065,"/var/log/syslog"
+-'  7126  49  /var/log/syslog
+|4,39,7126,49,1565535065,"/var/log/syslog"
+-'  7125  49  /var/log/syslog
+|4,39,7125,49,1565535065,"/var/log/syslog"
+-'  7124  49  /var/log/syslog
+|4,39,7124,49,1565535065,"/var/log/syslog"
+-'  9847  81  /var/log/syslog
+|4,39,9847,81,1565535065,"/var/log/syslog"
+-'  9809  61  /var/log/syslog
+|4,39,9809,61,1565535065,"/var/log/syslog"
+-'  9805  82  /var/log/syslog
+|4,39,9805,82,1565535065,"/var/log/syslog"
+-'  7127  77  /var/log/syslog
+|4,39,7127,77,1565535065,"/var/log/syslog"
+-'  7126  49  /var/log/syslog
+|4,39,7126,49,1565535065,"/var/log/syslog"
+-'  7125  49  /var/log/syslog
+|4,39,7125,49,1565535065,"/var/log/syslog"
+-'  7124  49  /var/log/syslog
+|4,39,7124,49,1565535065,"/var/log/syslog"
+-'  9847  81  /var/log/syslog
+|4,39,9847,81,1565535065,"/var/log/syslog"
+-'  9809  61  /var/log/syslog
+|4,39,9809,61,1565535065,"/var/log/syslog"
+-'  9805  82  /var/log/syslog
+|4,39,9805,82,1565535065,"/var/log/syslog"
+-'  7127  77  /var/log/syslog
+|4,39,7127,77,1565535065,"/var/log/syslog"
+-'  7126  49  /var/log/syslog
+|4,39,7126,49,1565535065,"/var/log/syslog"
+-'  7125  49  /var/log/syslog
+|4,39,7125,49,1565535065,"/var/log/syslog"
+-'  7124  49  /var/log/syslog
+|4,39,7124,49,1565535065,"/var/log/syslog"
+-'  7123  49  /var/log/syslog
+|4,39,7123,49,1565535064,"/var/log/syslog"
+-'  12399  81  /var/log/syslog
+|4,39,12399,81,1565535064,"/var/log/syslog"
+-'  12528  49  /var/log/syslog
+|4,39,12528,49,1565535064,"/var/log/syslog"
+-'  7123  49  /var/log/syslog
+|4,39,7123,49,1565535064,"/var/log/syslog"
+-'  12399  81  /var/log/syslog
+|4,39,12399,81,1565535064,"/var/log/syslog"
+-'  12528  49  /var/log/syslog
+|4,39,12528,49,1565535064,"/var/log/syslog"
+-'  7123  49  /var/log/syslog
+|4,39,7123,49,1565535064,"/var/log/syslog"
+-'  12399  81  /var/log/syslog
+|4,39,12399,81,1565535064,"/var/log/syslog"
+-'  12528  49  /var/log/syslog
+|4,39,12528,49,1565535064,"/var/log/syslog"
+-'  7123  49  /var/log/syslog
+|4,39,7123,49,1565535064,"/var/log/syslog"
+-'  12399  81  /var/log/syslog
+|4,39,12399,81,1565535064,"/var/log/syslog"
+-'  12528  49  /var/log/syslog
+|4,39,12528,49,1565535064,"/var/log/syslog"
+-'  12529  49  /var/log/syslog
+|4,39,12529,49,1565535063,"/var/log/syslog"
+-'  12529  49  /var/log/syslog
+|4,39,12529,49,1565535063,"/var/log/syslog"
+-'  12529  49  /var/log/syslog
+|4,39,12529,49,1565535063,"/var/log/syslog"
+-'  12529  49  /var/log/syslog
+|4,39,12529,49,1565535063,"/var/log/syslog"
+-'  12530  49  /var/log/syslog
+|4,39,12530,49,1565535062,"/var/log/syslog"
+-'  12531  49  /var/log/syslog
+|4,39,12531,49,1565535062,"/var/log/syslog"
+-'  12532  77  /var/log/syslog
+|4,39,12532,77,1565535062,"/var/log/syslog"
+-'  12533  49  /var/log/syslog
+|4,39,12533,49,1565535062,"/var/log/syslog"
+-'  12534  49  /var/log/syslog
+|4,39,12534,49,1565535062,"/var/log/syslog"
+-'  12535  46  /var/log/syslog
+|4,39,12535,46,1565535062,"/var/log/syslog"
+-'  12536  46  /var/log/syslog
+|4,39,12536,46,1565535062,"/var/log/syslog"
+-'  12537  46  /var/log/syslog
+|4,39,12537,46,1565535062,"/var/log/syslog"
+-'  12538  46  /var/log/syslog
+|4,39,12538,46,1565535062,"/var/log/syslog"
+-'  12539  46  /var/log/syslog
+|4,39,12539,46,1565535062,"/var/log/syslog"
+-'  12540  46  /var/log/syslog
+|4,39,12540,46,1565535062,"/var/log/syslog"
+-'  12541  46  /var/log/syslog
+|4,39,12541,46,1565535062,"/var/log/syslog"
+-'  12542  46  /var/log/syslog
+|4,39,12542,46,1565535062,"/var/log/syslog"
+-'  12543  46  /var/log/syslog
+|4,39,12543,46,1565535062,"/var/log/syslog"
+-'  12544  46  /var/log/syslog
+|4,39,12544,46,1565535062,"/var/log/syslog"
+-'  12545  46  /var/log/syslog
+|4,39,12545,46,1565535062,"/var/log/syslog"
+-'  12546  46  /var/log/syslog
+|4,39,12546,46,1565535062,"/var/log/syslog"
+-'  12547  46  /var/log/syslog
+|4,39,12547,46,1565535062,"/var/log/syslog"
+-'  12548  46  /var/log/syslog
+|4,39,12548,46,1565535062,"/var/log/syslog"
+-'  12530  49  /var/log/syslog
+|4,39,12530,49,1565535062,"/var/log/syslog"
+-'  12531  49  /var/log/syslog
+|4,39,12531,49,1565535062,"/var/log/syslog"
+-'  12532  77  /var/log/syslog
+|4,39,12532,77,1565535062,"/var/log/syslog"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1565514838	0
-	"	3	0
-	^	14	11
-	.	3	0
+	*	1565536283	0
+	"	16	6
+	^	16	7
+	.	16	7
 	+	5	0
 	+	3	80
 	+	6	0
@@ -783,39 +730,55 @@ $
 	+	3	10
 	+	5	21
 	+	6	6
-	+	13	6
+	+	14	6
 	+	7	1
 	+	6	2
-	+	9	8
-	+	10	6
-	+	13	7
-	+	14	3
-	+	10	11
-	+	12	0
-	+	15	7
-	+	16	0
+	+	8	8
+	+	11	6
+	+	14	7
+	+	15	3
+	+	11	11
+	+	13	0
+	+	16	7
 	+	2	1
 	+	3	8
 	+	3	10
 	+	3	4
 	+	2	0
-	+	12	7
-	+	9	10
+	+	13	7
+	+	8	10
 	+	8	8
 	+	6	4
-	+	14	11
-	+	14	10
+	+	15	11
+	+	15	10
 	+	3	0
+	+	8	7
+	+	16	7
 
-> /run/blkmapd.pid
-	*	1565514204	0
-	"	1	0
+> /var/log/syslog
+	*	1565535326	0
+	"	10508	0
+	^	12745	101
+	.	213	0
+	+	11035	4
+	+	11566	0
+	+	1	0
+	+	2689	0
+	+	6139	0
+	+	12465	118
+	+	12465	0
+	+	12745	0
+	+	10021	0
+	+	204	0
+	+	213	0
+	j	6115	3
+	k	13460	0
 
 > ~/crashlog-1.md
-	*	1565513738	0
-	"	6	0
-	^	5	8
-	.	5	7
+	*	1565532127	0
+	"	24	13
+	^	24	16
+	.	24	16
 	+	1	0
 	+	1	1
 	+	1	86
@@ -839,16 +802,24 @@ $
 	+	2	0
 	+	2	7
 	+	5	7
+	+	11	0
+	+	12	0
+	+	12	81
+	+	16	0
+	+	16	72
+	+	20	0
+	+	16	51
+	+	21	0
+	+	19	3
+	+	20	7
+	+	21	11
+	+	22	16
+	+	17	17
+	+	24	16
 
-> /var/log/syslog
-	*	1565513674	0
-	"	2688	0
-	.	2689	0
-	+	11044	4
-	+	11575	0
-	+	1	0
-	+	2689	0
-	k	13469	0
+> /run/blkmapd.pid
+	*	1565514204	0
+	"	1	0
 
 > ~/install.log
 	*	1565510320	0
