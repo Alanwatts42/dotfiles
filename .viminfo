@@ -20,6 +20,8 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1565536536,,"q"
 :wq
 |2,0,1565536284,,"wq"
 :w
@@ -32,8 +34,6 @@ $
 |2,0,1565533062,,"12851"
 :10329
 |2,0,1565531819,,"10329"
-:q
-|2,0,1565531135,,"q"
 :7293
 |2,0,1565514973,,"7293"
 :5042
@@ -492,36 +492,74 @@ $
 |3,0,36,0,1,0,1565533322,"t"
 
 # File marks:
-'0  16  6  ~/.gitignore
-|4,48,16,6,1565536285,"~/.gitignore"
-'1  10508  0  /var/log/syslog
-|4,49,10508,0,1565535644,"/var/log/syslog"
-'2  10020  119  /var/log/syslog
-|4,50,10020,119,1565535087,"/var/log/syslog"
-'3  10020  119  /var/log/syslog
-|4,51,10020,119,1565535087,"/var/log/syslog"
-'4  10019  0  /var/log/syslog
-|4,52,10019,0,1565532600,"/var/log/syslog"
-'5  10019  0  /var/log/syslog
-|4,53,10019,0,1565532600,"/var/log/syslog"
-'6  10019  0  /var/log/syslog
-|4,54,10019,0,1565532600,"/var/log/syslog"
+'0  9  5  ~/.gitignore
+|4,48,9,5,1565536537,"~/.gitignore"
+'1  1  0  ~/.tmp.xyz
+|4,49,1,0,1565536438,"~/.tmp.xyz"
+'2  16  6  ~/.gitignore
+|4,50,16,6,1565536285,"~/.gitignore"
+'3  16  6  ~/.gitignore
+|4,51,16,6,1565536285,"~/.gitignore"
+'4  10508  0  /var/log/syslog
+|4,52,10508,0,1565535644,"/var/log/syslog"
+'5  10020  119  /var/log/syslog
+|4,53,10020,119,1565535087,"/var/log/syslog"
+'6  10020  119  /var/log/syslog
+|4,54,10020,119,1565535087,"/var/log/syslog"
 '7  10019  0  /var/log/syslog
 |4,55,10019,0,1565532600,"/var/log/syslog"
-'8  24  13  ~/crashlog-1.md
-|4,56,24,13,1565532129,"~/crashlog-1.md"
-'9  6140  0  /var/log/syslog
-|4,57,6140,0,1565531137,"/var/log/syslog"
+'8  10019  0  /var/log/syslog
+|4,56,10019,0,1565532600,"/var/log/syslog"
+'9  10019  0  /var/log/syslog
+|4,57,10019,0,1565532600,"/var/log/syslog"
 
 # Jumplist (newest first):
+-'  9  5  ~/.gitignore
+|4,39,9,5,1565536537,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1565536523,"~/.gitignore"
+-'  1  0  ~/.tmp.xyz
+|4,39,1,0,1565536438,"~/.tmp.xyz"
+-'  1  0  ~/.tmp.xyz
+|4,39,1,0,1565536438,"~/.tmp.xyz"
 -'  16  6  ~/.gitignore
 |4,39,16,6,1565536285,"~/.gitignore"
+-'  16  6  ~/.gitignore
+|4,39,16,6,1565536285,"~/.gitignore"
+-'  16  6  ~/.gitignore
+|4,39,16,6,1565536285,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1565536133,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1565536133,"~/.gitignore"
 -'  10508  0  /var/log/syslog
 |4,39,10508,0,1565535644,"/var/log/syslog"
 -'  10508  0  /var/log/syslog
 |4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  10508  0  /var/log/syslog
+|4,39,10508,0,1565535644,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
+-'  213  4  /var/log/syslog
+|4,39,213,4,1565535162,"/var/log/syslog"
 -'  213  4  /var/log/syslog
 |4,39,213,4,1565535162,"/var/log/syslog"
 -'  213  4  /var/log/syslog
@@ -530,6 +568,30 @@ $
 |4,39,204,4,1565535141,"/var/log/syslog"
 -'  204  4  /var/log/syslog
 |4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  204  4  /var/log/syslog
+|4,39,204,4,1565535141,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1565535094,"/var/log/syslog"
 -'  1  0  /var/log/syslog
 |4,39,1,0,1565535094,"/var/log/syslog"
 -'  1  0  /var/log/syslog
@@ -542,6 +604,30 @@ $
 |4,39,10020,119,1565535087,"/var/log/syslog"
 -'  10020  119  /var/log/syslog
 |4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
+-'  10020  119  /var/log/syslog
+|4,39,10020,119,1565535087,"/var/log/syslog"
 -'  10021  49  /var/log/syslog
 |4,39,10021,49,1565535070,"/var/log/syslog"
 -'  10021  49  /var/log/syslog
@@ -550,6 +636,54 @@ $
 |4,39,10021,49,1565535070,"/var/log/syslog"
 -'  10021  49  /var/log/syslog
 |4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10021  49  /var/log/syslog
+|4,39,10021,49,1565535070,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
+-'  10022  49  /var/log/syslog
+|4,39,10022,49,1565535069,"/var/log/syslog"
 -'  10022  49  /var/log/syslog
 |4,39,10022,49,1565535069,"/var/log/syslog"
 -'  10022  49  /var/log/syslog
@@ -580,146 +714,12 @@ $
 |4,39,10023,77,1565535067,"/var/log/syslog"
 -'  12318  82  /var/log/syslog
 |4,39,12318,82,1565535067,"/var/log/syslog"
--'  12347  61  /var/log/syslog
-|4,39,12347,61,1565535067,"/var/log/syslog"
--'  9847  81  /var/log/syslog
-|4,39,9847,81,1565535065,"/var/log/syslog"
--'  9809  61  /var/log/syslog
-|4,39,9809,61,1565535065,"/var/log/syslog"
--'  9805  82  /var/log/syslog
-|4,39,9805,82,1565535065,"/var/log/syslog"
--'  7127  77  /var/log/syslog
-|4,39,7127,77,1565535065,"/var/log/syslog"
--'  7126  49  /var/log/syslog
-|4,39,7126,49,1565535065,"/var/log/syslog"
--'  7125  49  /var/log/syslog
-|4,39,7125,49,1565535065,"/var/log/syslog"
--'  7124  49  /var/log/syslog
-|4,39,7124,49,1565535065,"/var/log/syslog"
--'  9847  81  /var/log/syslog
-|4,39,9847,81,1565535065,"/var/log/syslog"
--'  9809  61  /var/log/syslog
-|4,39,9809,61,1565535065,"/var/log/syslog"
--'  9805  82  /var/log/syslog
-|4,39,9805,82,1565535065,"/var/log/syslog"
--'  7127  77  /var/log/syslog
-|4,39,7127,77,1565535065,"/var/log/syslog"
--'  7126  49  /var/log/syslog
-|4,39,7126,49,1565535065,"/var/log/syslog"
--'  7125  49  /var/log/syslog
-|4,39,7125,49,1565535065,"/var/log/syslog"
--'  7124  49  /var/log/syslog
-|4,39,7124,49,1565535065,"/var/log/syslog"
--'  9847  81  /var/log/syslog
-|4,39,9847,81,1565535065,"/var/log/syslog"
--'  9809  61  /var/log/syslog
-|4,39,9809,61,1565535065,"/var/log/syslog"
--'  9805  82  /var/log/syslog
-|4,39,9805,82,1565535065,"/var/log/syslog"
--'  7127  77  /var/log/syslog
-|4,39,7127,77,1565535065,"/var/log/syslog"
--'  7126  49  /var/log/syslog
-|4,39,7126,49,1565535065,"/var/log/syslog"
--'  7125  49  /var/log/syslog
-|4,39,7125,49,1565535065,"/var/log/syslog"
--'  7124  49  /var/log/syslog
-|4,39,7124,49,1565535065,"/var/log/syslog"
--'  9847  81  /var/log/syslog
-|4,39,9847,81,1565535065,"/var/log/syslog"
--'  9809  61  /var/log/syslog
-|4,39,9809,61,1565535065,"/var/log/syslog"
--'  9805  82  /var/log/syslog
-|4,39,9805,82,1565535065,"/var/log/syslog"
--'  7127  77  /var/log/syslog
-|4,39,7127,77,1565535065,"/var/log/syslog"
--'  7126  49  /var/log/syslog
-|4,39,7126,49,1565535065,"/var/log/syslog"
--'  7125  49  /var/log/syslog
-|4,39,7125,49,1565535065,"/var/log/syslog"
--'  7124  49  /var/log/syslog
-|4,39,7124,49,1565535065,"/var/log/syslog"
--'  7123  49  /var/log/syslog
-|4,39,7123,49,1565535064,"/var/log/syslog"
--'  12399  81  /var/log/syslog
-|4,39,12399,81,1565535064,"/var/log/syslog"
--'  12528  49  /var/log/syslog
-|4,39,12528,49,1565535064,"/var/log/syslog"
--'  7123  49  /var/log/syslog
-|4,39,7123,49,1565535064,"/var/log/syslog"
--'  12399  81  /var/log/syslog
-|4,39,12399,81,1565535064,"/var/log/syslog"
--'  12528  49  /var/log/syslog
-|4,39,12528,49,1565535064,"/var/log/syslog"
--'  7123  49  /var/log/syslog
-|4,39,7123,49,1565535064,"/var/log/syslog"
--'  12399  81  /var/log/syslog
-|4,39,12399,81,1565535064,"/var/log/syslog"
--'  12528  49  /var/log/syslog
-|4,39,12528,49,1565535064,"/var/log/syslog"
--'  7123  49  /var/log/syslog
-|4,39,7123,49,1565535064,"/var/log/syslog"
--'  12399  81  /var/log/syslog
-|4,39,12399,81,1565535064,"/var/log/syslog"
--'  12528  49  /var/log/syslog
-|4,39,12528,49,1565535064,"/var/log/syslog"
--'  12529  49  /var/log/syslog
-|4,39,12529,49,1565535063,"/var/log/syslog"
--'  12529  49  /var/log/syslog
-|4,39,12529,49,1565535063,"/var/log/syslog"
--'  12529  49  /var/log/syslog
-|4,39,12529,49,1565535063,"/var/log/syslog"
--'  12529  49  /var/log/syslog
-|4,39,12529,49,1565535063,"/var/log/syslog"
--'  12530  49  /var/log/syslog
-|4,39,12530,49,1565535062,"/var/log/syslog"
--'  12531  49  /var/log/syslog
-|4,39,12531,49,1565535062,"/var/log/syslog"
--'  12532  77  /var/log/syslog
-|4,39,12532,77,1565535062,"/var/log/syslog"
--'  12533  49  /var/log/syslog
-|4,39,12533,49,1565535062,"/var/log/syslog"
--'  12534  49  /var/log/syslog
-|4,39,12534,49,1565535062,"/var/log/syslog"
--'  12535  46  /var/log/syslog
-|4,39,12535,46,1565535062,"/var/log/syslog"
--'  12536  46  /var/log/syslog
-|4,39,12536,46,1565535062,"/var/log/syslog"
--'  12537  46  /var/log/syslog
-|4,39,12537,46,1565535062,"/var/log/syslog"
--'  12538  46  /var/log/syslog
-|4,39,12538,46,1565535062,"/var/log/syslog"
--'  12539  46  /var/log/syslog
-|4,39,12539,46,1565535062,"/var/log/syslog"
--'  12540  46  /var/log/syslog
-|4,39,12540,46,1565535062,"/var/log/syslog"
--'  12541  46  /var/log/syslog
-|4,39,12541,46,1565535062,"/var/log/syslog"
--'  12542  46  /var/log/syslog
-|4,39,12542,46,1565535062,"/var/log/syslog"
--'  12543  46  /var/log/syslog
-|4,39,12543,46,1565535062,"/var/log/syslog"
--'  12544  46  /var/log/syslog
-|4,39,12544,46,1565535062,"/var/log/syslog"
--'  12545  46  /var/log/syslog
-|4,39,12545,46,1565535062,"/var/log/syslog"
--'  12546  46  /var/log/syslog
-|4,39,12546,46,1565535062,"/var/log/syslog"
--'  12547  46  /var/log/syslog
-|4,39,12547,46,1565535062,"/var/log/syslog"
--'  12548  46  /var/log/syslog
-|4,39,12548,46,1565535062,"/var/log/syslog"
--'  12530  49  /var/log/syslog
-|4,39,12530,49,1565535062,"/var/log/syslog"
--'  12531  49  /var/log/syslog
-|4,39,12531,49,1565535062,"/var/log/syslog"
--'  12532  77  /var/log/syslog
-|4,39,12532,77,1565535062,"/var/log/syslog"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1565536283	0
-	"	16	6
+	*	1565536533	0
+	"	9	5
 	^	16	7
 	.	16	7
 	+	5	0
@@ -754,6 +754,10 @@ $
 	+	3	0
 	+	8	7
 	+	16	7
+
+> ~/.tmp.xyz
+	*	1565536434	0
+	"	1	0
 
 > /var/log/syslog
 	*	1565535326	0
@@ -2429,7 +2433,3 @@ $
 	+	438	23
 	+	437	45
 	+	579	0
-
-> ~/.config/openbox/LXDE/rc.xml
-	*	1564085592	0
-	"	3	0
