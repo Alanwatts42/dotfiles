@@ -69,6 +69,7 @@ Plug 'somini/vim-autoclose' " Auto-close when using grouping symbols i.e.'(), []
 Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
 Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+Plug 'PyCQA/pylint'         " Python linter
 
 """ ==Javascript==
 Plug 'w0rp/ale'    " javascript linter
@@ -98,7 +99,6 @@ Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 Plug 'plasticboy/vim-markdown' " Markdown handling in Vim 
 Plug 'godlygeek/tabular' " Req'd for vim-markdown
 
-""" ==Python-vimrc-bundled-plugins==
 """ ==Snippets support ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
 Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
@@ -146,6 +146,13 @@ nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>
 
 " -Pipenv-Integration-
 let pipenv_venv_path = system('pipenv --venv')
+
+" ==Python-mode==
+" set syntastic to log the output of the linter to vim messages (accessible
+" with :mes
+" let g:syntastic_debug = 3
+
+
 
 " ==Javascript==
 autocmd BufWritePre *.js :normal gggqG
@@ -197,9 +204,11 @@ set mouse=a             " disable mouse
 set encoding=utf-8
 set number
 
+
 " ----------------------
 " -Keyboard-Cartography-
 " ----------------------
+
 " <leader> key mapping. I typically use comma or ','
 let g:mapleader=','
 
@@ -207,7 +216,9 @@ let g:mapleader=','
 noremap <Leader>ve :edit $HOME/.vimrc<CR>
 noremap <Leader>vs :source $HOME/.vimrc<CR>
 
-""" -Clipboard-
+
+""" --Clipboard--
+
 " Fixing Vim's clipboard (as much as possible)
 " X11 keyboard fix - <Leader>y, p, Y, P = copy, paste to/from X11 clipboard
 " Same modification should also work the same way on Win32/MacOS
@@ -216,6 +227,7 @@ nnoremap <Leader>y "*y
 nnoremap <Leader>p "*p
 nnoremap <Leader>Y "+y
 nnoremap <Leader>P "+p
+
 " Y (capital) now yanks from cursor position to end of current line 
 noremap Y y$
 nnoremap <F2> :set invpaste paste?<CR>
@@ -229,7 +241,13 @@ set clipboard=unnamed
 " 'showmode' tells vim to display status of  'paste mode' (on or off)
 " 'set clipboard=unnamed', not sure what this does exactly, but also helps fix vim's clipboard.
 
-""" -Search Options-
+" Delete without copying what is being deleted to clipboard
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP
+
+
+""" --Search Options--
 set incsearch               " searches as you type
 set matchtime=2             " time to blink match {}
 set matchpairs+=<:>         " for ci< or ci>
@@ -245,7 +263,9 @@ vnoremap <Leader>rc y:$s/<C-r>"/
 " Toggle relativenumber
 nnoremap <Leader>rnn :set relativenumber!<CR>
 
+
 " --Screen-Splitting--
+
 " :sp <path to file you want to split screen with (vertically)
 " i.e. :sp ~/.vimrc to split the screen with the .vimrc
 
@@ -259,7 +279,8 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-"" -Indent, Type-Setting Options-
+
+"" --Indent, Type-Setting Options--
 
 " <ctrl-e> jumps to the end of the line in insert mode
 inoremap <C-e> <C-o>$
@@ -271,7 +292,7 @@ set listchars=tab:>\            " > to highlight <Tab>
 set nolist                      " displaying listchars
 set ww=<,>,h,l  " ww = commands allowed to 'wrap' around EOL
 
-" Text-folding setting
+" --Text-folding setting--
 set foldmethod=marker
 set foldopen=hor
 
@@ -299,7 +320,7 @@ set wildignore+=*/.git*,*.tar,*.zip
 set wildmenu
 set wildmode=longest:full,list:full
 
-" saving/loading
+" --saving/loading--
 set autoread                    " refresh if changed
 set confirm                     " confirm changed files
 set noautowrite                 " never autowrite
@@ -321,11 +342,11 @@ if has('persistent_undo') && exists('&undodir')
     set undoreload=10000        " buffer stored undos
 endif
 
-" Undo History
+" --Undo History--
 set hidden                      " buffer change, more undo
 set history=1000                " default 20
 
-""" Text formatting 
+""" ===Text formatting=== 
 set autoindent                  " preserve indentation
 set backspace=indent,eol,start  " normal backspace
 set expandtab                   " indents <Tab> as spaces
@@ -341,7 +362,7 @@ set scrolloff=10                " let 10 lines before cursor during scroll
 set exrc                        " enable usage of additional vimrc files
 set secure                      " .vimrc files cannot execute/create files
 
-""" ==gvim options== 
+""" ===gvim options===
 "set guioptions-=m   " remove menubar set 
 "guioptions-=T       " remove toolbar
 "set guioptions-=r   " remove right scrollbar

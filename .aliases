@@ -1,4 +1,5 @@
-#                               ALIASES #                                 ***
+#    ALIASES  
+#   ---***---
 # Reference(s): 
 # <https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts>
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
@@ -37,7 +38,7 @@ alias xbright="xrandr --output eDP-1 --brightness 1"
 
 # Wifi operations via the terminal - very long, very specific, aliases therefore very necessary
 alias wifi-go="sudo nmcli dev wifi connect"
-alias mifi-go="sudo nmcli dev wifi connect MY_EX-WIFI_GOT_THE_HOUSE password amqv294#"
+alias mifi="sudo nmcli dev wifi connect MY_EX-WIFI_GOT_THE_HOUSE password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
 
 # Pip, pipenv, and python
