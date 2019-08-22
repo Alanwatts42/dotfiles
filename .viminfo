@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1566484637,,"q"
 :w
 |2,0,1566426138,,"w"
 :wq
 |2,0,1566362290,,"wq"
-:q
-|2,0,1566356238,,"q"
 :redo
 |2,0,1566356225,,"redo"
 :tabclose
@@ -604,40 +604,66 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 ""-	CHAR	0
-	p
-|3,1,36,0,1,0,1566428619,"p"
+	,
+|3,1,36,0,1,0,1566484632,","
 
 # File marks:
-'0  50  0  ~/_reference/chmod_codes.md
-|4,48,50,0,1566441827,"~/_reference/chmod_codes.md"
+'0  69  12  ~/.vimrc
+|4,48,69,12,1566484638,"~/.vimrc"
 '1  50  0  ~/_reference/chmod_codes.md
-|4,49,50,0,1566441826,"~/_reference/chmod_codes.md"
-'2  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,50,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
-'3  64  24  ~/.vimrc
-|4,51,64,24,1566362270,"~/.vimrc"
-'4  96  0  ~/.zshrc
-|4,52,96,0,1566319954,"~/.zshrc"
-'5  102  0  ~/.zshrc
-|4,53,102,0,1566317749,"~/.zshrc"
-'6  102  0  ~/.zshrc
-|4,54,102,0,1566317749,"~/.zshrc"
-'7  10  21  ~/_reference/calc
-|4,55,10,21,1566317607,"~/_reference/calc"
-'8  5326  0  ~/_reference/software_dev-best_practices.md
-|4,56,5326,0,1566314392,"~/_reference/software_dev-best_practices.md"
-'9  28  0  ~/_repos/RetroPie-Setup/retropie_packages.sh
-|4,57,28,0,1566290806,"~/_repos/RetroPie-Setup/retropie_packages.sh"
+|4,49,50,0,1566441827,"~/_reference/chmod_codes.md"
+'2  50  0  ~/_reference/chmod_codes.md
+|4,50,50,0,1566441826,"~/_reference/chmod_codes.md"
+'3  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,51,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+'4  64  24  ~/.vimrc
+|4,52,64,24,1566362270,"~/.vimrc"
+'5  64  24  ~/.vimrc
+|4,53,64,24,1566362270,"~/.vimrc"
+'6  96  0  ~/.zshrc
+|4,54,96,0,1566319954,"~/.zshrc"
+'7  102  0  ~/.zshrc
+|4,55,102,0,1566317749,"~/.zshrc"
+'8  102  0  ~/.zshrc
+|4,56,102,0,1566317749,"~/.zshrc"
+'9  10  21  ~/_reference/calc
+|4,57,10,21,1566317607,"~/_reference/calc"
 
 # Jumplist (newest first):
+-'  69  12  ~/.vimrc
+|4,39,69,12,1566484638,"~/.vimrc"
+-'  93  7  ~/.vimrc
+|4,39,93,7,1566484574,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566484551,"~/.vimrc"
 -'  50  0  ~/_reference/chmod_codes.md
 |4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
 -'  50  0  ~/_reference/chmod_codes.md
 |4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
 -'  5  0  ~/_reference/chmod_codes.md
 |4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
 -'  5  0  ~/_reference/chmod_codes.md
 |4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
 -'  4  0  ~/_reference/chmod_codes.md
 |4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
 -'  3  0  ~/_reference/chmod_codes.md
@@ -654,6 +680,14 @@ $
 |4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
 -'  7  0  ~/_reference/chmod_codes.md
 |4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+-'  7  0  ~/_reference/chmod_codes.md
+|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+-'  7  0  ~/_reference/chmod_codes.md
+|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+-'  1  0  ~/_reference/chmod_codes.md
+|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
+-'  1  0  ~/_reference/chmod_codes.md
+|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
 -'  1  0  ~/_reference/chmod_codes.md
 |4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
 -'  1  0  ~/_reference/chmod_codes.md
@@ -664,12 +698,22 @@ $
 |4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
 -'  13  27  ~/_projects/str-slicer/log_splitter.py
 |4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
 -'  64  24  ~/.vimrc
 |4,39,64,24,1566362270,"~/.vimrc"
 -'  64  24  ~/.vimrc
 |4,39,64,24,1566362270,"~/.vimrc"
 -'  64  24  ~/.vimrc
 |4,39,64,24,1566362270,"~/.vimrc"
+-'  64  24  ~/.vimrc
+|4,39,64,24,1566362270,"~/.vimrc"
+-'  10  0  ~/.vimrc
+|4,39,10,0,1566356423,"~/.vimrc"
 -'  10  0  ~/.vimrc
 |4,39,10,0,1566356423,"~/.vimrc"
 -'  10  0  ~/.vimrc
@@ -688,6 +732,18 @@ $
 |4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
 -'  1  0  ~/_projects/str-slicer/log_splitter.py
 |4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
 -'  3  0  ~/_projects/str-slicer/log_splitter.py
 |4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
 -'  3  0  ~/_projects/str-slicer/log_splitter.py
@@ -712,6 +768,42 @@ $
 |4,39,96,0,1566319954,"~/.zshrc"
 -'  96  0  ~/.zshrc
 |4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1566319923,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -738,100 +830,21 @@ $
 |4,39,102,0,1566317749,"~/.zshrc"
 -'  102  0  ~/.zshrc
 |4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  10  21  ~/_reference/calc
-|4,39,10,21,1566317607,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
--'  8  0  ~/_reference/calc
-|4,39,8,0,1566314402,"~/_reference/calc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1566484636	0
+	"	69	12
+	^	69	11
+	.	69	10
+	+	64	27
+	+	64	24
+	+	94	0
+	+	93	0
+	+	97	0
+	+	98	0
+	+	69	10
 
 > ~/_reference/chmod_codes.md
 	*	1566428619	0
@@ -946,14 +959,6 @@ $
 	+	1	0
 	+	13	0
 	+	1	0
-
-> ~/.vimrc
-	*	1566362268	0
-	"	64	24
-	^	64	25
-	.	64	24
-	+	64	27
-	+	64	24
 
 > /usr/share/vim/vim80/doc/help.txt
 	*	1566356235	0
