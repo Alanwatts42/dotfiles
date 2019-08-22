@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1566484637,,"q"
+|2,0,1566485101,,"q"
 :w
 |2,0,1566426138,,"w"
 :wq
@@ -608,32 +608,58 @@ $
 |3,1,36,0,1,0,1566484632,","
 
 # File marks:
-'0  69  12  ~/.vimrc
-|4,48,69,12,1566484638,"~/.vimrc"
-'1  50  0  ~/_reference/chmod_codes.md
-|4,49,50,0,1566441827,"~/_reference/chmod_codes.md"
-'2  50  0  ~/_reference/chmod_codes.md
-|4,50,50,0,1566441826,"~/_reference/chmod_codes.md"
-'3  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,51,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
-'4  64  24  ~/.vimrc
-|4,52,64,24,1566362270,"~/.vimrc"
-'5  64  24  ~/.vimrc
-|4,53,64,24,1566362270,"~/.vimrc"
-'6  96  0  ~/.zshrc
-|4,54,96,0,1566319954,"~/.zshrc"
-'7  102  0  ~/.zshrc
-|4,55,102,0,1566317749,"~/.zshrc"
-'8  102  0  ~/.zshrc
-|4,56,102,0,1566317749,"~/.zshrc"
-'9  10  21  ~/_reference/calc
-|4,57,10,21,1566317607,"~/_reference/calc"
+'0  121  0  ~/NERD_tree_1
+|4,48,121,0,1566485101,"~/NERD_tree_1"
+'1  1  0  ~/.gitignore
+|4,49,1,0,1566485043,"~/.gitignore"
+'2  69  12  ~/.vimrc
+|4,50,69,12,1566484638,"~/.vimrc"
+'3  50  0  ~/_reference/chmod_codes.md
+|4,51,50,0,1566441827,"~/_reference/chmod_codes.md"
+'4  50  0  ~/_reference/chmod_codes.md
+|4,52,50,0,1566441826,"~/_reference/chmod_codes.md"
+'5  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,53,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+'6  64  24  ~/.vimrc
+|4,54,64,24,1566362270,"~/.vimrc"
+'7  64  24  ~/.vimrc
+|4,55,64,24,1566362270,"~/.vimrc"
+'8  96  0  ~/.zshrc
+|4,56,96,0,1566319954,"~/.zshrc"
+'9  102  0  ~/.zshrc
+|4,57,102,0,1566317749,"~/.zshrc"
 
 # Jumplist (newest first):
+-'  121  0  ~/NERD_tree_1
+|4,39,121,0,1566485101,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1566485098,"~/NERD_tree_1"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566485043,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566485043,"~/.gitignore"
+-'  69  12  ~/.vimrc
+|4,39,69,12,1566484638,"~/.vimrc"
+-'  69  12  ~/.vimrc
+|4,39,69,12,1566484638,"~/.vimrc"
+-'  69  12  ~/.vimrc
+|4,39,69,12,1566484638,"~/.vimrc"
 -'  69  12  ~/.vimrc
 |4,39,69,12,1566484638,"~/.vimrc"
 -'  93  7  ~/.vimrc
 |4,39,93,7,1566484574,"~/.vimrc"
+-'  93  7  ~/.vimrc
+|4,39,93,7,1566484574,"~/.vimrc"
+-'  93  7  ~/.vimrc
+|4,39,93,7,1566484574,"~/.vimrc"
+-'  93  7  ~/.vimrc
+|4,39,93,7,1566484574,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566484551,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566484551,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566484551,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1566484551,"~/.vimrc"
 -'  50  0  ~/_reference/chmod_codes.md
@@ -641,6 +667,30 @@ $
 -'  50  0  ~/_reference/chmod_codes.md
 |4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
 -'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
 |4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
 -'  50  0  ~/_reference/chmod_codes.md
 |4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
@@ -652,6 +702,102 @@ $
 |4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
 -'  5  0  ~/_reference/chmod_codes.md
 |4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
 -'  4  0  ~/_reference/chmod_codes.md
 |4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
 -'  3  0  ~/_reference/chmod_codes.md
@@ -682,156 +828,18 @@ $
 |4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
 -'  7  0  ~/_reference/chmod_codes.md
 |4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
--'  7  0  ~/_reference/chmod_codes.md
-|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
--'  1  0  ~/_reference/chmod_codes.md
-|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
--'  1  0  ~/_reference/chmod_codes.md
-|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
--'  1  0  ~/_reference/chmod_codes.md
-|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
--'  1  0  ~/_reference/chmod_codes.md
-|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
--'  64  24  ~/.vimrc
-|4,39,64,24,1566362270,"~/.vimrc"
--'  64  24  ~/.vimrc
-|4,39,64,24,1566362270,"~/.vimrc"
--'  64  24  ~/.vimrc
-|4,39,64,24,1566362270,"~/.vimrc"
--'  64  24  ~/.vimrc
-|4,39,64,24,1566362270,"~/.vimrc"
--'  10  0  ~/.vimrc
-|4,39,10,0,1566356423,"~/.vimrc"
--'  10  0  ~/.vimrc
-|4,39,10,0,1566356423,"~/.vimrc"
--'  10  0  ~/.vimrc
-|4,39,10,0,1566356423,"~/.vimrc"
--'  10  0  ~/.vimrc
-|4,39,10,0,1566356423,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566356373,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566356373,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566356373,"~/.vimrc"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  1  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  3  0  ~/_projects/str-slicer/log_splitter.py
-|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  96  0  ~/.zshrc
-|4,39,96,0,1566319954,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1566319923,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
--'  102  0  ~/.zshrc
-|4,39,102,0,1566317749,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/NERD_tree_1
+	*	1566485100	0
+	"	121	0
+	.	1	0
+	+	1	0
+
+> ~/.gitignore
+	*	1566485041	0
+	"	1	0
 
 > ~/.vimrc
 	*	1566484636	0
