@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/system
+~MSle0~/port
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -20,26 +20,36 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1565925196,,"q"
-:wq
-|2,0,1565925192,,"wq"
 :w
-|2,0,1565925115,,"w"
+|2,0,1566426138,,"w"
+:wq
+|2,0,1566362290,,"wq"
+:q
+|2,0,1566356238,,"q"
+:redo
+|2,0,1566356225,,"redo"
+:tabclose
+|2,0,1566342897,,"tabclose"
+:messages
+|2,0,1566338336,,"messages"
+:PlugInstall!
+|2,0,1566356490,,"PlugInstall!"
+:w empower_acct-discrepancy
+|2,0,1566317602,,"w empower_acct-discrepancy"
 :1
-|2,0,1565854111,,"1"
+|2,0,1566033777,,"1"
 :vs sh_template.sh
 |2,0,1565853783,,"vs sh_template.sh"
 :ww
 |2,0,1565840970,,"ww"
 :PlugInstall
 |2,0,1565840858,,"PlugInstall"
-:help pymode
-|2,0,1565833623,,"help pymode"
 :mes
 |2,0,1565834985,,"mes"
 :p
 |2,0,1565833858,,"p"
+:help pymode
+|2,0,1565833623,,"help pymode"
 :help
 |2,0,1565833395,,"help"
 :errors
@@ -54,8 +64,6 @@ $
 |2,0,1565806835,,"17781"
 :1000
 |2,0,1565762275,,"1000"
-:redo
-|2,0,1565685761,,"redo"
 :w lubuntu-rc.bak.xml
 |2,0,1565683203,,"w lubuntu-rc.bak.xml"
 :sp crashlog-1a.log
@@ -84,26 +92,22 @@ $
 |2,0,1565512734,,"5042"
 :4890
 |2,0,1565508907,,"4890"
-:13966
-|2,0,1565187364,,"13966"
 :W
 |2,0,1565189661,,"W"
+:13966
+|2,0,1565187364,,"13966"
 :11445
 |2,0,1565184420,,"11445"
-:13416
-|2,0,1565174405,,"13416"
 :!mifi-go
 |2,0,1565182389,,"!mifi-go"
 :8171
 |2,0,1565181885,,"8171"
+:13416
+|2,0,1565174405,,"13416"
 :7705
 |2,0,1565173634,,"7705"
 :400
 |2,0,1565150042,,"400"
-:PlugInstall!
-|2,0,1565139787,,"PlugInstall!"
-:messages
-|2,0,1565138932,,"messages"
 :PlugUpdate!
 |2,0,1565138441,,"PlugUpdate!"
 :PlugClean!
@@ -190,14 +194,14 @@ $
 |2,0,1563672537,,"sp .bash_aliases"
 :jk
 |2,0,1563649356,,"jk"
-:sp scraper-ex-boone.py
-|2,0,1563499980,,"sp scraper-ex-boone.py"
 :w selenium-scraper.py
 |2,0,1563501434,,"w selenium-scraper.py"
 :w scraper_procedure.md
 |2,0,1563501325,,"w scraper_procedure.md"
 :w scraper_scratch.md
 |2,0,1563500341,,"w scraper_scratch.md"
+:sp scraper-ex-boone.py
+|2,0,1563499980,,"sp scraper-ex-boone.py"
 :vs .
 |2,0,1563467070,,"vs ."
 :w .zsh_plugins
@@ -212,6 +216,26 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/rope
+|2,1,1566356423,47,"rope"
+?/port
+|2,1,1566072093,47,"port"
+?/speed
+|2,1,1566071954,47,"speed"
+?/DL_
+|2,1,1566068510,47,"DL_"
+?/incomplete
+|2,1,1566068341,47,"incomplete"
+?/incomplete-dir
+|2,1,1566068337,47,"incomplete-dir"
+?/alt
+|2,1,1566068281,47,"alt"
+?/up
+|2,1,1566068180,47,"up"
+?/down
+|2,1,1566068163,47,"down"
+?/escape
+|2,1,1566034156,47,"escape"
 ?/system
 |2,1,1565887073,47,"system"
 ?/tu
@@ -250,14 +274,14 @@ $
 |2,1,1565762292,47,"config"
 ?//.config
 |2,1,1565762288,47,"/.config"
+?/pleas
+|2,1,1565676187,47,"pleas"
 ?/resolv.conf
 |2,1,1565671050,47,"resolv.conf"
 ?/nm
 |2,1,1565670473,47,"nm"
 ?/alsa
 |2,1,1565670188,47,"alsa"
-?/pleas
-|2,1,1565676187,47,"pleas"
 ?/08-
 |2,1,1565641336,47,"08-"
 ?/08-11
@@ -280,12 +304,12 @@ $
 |2,1,1565172162,47,"roard"
 ?/driver
 |2,1,1565171746,47,"driver"
+?/stereo
+|2,1,1565160704,47,"stereo"
 ?/content
 |2,1,1565159513,47,"content"
 ?/contents
 |2,1,1565159503,47,"contents"
-?/stereo
-|2,1,1565160704,47,"stereo"
 ?/lapt
 |2,1,1565156988,47,"lapt"
 ?/deb
@@ -368,10 +392,6 @@ $
 |2,1,1565057470,47,"statusline"
 ?/powerline
 |2,1,1565046671,47,"powerline"
-?/python mode
-|2,1,1565045426,47,"python mode"
-?/rope
-|2,1,1565045406,47,"rope"
 ?/powerlin
 |2,1,1565046665,47,"powerlin"
 ?/:YCm
@@ -380,6 +400,8 @@ $
 |2,1,1565045552,47,"nerd"
 ?/plugin
 |2,1,1565045444,47,"plugin"
+?/python mode
+|2,1,1565045426,47,"python mode"
 ?/rope-vim
 |2,1,1565045390,47,"rope-vim"
 ?/buffer
@@ -444,8 +466,6 @@ $
 |2,1,1565043528,47,"syntastic"
 ?/snippets
 |2,1,1564982212,47,"snippets"
-?/zip_ref
-|2,1,1564968846,47,"zip_ref"
 ?/remap
 |2,1,1564976507,47,"remap"
 ?/innoremap
@@ -474,6 +494,8 @@ $
 |2,1,1564974968,47,"set ts=4"
 ?/set
 |2,1,1564974944,47,"set"
+?/zip_ref
+|2,1,1564968846,47,"zip_ref"
 ?/pure
 |2,1,1564879726,47,"pure"
 ?/purepower
@@ -543,36 +565,35 @@ $
 
 # Registers:
 "0	LINE	0
-	    fi
-|3,0,0,1,1,0,1565880224,"    fi"
+	*listed in the order that they are read by the system*
+|3,0,0,1,1,0,1566286567,"*listed in the order that they are read by the system*"
 "1@	LINE	0
-	
-|3,2,1,1,1,0,1565881130,""
+	you would add 400+200+100+040+010+001 to give 751.
+|3,2,1,1,1,0,1566428619,"you would add 400+200+100+040+010+001 to give 751."
 "2	LINE	0
-	
-|3,0,2,1,1,0,1565880974,""
+	 
+|3,0,2,1,1,0,1566426130," "
 "3	LINE	0
 	
-|3,0,3,1,1,0,1565880972,""
+|3,0,3,1,1,0,1566426126,""
 "4	LINE	0
-	    
-|3,0,4,1,1,0,1565880970,"    "
+	
+|3,0,4,1,1,0,1566426034,""
 "5	LINE	0
-	    # fi
-|3,0,5,1,1,0,1565880773,"    # fi"
+	
+|3,0,5,1,1,0,1566426023,""
 "6	LINE	0
-	    # if [ "${file: -4}" == ".mp3" ]; then
-	    #     mv "$DOWNLOADS/*.mp3" ~/Music
-|3,0,6,1,2,0,1565880756,"    # if [ \"${file: -4}\" == \".mp3\" ]; then","    #     mv \"$DOWNLOADS/*.mp3\" ~/Music"
+	
+|3,0,6,1,1,0,1566426022,""
 "7	LINE	0
-	# File type check
-|3,0,7,1,1,0,1565880476,"# File type check"
+	## Sources
+|3,0,7,1,1,0,1566426022,"## Sources"
 "8	LINE	0
-	    if [ "${file: -4}" == ".mp3" ]; then
-|3,0,8,1,1,0,1565880210,"    if [ \"${file: -4}\" == \".mp3\" ]; then"
+	https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html#Numeric-Modes
+|3,0,8,1,1,0,1566426022,"https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html#Numeric-Modes"
 "9	LINE	0
-	    fi
-|3,0,9,1,1,0,1565880056,"    fi"
+	                                                                                                                                                                                   
+|3,0,9,1,1,0,1566426022,"                                                                                                                                                                                   "
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -583,1750 +604,846 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1565925085," "
+	p
+|3,1,36,0,1,0,1566428619,"p"
 
 # File marks:
-'0  8  1  ~/_projects/zipsaw/zipsaw.py
-|4,48,8,1,1565925196,"~/_projects/zipsaw/zipsaw.py"
-'1  9  0  ~/_projects/zipsaw/zipsaw.py
-|4,49,9,0,1565925125,"~/_projects/zipsaw/zipsaw.py"
-'2  9  0  ~/_projects/zipsaw/zipsaw.py
-|4,50,9,0,1565925125,"~/_projects/zipsaw/zipsaw.py"
-'3  161  0  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,51,161,0,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
-'4  161  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,52,161,7,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
-'5  1  0  /etc/emulationstation/themes/minimal/layouts/v2.xml
-|4,53,1,0,1565887026,"/etc/emulationstation/themes/minimal/layouts/v2.xml"
-'6  1  0  /etc/emulationstation/themes/minimal/theme.xml
-|4,54,1,0,1565887014,"/etc/emulationstation/themes/minimal/theme.xml"
-'7  11  56  /etc/emulationstation/themes/minimal/guide.txt
-|4,55,11,56,1565886983,"/etc/emulationstation/themes/minimal/guide.txt"
-'8  37  1  ~/Downloads/DL_Shell/tor-shuffle.sh
-|4,56,37,1,1565881162,"~/Downloads/DL_Shell/tor-shuffle.sh"
-'9  3  0  ~/Downloads/DL_Shell/dl.sh
-|4,57,3,0,1565875523,"~/Downloads/DL_Shell/dl.sh"
+'0  50  0  ~/_reference/chmod_codes.md
+|4,48,50,0,1566441827,"~/_reference/chmod_codes.md"
+'1  50  0  ~/_reference/chmod_codes.md
+|4,49,50,0,1566441826,"~/_reference/chmod_codes.md"
+'2  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,50,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+'3  64  24  ~/.vimrc
+|4,51,64,24,1566362270,"~/.vimrc"
+'4  96  0  ~/.zshrc
+|4,52,96,0,1566319954,"~/.zshrc"
+'5  102  0  ~/.zshrc
+|4,53,102,0,1566317749,"~/.zshrc"
+'6  102  0  ~/.zshrc
+|4,54,102,0,1566317749,"~/.zshrc"
+'7  10  21  ~/_reference/calc
+|4,55,10,21,1566317607,"~/_reference/calc"
+'8  5326  0  ~/_reference/software_dev-best_practices.md
+|4,56,5326,0,1566314392,"~/_reference/software_dev-best_practices.md"
+'9  28  0  ~/_repos/RetroPie-Setup/retropie_packages.sh
+|4,57,28,0,1566290806,"~/_repos/RetroPie-Setup/retropie_packages.sh"
 
 # Jumplist (newest first):
--'  8  1  ~/_projects/zipsaw/zipsaw.py
-|4,39,8,1,1565925196,"~/_projects/zipsaw/zipsaw.py"
--'  1  0  ~/_projects/zipsaw/zipsaw.py
-|4,39,1,0,1565925139,"~/_projects/zipsaw/zipsaw.py"
--'  9  0  ~/_projects/zipsaw/zipsaw.py
-|4,39,9,0,1565925125,"~/_projects/zipsaw/zipsaw.py"
--'  9  0  ~/_projects/zipsaw/zipsaw.py
-|4,39,9,0,1565925125,"~/_projects/zipsaw/zipsaw.py"
--'  1  0  ~/_projects/zipsaw/zipsaw.py
-|4,39,1,0,1565924881,"~/_projects/zipsaw/zipsaw.py"
--'  161  0  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,0,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,7,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  0  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,0,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,7,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  0  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,0,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,7,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  0  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,0,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  161  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,161,7,1565892805,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  11  13  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,11,13,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  164  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,164,14,1565887085,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  157  18  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,157,18,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  155  15  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,155,15,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  74  11  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,74,11,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  73  14  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,73,14,1565887084,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  29  20  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,29,20,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  26  8  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,26,8,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  22  7  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,22,7,1565887083,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  153  5  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,153,5,1565887073,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
--'  173  6  /etc/emulationstation/themes/minimal/layouts/V2.xml
-|4,39,173,6,1565887070,"/etc/emulationstation/themes/minimal/layouts/V2.xml"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
+-'  50  0  ~/_reference/chmod_codes.md
+|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  5  0  ~/_reference/chmod_codes.md
+|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  4  0  ~/_reference/chmod_codes.md
+|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
+-'  3  0  ~/_reference/chmod_codes.md
+|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
+-'  2  0  ~/_reference/chmod_codes.md
+|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
+-'  7  0  ~/_reference/chmod_codes.md
+|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+-'  7  0  ~/_reference/chmod_codes.md
+|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+-'  1  0  ~/_reference/chmod_codes.md
+|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
+-'  1  0  ~/_reference/chmod_codes.md
+|4,39,1,0,1566362355,"~/_reference/chmod_codes.md"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  13  27  ~/_projects/str-slicer/log_splitter.py
+|4,39,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
+-'  64  24  ~/.vimrc
+|4,39,64,24,1566362270,"~/.vimrc"
+-'  64  24  ~/.vimrc
+|4,39,64,24,1566362270,"~/.vimrc"
+-'  64  24  ~/.vimrc
+|4,39,64,24,1566362270,"~/.vimrc"
+-'  10  0  ~/.vimrc
+|4,39,10,0,1566356423,"~/.vimrc"
+-'  10  0  ~/.vimrc
+|4,39,10,0,1566356423,"~/.vimrc"
+-'  10  0  ~/.vimrc
+|4,39,10,0,1566356423,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566356373,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566356373,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1566356373,"~/.vimrc"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  1  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,1,0,1566356287,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
+-'  3  0  ~/_projects/str-slicer/log_splitter.py
+|4,39,3,0,1566343076,"~/_projects/str-slicer/log_splitter.py"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  96  0  ~/.zshrc
+|4,39,96,0,1566319954,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1566319923,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  102  0  ~/.zshrc
+|4,39,102,0,1566317749,"~/.zshrc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  10  21  ~/_reference/calc
+|4,39,10,21,1566317607,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
+-'  8  0  ~/_reference/calc
+|4,39,8,0,1566314402,"~/_reference/calc"
 
 # History of marks within files (newest to oldest):
 
-> ~/_projects/zipsaw/zipsaw.py
-	*	1565925195	0
-	"	8	1
-	^	2	0
-	.	1	45
-	+	1	0
-	+	1	9
-	+	13	28
-	+	14	30
-	+	16	76
-	+	18	61
-	+	19	75
-	+	20	41
-	+	21	44
-	+	22	0
-	+	21	67
-	+	20	64
-	+	22	58
-	+	23	36
-	+	24	48
-	+	13	21
-	+	14	29
-	+	20	41
-	+	7	14
-	+	11	0
-	+	23	0
-	+	16	19
-	+	18	35
-	+	19	35
-	+	20	43
-	+	19	35
-	+	18	35
-	+	21	47
-	+	22	39
-	+	23	27
-	+	24	31
-	+	1	10
-	+	6	6
-	+	1	7
-	+	6	8
-	+	4	7
-	+	6	10
-	+	6	0
-	+	5	6
-	+	6	6
-	+	1	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	37	0
-	+	37	19
-	+	40	0
-	+	37	16
-	+	37	0
-	+	26	0
-	+	35	0
-	+	37	0
-	+	1	45
-	e	1	0
-
-> ~/_projects/zipsaw/__Tagbar__.1
-	*	1565925194	0
-	"	8	4
-	.	25	0
-	+	66	0
-	+	45	0
-	+	25	0
-
-> /etc/emulationstation/themes/minimal/layouts/V2.xml
-	*	1565892805	0
-	"	161	0
-
-> /etc/emulationstation/themes/minimal/layouts/v2.xml
-	*	1565887025	0
-	"	1	0
-
-> /etc/emulationstation/themes/minimal/theme.xml
-	*	1565886992	0
-	"	1	0
-
-> /etc/emulationstation/themes/minimal/guide.txt
-	*	1565886979	0
-	"	11	56
-
-> ~/Downloads/DL_Shell/tor-shuffle.sh
-	*	1565881160	0
-	"	37	1
-	.	37	0
-	+	28	4
-	+	39	0
-	+	28	38
-	+	28	1
-	+	28	38
-	+	28	21
-	+	20	30
-	+	20	16
-	+	20	0
-	+	20	35
-	+	20	21
-	+	28	21
-	+	20	8
-	+	28	4
-	+	20	6
-	+	8	0
-	+	20	13
-	+	9	21
-	+	20	24
-	+	28	4
-	+	20	0
-	+	28	0
-	+	28	3
-	+	20	25
-	+	37	3
-	+	28	18
-	+	20	22
-	+	28	40
-	+	29	8
-	+	28	0
-	+	29	37
-	+	30	6
-	+	31	9
-	+	31	40
-	+	32	38
-	+	34	6
-	+	34	0
-	+	31	34
-	+	34	34
-	+	37	0
-	+	34	30
-	+	35	42
-	+	35	43
-	+	36	5
-	+	37	0
-	+	22	0
-	+	36	0
-	+	14	0
-	+	20	0
-	+	11	0
-	+	14	19
-	+	15	0
-	+	18	0
-	+	15	27
-	+	14	18
-	+	16	39
-	+	17	5
-	+	14	16
-	+	15	28
-	+	16	34
-	+	36	0
-	+	22	4
-	+	28	0
-	+	22	34
-	+	23	34
-	+	24	38
-	+	28	4
-	+	25	33
-	+	26	37
-	+	27	35
-	+	28	0
-	+	37	0
-	+	12	76
-	+	13	17
-	+	11	0
-	+	37	0
-	v	29	7
-
-> /usr/share/vim/vim80/doc/help.txt
-	*	1565879166	0
-	"	1	0
-
-> ~/Downloads/DL_Shell/dl.sh
-	*	1565875522	0
-	"	3	0
-
-> ~/Downloads/dl_shell/sh_template.sh
-	*	1565870562	0
-	"	1	1
-	^	78	2
-	.	78	1
-	+	42	0
-	+	43	0
-	+	42	9
-	+	43	24
-	+	44	9
-	+	47	25
-	+	48	0
-	+	72	28
-	+	75	0
-	+	73	49
-	+	74	25
-	+	75	4
-	+	76	10
-	+	72	26
-	+	77	1
-	+	76	12
-	+	72	24
-	+	73	40
-	+	74	23
-	+	76	9
-	+	75	39
-	+	76	41
-	+	76	0
-	+	59	55
-	+	76	41
-	+	75	0
-	+	78	1
-
-> ~/Downloads/dl_shell/tor-shuffle.sh
-	*	1565868514	0
-	"	10	2
-	^	10	3
-	.	10	3
-	+	2	0
-	+	6	79
-	+	6	83
-	+	7	83
-	+	7	84
-	+	8	0
-	+	2	0
-	+	3	2
-	+	5	2
-	+	10	3
-
-> ~/.aliases
-	*	1565860049	0
-	"	40	10
-	^	1	5
-	.	41	10
-	+	5	0
-	+	98	17
-	+	97	33
-	+	5	0
-	+	1	16
-	+	5	0
-	+	1	0
-	+	3	3
-	+	1	0
+> ~/_reference/chmod_codes.md
+	*	1566428619	0
+	"	50	0
+	^	17	0
+	.	49	6
+	+	1	29
+	+	1	35
+	+	7	3
 	+	7	0
-	+	5	0
-	+	1	39
-	+	3	2
-	+	3	1
-	+	3	2
-	+	3	1
-	+	4	0
+	+	7	9
+	+	7	359
+	+	7	144
+	+	7	140
+	+	7	136
+	+	7	132
+	+	7	128
+	+	7	124
+	+	7	120
+	+	7	116
+	+	7	112
+	+	7	108
+	+	7	104
+	+	7	100
+	+	7	96
+	+	7	92
+	+	7	88
+	+	7	84
+	+	7	80
+	+	7	0
+	+	7	178
+	+	7	0
+	+	6	0
+	+	8	0
+	+	10	0
+	+	11	11
+	+	50	49
+	+	15	0
+	+	17	0
+	+	15	23
+	+	18	33
+	+	33	0
+	+	50	0
+	+	49	6
+
+> ~/_projects/str-slicer/log_splitter.py
+	*	1566362286	0
+	"	13	27
+	.	1	0
+	+	1	9
 	+	3	0
-	+	46	19
-	+	45	15
-	+	45	0
-	+	45	21
-	+	45	23
-	+	45	27
-	+	45	22
-	+	46	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	46	30
-	+	45	0
-	+	21	46
-	+	22	0
-	+	17	28
-	+	18	8
-	+	21	8
-	+	18	8
-	+	36	0
-	+	32	0
-	+	30	32
-	+	31	33
-	+	1	13
-	+	2	8
-	+	1	4
-	+	2	3
-	+	1	5
-	+	41	10
+	+	1	0
+	+	3	0
+	+	3	26
+	+	3	39
+	+	7	16
+	+	3	36
+	+	7	15
+	+	3	36
+	+	7	15
+	+	3	36
+	+	7	15
+	+	3	36
+	+	7	14
+	+	3	36
+	+	7	17
+	+	3	36
+	+	7	22
+	+	3	26
+	+	3	25
+	+	3	26
+	+	7	42
+	+	7	31
+	+	7	17
+	+	3	36
+	+	7	34
+	+	3	29
+	+	7	7
+	+	3	29
+	+	3	0
+	+	4	3
+	+	7	20
+	+	7	23
+	+	5	12
+	+	6	43
+	+	7	48
+	+	7	64
+	+	7	55
+	+	7	7
+	+	7	22
+	+	7	21
+	+	7	46
+	+	3	67
+	+	6	75
+	+	6	77
+	+	6	76
+	+	6	75
+	+	6	76
+	+	7	7
+	+	7	0
+	+	6	73
+	+	7	36
+	+	8	25
+	+	10	45
+	+	11	61
+	+	12	24
+	+	13	51
+	+	7	9
+	+	6	44
+	+	3	0
+	+	2	0
+	+	1	0
+	+	13	0
+	+	1	0
 
 > ~/.vimrc
-	*	1565859823	0
-	"	237	2
-	^	310	36
-	.	310	2
-	+	174	24
-	+	194	28
-	+	193	28
-	+	192	28
-	+	191	28
-	+	190	28
-	+	189	24
-	+	190	24
-	+	191	24
-	+	192	24
-	+	193	24
-	+	194	24
-	+	357	0
-	+	457	0
-	+	450	71
-	+	454	0
-	+	115	36
-	+	116	36
-	+	112	36
-	+	111	37
-	+	110	36
-	+	109	36
-	+	115	40
-	+	115	39
-	+	116	0
-	+	115	30
-	+	153	0
-	+	115	48
-	+	137	18
-	+	144	0
-	+	146	0
-	+	148	0
-	+	401	27
-	+	402	42
-	+	477	64
-	+	120	5
-	+	119	72
-	+	120	5
-	+	120	0
-	+	121	0
-	+	119	66
-	+	358	21
-	+	360	0
-	+	359	1
-	+	359	0
-	+	360	0
-	+	361	2
-	+	359	1
-	+	360	1
-	+	361	1
-	+	359	1
-	+	360	1
-	+	361	1
-	+	359	21
-	+	361	20
-	+	384	65
-	+	384	70
-	+	385	49
-	+	387	26
-	+	80	27
-	+	79	23
-	+	80	64
-	+	165	0
-	+	164	24
-	+	165	0
-	+	102	0
-	+	110	0
-	+	72	42
-	+	153	0
-	+	246	0
-	+	244	25
-	+	238	0
-	+	245	21
-	+	246	22
-	+	247	23
-	+	248	0
-	+	271	0
-	+	281	0
-	+	271	0
-	+	268	0
-	+	265	0
-	+	248	0
-	+	251	0
-	+	230	0
-	+	221	0
-	+	218	0
-	+	211	0
-	+	206	0
-	+	220	16
-	+	250	4
-	+	283	34
-	+	365	4
-	+	349	24
-	+	345	17
-	+	323	3
-	+	310	35
-	+	295	25
-	+	288	23
-	+	288	22
-	+	310	2
+	*	1566362268	0
+	"	64	24
+	^	64	25
+	.	64	24
+	+	64	27
+	+	64	24
 
-> ~/Downloads/DL_Links.md
-	*	1565858941	0
-	"	12	1
-
-> ~/Downloads/dlinks-roms
-	*	1565858927	0
+> /usr/share/vim/vim80/doc/help.txt
+	*	1566356235	0
 	"	1	0
 
-> ~/Downloads/romsmania.cc_Archive [19-08-03 23-00-48].har
-	*	1565858745	0
-	"	87	0
+> ~/_projects/str-slicer/__Tagbar__.1
+	*	1566343103	0
+	"	37	4
+	.	40	0
+	+	40	0
 
-> ~/vimrc/sync.sh
-	*	1565858168	0
-	"	13	16
-	^	70	149
-	.	42	45
-	+	42	48
-	+	43	44
-	+	44	42
-	+	45	40
-	+	46	48
-	+	49	42
-	+	50	49
-	+	49	39
-	+	46	45
-	+	45	37
-	+	44	39
-	+	43	41
-	+	42	45
-	a	70	148
-
-> ~/Downloads/sh_template.sh
-	*	1565855532	0
-	"	42	38
-	^	40	19
-	.	41	20
-	+	1	0
-	+	2	0
-	+	5	35
-	+	17	0
-	+	11	0
-	+	37	9
-	+	40	18
-	+	41	0
-	+	42	0
-	+	41	0
-	+	42	0
-	+	41	20
-
-> ~/Downloads/tor-shuffle.sh
-	*	1565855522	0
-	"	9	0
-	^	9	0
-	.	9	0
-	+	1	0
-	+	9	0
-
-> ~/Downloads/NERD_tree_1
-	*	1565854419	0
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/vimrc/shinstall.sh
-	*	1565853750	0
-	"	1	0
-
-> ~/Downloads/romsmania_requests.csv
-	*	1565852650	0
-	"	1	0
-
-> ~/Downloads/images
-	*	1565852560	0
-	"	7	2
-
-> ~/Downloads/ajax.html
-	*	1565852532	0
-	"	52	4
-
-> ~/.config/lxtask.conf
-	*	1565840908	0
-	"	6	0
-
-> ~/_reference/_python/_examples/functions/func_one.py
-	*	1565835018	0
-	"	3	0
-	^	5	34
-	.	5	33
-	+	1	11
-	+	3	14
-	+	4	56
-	+	6	3
-	+	5	33
-
-> ~/_reference/_python/_examples/functions/__Tagbar__.1
-	*	1565834979	0
-	"	4	4
-	.	7	0
-	+	39	0
-	+	7	0
-
-> ~/.vim/bundle/syntastic/doc/syntastic.txt
-	*	1565834913	0
-	"	829	0
-
-> /usr/share/X11/xorg.conf.d/40-libinput.conf
-	*	1565829551	0
-	"	21	41
-	^	21	42
-	.	21	41
-	+	20	31
-	+	21	41
-
-> ~/crash-fix/crashlog-1b.md
-	*	1565808292	0
-	"	11002	56
-	.	2	0
-	+	2	0
-
-> ~/crash-fix/crashlog-1.md
-	*	1565808287	0
-	"	44	42
-	^	44	43
-	.	44	43
-	+	26	3
-	+	27	0
-	+	33	0
-	+	48	0
-	+	73	0
-	+	75	0
+> ~/.zshrc
+	*	1566319953	0
+	"	96	0
+	^	100	0
+	.	100	0
+	+	97	51
+	+	97	0
+	+	97	51
+	+	99	36
+	+	98	0
+	+	100	2
+	+	101	0
 	+	100	0
-	+	102	0
-	+	128	0
-	+	130	0
-	+	156	0
-	+	158	0
-	+	202	0
-	+	33	2
-	+	183	3
-	+	200	0
-	+	185	0
-	+	189	27
-	+	190	33
-	+	194	51
-	+	195	25
-	+	201	92
-	+	197	0
-	+	195	8
-	+	198	0
-	+	195	0
-	+	190	0
-	+	189	0
-	+	187	0
-	+	188	0
-	+	190	0
-	+	190	9
-	+	190	10
-	+	190	8
-	+	38	12
-	+	34	47
-	+	35	0
-	+	34	47
-	+	35	0
-	+	35	159
-	+	36	0
-	+	37	100
-	+	37	86
-	+	38	88
-	+	38	0
-	+	40	27
-	+	42	11
-	+	44	43
 
-> /var/tmp/grub.XXQEvpw9
-	*	1565806300	0
-	"	12	0
-	^	11	31
-	.	11	30
-	+	11	30
-
-> ~/.config/user-dirs.dirs
-	*	1565767990	0
-	"	15	3644
-	.	15	3643
-	+	15	3643
-
-> ~/.config/lxqt/lxqt.conf
-	*	1565765733	0
-	"	1	0
-
-> ~/.config/lxsession/Lubuntu/autostart
-	*	1565765539	0
-	"	1	0
-
-> ~/.config/lxsession/Lubuntu/desktop.conf
-	*	1565765532	0
-	"	69	7
-
-> ~/.config/lxsession/LXDE/desktop.conf
-	*	1565765077	0
-	"	2	0
-
-> /usr/share/X11/xorg.conf.d/51-synaptics-quirks.conf
-	*	1565764777	0
-	"	1	3
-
-> /usr/share/X11/xorg.conf.d/70-synaptics.conf
-	*	1565764735	0
-	"	46	9
-
-> /usr/share/X11/xorg.conf.d/70-wacom.conf
-	*	1565764237	0
-	"	112	0
-
-> ~/synaptics-manual.md
-	*	1565763995	0
-	"	463	14
-	.	522	0
-	+	522	61
-	+	522	70
-	+	522	0
-
-> ~/.config/openbox/lubuntu-rc.xml
-	*	1565709312	0
-	"	281	18
-	.	23	0
-	+	23	19
-	+	1071	0
-	+	28	0
-	+	31	0
-	+	28	67
-	+	37	18
-	+	52	20
-	+	132	15
-	+	133	12
-	+	132	18
-	+	133	17
-	+	129	12
-	+	133	26
-	+	492	0
-	+	782	8957
-	+	489	0
-	+	505	0
-	+	497	29773
-	+	498	69
-	+	1070	80025
-	+	1059	16
-	+	1059	20
-	+	1059	21
-	+	1059	29
-	+	1059	40
-	+	1059	47
-	+	23	0
-
-> ~/.config/openbox/LXDE/rc.xml
-	*	1565683768	0
-	"	40	16
-	^	38	17
-	.	38	16
-	+	137	7
-	+	132	21
-	+	38	16
-
-> ~/.config/openbox/rc2.xml
-	*	1565683137	0
-	"	26	18
-	^	28	19
-	.	28	18
-	+	28	18
-
-> ~/.config/openbox/lxde-rc.xml
-	*	1565683070	0
-	"	1	1
-
-> ~/.config/openbox/rc.xml
-	*	1565682957	0
-	"	37	0
-
-> ~/.config/.config/.config/openbox/rc.xml
-	*	1565682909	0
-	"	1	0
-
-> ~/.config/.config/.config/dconf/user
-	*	1565680390	0
-	"	36	0
-
-> ~/crashlog-1.md
-	*	1565678517	0
-	"	37	0
-	^	36	0
-	.	37	0
-	+	1	0
+> ~/_reference/calc
+	*	1566317606	0
+	"	10	21
+	^	10	22
+	.	10	21
 	+	1	1
-	+	1	86
-	+	1	0
-	+	1	5
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	2
-	+	1	3
-	+	1	0
-	+	1	2
-	+	1	130
-	+	1	2
-	+	1	0
-	+	7	0
-	+	1	0
-	+	9	0
-	+	4	0
-	+	1	0
-	+	2	0
 	+	2	7
-	+	5	7
-	+	11	0
-	+	12	0
-	+	12	81
-	+	16	0
-	+	16	72
-	+	20	0
-	+	16	51
-	+	21	0
-	+	19	3
-	+	20	7
-	+	21	11
-	+	22	16
-	+	17	17
-	+	25	46
-	+	34	60
-	+	36	0
-	+	35	0
-	+	36	0
-	+	25	64
-	+	26	0
-	+	36	0
-	+	26	0
-	+	37	0
-
-> ~/crashlog-1a.log
-	*	1565678515	0
-	"	361	0
-	.	2	0
-	+	2	0
-
-> /var/log/syslog.1
-	*	1565678503	0
-	"	7980	0
-	^	7980	0
-	.	7980	0
-	+	12608	0
-	+	12665	0
-	+	7980	0
-
-> /etc/sysctl.conf
-	*	1565676327	0
-	"	98	61
-	^	98	62
-	.	98	61
-	+	78	1
-	+	78	0
-	+	78	25
-	+	96	41
-	+	88	0
-	+	78	0
-	+	80	37
-	+	81	0
-	+	82	36
-	+	85	131
-	+	84	78
-	+	85	125
-	+	84	58
-	+	85	49
-	+	85	57
-	+	86	17
-	+	87	0
-	+	83	30
-	+	99	0
-	+	98	61
-
-> /etc/security/limits.conf
-	*	1565675784	0
-	"	70	0
-	^	70	0
-	.	59	0
-	+	68	18
-	+	57	0
-	+	58	0
-	+	61	0
-	+	60	0
-	+	58	0
-	+	57	5
-	+	58	0
-	+	60	0
-	+	63	0
-	+	65	0
-	+	61	33
-	+	69	0
-	+	55	0
-	+	59	53
-	+	69	83
-	+	71	0
-	+	69	0
-	+	59	0
-
-> /var/log/syslog
-	*	1565671140	0
-	"	1679	67
-	^	17902	272
-	.	17902	0
-	+	11035	4
-	+	11566	0
-	+	1	0
-	+	2689	0
-	+	6139	0
-	+	12465	118
-	+	12465	0
-	+	12745	0
-	+	10021	0
-	+	204	0
-	+	213	0
-	+	1	0
-	+	17902	0
-	j	6115	3
-	k	13460	0
-
-> /var/log/installer/syslog
-	*	1565670036	0
-	"	45116	66
-
-> /var/log/apt/history.log
-	*	1565646578	0
-	"	363	0
-
-> /var/log/apt/term.log
-	*	1565646042	0
-	"	1331	16
-	^	1464	0
-	.	1464	0
-	+	1464	0
-
-> ~/to-reinstall.md
-	*	1565539294	0
-	"	29	20
-	^	30	5
-	.	30	4
-	+	7	153
-	+	7	19
-	+	32	16
-	+	28	0
-	+	33	16
-	+	43	21
-	+	44	0
-	+	8	7
-	+	9	15
-	+	10	27
-	+	11	15
-	+	12	12
-	+	13	23
-	+	14	22
-	+	31	0
-	+	14	22
-	+	30	4
-
-> ~/.gitignore
-	*	1565536533	0
-	"	9	5
-	^	16	7
-	.	16	7
-	+	5	0
-	+	3	80
 	+	6	0
-	+	4	0
-	+	2	0
-	+	3	10
-	+	5	21
-	+	6	6
-	+	14	6
-	+	7	1
-	+	6	2
-	+	8	8
-	+	11	6
-	+	14	7
-	+	15	3
-	+	11	11
+	+	10	1
+	+	9	4
+	+	17	0
+	+	14	0
+	+	15	2
+	+	14	0
+	+	1	12
+	+	2	15
+	+	3	16
+	+	4	18
+	+	5	20
+	+	2	13
+	+	1	13
+	+	8	17
+	+	9	21
+	+	10	21
+
+> ~/_reference/software_dev-best_practices.md
+	*	1566314387	0
+	"	5326	0
+	^	5327	3
+	.	5327	2
+	+	22	57
+	+	30	80
+	+	30	81
+	+	33	0
+	+	30	79
+	+	33	3
+	+	30	1
+	+	17	1
+	+	20	1
+	+	22	1
+	+	24	1
+	+	33	0
+	+	34	48
+	+	5898	0
+	+	14	22
+	+	9	0
 	+	13	0
-	+	16	7
-	+	2	1
-	+	3	8
-	+	3	10
-	+	3	4
+	+	11	4
 	+	2	0
-	+	13	7
-	+	8	10
-	+	8	8
-	+	6	4
-	+	15	11
-	+	15	10
 	+	3	0
-	+	8	7
-	+	16	7
+	+	3	152
+	+	11	4
+	+	3	248
+	+	3	244
+	+	3	260
+	+	3	255
+	+	3	0
+	+	3	281
+	+	3	156
+	+	3	0
+	+	3	107
+	+	3	238
+	+	3	291
+	+	11	5
+	+	3	356
+	+	3	74
+	+	4	72
+	+	5	70
+	+	6	76
+	+	17	0
+	+	30	0
+	+	30	2
+	+	17	0
+	+	30	0
+	+	32	0
+	+	19	0
+	+	28	0
+	+	27	3
+	+	11	3
+	+	34	94
+	+	19	0
+	+	34	210
+	+	5894	8
+	+	5896	0
+	+	5327	2
 
-> ~/.tmp.xyz
-	*	1565536434	0
+> ~/_repos/RetroPie-Setup/retropie_packages.sh
+	*	1566290798	0
+	"	28	0
+
+> ~/_repos/RetroPie-Setup/retropie_setup.sh
+	*	1566290675	0
+	"	15	0
+
+> ~/Documents/zsh-help_resources.md
+	*	1566289451	0
+	"	42	0
+	.	42	0
+	+	33	9
+	+	38	9
+	+	41	9
+	+	45	0
+	+	22	14
+	+	33	16
+	+	38	13
+	+	41	14
+	+	45	16
+	+	55	0
+	+	45	62
+	+	22	17
+	+	45	17
+	+	22	17
+	+	21	14
+	+	22	0
+	+	50	0
+	+	33	0
+	+	34	0
+	+	38	0
+	+	34	17
+	+	37	0
+	+	41	0
+	+	45	0
+	+	46	0
+	+	50	0
+	+	22	55
+	+	24	0
+	+	50	0
+	+	52	0
+	+	50	2
+	+	55	2
+	+	16	2
+	+	29	3
+	+	7	3
+	+	18	4
+	+	19	3
+	+	57	0
+	+	61	0
+	+	22	0
+	+	23	55
+	+	24	2
+	+	23	0
+	+	24	0
+	+	23	53
+	+	24	0
+	+	33	0
+	+	34	0
+	+	37	0
+	+	38	0
+	+	41	0
+	+	42	0
+	+	45	0
+	+	46	0
+	+	49	0
+	+	33	0
+	+	34	0
+	+	37	0
+	+	38	0
+	+	41	0
+	+	42	0
+	+	45	0
+	+	46	0
+	+	49	0
+	+	50	0
+	+	32	15
+	+	47	10
+	+	43	12
+	+	39	18
+	+	34	0
+	+	35	12
+	+	32	0
+	+	32	10
+	+	24	1
+	+	29	0
+	+	24	0
+	+	25	205
+	+	25	206
+	+	25	217
+	+	25	218
+	+	25	78
+	+	26	81
+	+	27	5
+	+	25	80
+	+	27	5
+	+	25	76
+	+	27	5
+	+	26	76
+	+	28	0
+	+	32	0
+	+	31	2
+	+	60	2
+	+	42	0
+
+> /etc/profile.d/vte-2.91.sh
+	*	1566285169	0
+	"	6	7
+
+> ~/.local/lib/python3.6/site-packages/usercustomize.py
+	*	1566248701	0
+	"	7	0
+	^	2	0
+	.	1	0
+	+	1	9
+	+	5	0
+	+	6	11
+	+	7	8
+	+	9	13
+	+	10	2
+	+	9	0
+	+	6	8
+	+	7	14
+	+	9	10
+	+	10	16
+	+	1	9
+	+	3	9
+	+	1	24
+	+	3	8
+	+	1	41
+	+	3	0
+	+	1	0
+
+> ~/_projects/str-slicer/NOTES.md
+	*	1566240566	0
+	"	97	119
+	^	2	0
+	.	97	118
+	+	38	3
+	+	39	0
+	+	45	159
+	+	40	4
+	+	32	0
+	+	40	105
+	+	40	116
+	+	40	140
+	+	42	49
+	+	44	19
+	+	36	0
+	+	45	126
+	+	45	150
+	+	45	140
+	+	45	137
+	+	45	150
+	+	45	159
+	+	45	163
+	+	45	191
+	+	45	196
+	+	47	0
+	+	47	89
+	+	50	3
+	+	51	64
+	+	44	86
+	+	51	74
+	+	54	0
+	+	53	70
+	+	54	0
+	+	55	151
+	+	55	160
+	+	55	162
+	+	55	6
+	+	56	89
+	+	56	93
+	+	56	0
+	+	56	431
+	+	57	0
+	+	57	120
+	+	57	195
+	+	57	201
+	+	57	202
+	+	57	204
+	+	57	271
+	+	57	292
+	+	57	251
+	+	57	0
+	+	57	413
+	+	58	0
+	+	59	12
+	+	53	0
+	+	59	70
+	+	60	0
+	+	61	6
+	+	55	169
+	+	61	65
+	+	62	71
+	+	65	3
+	+	66	0
+	+	64	0
+	+	65	3
+	+	66	0
+	+	72	83
+	+	80	20
+	+	82	4
+	+	83	7
+	+	89	7
+	+	91	17
+	+	93	4
+	+	94	38
+	+	99	0
+	+	96	111
+	+	96	1
+	+	97	87
+	+	97	105
+	+	97	116
+	+	97	119
+	+	98	0
+	+	94	48
+	+	89	7
+	+	83	7
+	+	85	7
+	+	87	7
+	+	84	0
+	+	86	0
+	+	88	0
+	+	73	67
+	+	74	4
+	+	75	8
+	+	78	7
+	+	80	1
+	+	91	1
+	+	81	21
+	+	92	72
+	+	96	195
+	+	96	198
+	+	96	199
+	+	2	0
+	+	94	10
+	+	97	118
+
+> ~/Documents/coding-basic_concepts.md
+	*	1566099828	0
+	"	315	104
+	.	315	103
+	+	315	103
+
+> ~/.config/transmission/dht.dat
+	*	1566072308	0
 	"	1	0
 
-> /run/blkmapd.pid
-	*	1565514204	0
-	"	1	0
-
-> ~/install.log
-	*	1565510320	0
-	"	66	0
-
-> ~/.git/hooks/pre-receive.sample
-	*	1565201257	0
-	"	7	33
-
-> ~/NERD_tree_1
-	*	1565199639	0
+> ~/.config/transmission/NERD_tree_1
+	*	1566072307	0
 	"	4	0
 	.	1	0
 	+	1	0
 
-> ~/crashlog-1.vim
-	*	1565182154	0
-	"	8	0
-	.	11	0
-	+	2	0
-	+	9	0
-	+	10	17
-	+	11	0
+> ~/.config/transmission/settings.json
+	*	1566072248	0
+	"	45	22
+	^	28	39
+	.	20	27
+	+	26	56
+	+	8	20
+	+	92	22
+	+	90	24
+	+	93	33
+	+	91	35
+	+	95	26
+	+	83	38
+	+	77	80
+	+	42	21
+	+	43	33
+	+	44	32
+	+	28	38
+	+	20	27
 
-> ~/_reference/linux-dev-notes/hardware_fixes.md
-	*	1565181977	0
-	"	69	23599
-	^	68	16
-	.	69	23598
-	+	51	21
-	+	45	0
-	+	44	16
-	+	45	8
-	+	51	107
-	+	51	23
-	+	54	0
-	+	53	0
-	+	91	0
-	+	102	0
-	+	135	0
-	+	137	0
-	+	141	0
-	+	153	67
-	+	157	0
-	+	187	0
-	+	182	0
-	+	186	0
-	+	187	0
-	+	191	0
-	+	190	3
-	+	141	0
-	+	137	0
-	+	182	0
-	+	186	0
-	+	111	0
-	+	16	0
-	+	11	0
-	+	24	0
-	+	19	0
-	+	23	0
-	+	22	6
-	+	33	14
-	+	51	21
-	+	54	3
-	+	54	89
-	+	55	118
-	+	55	124
-	+	55	127
-	+	55	132
-	+	55	135
-	+	55	140
-	+	55	143
-	+	55	148
-	+	55	151
-	+	55	158
-	+	55	238
-	+	27	3
-	+	28	3
-	+	30	0
-	+	32	0
-	+	30	0
-	+	32	0
-	+	22	22
-	+	27	0
-	+	28	87
-	+	56	0
-	+	58	10
-	+	59	0
-	+	73	0
-	+	59	0
-	+	75	0
-	+	73	0
-	+	90	0
-	+	98	0
-	+	73	0
-	+	59	0
-	+	93	9
-	+	96	0
-	+	96	92
-	+	96	111
-	+	96	121
-	+	96	137
-	+	96	151
-	+	96	159
-	+	96	180
-	+	92	37
-	+	1	0
-	+	5	0
-	+	59	0
-	+	60	77
-	+	61	4
-	+	60	41
-	+	62	0
-	+	62	20
-	+	62	10
-	+	62	0
-	+	63	0
-	+	71	0
-	+	58	4
-	+	63	0
-	+	65	138
-	+	66	20
-	+	67	18
-	+	66	19
-	+	65	19
-	+	68	14
-	+	68	16
-	+	69	23598
-
-> /usr/share/pulseaudio/alsa-mixer/paths/analog-output.conf.common
-	*	1565162018	0
-	"	175	11
-
-> /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
-	*	1565160883	0
-	"	111	16
-
-> ~/soundcard-info.txt
-	*	1565159373	0
-	"	2	0
-	^	1	19
-	.	1	18
-	+	2	0
-	+	1	18
-
-> ~/sudo_alsa_force-reload.txt
-	*	1565158875	0
-	"	1	575
-
-> ~/_reference/linux-dev-notes/hardware_fixes..md
-	*	1565156979	0
-	"	1	0
-
-> /etc/trusted.gpg
-	*	1565156659	0
-	"	1	0
-
-> /etc/apt/sources.list.save
-	*	1565156585	0
-	"	51	0
-	.	52	0
-	+	52	0
-
-> /etc/apt/sources.list
-	*	1565156560	0
-	"	45	0
-	.	52	0
-	+	52	86
-	+	52	0
-
-> ~/test.py
-	*	1565139233	0
-	"	1	0
-	.	1	0
-	+	2	0
-	+	1	0
-
-> ~/.vim/ftplugin/python.vim
-	*	1565138907	0
-	"	2	0
-	^	437	31
-	.	437	30
-	+	44	0
-	+	437	30
-	j	82	1
-
-> ~/.vim/templates/skeleton.py
-	*	1565138828	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/teset.py
-	*	1565138727	0
-	"	3	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/python-mode/pymode/libs/six.py
-	*	1565137363	0
-	"	1432	22
-	^	1120	22
-	.	1421	0
-	+	716	0
-	+	721	0
-	+	726	0
-	+	731	0
-	+	736	0
-	+	743	0
-	+	751	0
-	+	750	0
-	+	763	0
-	+	768	0
-	+	769	0
-	+	773	0
-	+	780	0
-	+	787	0
-	+	793	0
-	+	803	0
-	+	808	0
-	+	813	0
-	+	818	0
-	+	823	0
-	+	828	0
-	+	833	0
-	+	838	0
-	+	843	0
-	+	848	0
-	+	853	0
-	+	858	0
-	+	863	0
-	+	864	0
-	+	868	0
-	+	873	0
-	+	878	0
-	+	883	0
-	+	888	0
-	+	893	0
-	+	898	0
-	+	903	0
-	+	908	0
-	+	913	0
-	+	918	0
-	+	923	0
-	+	928	0
-	+	933	0
-	+	938	0
-	+	943	0
-	+	948	0
-	+	953	0
-	+	958	0
-	+	963	0
-	+	968	0
-	+	973	0
-	+	980	0
-	+	990	0
-	+	989	0
-	+	1002	0
-	+	1007	0
-	+	1017	0
-	+	1012	0
-	+	1024	0
-	+	1034	0
-	+	1029	0
-	+	1033	0
-	+	1046	0
-	+	1053	0
-	+	1063	0
-	+	1062	0
-	+	1071	0
-	+	1074	0
-	+	1077	0
-	+	1080	0
-	+	1083	0
-	+	1092	0
-	+	1096	0
-	+	1106	0
-	+	1115	0
-	+	1122	0
-	+	1188	0
-	+	1236	0
-	+	1240	0
-	+	1245	0
-	+	1244	0
-	+	1249	0
-	+	1248	0
-	+	1379	0
-	+	1385	0
-	+	1389	0
-	+	1395	0
-	+	1406	0
-	+	1411	0
-	+	1418	0
-	+	1414	0
-	+	1421	0
-	+	1423	0
-	+	1421	0
-	m	29	0
-
-> ~/.vim/bundle/python-mode/plugin/pymode.vim
-	*	1565134027	0
-	"	19	6
-	^	293	23
-	.	293	22
-	+	304	41
-	+	305	38
-	+	294	37
-	+	290	37
-	+	25	50
-	+	302	29
-	+	293	22
-
-> ~/.vim/bundle/python-mode/autoload/pymode/run.vim
-	*	1565133437	0
-	"	90	0
-
-> ~/.vim/bundle/python-mode/autoload/pymode.vim
-	*	1565133273	0
-	"	94	3
-	^	15	17
-	.	15	16
-	+	15	16
-
-> ~/.xsession-errors
-	*	1565132705	0
-	"	169	0
-
-> ~/zipsaw.py
-	*	1565103596	0
-	"	1	0
-
-> ~/_projects/zipsaw/zipsaw
-	*	1565101414	0
-	"	1	0
-
-> ~/.vim/bundle/python-mode/.git/COMMIT_EDITMSG
-	*	1565101237	0
-	"	1	0
-
-> ~/_repos/python-vimrc/vimrc
-	*	1565046684	0
-	"	34	11
-
-> /var/lib/vim/addons/doc/command-t.txt
-	*	1565044628	0
-	"	1508	48
-
-> ~/_security/gnugp-key
-	*	1565041851	0
-	"	10	0
-	^	3	21
-	.	3	20
-	+	9	0
-	+	2	0
-	+	3	20
-
-> ~/_security
-	*	1565041298	0
-	"	1	0
-
-> ~/_repos/python-vimrc/setup.sh
-	*	1564977810	0
-	"	85	120
-
-> ~/vimrc/.vimrc
-	*	1564977653	0
-	"	3	0
-
-> ~/.vim/.vimrc
-	*	1564977623	0
-	"	1	0
-
-> ~/_repos/.vimrc
-	*	1564977467	0
-	"	1	0
-
-> ~/.vim/test.md
-	*	1564976481	0
-	"	11	0
-	^	19	0
-	.	18	0
-	+	8	410
-	+	1	18
-	+	4	0
-	+	5	0
-	+	8	71
-	+	10	76
-	+	11	68
-	+	12	73
-	+	5	75
-	+	14	97
-	+	14	16
-	+	14	107
-	+	14	16
-	+	14	149
-	+	16	0
-	+	14	0
-	+	17	2
-	+	18	0
-
-> ~/_reference/_python/watch_directory.py
-	*	1564963972	0
-	"	122	0
-
-> ~/.purepower
-	*	1564949783	0
-	"	4	32
-
-> ~/.zshrc
-	*	1564949500	0
-	"	92	0
-	^	87	9
-	.	92	0
-	+	62	24
-	+	63	0
-	+	71	0
-	+	85	0
-	+	74	0
-	+	73	0
-	+	74	51
-	+	76	29
-	+	82	2
-	+	84	9
-	+	72	41
-	+	67	52
-	+	65	46
-	+	67	41
-	+	63	0
-	+	64	0
-	+	72	53
-	+	64	0
-	+	73	0
-	+	85	0
-	+	89	0
-	+	72	44
-	+	68	50
-	+	68	59
-	+	70	0
-	+	69	36
-	+	69	0
-	+	68	0
-	+	66	0
-	+	70	0
-	+	67	49
-	+	69	0
-	+	14	14
-	+	50	79
-	+	12	0
-	+	12	8
-	+	14	14
-	+	14	13
-	+	15	0
-	+	27	0
-	+	27	12
-	+	26	7
-	+	27	0
-	+	10	0
-	+	9	30
-	+	90	0
-	+	89	0
-	+	92	0
-	+	71	2
-	+	70	0
-	+	60	28
-	+	54	0
-	+	52	19
-	+	27	14
-	+	8	25
-	+	12	11
-	+	85	0
-	+	87	19
-	+	85	0
-	+	60	0
-	+	54	0
-	+	50	79
-	+	49	0
-	+	28	0
-	+	12	0
-	+	1	13
+> /etc/apache2/ports.conf
+	*	1566068577	0
+	"	9	20
+	^	9	21
+	.	9	21
 	+	6	0
-	+	85	0
-	+	1	16
-	+	16	2
-	+	19	2
-	+	24	2
-	+	87	2
-	+	74	2
-	+	71	2
-	+	61	2
-	+	55	2
-	+	52	2
-	+	34	2
-	+	24	2
-	+	19	2
-	+	16	2
-	+	12	2
-	+	8	2
-	+	1	2
-	+	64	2
-	+	66	2
-	+	68	2
-	+	51	0
-	+	52	0
-	+	32	0
-	+	31	35
-	+	30	15
-	+	89	0
-	+	90	0
-	+	91	0
-	+	92	0
-	+	91	0
-	+	87	9
-	+	92	0
-
-> ~/_projects/sentinel/sentinel.py
-	*	1564861136	0
-	"	3	0
-	^	3	0
-	.	1	0
-	+	1	0
-
-> ~/_projects/scraper/scraper/scraper.py
-	*	1564842347	0
-	"	18	9
-	^	17	3298
-	.	17	3297
-	+	12	26
-	+	13	0
-	+	18	0
-	+	14	54
-	+	15	33
-	+	15	35
-	+	15	41
-	+	18	0
-	+	15	77
-	+	15	93
-	+	15	59
-	+	15	0
-	+	18	26
-	+	18	14
-	+	15	0
-	+	15	32
-	+	18	40
-	+	15	17
-	+	18	26
-	+	22	25
-	+	5	54
-	+	2	0
-	+	2	15
-	+	3	0
-	+	1	1
-	+	27	11
-	+	30	0
-	+	22	71
-	+	22	108
-	+	22	66
-	+	22	84
-	+	22	10
+	+	9	12
 	+	7	0
-	+	3	29
-	+	4	0
-	+	18	0
-	+	21	0
-	+	8	5
-	+	18	7
-	+	15	10
-	+	18	0
 	+	16	0
-	+	15	10
-	+	18	17
-	+	15	11
-	+	18	34
-	+	16	79
-	+	16	76
-	+	21	22
-	+	21	7
-	+	18	52
-	+	15	9
-	+	21	16
-	+	18	13
-	+	21	6
-	+	18	48
-	+	18	63
-	+	21	3
-	+	16	79
-	+	16	22
-	+	16	47
-	+	20	0
-	+	21	0
-	+	22	0
-	+	8	110
-	+	9	0
-	+	15	0
-	+	29	0
-	+	27	0
-	+	22	36
-	+	1	0
-	+	18	47
-	+	20	0
-	+	18	57
-	+	23	11
-	+	18	32
-	+	22	33
-	+	18	32
-	+	22	0
-	+	23	14
-	+	24	24
-	+	25	11
-	+	24	21
-	+	18	47
-	+	18	35
-	+	24	25
-	+	24	24
-	+	19	16
-	+	24	27
-	+	24	26
-	+	25	10
-	+	18	29
-	+	24	20
-	+	15	20
-	+	2	0
-	+	15	0
-	+	21	0
-	+	27	0
-	+	18	0
-	+	17	3297
+	+	7	0
+	+	6	0
+	+	9	21
+
+> ~/.config/.config/transmission/stats.json
+	*	1566068558	0
+	"	1	0
+
+> ~/.config/.config/transmission/status.json
+	*	1566068553	0
+	"	1	0
+
+> ~/.config/.config/transmission/settings.json
+	*	1566068514	0
+	"	66	58
+	^	66	81
+	.	66	80
+	+	81	22
+	+	8	20
+	+	38	22
+	+	79	24
+	+	23	56
+	+	24	32
+	+	25	38
+	+	48	31
+	+	65	38
+	+	66	80
+
+> ~/.config/.config/transmission/settings.jsoon
+	*	1566068113	0
+	"	1	0
+
+> /etc/apache2/apache2.conf
+	*	1566066245	0
+	"	227	0
+
+> /etc/apache2/sites-enabled/000-default.conf
+	*	1566065982	0
+	"	1	25
+	^	1	26
+	.	1	25
+	+	1	25
+
+> ~/_reference/python-traceback.md
+	*	1566042381	0
+	"	17	5
+	^	17	6
+	.	17	6
+	+	3	48
+	+	6	175
+	+	6	182
+	+	6	82
+	+	8	0
+	+	5	3
+	+	12	93
+	+	15	3
+	+	16	0
+	+	20	21
+	+	17	20
+	+	18	30
+	+	20	17
+	+	22	7
+	+	32	0
+	+	23	68
+	+	24	3
+	+	31	0
+	+	23	0
+	+	13	0
+	+	14	0
+	+	32	19
+	+	19	0
+	+	32	68
+	+	33	82
+	+	35	125
+	+	35	133
+	+	35	163
+	+	33	82
+	+	35	163
+	+	35	198
+	+	39	4
+	+	36	68
+	+	37	69
+	+	38	29
+	+	34	0
+	+	39	0
+	+	40	28
+	+	41	0
+	+	17	6
+
+> ~/.dgen/dgenrc
+	*	1566034164	0
+	"	151	11
+	.	7	0
+	+	3	22
+	+	6	0
+	+	3	0
+	+	7	0
