@@ -1,8 +1,9 @@
 # Dotfiles gitignore
 *   
 # ignore all files not listed below preceded with a '!'
+
 !.vimrc
-!.vim
+!.vim/
 !README
 !crashlog-1.md
 !.gitconfig
@@ -12,5 +13,5 @@
 !.zshrc
 !.gitignore
 !.zplug
-!.gitconfig
-.viminf*
+
+.viminfo

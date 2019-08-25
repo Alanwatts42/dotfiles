@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Plug
+~MSle0~/if
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1566711943,,"wq"
+|2,0,1566717000,,"wq"
 :w
-|2,0,1566711941,,"w"
+|2,0,1566716999,,"w"
 :q
 |2,0,1566710966,,"q"
 :w github-gpgkey.md
@@ -228,6 +228,12 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/if
+|2,1,1566716141,47,"if"
+?/IF
+|2,1,1566716136,47,"IF"
+?/iF
+|2,1,1566716131,47,"iF"
 ?/Plug
 |2,1,1566699566,47,"Plug"
 ?/Plugin
@@ -292,8 +298,6 @@ $
 |2,1,1565887069,47,"tu"
 ?/tg
 |2,1,1565887063,47,"tg"
-?/if
-|2,1,1565870418,47,"if"
 ?/mifi
 |2,1,1565860028,47,"mifi"
 ?/mifi-
@@ -672,53 +676,53 @@ $
 |<"nmKVCRs1KkHoOKOrUMvUYPURMBGQAFDZcmToiBLTiPpdy8D3v2/cnbdGmVmJK2uH","FkM7SKlVVH+CbGg40Qq3qxbDDz9/tJTz3/ZqasJW66b/mQwggzoQ6olr9P+X4WAM","ufmyV2g8MeyDRhkMSeVbd8BJirxrinw6fi/dlVXlpse19hdly0CoJ2KEUIUYedJF","QPC/fUtpsRqGmEj4P/T7Tg+2FAwzRvEDFt+qAbDGEhkyhIdBDoxISv/GX4kC7D1k","gOoA01C9bpuxzz/rWMN0MKneeYP7p+1qaaHy4CC+3w/8J7UMXO46yKpWcKDlhpcd","8NtjkiGKBNBxacCJeuBVD98ztI5iA3tDeEyv0wL0T9TD6yAEuZj4mXqLQsErpHbF","QVKkvJqAUBCbsAEpPRQTqn2geJXHCiRmz5y7xOuzp2sAWmTTkUvBU/7Rk3nI3kMg",>62
 |<"ObD+ohQ4qluEl1ZC8va/UoVTA4a+wlQR3iS8w7EdNgeJFXjZqB/+kICIWAFK"
 ""1@	LINE	0
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-|3,3,1,1,16,0,1566711940,"","","","","","","","","","","","","","","",""
+	!.gitconfig
+|3,3,1,1,1,0,1566716944,"!.gitconfig"
 "2	LINE	0
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+|3,0,2,1,16,0,1566711940,"","","","","","","","","","","","","","","",""
+"3	LINE	0
 	pub   rsa4096 2019-08-25 [SC]
 	      53DF66AD0CB3AA2975A2D244DBDA25205DD3CE2F
-|3,0,2,1,2,0,1566710429,"pub   rsa4096 2019-08-25 [SC]","      53DF66AD0CB3AA2975A2D244DBDA25205DD3CE2F"
-"3	LINE	0
-	
-|3,0,3,1,1,0,1566710415,""
+|3,0,3,1,2,0,1566710429,"pub   rsa4096 2019-08-25 [SC]","      53DF66AD0CB3AA2975A2D244DBDA25205DD3CE2F"
 "4	LINE	0
-	sso-type=oauth
-|3,0,4,1,1,0,1566532290,"sso-type=oauth"
+	
+|3,0,4,1,1,0,1566710415,""
 "5	LINE	0
+	sso-type=oauth
+|3,0,5,1,1,0,1566532290,"sso-type=oauth"
+"6	LINE	0
 	on linter
-|3,0,5,1,1,0,1566531936,"on linter"
-"6	CHAR	0
+|3,0,6,1,1,0,1566531936,"on linter"
+"7	CHAR	0
 	for '*.ini' (i.e. nodejs config file)
 	
-|3,0,6,0,2,0,1566531170,"for '*.ini' (i.e. nodejs config file)",""
-"7	CHAR	0
+|3,0,7,0,2,0,1566531170,"for '*.ini' (i.e. nodejs config file)",""
+"8	CHAR	0
 	not compatible with vi, required for certain options
 	
-|3,0,7,0,2,0,1566530995,"not compatible with vi, required for certain options",""
-"8	LINE	0
+|3,0,8,0,2,0,1566530995,"not compatible with vi, required for certain options",""
+"9	LINE	0
 	npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42
 	> Username: Alanwatts42
 	> Password: K1llingit$
 	> Email: evanzemail@gmail.com
-|3,0,8,1,4,0,1566513516,"npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42","> Username: Alanwatts42","> Password: K1llingit$","> Email: evanzemail@gmail.com"
-"9	LINE	0
-	gin --registry=https://npm.pkg.github.com --scope=@OWNER
-|3,0,9,1,1,0,1566513503,"gin --registry=https://npm.pkg.github.com --scope=@OWNER"
+|3,0,9,1,4,0,1566513516,"npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42","> Username: Alanwatts42","> Password: K1llingit$","> Email: evanzemail@gmail.com"
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -729,234 +733,278 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 "-	CHAR	0
-	```
-|3,0,36,0,1,0,1566710451,"```"
+	"
+|3,0,36,0,1,0,1566716571,"\""
 
 # File marks:
-'0  52  0  ~/_security/github-gpgkey-block
-|4,48,52,0,1566711943,"~/_security/github-gpgkey-block"
-'1  12  0  ~/_repos/my_github_gpgkey
-|4,49,12,0,1566711469,"~/_repos/my_github_gpgkey"
-'2  12  0  ~/_security/github-gpg-key
-|4,50,12,0,1566710966,"~/_security/github-gpg-key"
-'3  1  0  ~/scratchpad.md
-|4,51,1,0,1566710841,"~/scratchpad.md"
-'4  18  0  ~/git-gpg-notes.md
-|4,52,18,0,1566710658,"~/git-gpg-notes.md"
+'0  6  5  ~/.gitignore
+|4,48,6,5,1566717000,"~/.gitignore"
+'1  17  0  ~/.gitignore
+|4,49,17,0,1566716981,"~/.gitignore"
+'2  17  0  ~/.gitignore
+|4,50,17,0,1566716981,"~/.gitignore"
+'3  16  7  ~/.gitignore
+|4,51,16,7,1566716957,"~/.gitignore"
+'4  16  7  ~/.gitignore
+|4,52,16,7,1566716957,"~/.gitignore"
 '5  16  7  ~/.gitignore
-|4,53,16,7,1566699771,"~/.gitignore"
-'6  76  0  ~/.vimrc
-|4,54,76,0,1566699587,"~/.vimrc"
-'7  3  0  ~/.gitignore
-|4,55,3,0,1566699502,"~/.gitignore"
-'8  3  0  ~/.gitignore
-|4,56,3,0,1566699502,"~/.gitignore"
-'9  22  0  ~/_projects/str-slicer/.flake8
-|4,57,22,0,1566663358,"~/_projects/str-slicer/.flake8"
+|4,53,16,7,1566716957,"~/.gitignore"
+'6  16  7  ~/.gitignore
+|4,54,16,7,1566716957,"~/.gitignore"
+'7  32  27  ~/_projects/scraper/README.md
+|4,55,32,27,1566716829,"~/_projects/scraper/README.md"
+'8  52  0  ~/_security/github-gpgkey-block
+|4,56,52,0,1566711943,"~/_security/github-gpgkey-block"
+'9  12  0  ~/_repos/my_github_gpgkey
+|4,57,12,0,1566711469,"~/_repos/my_github_gpgkey"
 
 # Jumplist (newest first):
+-'  6  5  ~/.gitignore
+|4,39,6,5,1566717000,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566716987,"~/.gitignore"
+-'  17  0  ~/.gitignore
+|4,39,17,0,1566716981,"~/.gitignore"
+-'  17  0  ~/.gitignore
+|4,39,17,0,1566716981,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566716972,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566716957,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566716957,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566716957,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566716933,"~/.gitignore"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  32  27  ~/_projects/scraper/README.md
+|4,39,32,27,1566716829,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  13  101  ~/_projects/scraper/README.md
+|4,39,13,101,1566716141,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  42  81  ~/_projects/scraper/README.md
+|4,39,42,81,1566716131,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  1  0  ~/_projects/scraper/README.md
+|4,39,1,0,1566716013,"~/_projects/scraper/README.md"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
 -'  52  0  ~/_security/github-gpgkey-block
 |4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
 -'  12  0  ~/_repos/my_github_gpgkey
 |4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
 -'  1  0  ~/_security/github-gpgkey-block
 |4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
 -'  1  0  ~/_repos/my_github_gpgkey
 |4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
--'  12  0  ~/_security/github-gpg-key
-|4,39,12,0,1566710966,"~/_security/github-gpg-key"
--'  12  0  ~/_security/github-gpg-key
-|4,39,12,0,1566710966,"~/_security/github-gpg-key"
--'  12  0  ~/_security/github-gpg-key
-|4,39,12,0,1566710966,"~/_security/github-gpg-key"
--'  1  0  ~/_security/github-gpg-key
-|4,39,1,0,1566710961,"~/_security/github-gpg-key"
--'  1  0  ~/_security/github-gpg-key
-|4,39,1,0,1566710961,"~/_security/github-gpg-key"
--'  1  0  ~/_security/github-gpg-key
-|4,39,1,0,1566710961,"~/_security/github-gpg-key"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  1  0  ~/scratchpad.md
-|4,39,1,0,1566710841,"~/scratchpad.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  18  0  ~/git-gpg-notes.md
-|4,39,18,0,1566710658,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  20  0  ~/git-gpg-notes.md
-|4,39,20,0,1566710430,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  1  0  ~/git-gpg-notes.md
-|4,39,1,0,1566707348,"~/git-gpg-notes.md"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  16  7  ~/.gitignore
-|4,39,16,7,1566699771,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1566716999	0
+	"	6	5
+	^	6	6
+	.	6	5
+	+	16	11
+	+	16	0
+	+	6	0
+	+	2	7
+	+	6	7
+	+	2	0
+	+	6	0
+	+	6	59
+	+	6	0
+	+	2	0
+	+	16	0
+	+	2	4
+	+	16	7
+	+	4	0
+	+	16	0
+	+	6	5
+
+> ~/_projects/scraper/README.md
+	*	1566716828	0
+	"	32	27
+	^	46	0
+	.	45	72
+	+	42	0
+	+	42	144
+	+	42	146
+	+	42	90
+	+	42	208
+	+	42	231
+	+	42	190
+	+	45	24
+	+	42	16
+	+	42	207
+	+	42	219
+	+	42	250
+	+	45	64
+	+	43	77
+	+	44	74
+	+	45	72
 
 > ~/_security/github-gpgkey-block
 	*	1566711942	0
@@ -1016,25 +1064,6 @@ $
 	+	25	0
 	+	16	0
 	+	18	0
-
-> ~/.gitignore
-	*	1566699770	0
-	"	16	7
-	^	16	8
-	.	16	7
-	+	15	11
-	+	16	0
-	+	5	0
-	+	2	7
-	+	5	7
-	+	2	0
-	+	5	0
-	+	5	59
-	+	5	0
-	+	2	0
-	+	16	0
-	+	2	4
-	+	16	7
 
 > ~/.vimrc
 	*	1566699584	0
