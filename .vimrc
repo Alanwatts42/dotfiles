@@ -73,6 +73,7 @@ Plug 'PyCQA/pylint'         " Python linter
 
 """ ==Javascript==
 Plug 'w0rp/ale'    " javascript linter
+Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
 
 """ ==General Functionality==
 Plug 'ctrlpvim/ctrlp.vim'  " Fuzzy finder (files, mru, etc)
@@ -156,6 +157,9 @@ let pipenv_venv_path = system('pipenv --venv')
 
 " ==Javascript==
 autocmd BufWritePre *.js :normal gggqG
+
+" set nodejs config file '~/.npmrc' to *.ini filetype
+autocmd BufRead,BufNewFile ~/.npmrc setf dosini 
 
 " ==Templates==
 " Shell Scripts '*.sh' files

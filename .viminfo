@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/port
+~MSle0~/WPA_CLI
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -20,20 +20,36 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1566485101,,"q"
-:w
-|2,0,1566426138,,"w"
 :wq
-|2,0,1566362290,,"wq"
+|2,0,1566699502,,"wq"
+:w
+|2,0,1566699500,,"w"
+:q
+|2,0,1566663358,,"q"
+:W
+|2,0,1566620967,,"W"
+:w dockwidget-colors.md
+|2,0,1566616449,,"w dockwidget-colors.md"
+:PlugInstall!
+|2,0,1566532199,,"PlugInstall!"
+:PlugInstall
+|2,0,1566532193,,"PlugInstall"
 :redo
-|2,0,1566356225,,"redo"
+|2,0,1566531927,,"redo"
+:w]
+|2,0,1566531103,,"w]"
+:filetype-overview
+|2,0,1566530862,,"filetype-overview"
+:filetype
+|2,0,1566530825,,"filetype"
+:help ftdetect
+|2,0,1566530752,,"help ftdetect"
+:setf dosini
+|2,0,1566530282,,"setf dosini"
 :tabclose
 |2,0,1566342897,,"tabclose"
 :messages
 |2,0,1566338336,,"messages"
-:PlugInstall!
-|2,0,1566356490,,"PlugInstall!"
 :w empower_acct-discrepancy
 |2,0,1566317602,,"w empower_acct-discrepancy"
 :1
@@ -42,8 +58,6 @@ $
 |2,0,1565853783,,"vs sh_template.sh"
 :ww
 |2,0,1565840970,,"ww"
-:PlugInstall
-|2,0,1565840858,,"PlugInstall"
 :mes
 |2,0,1565834985,,"mes"
 :p
@@ -92,8 +106,6 @@ $
 |2,0,1565512734,,"5042"
 :4890
 |2,0,1565508907,,"4890"
-:W
-|2,0,1565189661,,"W"
 :13966
 |2,0,1565187364,,"13966"
 :11445
@@ -116,8 +128,6 @@ $
 |2,0,1565138208,,"PlugClean"
 :PlugClean~
 |2,0,1565138199,,"PlugClean~"
-:w]
-|2,0,1565136530,,"w]"
 :echo g:pymode_python
 |2,0,1565133835,,"echo g:pymode_python"
 :echo g:pymode_version
@@ -216,6 +226,40 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/WPA_CLI
+|2,1,1566658779,47,"WPA_CLI"
+?/s0
+|2,1,1566658755,47,"s0"
+?/interface
+|2,1,1566619961,47,"interface"
+?/initial
+|2,1,1566619706,47,"initial"
+?/back
+|2,1,1566619608,47,"back"
+?/retry
+|2,1,1566619542,47,"retry"
+?/java
+|2,1,1566531942,47,"java"
+?/Java
+|2,1,1566531909,47,"Java"
+?/plu
+|2,1,1566531899,47,"plu"
+?/noc
+|2,1,1566530991,47,"noc"
+?/compatible
+|2,1,1566530986,47,"compatible"
+?/autocmd
+|2,1,1566530309,47,"autocmd"
+?/:w
+|2,1,1566531731,47,":w"
+?/set filetype=
+|2,1,1566531726,47,"set filetype="
+?/filetype
+|2,1,1566531485,47,"filetype"
+?/hqx
+|2,1,1566510673,47,"hqx"
+?/fullscreen
+|2,1,1566510641,47,"fullscreen"
 ?/rope
 |2,1,1566356423,47,"rope"
 ?/port
@@ -564,36 +608,43 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	*listed in the order that they are read by the system*
-|3,0,0,1,1,0,1566286567,"*listed in the order that they are read by the system*"
+"0	CHAR	0
+	(blue)
+|3,0,0,0,1,0,1566619764,"(blue)"
 "1@	LINE	0
-	you would add 400+200+100+040+010+001 to give 751.
-|3,2,1,1,1,0,1566428619,"you would add 400+200+100+040+010+001 to give 751."
+	sso-type=oauth
+|3,2,1,1,1,0,1566532290,"sso-type=oauth"
 "2	LINE	0
-	 
-|3,0,2,1,1,0,1566426130," "
-"3	LINE	0
+	on linter
+|3,0,2,1,1,0,1566531936,"on linter"
+"3	CHAR	0
+	for '*.ini' (i.e. nodejs config file)
 	
-|3,0,3,1,1,0,1566426126,""
-"4	LINE	0
+|3,0,3,0,2,0,1566531170,"for '*.ini' (i.e. nodejs config file)",""
+"4	CHAR	0
+	not compatible with vi, required for certain options
 	
-|3,0,4,1,1,0,1566426034,""
+|3,0,4,0,2,0,1566530995,"not compatible with vi, required for certain options",""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1566426023,""
+	npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42
+	> Username: Alanwatts42
+	> Password: K1llingit$
+	> Email: evanzemail@gmail.com
+|3,0,5,1,4,0,1566513516,"npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42","> Username: Alanwatts42","> Password: K1llingit$","> Email: evanzemail@gmail.com"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1566426022,""
+	gin --registry=https://npm.pkg.github.com --scope=@OWNER
+|3,0,6,1,1,0,1566513503,"gin --registry=https://npm.pkg.github.com --scope=@OWNER"
 "7	LINE	0
-	## Sources
-|3,0,7,1,1,0,1566426022,"## Sources"
+	> Username: 
+	> Password: TOKEN
+	> Email: PUBLIC EMAIL ADDRESS
+|3,0,7,1,3,0,1566513470,"> Username: ","> Password: TOKEN","> Email: PUBLIC EMAIL ADDRESS"
 "8	LINE	0
-	https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html#Numeric-Modes
-|3,0,8,1,1,0,1566426022,"https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html#Numeric-Modes"
+	
+|3,0,8,1,1,0,1566511297,""
 "9	LINE	0
-	                                                                                                                                                                                   
-|3,0,9,1,1,0,1566426022,"                                                                                                                                                                                   "
+	bool_fullscreen [true]
+|3,0,9,1,1,0,1566511274,"bool_fullscreen [true]"
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -604,255 +655,517 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 ""-	CHAR	0
-	,
-|3,1,36,0,1,0,1566484632,","
+	 
+|3,1,36,0,1,0,1566620913," "
 
 # File marks:
-'0  121  0  ~/NERD_tree_1
-|4,48,121,0,1566485101,"~/NERD_tree_1"
-'1  1  0  ~/.gitignore
-|4,49,1,0,1566485043,"~/.gitignore"
-'2  69  12  ~/.vimrc
-|4,50,69,12,1566484638,"~/.vimrc"
-'3  50  0  ~/_reference/chmod_codes.md
-|4,51,50,0,1566441827,"~/_reference/chmod_codes.md"
-'4  50  0  ~/_reference/chmod_codes.md
-|4,52,50,0,1566441826,"~/_reference/chmod_codes.md"
-'5  13  27  ~/_projects/str-slicer/log_splitter.py
-|4,53,13,27,1566362290,"~/_projects/str-slicer/log_splitter.py"
-'6  64  24  ~/.vimrc
-|4,54,64,24,1566362270,"~/.vimrc"
-'7  64  24  ~/.vimrc
-|4,55,64,24,1566362270,"~/.vimrc"
-'8  96  0  ~/.zshrc
-|4,56,96,0,1566319954,"~/.zshrc"
-'9  102  0  ~/.zshrc
-|4,57,102,0,1566317749,"~/.zshrc"
+'0  3  0  ~/.gitignore
+|4,48,3,0,1566699502,"~/.gitignore"
+'1  22  0  ~/_projects/str-slicer/.flake8
+|4,49,22,0,1566663358,"~/_projects/str-slicer/.flake8"
+'2  11  0  /etc/wicd/dhclient.conf.template
+|4,50,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+'3  1  0  /etc/wicd/wireless-settings.conf
+|4,51,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+'4  33  29  /etc/wpa_supplicant/functions.sh
+|4,52,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+'5  1  0  /sbin/wpa_cli
+|4,53,1,0,1566658937,"/sbin/wpa_cli"
+'6  100  0  ~/.zshrc
+|4,54,100,0,1566657070,"~/.zshrc"
+'7  20  41  /var/lib/NetworkManager/NetworkManager-intern.conf
+|4,55,20,41,1566620919,"/var/lib/NetworkManager/NetworkManager-intern.conf"
+'8  21  0  /var/lib/NetworkManager/dhclient-wlp2s0.conf
+|4,56,21,0,1566620002,"/var/lib/NetworkManager/dhclient-wlp2s0.conf"
+'9  9  33  ~/dockwidget-colors.md
+|4,57,9,33,1566616454,"~/dockwidget-colors.md"
 
 # Jumplist (newest first):
--'  121  0  ~/NERD_tree_1
-|4,39,121,0,1566485101,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1566485098,"~/NERD_tree_1"
+-'  3  0  ~/.gitignore
+|4,39,3,0,1566699502,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1566485043,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1566485043,"~/.gitignore"
--'  69  12  ~/.vimrc
-|4,39,69,12,1566484638,"~/.vimrc"
--'  69  12  ~/.vimrc
-|4,39,69,12,1566484638,"~/.vimrc"
--'  69  12  ~/.vimrc
-|4,39,69,12,1566484638,"~/.vimrc"
--'  69  12  ~/.vimrc
-|4,39,69,12,1566484638,"~/.vimrc"
--'  93  7  ~/.vimrc
-|4,39,93,7,1566484574,"~/.vimrc"
--'  93  7  ~/.vimrc
-|4,39,93,7,1566484574,"~/.vimrc"
--'  93  7  ~/.vimrc
-|4,39,93,7,1566484574,"~/.vimrc"
--'  93  7  ~/.vimrc
-|4,39,93,7,1566484574,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566484551,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566484551,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566484551,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1566484551,"~/.vimrc"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441827,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  50  0  ~/_reference/chmod_codes.md
-|4,39,50,0,1566441826,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  5  0  ~/_reference/chmod_codes.md
-|4,39,5,0,1566426026,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  4  0  ~/_reference/chmod_codes.md
-|4,39,4,0,1566426025,"~/_reference/chmod_codes.md"
--'  3  0  ~/_reference/chmod_codes.md
-|4,39,3,0,1566426025,"~/_reference/chmod_codes.md"
--'  2  0  ~/_reference/chmod_codes.md
-|4,39,2,0,1566426025,"~/_reference/chmod_codes.md"
--'  7  0  ~/_reference/chmod_codes.md
-|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
--'  7  0  ~/_reference/chmod_codes.md
-|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
--'  7  0  ~/_reference/chmod_codes.md
-|4,39,7,0,1566426001,"~/_reference/chmod_codes.md"
+|4,39,1,0,1566699489,"~/.gitignore"
+-'  22  0  ~/_projects/str-slicer/.flake8
+|4,39,22,0,1566663358,"~/_projects/str-slicer/.flake8"
+-'  22  0  ~/_projects/str-slicer/.flake8
+|4,39,22,0,1566663358,"~/_projects/str-slicer/.flake8"
+-'  1  0  ~/_projects/str-slicer/.flake8
+|4,39,1,0,1566663353,"~/_projects/str-slicer/.flake8"
+-'  1  0  ~/_projects/str-slicer/.flake8
+|4,39,1,0,1566663353,"~/_projects/str-slicer/.flake8"
+-'  11  0  /etc/wicd/dhclient.conf.template
+|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+-'  11  0  /etc/wicd/dhclient.conf.template
+|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+-'  11  0  /etc/wicd/dhclient.conf.template
+|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+-'  11  0  /etc/wicd/dhclient.conf.template
+|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+-'  1  0  /etc/wicd/dhclient.conf.template
+|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
+-'  1  0  /etc/wicd/dhclient.conf.template
+|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
+-'  1  0  /etc/wicd/dhclient.conf.template
+|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
+-'  1  0  /etc/wicd/dhclient.conf.template
+|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  1  0  /etc/wicd/wireless-settings.conf
+|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  33  29  /etc/wpa_supplicant/functions.sh
+|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  1  0  /sbin/wpa_cli
+|4,39,1,0,1566658937,"/sbin/wpa_cli"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  8  28  /etc/wpa_supplicant/functions.sh
+|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  38  2  /etc/wpa_supplicant/functions.sh
+|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
+-'  39  0  /etc/wpa_supplicant/functions.sh
+|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	*	1566699500	0
+	"	3	0
+	^	3	0
+	.	2	4
+	+	15	11
+	+	16	0
+	+	5	0
+	+	2	7
+	+	5	7
+	+	2	0
+	+	5	0
+	+	5	59
+	+	5	0
+	+	2	0
+	+	16	0
+	+	2	4
+
+> ~/_projects/str-slicer/.flake8
+	*	1566663357	0
+	"	22	0
+
+> /etc/wicd/dhclient.conf.template
+	*	1566659530	0
+	"	11	0
+
+> /etc/wpa_supplicant/functions.sh
+	*	1566659407	0
+	"	33	29
+
+> /sbin/wpa_cli
+	*	1566658936	0
+	"	1	0
+
+> ~/.zshrc
+	*	1566652158	0
+	"	100	0
+	^	100	0
+	.	100	0
+	+	97	51
+	+	97	0
+	+	97	51
+	+	99	36
+	+	98	0
+	+	100	2
+	+	101	0
+	+	100	0
+
+> /var/lib/NetworkManager/NetworkManager-intern.conf
+	*	1566620917	0
+	"	20	41
+	^	20	72
+	.	20	41
+	+	20	41
+
+> /var/lib/NetworkManager/dhclient-wlp2s0.conf
+	*	1566619999	0
+	"	21	0
+	^	22	9
+	.	21	0
+	+	21	0
+	+	24	0
+	+	23	0
+	+	22	0
+	+	25	16
+	+	24	19
+	+	23	15
+	+	22	0
+	+	21	0
+
 > ~/NERD_tree_1
-	*	1566485100	0
-	"	121	0
+	*	1566616037	0
+	"	4	0
 	.	1	0
 	+	1	0
 
-> ~/.gitignore
-	*	1566485041	0
-	"	1	0
+> ~/wget-log
+	*	1566563622	0
+	"	13	0
+
+> ~/.joplin/Joplin_install_and_update.sh
+	*	1566533523	0
+	"	67	0
 
 > ~/.vimrc
-	*	1566484636	0
-	"	69	12
-	^	69	11
-	.	69	10
+	*	1566532548	0
+	"	81	71
+	^	76	54
+	.	76	99
 	+	64	27
 	+	64	24
+	+	95	0
 	+	94	0
-	+	93	0
-	+	97	0
 	+	98	0
+	+	99	0
 	+	69	10
+	+	160	72
+	+	160	66
+	+	160	35
+	+	160	56
+	+	160	0
+	+	160	62
+	+	160	60
+	+	160	10
+	+	160	2
+	+	160	38
+	+	5	0
+	+	3	71
+	+	3	69
+	+	5	0
+	+	3	62
+	+	160	10
+	+	160	0
+	+	162	0
+	+	160	0
+	+	161	52
+	+	162	46
+	+	72	35
+	+	73	0
+	+	72	42
+	+	76	28
+	+	76	32
+	+	77	0
+	+	76	99
+
+> ~/.npmrc
+	*	1566532309	0
+	"	129	0
+	^	118	1
+	.	129	0
+	+	1	0
+	+	1	28
+	+	1	22
+	+	1	29
+	+	1	0
+	+	1	67
+	+	1	32
+	+	20	12
+	+	25	23
+	+	118	0
+	+	133	0
+	+	129	0
+
+> /usr/share/vim/vim80/doc/filetype.txt
+	*	1566532275	0
+	"	170	5
+
+> ~/.vim/ftdetect/ini.vim
+	*	1566531739	0
+	"	2	43
+	^	2	44
+	.	2	43
+	+	2	43
+
+> ~/Documents/npm-install
+	*	1566518504	0
+	"	27	0
+	^	36	0
+	.	35	61
+	+	35	61
+
+> ~/.dgen/dgenrc
+	*	1566511405	0
+	"	56	0
+	^	3	66
+	.	3	65
+	+	3	22
+	+	4	0
+	+	3	0
+	+	5	0
+	+	4	0
+	+	3	65
+
+> ~/.dgen/dgenrc.1
+	*	1566511321	0
+	"	97	41
+	^	97	46
+	.	97	0
+	+	5	28
+	+	8	32
+	+	11	32
+	+	14	34
+	+	35	33
+	+	97	23
+	+	211	21
+	+	17	30
+	+	26	30
+	+	53	30
+	+	62	30
+	+	148	27
+	+	97	0
+
+> /opt/retropie/configs/all/retroarch/autoconfig/Microsoft X-Box 360 pad.cfg
+	*	1566511230	0
+	"	28	15
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1566510651	0
+	"	1	0
+
+> ~/.qpsrc
+	*	1566502828	0
+	"	10	0
+
+> ~/_repos/xdg-specs/menu/INSTALL
+	*	1566486319	0
+	"	31	0
+	.	2	0
+	+	1	51
+	+	1	52
+	+	1	111
+	+	1	128
+	+	1	130
+	+	1	198
+	+	1	265
+	+	1	332
+	+	1	362
+	+	1	364
+	+	1	382
+	+	1	401
+	+	1	402
+	+	1	466
+	+	1	532
+	+	1	598
+	+	1	665
+	+	1	732
+	+	1	798
+	+	1	869
+	+	1	933
+	+	1	935
+	+	1	1000
+	+	1	1069
+	+	1	1139
+	+	1	1210
+	+	1	1280
+	+	1	1351
+	+	1	1415
+	+	1	1439
+	+	1	1441
+	+	1	1510
+	+	1	1582
+	+	1	1654
+	+	1	1724
+	+	1	1726
+	+	1	1793
+	+	1	1864
+	+	1	1935
+	+	1	2007
+	+	1	2078
+	+	1	2101
+	+	1	2103
+	+	1	2164
+	+	1	2236
+	+	1	2309
+	+	1	2321
+	+	1	2323
+	+	1	2367
+	+	1	2368
+	+	1	2438
+	+	1	2494
+	+	1	2496
+	+	1	2561
+	+	1	2618
+	+	1	2620
+	+	1	2658
+	+	1	2660
+	+	1	2729
+	+	1	2795
+	+	1	2797
+	+	1	2866
+	+	1	2933
+	+	1	2999
+	+	1	3058
+	+	1	3070
+	+	1	3072
+	+	1	3141
+	+	1	3205
+	+	2	0
+
+> ~/_repos/xdg-specs/menu/autogen.sh
+	*	1566485263	0
+	"	1	0
 
 > ~/_reference/chmod_codes.md
 	*	1566428619	0
@@ -968,29 +1281,11 @@ $
 	+	13	0
 	+	1	0
 
-> /usr/share/vim/vim80/doc/help.txt
-	*	1566356235	0
-	"	1	0
-
 > ~/_projects/str-slicer/__Tagbar__.1
 	*	1566343103	0
 	"	37	4
 	.	40	0
 	+	40	0
-
-> ~/.zshrc
-	*	1566319953	0
-	"	96	0
-	^	100	0
-	.	100	0
-	+	97	51
-	+	97	0
-	+	97	51
-	+	99	36
-	+	98	0
-	+	100	2
-	+	101	0
-	+	100	0
 
 > ~/_reference/calc
 	*	1566317606	0
@@ -1451,12 +1746,3 @@ $
 	+	40	28
 	+	41	0
 	+	17	6
-
-> ~/.dgen/dgenrc
-	*	1566034164	0
-	"	151	11
-	.	7	0
-	+	3	22
-	+	6	0
-	+	3	0
-	+	7	0
