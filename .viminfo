@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/WPA_CLI
+~MSle0~/Plug
 
 # Last Substitute Search Pattern:
 ~MSle0&\<~\>
@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1566699502,,"wq"
+|2,0,1566699770,,"wq"
 :w
-|2,0,1566699500,,"w"
+|2,0,1566699769,,"w"
 :q
 |2,0,1566663358,,"q"
 :W
@@ -226,6 +226,10 @@ $
 |2,0,1563421523,,"100"
 
 # Search String History (newest to oldest):
+?/Plug
+|2,1,1566699566,47,"Plug"
+?/Plugin
+|2,1,1566699562,47,"Plugin"
 ?/WPA_CLI
 |2,1,1566658779,47,"WPA_CLI"
 ?/s0
@@ -296,8 +300,6 @@ $
 |2,1,1565859357,47,"nnoremap"
 ?/g:
 |2,1,1565840961,47,"g:"
-?/Plug
-|2,1,1565840801,47,"Plug"
 ?/syntastic_debug
 |2,1,1565834781,47,"syntastic_debug"
 ?/debug
@@ -655,240 +657,240 @@ $
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1566620913," "
+	o*
+|3,1,36,0,1,0,1566699766,"o*"
 
 # File marks:
-'0  3  0  ~/.gitignore
-|4,48,3,0,1566699502,"~/.gitignore"
-'1  22  0  ~/_projects/str-slicer/.flake8
-|4,49,22,0,1566663358,"~/_projects/str-slicer/.flake8"
-'2  11  0  /etc/wicd/dhclient.conf.template
-|4,50,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
-'3  1  0  /etc/wicd/wireless-settings.conf
-|4,51,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
-'4  33  29  /etc/wpa_supplicant/functions.sh
-|4,52,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
-'5  1  0  /sbin/wpa_cli
-|4,53,1,0,1566658937,"/sbin/wpa_cli"
-'6  100  0  ~/.zshrc
-|4,54,100,0,1566657070,"~/.zshrc"
-'7  20  41  /var/lib/NetworkManager/NetworkManager-intern.conf
-|4,55,20,41,1566620919,"/var/lib/NetworkManager/NetworkManager-intern.conf"
-'8  21  0  /var/lib/NetworkManager/dhclient-wlp2s0.conf
-|4,56,21,0,1566620002,"/var/lib/NetworkManager/dhclient-wlp2s0.conf"
-'9  9  33  ~/dockwidget-colors.md
-|4,57,9,33,1566616454,"~/dockwidget-colors.md"
+'0  16  7  ~/.gitignore
+|4,48,16,7,1566699771,"~/.gitignore"
+'1  76  0  ~/.vimrc
+|4,49,76,0,1566699587,"~/.vimrc"
+'2  3  0  ~/.gitignore
+|4,50,3,0,1566699502,"~/.gitignore"
+'3  3  0  ~/.gitignore
+|4,51,3,0,1566699502,"~/.gitignore"
+'4  22  0  ~/_projects/str-slicer/.flake8
+|4,52,22,0,1566663358,"~/_projects/str-slicer/.flake8"
+'5  11  0  /etc/wicd/dhclient.conf.template
+|4,53,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
+'6  1  0  /etc/wicd/wireless-settings.conf
+|4,54,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
+'7  33  29  /etc/wpa_supplicant/functions.sh
+|4,55,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
+'8  1  0  /sbin/wpa_cli
+|4,56,1,0,1566658937,"/sbin/wpa_cli"
+'9  100  0  ~/.zshrc
+|4,57,100,0,1566657070,"~/.zshrc"
 
 # Jumplist (newest first):
--'  3  0  ~/.gitignore
-|4,39,3,0,1566699502,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1566699489,"~/.gitignore"
--'  22  0  ~/_projects/str-slicer/.flake8
-|4,39,22,0,1566663358,"~/_projects/str-slicer/.flake8"
--'  22  0  ~/_projects/str-slicer/.flake8
-|4,39,22,0,1566663358,"~/_projects/str-slicer/.flake8"
--'  1  0  ~/_projects/str-slicer/.flake8
-|4,39,1,0,1566663353,"~/_projects/str-slicer/.flake8"
--'  1  0  ~/_projects/str-slicer/.flake8
-|4,39,1,0,1566663353,"~/_projects/str-slicer/.flake8"
--'  11  0  /etc/wicd/dhclient.conf.template
-|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
--'  11  0  /etc/wicd/dhclient.conf.template
-|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
--'  11  0  /etc/wicd/dhclient.conf.template
-|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
--'  11  0  /etc/wicd/dhclient.conf.template
-|4,39,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
--'  1  0  /etc/wicd/dhclient.conf.template
-|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
--'  1  0  /etc/wicd/dhclient.conf.template
-|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
--'  1  0  /etc/wicd/dhclient.conf.template
-|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
--'  1  0  /etc/wicd/dhclient.conf.template
-|4,39,1,0,1566659481,"/etc/wicd/dhclient.conf.template"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  1  0  /etc/wicd/wireless-settings.conf
-|4,39,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  33  29  /etc/wpa_supplicant/functions.sh
-|4,39,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  1  0  /sbin/wpa_cli
-|4,39,1,0,1566658937,"/sbin/wpa_cli"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  8  28  /etc/wpa_supplicant/functions.sh
-|4,39,8,28,1566658806,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  38  2  /etc/wpa_supplicant/functions.sh
-|4,39,38,2,1566658805,"/etc/wpa_supplicant/functions.sh"
--'  39  0  /etc/wpa_supplicant/functions.sh
-|4,39,39,0,1566658805,"/etc/wpa_supplicant/functions.sh"
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  76  0  ~/.vimrc
+|4,39,76,0,1566699587,"~/.vimrc"
+-'  76  0  ~/.vimrc
+|4,39,76,0,1566699587,"~/.vimrc"
+-'  75  0  ~/.vimrc
+|4,39,75,0,1566699584,"~/.vimrc"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1566699584,"~/.vimrc"
+-'  71  0  ~/.vimrc
+|4,39,71,0,1566699584,"~/.vimrc"
+-'  75  0  ~/.vimrc
+|4,39,75,0,1566699584,"~/.vimrc"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1566699584,"~/.vimrc"
+-'  71  0  ~/.vimrc
+|4,39,71,0,1566699584,"~/.vimrc"
+-'  70  0  ~/.vimrc
+|4,39,70,0,1566699583,"~/.vimrc"
+-'  69  0  ~/.vimrc
+|4,39,69,0,1566699583,"~/.vimrc"
+-'  68  0  ~/.vimrc
+|4,39,68,0,1566699583,"~/.vimrc"
+-'  67  0  ~/.vimrc
+|4,39,67,0,1566699583,"~/.vimrc"
+-'  70  0  ~/.vimrc
+|4,39,70,0,1566699583,"~/.vimrc"
+-'  69  0  ~/.vimrc
+|4,39,69,0,1566699583,"~/.vimrc"
+-'  68  0  ~/.vimrc
+|4,39,68,0,1566699583,"~/.vimrc"
+-'  67  0  ~/.vimrc
+|4,39,67,0,1566699583,"~/.vimrc"
+-'  79  0  ~/.vimrc
+|4,39,79,0,1566699581,"~/.vimrc"
+-'  79  0  ~/.vimrc
+|4,39,79,0,1566699581,"~/.vimrc"
+-'  80  0  ~/.vimrc
+|4,39,80,0,1566699580,"~/.vimrc"
+-'  81  0  ~/.vimrc
+|4,39,81,0,1566699580,"~/.vimrc"
+-'  84  0  ~/.vimrc
+|4,39,84,0,1566699580,"~/.vimrc"
+-'  85  0  ~/.vimrc
+|4,39,85,0,1566699580,"~/.vimrc"
+-'  86  0  ~/.vimrc
+|4,39,86,0,1566699580,"~/.vimrc"
+-'  87  0  ~/.vimrc
+|4,39,87,0,1566699580,"~/.vimrc"
+-'  80  0  ~/.vimrc
+|4,39,80,0,1566699580,"~/.vimrc"
+-'  81  0  ~/.vimrc
+|4,39,81,0,1566699580,"~/.vimrc"
+-'  84  0  ~/.vimrc
+|4,39,84,0,1566699580,"~/.vimrc"
+-'  85  0  ~/.vimrc
+|4,39,85,0,1566699580,"~/.vimrc"
+-'  86  0  ~/.vimrc
+|4,39,86,0,1566699580,"~/.vimrc"
+-'  87  0  ~/.vimrc
+|4,39,87,0,1566699580,"~/.vimrc"
+-'  88  0  ~/.vimrc
+|4,39,88,0,1566699579,"~/.vimrc"
+-'  89  0  ~/.vimrc
+|4,39,89,0,1566699579,"~/.vimrc"
+-'  92  0  ~/.vimrc
+|4,39,92,0,1566699579,"~/.vimrc"
+-'  93  0  ~/.vimrc
+|4,39,93,0,1566699579,"~/.vimrc"
+-'  94  0  ~/.vimrc
+|4,39,94,0,1566699579,"~/.vimrc"
+-'  95  0  ~/.vimrc
+|4,39,95,0,1566699579,"~/.vimrc"
+-'  96  0  ~/.vimrc
+|4,39,96,0,1566699579,"~/.vimrc"
+-'  97  0  ~/.vimrc
+|4,39,97,0,1566699579,"~/.vimrc"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1566699579,"~/.vimrc"
+-'  101  0  ~/.vimrc
+|4,39,101,0,1566699579,"~/.vimrc"
+-'  104  0  ~/.vimrc
+|4,39,104,0,1566699579,"~/.vimrc"
+-'  105  0  ~/.vimrc
+|4,39,105,0,1566699579,"~/.vimrc"
+-'  106  0  ~/.vimrc
+|4,39,106,0,1566699579,"~/.vimrc"
+-'  107  0  ~/.vimrc
+|4,39,107,0,1566699579,"~/.vimrc"
+-'  110  1  ~/.vimrc
+|4,39,110,1,1566699579,"~/.vimrc"
+-'  111  0  ~/.vimrc
+|4,39,111,0,1566699579,"~/.vimrc"
+-'  112  0  ~/.vimrc
+|4,39,112,0,1566699579,"~/.vimrc"
+-'  113  0  ~/.vimrc
+|4,39,113,0,1566699579,"~/.vimrc"
+-'  116  0  ~/.vimrc
+|4,39,116,0,1566699579,"~/.vimrc"
+-'  117  0  ~/.vimrc
+|4,39,117,0,1566699579,"~/.vimrc"
+-'  118  0  ~/.vimrc
+|4,39,118,0,1566699579,"~/.vimrc"
+-'  119  0  ~/.vimrc
+|4,39,119,0,1566699579,"~/.vimrc"
+-'  88  0  ~/.vimrc
+|4,39,88,0,1566699579,"~/.vimrc"
+-'  89  0  ~/.vimrc
+|4,39,89,0,1566699579,"~/.vimrc"
+-'  92  0  ~/.vimrc
+|4,39,92,0,1566699579,"~/.vimrc"
+-'  93  0  ~/.vimrc
+|4,39,93,0,1566699579,"~/.vimrc"
+-'  94  0  ~/.vimrc
+|4,39,94,0,1566699579,"~/.vimrc"
+-'  95  0  ~/.vimrc
+|4,39,95,0,1566699579,"~/.vimrc"
+-'  96  0  ~/.vimrc
+|4,39,96,0,1566699579,"~/.vimrc"
+-'  97  0  ~/.vimrc
+|4,39,97,0,1566699579,"~/.vimrc"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1566699579,"~/.vimrc"
+-'  101  0  ~/.vimrc
+|4,39,101,0,1566699579,"~/.vimrc"
+-'  104  0  ~/.vimrc
+|4,39,104,0,1566699579,"~/.vimrc"
+-'  105  0  ~/.vimrc
+|4,39,105,0,1566699579,"~/.vimrc"
+-'  106  0  ~/.vimrc
+|4,39,106,0,1566699579,"~/.vimrc"
+-'  107  0  ~/.vimrc
+|4,39,107,0,1566699579,"~/.vimrc"
+-'  110  1  ~/.vimrc
+|4,39,110,1,1566699579,"~/.vimrc"
+-'  111  0  ~/.vimrc
+|4,39,111,0,1566699579,"~/.vimrc"
+-'  112  0  ~/.vimrc
+|4,39,112,0,1566699579,"~/.vimrc"
+-'  113  0  ~/.vimrc
+|4,39,113,0,1566699579,"~/.vimrc"
+-'  116  0  ~/.vimrc
+|4,39,116,0,1566699579,"~/.vimrc"
+-'  117  0  ~/.vimrc
+|4,39,117,0,1566699579,"~/.vimrc"
+-'  118  0  ~/.vimrc
+|4,39,118,0,1566699579,"~/.vimrc"
+-'  119  0  ~/.vimrc
+|4,39,119,0,1566699579,"~/.vimrc"
+-'  120  0  ~/.vimrc
+|4,39,120,0,1566699578,"~/.vimrc"
+-'  123  5  ~/.vimrc
+|4,39,123,5,1566699578,"~/.vimrc"
+-'  125  9  ~/.vimrc
+|4,39,125,9,1566699578,"~/.vimrc"
+-'  181  48  ~/.vimrc
+|4,39,181,48,1566699578,"~/.vimrc"
+-'  407  35  ~/.vimrc
+|4,39,407,35,1566699578,"~/.vimrc"
+-'  21  14  ~/.vimrc
+|4,39,21,14,1566699578,"~/.vimrc"
+-'  120  0  ~/.vimrc
+|4,39,120,0,1566699578,"~/.vimrc"
+-'  123  5  ~/.vimrc
+|4,39,123,5,1566699578,"~/.vimrc"
+-'  125  9  ~/.vimrc
+|4,39,125,9,1566699578,"~/.vimrc"
+-'  181  48  ~/.vimrc
+|4,39,181,48,1566699578,"~/.vimrc"
+-'  407  35  ~/.vimrc
+|4,39,407,35,1566699578,"~/.vimrc"
+-'  21  14  ~/.vimrc
+|4,39,21,14,1566699578,"~/.vimrc"
+-'  22  23  ~/.vimrc
+|4,39,22,23,1566699577,"~/.vimrc"
+-'  26  57  ~/.vimrc
+|4,39,26,57,1566699577,"~/.vimrc"
+-'  29  97  ~/.vimrc
+|4,39,29,97,1566699577,"~/.vimrc"
+-'  35  22  ~/.vimrc
+|4,39,35,22,1566699577,"~/.vimrc"
+-'  22  23  ~/.vimrc
+|4,39,22,23,1566699577,"~/.vimrc"
+-'  26  57  ~/.vimrc
+|4,39,26,57,1566699577,"~/.vimrc"
+-'  29  97  ~/.vimrc
+|4,39,29,97,1566699577,"~/.vimrc"
+-'  35  22  ~/.vimrc
+|4,39,35,22,1566699577,"~/.vimrc"
+-'  36  23  ~/.vimrc
+|4,39,36,23,1566699576,"~/.vimrc"
+-'  48  7  ~/.vimrc
+|4,39,48,7,1566699576,"~/.vimrc"
+-'  49  21  ~/.vimrc
+|4,39,49,21,1566699576,"~/.vimrc"
+-'  50  5  ~/.vimrc
+|4,39,50,5,1566699576,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1566699500	0
-	"	3	0
-	^	3	0
-	.	2	4
+	*	1566699770	0
+	"	16	7
+	^	16	8
+	.	16	7
 	+	15	11
 	+	16	0
 	+	5	0
@@ -901,6 +903,48 @@ $
 	+	2	0
 	+	16	0
 	+	2	4
+	+	16	7
+
+> ~/.vimrc
+	*	1566699584	0
+	"	76	0
+	^	76	54
+	.	76	99
+	+	64	27
+	+	64	24
+	+	95	0
+	+	94	0
+	+	98	0
+	+	99	0
+	+	69	10
+	+	160	72
+	+	160	66
+	+	160	35
+	+	160	56
+	+	160	0
+	+	160	62
+	+	160	60
+	+	160	10
+	+	160	2
+	+	160	38
+	+	5	0
+	+	3	71
+	+	3	69
+	+	5	0
+	+	3	62
+	+	160	10
+	+	160	0
+	+	162	0
+	+	160	0
+	+	161	52
+	+	162	46
+	+	72	35
+	+	73	0
+	+	72	42
+	+	76	28
+	+	76	32
+	+	77	0
+	+	76	99
 
 > ~/_projects/str-slicer/.flake8
 	*	1566663357	0
@@ -967,47 +1011,6 @@ $
 > ~/.joplin/Joplin_install_and_update.sh
 	*	1566533523	0
 	"	67	0
-
-> ~/.vimrc
-	*	1566532548	0
-	"	81	71
-	^	76	54
-	.	76	99
-	+	64	27
-	+	64	24
-	+	95	0
-	+	94	0
-	+	98	0
-	+	99	0
-	+	69	10
-	+	160	72
-	+	160	66
-	+	160	35
-	+	160	56
-	+	160	0
-	+	160	62
-	+	160	60
-	+	160	10
-	+	160	2
-	+	160	38
-	+	5	0
-	+	3	71
-	+	3	69
-	+	5	0
-	+	3	62
-	+	160	10
-	+	160	0
-	+	162	0
-	+	160	0
-	+	161	52
-	+	162	46
-	+	72	35
-	+	73	0
-	+	72	42
-	+	76	28
-	+	76	32
-	+	77	0
-	+	76	99
 
 > ~/.npmrc
 	*	1566532309	0
