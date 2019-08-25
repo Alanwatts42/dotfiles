@@ -1,17 +1,29 @@
 # Dotfiles gitignore
-*   
+*
+.viminfo
+
 # ignore all files not listed below preceded with a '!'
 
+# vim
 !.vimrc
-!.vim/*
-!README
-!crashlog-1.md
-!.gitconfig
+!.vim
+!.vim/ftplugin/python.vim
+!.vim/templates/skeleton.*
+!.vim/ftdetect/*.vim
+!.vim/autoload/*.vim
+
+# terminal (bash and zsh) 
+!.bashrc
 !.purepower
 !.profile
-!.bashrc
-!.zshrc
-!.gitignore
 !.zplug
+!.zshrc
 
-.viminfo
+# git
+!.gitignore
+!.gitconfig
+
+# misc
+!crashlog-1.md
+!README
+!.ssh
