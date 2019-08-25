@@ -21,11 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1566699770,,"wq"
+|2,0,1566711943,,"wq"
 :w
-|2,0,1566699769,,"w"
+|2,0,1566711941,,"w"
 :q
-|2,0,1566663358,,"q"
+|2,0,1566710966,,"q"
+:w github-gpgkey.md
+|2,0,1566710545,,"w github-gpgkey.md"
 :W
 |2,0,1566620967,,"W"
 :w dockwidget-colors.md
@@ -610,43 +612,113 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	(blue)
-|3,0,0,0,1,0,1566619764,"(blue)"
-"1@	LINE	0
-	sso-type=oauth
-|3,2,1,1,1,0,1566532290,"sso-type=oauth"
+"0	LINE	0
+	-----BEGIN PGP PUBLIC KEY BLOCK-----
+	
+	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
+|3,0,0,1,50,0,1566711383,"-----BEGIN PGP PUBLIC KEY BLOCK-----","","mQINBF1iGjUBEADCdIjVN67HIR5w9I3/DnwXzvn3eD6tdFVMueGOw+KUjMqqvvHK","1xSmIWcex/dv8pH/WU8wfZkiGq8BZihee3qs4SuuE4l0D8DbUWC3kf6U/J/FnnQB","vurZfQCfMG7rxEbfvz/Xmxt8jmlNMQ+aHufi2K3SP7SsggfHK5BtlL3P0n52TqTC","GXT0IQpRCAQECQFgaCt1qYJHyIhjoOl53X9yILZ/E5uyI48zX2knPza21HI/h1A/","22U7yxmcN5PSs8dlPgBsB8dsLiWLYk5zFYwJpPLRKqpV1+u+bxdZQSW8fNagAqpY",>66
+|<"3+PDLMG8vaO0klwJ1VXTlka+LfgTIK+Dj4llEoEZfY6rG2RpXkSO56e1S72PJajV","6T9Nxhd0FH9B/2Ywg3UMbEyqEIEo9rYtg24lD1EDY+QQFOs/etwuwcSkREUU+T0E","FhG5cf2aYRXjIh3Z9a+OkzplokMDmm2PFtOXRzzkHKZ8F0m0oPpAjI4vPkJkaBHW","Upm5cq0Elv9ZvXd7WTCzgDzLUIhle+3W1F1PpZAhL77Hoq6igFCvt37UOpE44Qic","cX2nyECqOmQvDeqW1vGcTcbXAWk68ODZkyGCDQl3F7/buhkgOo/VNYyqsMzpMz8H","1KGhEhJ1YF/W5vHC77EyZgli2xDGRBht7Xin5WQzZNOtcssR6PlPpKZSkQARAQAB","tFFFdmFuIFNoZXJ3b29kIChjcmVhdGluZyBncGcga2V5IGZvciBteSBnaXRodWIg",>66
+|<"YWxhbndhdHRzNDIpIDxldmFuemVtYWlsQGdtYWlsLmNvbT6JAk4EEwEKADgWIQRT","32atDLOqKXWi0kTb2iUgXdPOLwUCXWIaNQIbAwULCQgHAgYVCgkICwIEFgIDAQIe","AQIXgAAKCRDb2iUgXdPOL86RD/98Md/EtFmWQQHaJK6chsgmkHXNxcyTcHm6HXbp","5b83tZjrDyVnYeFd2MLj9TIPK5Hs4i6DmNJDaMs/KwAaTESEBG58thkOhK3+uSAl","T/KO2D9+2t5Zk7v2U/B1oLMId04jKIm68Yd1q3sViGlYxAeHvkP+uXqclc7OWERD","0jtwlvS+s0xAgJP7wbcIEFK8HMkkhFuOGTPK/7D26+jJFbucHeAkSBBEWG/2iWlS","2U3eI3hHQlhRFgluAQ193NbPgH7GcPOSBTUkE1CXCKp+PdASmuswWhZyJHoGIq2A",>66
+|<"IwNuZiLWV4SLBfjSEkAeydXlEau1RrafFdlmPlY3029RBxi54CG/Co7AXIQblURv","UPO97METUhZucpfS8do5jtIy7H9G0c11QoRSWceL6wkBSpUlolEiqPb6DsilEnnz","3eFuh0RxT/XIX8yI+XX88gWRWMfRJUzd+SpjD6Ln+evb2ZULzXdLOHlo8e1XLb/G","ISoipoiGw20a3nfM4aLggaBaR/i06290qeNLgrttvkJpuS7M887xF+zYGgPOiQPe","7MA7P910bwTu0fB3Xsx1JhxdIzKf29PrdXm6dU0JH/+GkmTRmWZRJ8FrBBoZHwAs","SRHY+STXwkXioWeVY2PcBfrE69o67jHVh9vyHg0TU2A0WNWL9lRq7dyLu/RTd+Ff","RAEIxrkCDQRdYho1ARAAtwmIsrtWm9SFuOHS5ifoMkdScV6BkadcIQK6CzdNK3Wl",>66
+|<"lBUHW1dXQlHKVqMR2Rg2CdHxBnlaGLqV5oxWgw4/S3aw5298IFVcAQsvWgTLefwQ","aqJO8sFHDs5lPFZXS29O+tSH1yn+qEVS0Kr9Bki+wh0pDX0/Hr8h69UOGFEWDHlx","VihJT6oW7UYxt8L34wy8Aqq5hUHm5mbTvFiAg+plKb4SADlbv+v+m7tXhBx90Wuo","XKfvhmQy8QZNJ8Tr2Jdo3O0rgB+nBBmdicH/HxuT6KoFg1bRokreKb32VpbaWdHr","IixsgyjObGwK67UhYkM/z2RVg0olRQEXC3GTG+ZIMjqHFVcdH83w3kMZmQrZ8FMM","FOpd11XWvvdKjt4yPY4PCc2N5YpSr+102OE6M1u3qaKQ7d3h4I+aZHKhUC6/qGDF","IG5RzO0gkLegDpZ01/o3FklAFZrwSp13pZp6ORDOoIv9sKiqiZsSl8P0cZbcUP21",>66
+|<"yZcdkPzi/l0CUaYkKraXQkaEIBijryqr2TifhU03DCSZQk+OO7Fk8pCUKOme1OyJ","Vafu9S/UsxZFsyQecwDTLDCMzeU7ZuaR/4Cc6oiSI3blQJiSbyh5Fp9ZSAOdzd7J","e9eDomSywVq/MV6I5iIwNSyrZ0IG+rG/iAuzVp2zW3tCkg9fd4rz15F9z4Uh5FMA","EQEAAYkCNgQYAQoAIBYhBFPfZq0Ms6opdaLSRNvaJSBd084vBQJdYho1AhsMAAoJ","ENvaJSBd084vOeIQAKvisgc0NYxGEMxh3DrZxUYmARF97Guag3vFMBsuW/cSSZpe","fR34yRG+uRk4aoS61kgOqNqwR5gJ2MYQSG/lFUaaRfdd0yHA6BfYcOv+qrBCopl4","6WvKakCd4AkM9KIZH0kWNNmkwNnFwp/5aUL98ILoh2/g5IzrXF8McT8Fgrc4JIyq",>66
+|<"nmKVCRs1KkHoOKOrUMvUYPURMBGQAFDZcmToiBLTiPpdy8D3v2/cnbdGmVmJK2uH","FkM7SKlVVH+CbGg40Qq3qxbDDz9/tJTz3/ZqasJW66b/mQwggzoQ6olr9P+X4WAM","ufmyV2g8MeyDRhkMSeVbd8BJirxrinw6fi/dlVXlpse19hdly0CoJ2KEUIUYedJF","QPC/fUtpsRqGmEj4P/T7Tg+2FAwzRvEDFt+qAbDGEhkyhIdBDoxISv/GX4kC7D1k","gOoA01C9bpuxzz/rWMN0MKneeYP7p+1qaaHy4CC+3w/8J7UMXO46yKpWcKDlhpcd","8NtjkiGKBNBxacCJeuBVD98ztI5iA3tDeEyv0wL0T9TD6yAEuZj4mXqLQsErpHbF","QVKkvJqAUBCbsAEpPRQTqn2geJXHCiRmz5y7xOuzp2sAWmTTkUvBU/7Rk3nI3kMg",>62
+|<"ObD+ohQ4qluEl1ZC8va/UoVTA4a+wlQR3iS8w7EdNgeJFXjZqB/+kICIWAFK"
+""1@	LINE	0
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+|3,3,1,1,16,0,1566711940,"","","","","","","","","","","","","","","",""
 "2	LINE	0
+	pub   rsa4096 2019-08-25 [SC]
+	      53DF66AD0CB3AA2975A2D244DBDA25205DD3CE2F
+|3,0,2,1,2,0,1566710429,"pub   rsa4096 2019-08-25 [SC]","      53DF66AD0CB3AA2975A2D244DBDA25205DD3CE2F"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1566710415,""
+"4	LINE	0
+	sso-type=oauth
+|3,0,4,1,1,0,1566532290,"sso-type=oauth"
+"5	LINE	0
 	on linter
-|3,0,2,1,1,0,1566531936,"on linter"
-"3	CHAR	0
+|3,0,5,1,1,0,1566531936,"on linter"
+"6	CHAR	0
 	for '*.ini' (i.e. nodejs config file)
 	
-|3,0,3,0,2,0,1566531170,"for '*.ini' (i.e. nodejs config file)",""
-"4	CHAR	0
+|3,0,6,0,2,0,1566531170,"for '*.ini' (i.e. nodejs config file)",""
+"7	CHAR	0
 	not compatible with vi, required for certain options
 	
-|3,0,4,0,2,0,1566530995,"not compatible with vi, required for certain options",""
-"5	LINE	0
+|3,0,7,0,2,0,1566530995,"not compatible with vi, required for certain options",""
+"8	LINE	0
 	npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42
 	> Username: Alanwatts42
 	> Password: K1llingit$
 	> Email: evanzemail@gmail.com
-|3,0,5,1,4,0,1566513516,"npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42","> Username: Alanwatts42","> Password: K1llingit$","> Email: evanzemail@gmail.com"
-"6	LINE	0
-	gin --registry=https://npm.pkg.github.com --scope=@OWNER
-|3,0,6,1,1,0,1566513503,"gin --registry=https://npm.pkg.github.com --scope=@OWNER"
-"7	LINE	0
-	> Username: 
-	> Password: TOKEN
-	> Email: PUBLIC EMAIL ADDRESS
-|3,0,7,1,3,0,1566513470,"> Username: ","> Password: TOKEN","> Email: PUBLIC EMAIL ADDRESS"
-"8	LINE	0
-	
-|3,0,8,1,1,0,1566511297,""
+|3,0,8,1,4,0,1566513516,"npm login --registry=https://npm.pkg.github.com --scope=@Alanwatts42","> Username: Alanwatts42","> Password: K1llingit$","> Email: evanzemail@gmail.com"
 "9	LINE	0
-	bool_fullscreen [true]
-|3,0,9,1,1,0,1566511274,"bool_fullscreen [true]"
+	gin --registry=https://npm.pkg.github.com --scope=@OWNER
+|3,0,9,1,1,0,1566513503,"gin --registry=https://npm.pkg.github.com --scope=@OWNER"
 "a	CHAR	0
 	
 |3,0,10,0,1,0,1565044942,""
@@ -656,235 +728,294 @@ $
 "w	CHAR	0
 	€kb€kb;€kb€kb
 |3,0,32,0,1,0,1564829397,"€kb€kb;€kb€kb"
-""-	CHAR	0
-	o*
-|3,1,36,0,1,0,1566699766,"o*"
+"-	CHAR	0
+	```
+|3,0,36,0,1,0,1566710451,"```"
 
 # File marks:
-'0  16  7  ~/.gitignore
-|4,48,16,7,1566699771,"~/.gitignore"
-'1  76  0  ~/.vimrc
-|4,49,76,0,1566699587,"~/.vimrc"
-'2  3  0  ~/.gitignore
-|4,50,3,0,1566699502,"~/.gitignore"
-'3  3  0  ~/.gitignore
-|4,51,3,0,1566699502,"~/.gitignore"
-'4  22  0  ~/_projects/str-slicer/.flake8
-|4,52,22,0,1566663358,"~/_projects/str-slicer/.flake8"
-'5  11  0  /etc/wicd/dhclient.conf.template
-|4,53,11,0,1566659551,"/etc/wicd/dhclient.conf.template"
-'6  1  0  /etc/wicd/wireless-settings.conf
-|4,54,1,0,1566659444,"/etc/wicd/wireless-settings.conf"
-'7  33  29  /etc/wpa_supplicant/functions.sh
-|4,55,33,29,1566659409,"/etc/wpa_supplicant/functions.sh"
-'8  1  0  /sbin/wpa_cli
-|4,56,1,0,1566658937,"/sbin/wpa_cli"
-'9  100  0  ~/.zshrc
-|4,57,100,0,1566657070,"~/.zshrc"
+'0  52  0  ~/_security/github-gpgkey-block
+|4,48,52,0,1566711943,"~/_security/github-gpgkey-block"
+'1  12  0  ~/_repos/my_github_gpgkey
+|4,49,12,0,1566711469,"~/_repos/my_github_gpgkey"
+'2  12  0  ~/_security/github-gpg-key
+|4,50,12,0,1566710966,"~/_security/github-gpg-key"
+'3  1  0  ~/scratchpad.md
+|4,51,1,0,1566710841,"~/scratchpad.md"
+'4  18  0  ~/git-gpg-notes.md
+|4,52,18,0,1566710658,"~/git-gpg-notes.md"
+'5  16  7  ~/.gitignore
+|4,53,16,7,1566699771,"~/.gitignore"
+'6  76  0  ~/.vimrc
+|4,54,76,0,1566699587,"~/.vimrc"
+'7  3  0  ~/.gitignore
+|4,55,3,0,1566699502,"~/.gitignore"
+'8  3  0  ~/.gitignore
+|4,56,3,0,1566699502,"~/.gitignore"
+'9  22  0  ~/_projects/str-slicer/.flake8
+|4,57,22,0,1566663358,"~/_projects/str-slicer/.flake8"
 
 # Jumplist (newest first):
+-'  52  0  ~/_security/github-gpgkey-block
+|4,39,52,0,1566711943,"~/_security/github-gpgkey-block"
+-'  12  0  ~/_repos/my_github_gpgkey
+|4,39,12,0,1566711469,"~/_repos/my_github_gpgkey"
+-'  1  0  ~/_security/github-gpgkey-block
+|4,39,1,0,1566711217,"~/_security/github-gpgkey-block"
+-'  1  0  ~/_repos/my_github_gpgkey
+|4,39,1,0,1566711101,"~/_repos/my_github_gpgkey"
+-'  12  0  ~/_security/github-gpg-key
+|4,39,12,0,1566710966,"~/_security/github-gpg-key"
+-'  12  0  ~/_security/github-gpg-key
+|4,39,12,0,1566710966,"~/_security/github-gpg-key"
+-'  12  0  ~/_security/github-gpg-key
+|4,39,12,0,1566710966,"~/_security/github-gpg-key"
+-'  1  0  ~/_security/github-gpg-key
+|4,39,1,0,1566710961,"~/_security/github-gpg-key"
+-'  1  0  ~/_security/github-gpg-key
+|4,39,1,0,1566710961,"~/_security/github-gpg-key"
+-'  1  0  ~/_security/github-gpg-key
+|4,39,1,0,1566710961,"~/_security/github-gpg-key"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  1  0  ~/scratchpad.md
+|4,39,1,0,1566710841,"~/scratchpad.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  18  0  ~/git-gpg-notes.md
+|4,39,18,0,1566710658,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  20  0  ~/git-gpg-notes.md
+|4,39,20,0,1566710430,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  1  0  ~/git-gpg-notes.md
+|4,39,1,0,1566707348,"~/git-gpg-notes.md"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1566699771,"~/.gitignore"
 -'  16  7  ~/.gitignore
 |4,39,16,7,1566699771,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1566699669,"~/.gitignore"
--'  76  0  ~/.vimrc
-|4,39,76,0,1566699587,"~/.vimrc"
--'  76  0  ~/.vimrc
-|4,39,76,0,1566699587,"~/.vimrc"
--'  75  0  ~/.vimrc
-|4,39,75,0,1566699584,"~/.vimrc"
--'  72  0  ~/.vimrc
-|4,39,72,0,1566699584,"~/.vimrc"
--'  71  0  ~/.vimrc
-|4,39,71,0,1566699584,"~/.vimrc"
--'  75  0  ~/.vimrc
-|4,39,75,0,1566699584,"~/.vimrc"
--'  72  0  ~/.vimrc
-|4,39,72,0,1566699584,"~/.vimrc"
--'  71  0  ~/.vimrc
-|4,39,71,0,1566699584,"~/.vimrc"
--'  70  0  ~/.vimrc
-|4,39,70,0,1566699583,"~/.vimrc"
--'  69  0  ~/.vimrc
-|4,39,69,0,1566699583,"~/.vimrc"
--'  68  0  ~/.vimrc
-|4,39,68,0,1566699583,"~/.vimrc"
--'  67  0  ~/.vimrc
-|4,39,67,0,1566699583,"~/.vimrc"
--'  70  0  ~/.vimrc
-|4,39,70,0,1566699583,"~/.vimrc"
--'  69  0  ~/.vimrc
-|4,39,69,0,1566699583,"~/.vimrc"
--'  68  0  ~/.vimrc
-|4,39,68,0,1566699583,"~/.vimrc"
--'  67  0  ~/.vimrc
-|4,39,67,0,1566699583,"~/.vimrc"
--'  79  0  ~/.vimrc
-|4,39,79,0,1566699581,"~/.vimrc"
--'  79  0  ~/.vimrc
-|4,39,79,0,1566699581,"~/.vimrc"
--'  80  0  ~/.vimrc
-|4,39,80,0,1566699580,"~/.vimrc"
--'  81  0  ~/.vimrc
-|4,39,81,0,1566699580,"~/.vimrc"
--'  84  0  ~/.vimrc
-|4,39,84,0,1566699580,"~/.vimrc"
--'  85  0  ~/.vimrc
-|4,39,85,0,1566699580,"~/.vimrc"
--'  86  0  ~/.vimrc
-|4,39,86,0,1566699580,"~/.vimrc"
--'  87  0  ~/.vimrc
-|4,39,87,0,1566699580,"~/.vimrc"
--'  80  0  ~/.vimrc
-|4,39,80,0,1566699580,"~/.vimrc"
--'  81  0  ~/.vimrc
-|4,39,81,0,1566699580,"~/.vimrc"
--'  84  0  ~/.vimrc
-|4,39,84,0,1566699580,"~/.vimrc"
--'  85  0  ~/.vimrc
-|4,39,85,0,1566699580,"~/.vimrc"
--'  86  0  ~/.vimrc
-|4,39,86,0,1566699580,"~/.vimrc"
--'  87  0  ~/.vimrc
-|4,39,87,0,1566699580,"~/.vimrc"
--'  88  0  ~/.vimrc
-|4,39,88,0,1566699579,"~/.vimrc"
--'  89  0  ~/.vimrc
-|4,39,89,0,1566699579,"~/.vimrc"
--'  92  0  ~/.vimrc
-|4,39,92,0,1566699579,"~/.vimrc"
--'  93  0  ~/.vimrc
-|4,39,93,0,1566699579,"~/.vimrc"
--'  94  0  ~/.vimrc
-|4,39,94,0,1566699579,"~/.vimrc"
--'  95  0  ~/.vimrc
-|4,39,95,0,1566699579,"~/.vimrc"
--'  96  0  ~/.vimrc
-|4,39,96,0,1566699579,"~/.vimrc"
--'  97  0  ~/.vimrc
-|4,39,97,0,1566699579,"~/.vimrc"
--'  100  0  ~/.vimrc
-|4,39,100,0,1566699579,"~/.vimrc"
--'  101  0  ~/.vimrc
-|4,39,101,0,1566699579,"~/.vimrc"
--'  104  0  ~/.vimrc
-|4,39,104,0,1566699579,"~/.vimrc"
--'  105  0  ~/.vimrc
-|4,39,105,0,1566699579,"~/.vimrc"
--'  106  0  ~/.vimrc
-|4,39,106,0,1566699579,"~/.vimrc"
--'  107  0  ~/.vimrc
-|4,39,107,0,1566699579,"~/.vimrc"
--'  110  1  ~/.vimrc
-|4,39,110,1,1566699579,"~/.vimrc"
--'  111  0  ~/.vimrc
-|4,39,111,0,1566699579,"~/.vimrc"
--'  112  0  ~/.vimrc
-|4,39,112,0,1566699579,"~/.vimrc"
--'  113  0  ~/.vimrc
-|4,39,113,0,1566699579,"~/.vimrc"
--'  116  0  ~/.vimrc
-|4,39,116,0,1566699579,"~/.vimrc"
--'  117  0  ~/.vimrc
-|4,39,117,0,1566699579,"~/.vimrc"
--'  118  0  ~/.vimrc
-|4,39,118,0,1566699579,"~/.vimrc"
--'  119  0  ~/.vimrc
-|4,39,119,0,1566699579,"~/.vimrc"
--'  88  0  ~/.vimrc
-|4,39,88,0,1566699579,"~/.vimrc"
--'  89  0  ~/.vimrc
-|4,39,89,0,1566699579,"~/.vimrc"
--'  92  0  ~/.vimrc
-|4,39,92,0,1566699579,"~/.vimrc"
--'  93  0  ~/.vimrc
-|4,39,93,0,1566699579,"~/.vimrc"
--'  94  0  ~/.vimrc
-|4,39,94,0,1566699579,"~/.vimrc"
--'  95  0  ~/.vimrc
-|4,39,95,0,1566699579,"~/.vimrc"
--'  96  0  ~/.vimrc
-|4,39,96,0,1566699579,"~/.vimrc"
--'  97  0  ~/.vimrc
-|4,39,97,0,1566699579,"~/.vimrc"
--'  100  0  ~/.vimrc
-|4,39,100,0,1566699579,"~/.vimrc"
--'  101  0  ~/.vimrc
-|4,39,101,0,1566699579,"~/.vimrc"
--'  104  0  ~/.vimrc
-|4,39,104,0,1566699579,"~/.vimrc"
--'  105  0  ~/.vimrc
-|4,39,105,0,1566699579,"~/.vimrc"
--'  106  0  ~/.vimrc
-|4,39,106,0,1566699579,"~/.vimrc"
--'  107  0  ~/.vimrc
-|4,39,107,0,1566699579,"~/.vimrc"
--'  110  1  ~/.vimrc
-|4,39,110,1,1566699579,"~/.vimrc"
--'  111  0  ~/.vimrc
-|4,39,111,0,1566699579,"~/.vimrc"
--'  112  0  ~/.vimrc
-|4,39,112,0,1566699579,"~/.vimrc"
--'  113  0  ~/.vimrc
-|4,39,113,0,1566699579,"~/.vimrc"
--'  116  0  ~/.vimrc
-|4,39,116,0,1566699579,"~/.vimrc"
--'  117  0  ~/.vimrc
-|4,39,117,0,1566699579,"~/.vimrc"
--'  118  0  ~/.vimrc
-|4,39,118,0,1566699579,"~/.vimrc"
--'  119  0  ~/.vimrc
-|4,39,119,0,1566699579,"~/.vimrc"
--'  120  0  ~/.vimrc
-|4,39,120,0,1566699578,"~/.vimrc"
--'  123  5  ~/.vimrc
-|4,39,123,5,1566699578,"~/.vimrc"
--'  125  9  ~/.vimrc
-|4,39,125,9,1566699578,"~/.vimrc"
--'  181  48  ~/.vimrc
-|4,39,181,48,1566699578,"~/.vimrc"
--'  407  35  ~/.vimrc
-|4,39,407,35,1566699578,"~/.vimrc"
--'  21  14  ~/.vimrc
-|4,39,21,14,1566699578,"~/.vimrc"
--'  120  0  ~/.vimrc
-|4,39,120,0,1566699578,"~/.vimrc"
--'  123  5  ~/.vimrc
-|4,39,123,5,1566699578,"~/.vimrc"
--'  125  9  ~/.vimrc
-|4,39,125,9,1566699578,"~/.vimrc"
--'  181  48  ~/.vimrc
-|4,39,181,48,1566699578,"~/.vimrc"
--'  407  35  ~/.vimrc
-|4,39,407,35,1566699578,"~/.vimrc"
--'  21  14  ~/.vimrc
-|4,39,21,14,1566699578,"~/.vimrc"
--'  22  23  ~/.vimrc
-|4,39,22,23,1566699577,"~/.vimrc"
--'  26  57  ~/.vimrc
-|4,39,26,57,1566699577,"~/.vimrc"
--'  29  97  ~/.vimrc
-|4,39,29,97,1566699577,"~/.vimrc"
--'  35  22  ~/.vimrc
-|4,39,35,22,1566699577,"~/.vimrc"
--'  22  23  ~/.vimrc
-|4,39,22,23,1566699577,"~/.vimrc"
--'  26  57  ~/.vimrc
-|4,39,26,57,1566699577,"~/.vimrc"
--'  29  97  ~/.vimrc
-|4,39,29,97,1566699577,"~/.vimrc"
--'  35  22  ~/.vimrc
-|4,39,35,22,1566699577,"~/.vimrc"
--'  36  23  ~/.vimrc
-|4,39,36,23,1566699576,"~/.vimrc"
--'  48  7  ~/.vimrc
-|4,39,48,7,1566699576,"~/.vimrc"
--'  49  21  ~/.vimrc
-|4,39,49,21,1566699576,"~/.vimrc"
--'  50  5  ~/.vimrc
-|4,39,50,5,1566699576,"~/.vimrc"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1566699669,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/_security/github-gpgkey-block
+	*	1566711942	0
+	"	52	0
+	.	53	0
+	+	53	0
+
+> ~/_repos/my_github_gpgkey
+	*	1566711467	0
+	"	12	0
+
+> ~/_security/github-gpg-key
+	*	1566710965	0
+	"	12	0
+
+> ~/scratchpad.md
+	*	1566710840	0
+	"	1	0
+	^	17	0
+	.	16	0
+	+	5	0
+	+	16	0
+
+> ~/git-gpg-notes.md
+	*	1566710557	0
+	"	18	0
+	^	19	0
+	.	18	0
+	+	1	0
+	+	5	0
+	+	5	35
+	+	9	16
+	+	38	43
+	+	32	0
+	+	34	5
+	+	35	0
+	+	34	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	32	2
+	+	31	2
+	+	32	3
+	+	29	4
+	+	12	21
+	+	28	0
+	+	25	28
+	+	28	0
+	+	21	0
+	+	10	0
+	+	11	2
+	+	27	2
+	+	11	0
+	+	13	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	16	0
+	+	18	0
 
 > ~/.gitignore
 	*	1566699770	0
