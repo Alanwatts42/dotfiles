@@ -12,7 +12,7 @@ augroup END
 if has("win32")
   let dotvim = 'C:\Users\evan\vimfiles\'
 else
-  let dotvim = "/home/evan/.vim/"
+  let dotvim = "~/.vim/"
 endif
  
 let bundle = dotvim."bundle"
