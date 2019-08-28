@@ -32,4 +32,5 @@
 # misc
 !crashlog-1.md
 !README
+!.ssh/*
 !.ssh
