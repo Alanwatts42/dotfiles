@@ -20,7 +20,6 @@
 !.zshrc
 !.aliases
 !.aliases-m
-!powerlevel10k
 
 # git
 !.gitignore
