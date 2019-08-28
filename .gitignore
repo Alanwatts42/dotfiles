@@ -21,6 +21,7 @@
 !.aliases
 !.aliases-m
 !powerlevel10k/*
+!powerlevel10k
 
 # git
 !.gitignore
