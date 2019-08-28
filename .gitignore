@@ -18,6 +18,8 @@
 !.profile
 !.zplug
 !.zshrc
+!.aliases
+!.aliases-m
 
 # git
 !.gitignore
