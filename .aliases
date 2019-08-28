@@ -5,12 +5,16 @@
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
 # Functions - similar to aliases, but can have things like parameters/variables
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
-apt-grab(){
-    "sudo apt-get install ${0} --install-suggests"
+func apt-grab() {
+    "sudo apt-get install ${1} --install-suggests"
 }
 
-wifi-func(){
-    "sudo nmcli dev wifi connect ${0} password ${1}"
+func wifi-func() {
+    "sudo nmcli dev wifi connect ${1} password ${2}"
+}
+
+func shinstall() {
+    "sudo apt-get -fm install ${1} --install-suggests"
 }
 
 # Terminal navigation
@@ -101,3 +105,5 @@ alias youtubedll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-f
 alias shinstall="~/shinstall.sh"
 # wget
 alias wget="wget -t 99 --retry-connrefused"
+
+
