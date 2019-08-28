@@ -1,3 +1,6 @@
 [submodule "powerlevel10k"]
 	path = powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
+[submodule ".zplug"]
+	path = .zplug
+	url = git@github.com:zplug/zplug.git
