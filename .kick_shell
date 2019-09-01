@@ -1,0 +1,6 @@
+# Custom commands
+# This file adds shell scripts to path so I can execute them like commands
+# without needing to explictly type out their full path or ".sh" etc.
+
+# export ssh-url="$ssh-url:~/_projects/lets_kick_shell/ssh-url.sh"
+

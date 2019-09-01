@@ -22,6 +22,7 @@
 !.aliases-m
 !powerlevel10k/*
 !powerlevel10k
+!.kick_shell
 
 # git
 !.gitignore

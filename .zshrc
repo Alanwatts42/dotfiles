@@ -98,3 +98,14 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 #         source /etc/profile.d/vte.sh
 # fi
+
+# Source '~/.kick_shell' which is where I define custom shell commands
+if [ -f "$HOME/.kick_shell" ]
+then
+    # shellcheck source=/dev/null
+    source "$HOME/.kick_shell"
+fi
+
+# Shellcheck overrides
+export SHELLCHECK_OPTS='--shell=bash,zsh --exclude=SC2016,SC2035'
+

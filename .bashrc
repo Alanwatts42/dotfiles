@@ -48,7 +48,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=no
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -218,7 +218,7 @@ function retropie_welcome() {
                 out+="${fgred}Uptime.............: ${UPTIME}"
                 ;;
             6)
-                out+="${fgred}Memory.............: $(grep MemFree /proc/meminfo | awk {'print $2'})kB (Free) / $(grep MemTotal /proc/meminfo | awk {'print $2'})kB (Total)"
+                out+="${fgred}Memory.............: $(grep MemFree /proc/meminfo | awk "{'print $2'}")kB (Free) / $(grep MemTotal /proc/meminfo | awk "{'print $2'}")kB (Total)"
                 ;;
             7)
                 out+="${fgred}Running Processes..: $(ps ax | wc -l | tr -d " ")"
@@ -238,5 +238,14 @@ function retropie_welcome() {
     echo -e "\n$out"
 }
 
-retropie_welcome
-# RETROPIE PROFILE END
+# Source '~/.kick_shell' which is where I define custom shell commands
+if [ -f "$HOME/.kick_shell" ]
+then
+    # shellcheck source=/dev/null
+    source "$HOME/.kick_shell"
+fi
+
+# Shellcheck overrides
+export SHELLCHECK_OPTS='--shell=bash,zsh --exclude=SC2016,SC2035'
+
+

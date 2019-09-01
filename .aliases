@@ -5,17 +5,15 @@
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
 # Functions - similar to aliases, but can have things like parameters/variables
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
-func apt-grab() {
-    "sudo apt-get install ${1} --install-suggests"
-}
+# }
 
-func wifi-func() {
-    "sudo nmcli dev wifi connect ${1} password ${2}"
-}
-
-func shinstall() {
-    "sudo apt-get -fm install ${1} --install-suggests"
-}
+# func wifi-func() {
+#     "sudo nmcli dev wifi connect ${1} password ${2}"
+# }
+#
+# func shinstall() {
+#     "sudo apt-get -fm install ${1} --install-suggests"
+# }
 
 # Terminal navigation
 alias ls="ls -a --color=auto"
