@@ -94,6 +94,9 @@ alias py="python3"
 # Custom Scripts
 alias sync-dfs="~/sync.sh"
 
+# Custom Shell Commands
+alias lets_kick_shell="vim $HOME/.kick_shell"
+
 # --Apps--
 # qutebrowser (start with debug features on)
 alias qtbrowse="qutebrowser --debug --debug"
