@@ -88,19 +88,16 @@ setopt AUTO_CD
 # Sources >>
 source ~/.aliases
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-# source ~/.purepower
+# source ~/.purepower 
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-# Tilix config
+# Tilix config >
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte*.sh
 fi
-# Custom shell commands
+# Custom shell commands >
+# to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
 if [ -f "$HOME/.kick_shell" ] 
 then
     source "$HOME/.kick_shell"
 fi
-# to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
-
-# Set Vim as pager for `man` manual files
-export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"

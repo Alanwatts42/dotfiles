@@ -248,4 +248,4 @@ fi
 # Shellcheck overrides
 export SHELLCHECK_OPTS='--shell=bash,zsh --exclude=SC2016,SC2035'
 
-export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
+# export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"

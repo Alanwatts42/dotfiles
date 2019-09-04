@@ -119,6 +119,9 @@ Plug 'fisadev/FixedTaskList.vim' " pending tasks list
 Plug 'rosenfeld/conque-term' " consoles as buffers
 Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
 
+" ==Experimental==
+Plug 'powerman/vim-plugin-viewdoc'  " View documentation like 'man' pages and others in vim
+
 
 call plug#end() " automatically executes: 'filetype plugin indent on'  and 'syntax enable'
 

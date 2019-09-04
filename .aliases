@@ -23,7 +23,7 @@ alias lsg="ls -GAp --group-directories-first"
 alias lsd="ls -plax --group-directories-first"
 
 # Apt or apt-get shortcuts for convenience
-alias aptupgrade="sudo apt-get update && sudo apt-get dist-upgrade"
+alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade"
 alias aptgo="sudo apt-get"
 alias aptinstall="sudo apt-get -f install"
 alias aptgoup="sudo apt update && sudo apt upgrade"
