@@ -4,7 +4,7 @@
 # without needing to explictly type out their full path or ".sh" etc.
 
 ssh-url () {
-    echo sh "$HOME/_projects/lets_kick_shell/ssh-url.sh"
+    bash "$HOME/_projects/lets_kick_shell/ssh-url.sh"
 }
 
 

@@ -139,8 +139,7 @@ let g:airline_theme='lucius'
 " \make file executable \Create temp file \execute \dump output to it \new tab
 " \read file in new tab \delete temp file
 " code:
-nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>
-     \ :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
+nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>:tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
 " \\ ==end==
 " Run python code in current file with F9
 " nnoremap <F9> :w<cr>:!python %<cr>

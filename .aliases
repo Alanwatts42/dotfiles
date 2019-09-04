@@ -18,23 +18,27 @@
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
-alias lsa="ls -apw 100 --group-directories-first"
+alias lsa="ls -apw 110 --group-directories-first"
 alias lsg="ls -GAp --group-directories-first"
 alias lsd="ls -plax --group-directories-first"
 
 # Apt or apt-get shortcuts for convenience
-alias aptg-up="sudo apt-get update && sudo apt-get dist-upgrade"
-alias aptg="sudo apt-get"
-alias aptg-in="sudo apt-get -f install"
-alias apt-up="sudo apt update && sudo apt upgrade"
-alias apt-in="sudo apt install"
-alias apt-s="sudo apt search"
-alias purge="sudo apt-get purge"
-alias remove="sudo apt-get remove"
+alias aptupgrade="sudo apt-get update && sudo apt-get dist-upgrade"
+alias aptgo="sudo apt-get"
+alias aptinstall="sudo apt-get -f install"
+alias aptgoup="sudo apt update && sudo apt upgrade"
+alias aptgin="sudo apt-get install"
+alias aptseek="sudo apt search"
+alias aptpurge="sudo apt-get purge"
+alias aptremove="sudo apt-get remove"
 # add/remove repositories
 alias aptaddrepo="sudo add-apt-repository"
 alias aptrmrepo="sudo add-apt-repository --remove"
 alias aptrmppa:="sudo add-apt-repository --remove ppa:"
+alias listmyapps="sudo apt list --installed"
+alias myappsgrep="sudo apt list --installed | grep"
+alias listappsgrep="sudo apt list | grep"
+alias apshow="apt show"
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias xlight="xrandr --output eDP-1 --brightness"
@@ -106,5 +110,6 @@ alias youtubedll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-f
 alias shinstall="~/shinstall.sh"
 # wget
 alias wget="wget -t 99 --retry-connrefused"
-
+# curl
+alias curl="curl -retry 99 --retry-connrefused"
 
