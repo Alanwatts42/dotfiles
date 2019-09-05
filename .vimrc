@@ -58,17 +58,12 @@ endif
 call plug#begin(bundle)
 
 """ ==Development Environment and Enhancements==
-"Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
-"Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
-" Plug 'vim-syntastic/syntastic' " A linter, many options, much correct.
 Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
 Plug 'tpope/vim-surround'  " easy manipulation of surround chars
 Plug 'tomtom/tcomment_vim' " use gcc to comment/uncomment text under cursor
 Plug 'tpope/vim-commentary'  " tpope doesn't write docs, docs write themselves out of fear.
 Plug 'somini/vim-autoclose' " Auto-close when using grouping symbols i.e.'(), [], {}, '', '
-Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
-Plug 'jalvesaq/vimcmdline'  " run code on external terminal
 Plug 'PyCQA/pylint'         " Python linter
 
 """ ==Javascript==
@@ -89,16 +84,16 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Lokaltog/powerline' " tabline tool
 
 """ ==Git and Version Control==
-Plug 'tpope/vim-fugitive' " Git wrapper - control git with vim commands i.e. :Gcommit = git commit
+Plug 'tpope/vim-fugitive' " git wrapper - 'git commit'=':Gcommit'
 Plug 'tpope/vim-rhubarb' " something to do with git, I honestly forgot
 Plug 'junegunn/gv.vim' " diff tool - requires vim-fugitive to run
 Plug 'sodapopcan/vim-twiggy' " branch manager for git repositories
-Plug 'airblade/vim-gitgutter'  " diff tool - shows changes made to file being edited (as long as it's part of a git repo)
+Plug 'airblade/vim-gitgutter'  " excellent document diff tool
 Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ ==Atypical Filetype Handling==
-Plug 'plasticboy/vim-markdown' " Markdown handling in Vim 
-Plug 'godlygeek/tabular' " Req'd for vim-markdown
+Plug 'plasticboy/vim-markdown' " markdown handling in vim 
+Plug 'godlygeek/tabular' " vim-markdown needs this to run
 
 """ ==Snippets support ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
@@ -107,21 +102,28 @@ Plug 'tomtom/tlib_vim'                    " dependencies #2
 Plug 'honza/vim-snippets'                 " snippets repo
 
 """ ==Languages support ==
-"Plug 'tpope/vim-commentary'        " Comment stuff out
-Plug 'mitsuhiko/vim-sparkup'        " Sparkup(XML/jinja/htlm-django/etc.) support
-Plug 'Rykka/riv.vim'                "  ReStructuredText plugin
-Plug 'Valloric/YouCompleteMe'       " Autocomplete plugin
+Plug 'mitsuhiko/vim-sparkup'        " Sparkup(XML/jinja/htlm-django/etc.) 
+Plug 'Rykka/riv.vim'                " ReStructuredText plugin
 
 """ ==Python==
 Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
-Plug 'scrooloose/syntastic'         " Syntax checking plugin for Vim
-Plug 'fisadev/FixedTaskList.vim' " pending tasks list
-Plug 'rosenfeld/conque-term' " consoles as buffers
+Plug 'scrooloose/syntastic'        " Syntax checking plugin for Vim
+Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
+Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
 
 " ==Experimental==
-Plug 'powerman/vim-plugin-viewdoc'  " View documentation like 'man' pages and others in vim
+Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
+Plug 'WolfgangMehner/c-support'  " Tools for C coding
 
+" ==Temporarily-offline=
+" Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
+" Plug 'Valloric/YouCompleteMe'     " Complicated linter
+" Plug 'tpope/vim-commentary'        " Comment stuff out
+" Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
+" Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
+" Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+" Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 call plug#end() " automatically executes: 'filetype plugin indent on'  and 'syntax enable'
 
@@ -136,25 +138,29 @@ colorscheme meta5
 " vim-airline theme
 let g:airline_theme='lucius'
 
+" C-tools
+let g:C_UseTool_cmake   = 'yes'
+let g:C_UseTool_doxygen = 'yes'
+
+
 " ==All-Purpose-Execute==
 " date: 06/14/2019
 " purpose: \map <F9> to: \write current buffer (save file) 
 " \make file executable \Create temp file \execute \dump output to it \new tab
 " \read file in new tab \delete temp file
 " code:
-nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>:tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
-" \\ ==end==
+" nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>:tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
+
 " Run python code in current file with F9
-" nnoremap <F9> :w<cr>:!python %<cr>
+nnoremap <F9> :w<cr>:!python %<cr>
 
 " -Pipenv-Integration-
-let pipenv_venv_path = system('pipenv --venv')
+" let pipenv_venv_path = system('pipenv --venv')
 
 " ==Python-mode==
 " set syntastic to log the output of the linter to vim messages (accessible
 " with :mes
 " let g:syntastic_debug = 3
-
 
 
 " ==Javascript==
@@ -259,9 +265,6 @@ set matchtime=2             " time to blink match {}
 set matchpairs+=<:>         " for ci< or ci>
 set showmatch               " tmpjump to match-bracket
 
-" %% = current working directory (useful in ':'  command mode)
-inoremap <C-e> <C-o>$
-
 " Find and replace all
 nnoremap <Leader>rc :%s/\<<C-r><C-w>\>/
 vnoremap <Leader>rc y:$s/<C-r>"/
@@ -271,7 +274,6 @@ nnoremap <Leader>rnn :set relativenumber!<CR>
 
 
 " --Screen-Splitting--
-
 " :sp <path to file you want to split screen with (vertically)
 " i.e. :sp ~/.vimrc to split the screen with the .vimrc
 
@@ -363,28 +365,32 @@ set shiftwidth=0                " =0 uses 'ts' value
 set smarttab                    " tab to 0,4,8 etc.
 set softtabstop=-1              " =-1 uses 'sw' value
 set tabstop=4                   " <Tab> as 4 spaces
-" set cursorline                  " shows line under the cursor
 set scrolloff=10                " let 10 lines before cursor during scroll
 set exrc                        " enable usage of additional vimrc files
 set secure                      " .vimrc files cannot execute/create files
+" set cursorline                  " shows line under the cursor
 
 """ ===gvim options===
-"set guioptions-=m   " remove menubar set 
-"guioptions-=T       " remove toolbar
-"set guioptions-=r   " remove right scrollbar
+if has('win32')  " if running windows will work, else will not work
+    set guioptions-=m   " remove menubar set 
+    guioptions-=T       " remove toolbar
+    set guioptions-=r   " remove right scrollbar
+endif
 
 """ ===Plugin Settings & Reference===
 
 " -Vim-Argwrap-
 nnoremap <silent> <leader>a :ArgWrap<CR>  
+
 "" -Syntastic-
 noremap <silent><Leader>le :Errors<CR>  
 noremap <silent><Leader>lc :lclose<CR>  
+
 "" -Rope-Vim-
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
+
 "" -Undotree-
-" Toggle undotree plugin with <F5>
 nnoremap <F5> :UndotreeToggle<CR>
 
 "" -TagBar settings-
@@ -486,10 +492,10 @@ let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python3']
 
 " YouCompleteMe
-set completeopt-=preview
+" set completeopt-=preview
 
-let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf=0
+" let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
+" let g:ycm_confirm_extra_conf=0
 
-nmap <leader>g :YcmCompleter GoTo<CR>
-nmap <leader>d :YcmCompleter GoToDefinition<CR>
+" nmap <leader>g :YcmCompleter GoTo<CR>
+" nmap <leader>d :YcmCompleter GoToDefinition<CR>

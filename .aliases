@@ -11,9 +11,9 @@
 #     "sudo nmcli dev wifi connect ${1} password ${2}"
 # }
 #
-# func shinstall() {
-#     "sudo apt-get -fm install ${1} --install-suggests"
-# }
+shinstall () {
+    "sudo apt-get -f install $1 --install-suggests"
+}
 
 # Terminal navigation
 alias ls="ls -a --color=auto"
