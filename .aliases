@@ -15,6 +15,14 @@ shinstall () {
     "sudo apt-get -f install $1 --install-suggests"
 }
 
+vimget () {
+    vim <("$@")
+}
+
+lessget () {
+    less -f <("$@")
+}
+
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
@@ -35,9 +43,10 @@ alias aptremove="sudo apt-get remove"
 alias aptaddrepo="sudo add-apt-repository"
 alias aptrmrepo="sudo add-apt-repository --remove"
 alias aptrmppa:="sudo add-apt-repository --remove ppa:"
-alias listmyapps="sudo apt list --installed"
-alias myappsgrep="sudo apt list --installed | grep"
-alias listappsgrep="sudo apt list | grep"
+alias aptmylist="sudo apt list --installed"
+alias aptmylistgrep="sudo apt list --installed | grep"
+alias aptbiglistgrep="sudo apt list | grep"
+alias aptbiglistvim="vim <(sudo apt list)"
 alias apshow="apt show"
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
@@ -106,8 +115,6 @@ alias lets_kick_shell="vim $HOME/.kick_shell"
 alias qtbrowse="qutebrowser --debug --debug"
 # youtube-dl
 alias youtubedll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-filenames -R 99 --max-filesize 2000m --max-downloads 50 --verbose"
-# shinstall.sh (zsh 'apt install' script)
-alias shinstall="~/shinstall.sh"
 # wget
 alias wget="wget -t 99 --retry-connrefused"
 # curl
