@@ -23,6 +23,10 @@ lessget () {
     less -f <("$@")
 }
 
+clipfile () {
+    xclip -i -selection c "$1"
+}
+
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
