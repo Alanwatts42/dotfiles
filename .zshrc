@@ -8,9 +8,9 @@ prompt adam1
 # Shellcheck (shell linter) overrides
 export SHELLCHECK_OPTS='--shell=zsh --exclude=SC2016 SC2035'
 
-# Vim as EDITOR to allow vi style controls
-EDITOR=vim
-
+# Vi style controls
+# EDITOR=vim
+bindkey -v
 
 # Zplug >>
 
