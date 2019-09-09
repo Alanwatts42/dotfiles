@@ -1,6 +1,10 @@
 # Dotfiles gitignore
 *
 .viminfo
+.ssh/*
+.ssh
+id_rsa
+*.pub
 
 # ignore all files not listed below preceded with a '!'
 
@@ -33,5 +37,3 @@
 # misc
 !crashlog-1.md
 !README
-!.ssh/*
-!.ssh
