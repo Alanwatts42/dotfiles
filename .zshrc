@@ -6,31 +6,29 @@ prompt adam1
 
 # Environment variables >>
 # Shellcheck (shell linter) overrides
-export SHELLCHECK_OPTS='--shell=zsh --exclude=SC2016 SC2035'
+export SHELLCHECK_OPTS='--shell=bash --exclude=SC2016 SC2035'
 
 # Vi style controls
 # EDITOR=vim
 bindkey -v
 
 # Zplug >>
-
 # Zplug auto-install check
 if [[ ! -d ~/.zplug ]];then
   git clone https://github.com/zplug/zplug ~/.zplug 
   source ~/.zplug/init.zsh && zplug update --self
 fi
-
 # Essential for zplug to work
 source ~/.zplug/init.zsh
 
-# Zsh history search
+# Zsh history search >>
 zplug "zsh-users/zsh-history-substring-search"
 # Zsh syntax highlighting
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 # Zsh-autosuggestions 
 zplug "zsh-users/zsh-autosuggestions"
 
-# Look & Feel
+# Look & Feel >>
 zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
 
 # Install packages that have not been installed yet
@@ -47,7 +45,6 @@ zplug load
 
 
 # Formatting & Completion >>
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
@@ -88,13 +85,13 @@ setopt AUTO_CD
 # Sources >>
 source ~/.aliases
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-# source ~/.purepower 
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 # Tilix config >
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte*.sh
 fi
+
 # Custom shell commands >
 # to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
 if [ -f "$HOME/.kick_shell" ] 

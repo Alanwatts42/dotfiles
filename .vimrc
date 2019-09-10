@@ -45,7 +45,7 @@ if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux'  )
 endif
 " <https://vi.stackexchange.com/questions/10708/no-syntax-highlighting-in-tmux>
 
-""" ===Plugins===
+""" === Plugins ===
 """ Formula to add a plugin = Plug 'foo/bar' (in single quotes)
 """ :PlugInstall - Install the damn things
 """ :PlugInstall! - Sometimes you have to yell
@@ -57,7 +57,7 @@ endif
 
 call plug#begin(bundle)
 
-""" ==Development Environment and Enhancements==
+""" == Development Environment and Enhancements ==
 Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
 Plug 'tpope/vim-surround'  " easy manipulation of surround chars
 Plug 'tomtom/tcomment_vim' " use gcc to comment/uncomment text under cursor
@@ -66,16 +66,16 @@ Plug 'somini/vim-autoclose' " Auto-close when using grouping symbols i.e.'(), []
 Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
 Plug 'PyCQA/pylint'         " Python linter
 
-""" ==Javascript==
+""" == Javascript ==
 Plug 'w0rp/ale'    " javascript linter
 Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
 
-""" ==General Functionality==
+""" == General Functionality ==
 Plug 'ctrlpvim/ctrlp.vim'  " Fuzzy finder (files, mru, etc)
 Plug 'mbbill/undotree'  " Undo history tool
 Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
 
-""" ==Look & Feel==
+""" == Look & Feel ==
 Plug 'flazz/vim-colorschemes' " change colorshemes easier
 Plug 'vim-airline/vim-airline' " operative word 'line'
 Plug 'vim-airline/vim-airline-themes'  " Enables themes for vim-airline
@@ -83,7 +83,7 @@ Plug 'christophermca/meta5'  " meta5 colorscheme
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Lokaltog/powerline' " tabline tool
 
-""" ==Git and Version Control==
+""" == Git and Version Control ==
 Plug 'tpope/vim-fugitive' " git wrapper - 'git commit'=':Gcommit'
 Plug 'tpope/vim-rhubarb' " something to do with git, I honestly forgot
 Plug 'junegunn/gv.vim' " diff tool - requires vim-fugitive to run
@@ -91,30 +91,35 @@ Plug 'sodapopcan/vim-twiggy' " branch manager for git repositories
 Plug 'airblade/vim-gitgutter'  " excellent document diff tool
 Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
-""" ==Atypical Filetype Handling==
-Plug 'plasticboy/vim-markdown' " markdown handling in vim 
-Plug 'godlygeek/tabular' " vim-markdown needs this to run
-
-""" ==Snippets support ==
+""" == Snippets ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
 Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
 Plug 'tomtom/tlib_vim'                    " dependencies #2
 Plug 'honza/vim-snippets'                 " snippets repo
 
-""" ==Languages support ==
+""" == Markup/Markdown ==
 Plug 'mitsuhiko/vim-sparkup'        " Sparkup(XML/jinja/htlm-django/etc.) 
 Plug 'Rykka/riv.vim'                " ReStructuredText plugin
+Plug 'plasticboy/vim-markdown' " markdown handling in vim 
+Plug 'godlygeek/tabular' " vim-markdown needs this to run
 
-""" ==Python==
+""" == Python ==
 Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
 Plug 'scrooloose/syntastic'        " Syntax checking plugin for Vim
 Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
 Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
 
-" ==Experimental==
+" == C Programming/Dev Support ==
 Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
 Plug 'WolfgangMehner/c-support'  " Tools for C coding
+Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
+Plug 'SirVer/ultisnips'  
+Plug 'honza/vim-snippets'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
@@ -130,34 +135,66 @@ call plug#end() " automatically executes: 'filetype plugin indent on'  and 'synt
 filetype plugin indent on     " filetype plugins on
 syntax enable       " syntax highlighting on
 
-""" ==Colorscheme==
+""" == Colorscheme ==
 " main colorscheme
 set t_co=256
 colorscheme meta5
 
-" vim-airline theme
+" --vim-airline theme--
 let g:airline_theme='lucius'
 
-" C-tools
+" == C-tools ==
 let g:C_UseTool_cmake   = 'yes'
 let g:C_UseTool_doxygen = 'yes'
 
+" == Ulti-snips ==
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-" ==All-Purpose-Execute==
-" date: 06/14/2019
-" purpose: \map <F9> to: \write current buffer (save file) 
-" \make file executable \Create temp file \execute \dump output to it \new tab
-" \read file in new tab \delete temp file
-" code:
-" nmap <F9> :w<CR>:silent !chmod 755 %<CR>:silent !./% > .tmp.xyz<CR>:tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
+" == Asynccomplete ==
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+
+" -Force refresh completion-
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+" -Alternate auto-popup config-
+let g:asyncomplete_auto_popup = 0
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" -Language Server Protocol-
+if executable('pyls')
+    " pip install python-language-server
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
+
+" ==Python Plugin Options==
 " Run python code in current file with F9
 nnoremap <F9> :w<cr>:!python %<cr>
 
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
 
-" ==Python-mode==
+" -Python-mode-
 " set syntastic to log the output of the linter to vim messages (accessible
 " with :mes
 " let g:syntastic_debug = 3
@@ -378,6 +415,9 @@ if has('win32')  " if running windows will work, else will not work
 endif
 
 """ ===Plugin Settings & Reference===
+
+" -C-Sharp Asynchronous Server interactions-
+let g:OmniSharp_server_stdio = 1
 
 " -Vim-Argwrap-
 nnoremap <silent> <leader>a :ArgWrap<CR>  
