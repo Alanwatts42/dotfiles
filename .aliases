@@ -124,3 +124,7 @@ alias wget="wget -t 99 --retry-connrefused"
 # curl
 alias curl="curl -retry 99 --retry-connrefused"
 
+# ecm
+alias unecm="ecm-uncompress"
+alias ecm="ecm-compress"
+
