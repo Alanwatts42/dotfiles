@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/evan/.config/openbox/LXDE'
-let g:netrw_dirhist_2='/home/evan'
-let g:netrw_dirhist_3='/home/evan/.config'
-let g:netrw_dirhist_4='/home/evan/.config/openbox'
-let g:netrw_dirhist_5='/home/evan/snap/qownnotes'
-let g:netrw_dirhist_6='/home/evan/.zplug'
-let g:netrw_dirhist_7='/home/evan/_reference/linux-dev-notes'
