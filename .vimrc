@@ -68,7 +68,7 @@ Plug 'PyCQA/pylint'         " Python linter
 
 """ == Javascript ==
 Plug 'w0rp/ale'    " javascript linter
-Plug 'prettier/vim-prettier', { 'do': 'npm install' } " js syntax colors
+Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
 
 """ == General Functionality ==
 Plug 'ctrlpvim/ctrlp.vim'  " Fuzzy finder (files, mru, etc)
@@ -110,6 +110,19 @@ Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
 Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
 
+" == C Programming/Dev Support ==
+Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
+Plug 'WolfgangMehner/c-support'  " Tools for C coding
+Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
+
+" ==Temporarily-offline=
+" Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
+" Plug 'Valloric/YouCompleteMe'     " Complicated linter
+" Plug 'tpope/vim-commentary'        " Comment stuff out
+" Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
+" Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
+" Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+" Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 call plug#end() " automatically executes: 'filetype plugin indent on'  and 'syntax enable'
 
@@ -124,6 +137,49 @@ colorscheme meta5
 " --vim-airline theme--
 let g:airline_theme='lucius'
 
+" == C-tools ==
+let g:C_UseTool_cmake   = 'yes'
+let g:C_UseTool_doxygen = 'yes'
+
+" == Ulti-snips ==
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" == Asynccomplete ==
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+
+" -Force refresh completion-
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+" -Alternate auto-popup config-
+let g:asyncomplete_auto_popup = 0
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" -Language Server Protocol-
+if executable('pyls')
+    " pip install python-language-server
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
