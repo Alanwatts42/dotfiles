@@ -22,6 +22,7 @@ id_rsa
 !.profile
 !.zplug
 !.zshrc
+!.zprofile
 !.aliases
 !.aliases-m
 !powerlevel10k/*
