@@ -6,13 +6,12 @@
 # Functions - similar to aliases, but can have things like parameters/variables
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
 # }
-
-# func wifi-func() {
-#     "sudo nmcli dev wifi connect ${1} password ${2}"
-# }
+wificonnect () {
+    sudo nmcli dev wifi connect "$1" password "$2"
+}
 #
 shinstall () {
-    "sudo apt-get -f install $1 --install-suggests"
+    sudo apt-get -f install "$1" --install-suggests
 }
 
 vimget () {
