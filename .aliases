@@ -32,6 +32,7 @@ alias lss='ls'
 alias lsa="ls -apw 110 --group-directories-first"
 alias lsg="ls -GAp --group-directories-first"
 alias lsd="ls -plax --group-directories-first"
+alias lsg="ls -a | grep"
 
 # Apt or apt-get shortcuts for convenience
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade"
