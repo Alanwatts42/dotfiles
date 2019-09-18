@@ -6,7 +6,7 @@ prompt adam1
 
 # Environment variables >>
 # Shellcheck (shell linter) overrides
-export SHELLCHECK_OPTS='--shell=bash --exclude=SC2016'
+export SHELLCHECK_OPTS='--shell=sh --exclude=SC2016'
 
 # Vi style controls
 # EDITOR=vim

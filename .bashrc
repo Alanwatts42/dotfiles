@@ -106,9 +106,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
+source /home/evan/.aliases
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -131,13 +129,13 @@ function getIPAddress() {
     [[ -n "$ip_route" ]] && grep -oP "src \K[^\s]+" <<< "$ip_route"
 }
 
-function retropie_welcome() {
-    local upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
+retropie_welcome() {
+    upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
     local secs=$((upSeconds%60))
     local mins=$((upSeconds/60%60))
     local hours=$((upSeconds/3600%24))
     local days=$((upSeconds/86400))
-    local UPTIME=$(printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs")
+    UPTIME=$(printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs")
 
     # calculate rough CPU and GPU temperatures:
     local cpuTempC
@@ -159,42 +157,42 @@ function retropie_welcome() {
 
     local df_out=()
     local line
-    while read line; do
+    while read -r line; do
         df_out+=("$line")
     done < <(df -h /)
 
-    local rst="$(tput sgr0)"
-    local fgblk="${rst}$(tput setaf 0)" # Black - Regular
-    local fgred="${rst}$(tput setaf 1)" # Red
-    local fggrn="${rst}$(tput setaf 2)" # Green
-    local fgylw="${rst}$(tput setaf 3)" # Yellow
-    local fgblu="${rst}$(tput setaf 4)" # Blue
-    local fgpur="${rst}$(tput setaf 5)" # Purple
-    local fgcyn="${rst}$(tput setaf 6)" # Cyan
-    local fgwht="${rst}$(tput setaf 7)" # White
+    rst="$(tput sgr0)"
+    fgblk="${rst}$(tput setaf 0)" # Black - Regular
+    fgred="${rst}$(tput setaf 1)" # Red
+    fggrn="${rst}$(tput setaf 2)" # Green
+    fgylw="${rst}$(tput setaf 3)" # Yellow
+    fgblu="${rst}$(tput setaf 4)" # Blue
+    fgpur="${rst}$(tput setaf 5)" # Purple
+    fgcyn="${rst}$(tput setaf 6)" # Cyan
+    fgwht="${rst}$(tput setaf 7)" # White
 
-    local bld="$(tput bold)"
-    local bfgblk="${bld}$(tput setaf 0)"
-    local bfgred="${bld}$(tput setaf 1)"
-    local bfggrn="${bld}$(tput setaf 2)"
-    local bfgylw="${bld}$(tput setaf 3)"
-    local bfgblu="${bld}$(tput setaf 4)"
-    local bfgpur="${bld}$(tput setaf 5)"
-    local bfgcyn="${bld}$(tput setaf 6)"
-    local bfgwht="${bld}$(tput setaf 7)"
+    bld="$(tput bold)"
+    bfgblk="${bld}$(tput setaf 0)"
+    bfgred="${bld}$(tput setaf 1)"
+    bfggrn="${bld}$(tput setaf 2)"
+    bfgylw="${bld}$(tput setaf 3)"
+    bfgblu="${bld}$(tput setaf 4)"
+    bfgpur="${bld}$(tput setaf 5)"
+    bfgcyn="${bld}$(tput setaf 6)"
+    bfgwht="${bld}$(tput setaf 7)"
 
-    local logo=(
-        "${fgred}   .***.   "
-        "${fgred}   ***${bfgwht}*${fgred}*   "
-        "${fgred}   \`***'   "
-        "${bfgwht}    |*|    "
-        "${bfgwht}    |*|    "
-        "${bfgred}  ..${bfgwht}|*|${bfgred}..  "
-        "${bfgred}.*** ${bfgwht}*${bfgred} ***."
-        "${bfgred}*******${fggrn}@@${bfgred}**"
-        "${fgred}\`*${bfgred}****${bfgylw}@@${bfgred}*${fgred}*'"
-        "${fgred} \`*******'${fgrst} "
-        "${fgred}   \`\"\"\"'${fgrst}   "
+    logo=(
+        "$fgred   .***.   "
+        "$fgred   ***${bfgwht}*${fgred}*   "
+        "$fgred   \`***'   "
+        "$bfgwht    |*|    "
+        "$bfgwht    |*|    "
+        "$bfgred  ..${bfgwht}|*|${bfgred}..  "
+        "$bfgred  .*** ${bfgwht}*${bfgred} ***."
+        "$bfgred*******${fggrn}@@${bfgred}**"
+        "$fgred\`*${bfgred}****${bfgylw}@@${bfgred}*${fgred}*'"
+        "$fgred \`*******'${fgrst} "
+        "$fgred   \`\"\"\"'${fgrst}   "
         )
 
     local out
@@ -246,6 +244,6 @@ then
 fi
 
 # Shellcheck overrides
-export SHELLCHECK_OPTS='--shell=bash,zsh --exclude=SC2016,SC2035'
+export SHELLCHECK_OPTS='--shell=bash --exclude=SC2016,SC2035'
 
 # export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
