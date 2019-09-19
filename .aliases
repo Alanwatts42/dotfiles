@@ -26,6 +26,10 @@ clipfile () {
     xclip -i -selection c "$1"
 }
 
+hush () {
+    "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
+}
+
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
