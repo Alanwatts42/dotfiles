@@ -148,7 +148,7 @@ alias qtbrowse="qutebrowser --debug --debug"
 # youtube-dl
 alias youtubedll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-filenames -R 99 --max-filesize 2000m --max-downloads 50 --verbose"
 # wget
-alias wget="wget -t 99 --retry-connrefused"
+alias wget="wget -c -t 99 --retry-connrefused"
 # curl
 alias curl="curl -retry 99 --retry-connrefused"
 #
