@@ -1,35 +1,59 @@
-#    ALIASES  
-#   ---***---
+#                           **ALIASES**  
+#                           -----------  
+## Evan Sherwood
+## evan.sherwood@keemail.me
+#
 # Reference(s): 
+# -------------
+#
 # <https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts>
+#
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
+#
 # Functions - similar to aliases, but can have things like parameters/variables
+#
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
-# }
+#
+#
+#
+# Functions:
+# ----------
+#
+## it's called wificonnect, you get one guess what it does
 wificonnect () {
     sudo nmcli dev wifi connect "$1" password "$2"
 }
 #
-shinstall () {
+## run install using synaptic and treat suggestions as dependencies
+shinstall () { 
     sudo apt-get -f install "$1" --install-suggests
 }
-
+#
+## pipe terminal output to vim
 vimget () {
     vim <("$@")
 }
-
+#
+## pipe terminal output to less text viewer
 lessget () {
     less -f <("$@")
 }
-
+#
+## copy the contents of a text file to the clipboard
 clipfile () {
     xclip -i -selection c "$1"
 }
-
+#
+## run something with no terimal output (quietly)
 hush () {
     "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
 }
-
+#
+## open anything in a subshell
+# shopen () {  
+# }
+#
+#
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
@@ -37,7 +61,7 @@ alias lsa="ls -apw 110 --group-directories-first"
 alias lsg="ls -GAp --group-directories-first"
 alias lsd="ls -plax --group-directories-first"
 alias lsg="ls -a | grep"
-
+#
 # Apt or apt-get shortcuts for convenience
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade"
 alias aptgo="sudo apt-get"
@@ -56,17 +80,17 @@ alias aptmylistgrep="sudo apt list --installed | grep"
 alias aptbiglistgrep="sudo apt list | grep"
 alias aptbiglistvim="vim <(sudo apt list)"
 alias apshow="apt show"
-
+#
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias xlight="xrandr --output eDP-1 --brightness"
 alias xdim="xrandr --output eDP-1 --brightness 0.65"
 alias xbright="xrandr --output eDP-1 --brightness 1"
-
+#
 # Wifi operations via the terminal - very long, very specific, aliases therefore very necessary
 alias wifi-go="sudo nmcli dev wifi connect"
 alias mifi="sudo nmcli dev wifi connect MY_EX-WIFI_GOT_THE_HOUSE password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
-
+#
 # Pip, pipenv, and python
 alias pipinstall="sudo pip3 --user install"
 alias pipenv="python3 -m pipenv"
@@ -76,7 +100,7 @@ alias ppvcheck="python3 -m pipenv check"
 alias ppvsync="python3 -m pipenv sync"
 alias ppvupdate="python3 -m pipenv update"
 alias pipenvshell="python3 -m pipenv shell"
-
+#
 # --Git--
 # start a working area
 alias ginit="git init"
@@ -104,21 +128,21 @@ alias gtag="git tag"
 alias gfetch="git fetch"
 alias gpush="git push"
 alias gpull="git pull"
-
+#
 # Emulation & Games - Last but not least
 alias vidgames="emulationstation"
-
+#
 # Python
 alias python="python3"
 alias py="python3"
-
+#
 # Custom Scripts
 alias sync-dfs="~/sync.sh"
-
+#
 # Custom Shell Commands
 alias lets_kick_shell="vim $HOME/.kick_shell"
-
-# --Apps--
+#
+# --Utilities--
 # qutebrowser (start with debug features on)
 alias qtbrowse="qutebrowser --debug --debug"
 # youtube-dl
@@ -127,8 +151,13 @@ alias youtubedll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-f
 alias wget="wget -t 99 --retry-connrefused"
 # curl
 alias curl="curl -retry 99 --retry-connrefused"
-
+#
 # ecm
 alias unecm="ecm-uncompress"
 alias ecm="ecm-compress"
-
+#
+# --Applications--
+alias firefox="firefox"
+alias emustation="emulationstation"
+alias xkbind="xbindkeys --key"
+#
