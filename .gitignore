@@ -28,6 +28,7 @@ id_rsa
 !powerlevel10k/*
 !powerlevel10k
 !.kick_shell
+!.tmux.conf
 
 # git
 !.gitignore
