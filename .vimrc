@@ -38,11 +38,11 @@ else
 endif
 
 " tmux color issue fix
-if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux'  )
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-endif
+" if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux'  ) let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" endif
+
+
 " <https://vi.stackexchange.com/questions/10708/no-syntax-highlighting-in-tmux>
 
 """ === Plugins ===
@@ -124,10 +124,13 @@ Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
 " Plug 'jalvesaq/vimcmdline'  " run code on external terminal
 " Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
-call plug#end() " automatically executes: 'filetype plugin indent on'  and 'syntax enable'
+call plug#end() 
 
-filetype plugin indent on     " filetype plugins on
-syntax enable       " syntax highlighting on
+filetype plugin indent on 
+
+syntax enable
+
+set termguicolors
 
 """ == Colorscheme ==
 " main colorscheme

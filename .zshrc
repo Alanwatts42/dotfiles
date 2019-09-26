@@ -12,6 +12,9 @@ export SHELLCHECK_OPTS='--shell=sh --exclude=SC2016'
 # EDITOR=vim
 bindkey -v
 
+# set 256 color mode
+export TERM=xterm-256color
+
 # Zplug >>
 # Zplug auto-install check
 if [[ ! -d ~/.zplug ]];then
