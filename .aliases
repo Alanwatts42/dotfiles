@@ -2,43 +2,41 @@
 #                           -----------  
 ## Evan Sherwood
 ## evan.sherwood@keemail.me
-#
+
 # Reference(s): 
 # -------------
-#
+
 # <https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts>
-#
+
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
-#
+
 # Functions - similar to aliases, but can have things like parameters/variables
-#
+
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
-#
-#
-#
+
+
+
 # Functions:
 # ----------
-#
+
 ## it's called wificonnect, you get one guess what it does
 wificonnect () {
     sudo nmcli dev wifi connect "$1" password "$2"
 }
-#
+
 ## run install using synaptic and treat suggestions as dependencies
 shinstall () { 
     sudo apt-get -f install "$1" --install-suggests
 }
-#
+
 ## pipe terminal output to vim
 vimget () {
     vim <("$@")
 }
-#
 ## pipe terminal output to less text viewer
 lessget () {
     less -f <("$@")
 }
-#
 ## copy the contents of a text file to the clipboard
 clipfile () {
     xclip -i -selection c "$1"
@@ -58,22 +56,30 @@ doainloopb () {
     done
 }
 
-## trying to automate git add --all <return>, git commit -m 'message' <return>, git push <return>
-## the challenge is executing each line within the function
-## test test
-gitsync () {
+# trying to automate: 
+#   git add --all <return>; 
+#   git commit -m 'message' <return>; 
+#   git push <return>;
+# challenge: executing each line 
+#   individually within the function.
+# solution: ending each 'line' with a `;`
+#   it appears that `;` works to end each line
+#   as if it were typed into the shell and 
+#   executed with <return>
+gitaddpush () {
    git add --all;    
    git commit -m "$1"; 
    git push;
 }
 
+# quickly add all changes and push to remote
+# with generic commit message 'minor edits'
+gitsync () {
+   git add --all;    
+   git commit -m "minor edits"; 
+   git push;
+}
 
-#
-## open anything in a subshell
-# shopen () {  
-# }
-#
-#
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
