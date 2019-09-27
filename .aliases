@@ -51,6 +51,7 @@ hush () {
 
 ## trying to automate git add --all <return>, git commit -m 'message' <return>, git push <return>
 ## the challenge is executing each line within the function
+## test test
 gitsync () {
    $(git add --all)    
    $(git commit -m "$1") 
