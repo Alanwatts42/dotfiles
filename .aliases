@@ -49,6 +49,15 @@ hush () {
     "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
 }
 
+# doainloopb [for each part of iterable] "$1" [run command] "$2"
+# example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
+# item in that list in other words, loop through working directory and make each file executable.
+doainloopb () {
+    for i in $1;do
+        $@ $i
+    done
+}
+
 ## trying to automate git add --all <return>, git commit -m 'message' <return>, git push <return>
 ## the challenge is executing each line within the function
 ## test test
@@ -91,6 +100,17 @@ alias aptmylistgrep="sudo apt list --installed | grep"
 alias aptbiglistgrep="sudo apt list | grep"
 alias aptbiglistvim="vim <(sudo apt list)"
 alias apshow="apt show"
+# clear screen
+alias clr="clear"
+alias cls="clear"
+alias cs="clear"
+alias cx="clear -x"
+# super user
+alias su="sudo"
+# open and edit with vi improved a.k.a. vim 8
+alias vi="vim"
+# open and edit with neovim
+alias nvi="nvim"
 #
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias xlight="xrandr --output eDP-1 --brightness"
