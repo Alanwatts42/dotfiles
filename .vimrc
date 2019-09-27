@@ -1,25 +1,29 @@
-""" Evan's .vimrc
-
+""                     Vi(m) 8 config file `~/.vimrc` 
+""                    -------------------------------
+""
+"" Evan Sherwood
+"" evan.sherwood@keemail.me
+""
 set nocompatible    " not compatible with vi, required for certain options
-
+""
 augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC| if has('gui_running') | so $MYGVIMRC | endif
 augroup END
-
-" Allows the same .vimrc file to be used on both Windows and Linux (WSL) 
-" defines variable called home, varies based on OS directory system 
+""
+"" Allows the same .vimrc file to be used on both Windows and Linux (WSL) 
+"" defines variable called home, varies based on OS directory system 
 if has("win32")
   let dotvim = 'C:\Users\evan\vimfiles\'
 else
   let dotvim = "~/.vim/"
 endif
- 
+""
 let bundle = dotvim."bundle"
 let autoload = dotvim."autoload"
-
-" Install vim-plug on first time opening vim with this .vimrc.
-" Also re-installs vim-plug if missing for whatever reason.
+""
+"" Install vim-plug on first time opening vim with this .vimrc.
+"" Also re-installs vim-plug if missing for whatever reason.
 if has("win32")
 	if empty(autoload)
 		md \vimfiles\autoload
