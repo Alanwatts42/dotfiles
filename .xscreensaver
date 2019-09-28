@@ -1,11 +1,11 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for evan on Tue Aug  6 09:12:38 2019.
+# Written by xscreensaver-demo 5.36 for evan on Sat Sep 28 02:21:50 2019.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	1:00:00
-cycle:		0:45:00
-lock:		False
-lockTimeout:	0:00:00
+timeout:	1:30:00
+cycle:		2:00:00
+lock:		True
+lockTimeout:	1:30:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
@@ -17,15 +17,15 @@ demoCommand:	xscreensaver-demo
 prefsCommand:	xscreensaver-demo -prefs
 nice:		10
 memoryLimit:	0
-fade:		True
-unfade:		True
+fade:		False
+unfade:		False
 fadeSeconds:	0:00:02
 fadeTicks:	20
 captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	True
-dpmsQuickOff:	False
+dpmsQuickOff:	True
 dpmsStandby:	1:30:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
@@ -35,10 +35,10 @@ chooseRandomImages: True
 imageDirectory:	/home/evan/Pictures/Backgrounds
 
 mode:		one
-selected:	176
+selected:	210
 
 textMode:	literal
-textLiteral:	sudo go > fuck(self=your)
+textLiteral:	Boldly go where no man has gone before
 textFile:	
 textProgram:	fortune
 textURL:	http://feeds.feedburner.com/ubuntu-news
@@ -257,7 +257,8 @@ programs:								      \
 - GL: 				geodesicgears -root			    \n\
 - GL: 				projectiveplane -root			    \n\
 - GL: 				romanboy -root				    \n\
-				tessellimage -root			    \n\
+  Best: 			tessellimage -root -delay 34351		      \
+				  -duration2 0.5763 -max-depth 62969	    \n\
 - GL: 				winduprobot -root			    \n\
 - GL: 				splitflap -root				    \n\
 - GL: 				cubestack -root				    \n\
