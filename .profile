@@ -8,13 +8,25 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+# Shellcheck exclusions
+export SHELLCHECK_OPTS="-e SC2059 -e SC2034 -e SC1090"
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
+    # shellcheck source=/dev/null
 	. "$HOME/.bashrc"
     fi
 fi
+
+
+
+if [ -f "$HOME/.aliases" ]; then
+    # shellcheck source=/dev/null
+    . "$HOME"/.aliases
+fi
+
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
