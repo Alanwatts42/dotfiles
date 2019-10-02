@@ -11,3 +11,8 @@ chmodx () {
     chmod +x "$1"
 }
 
+lswalk () {
+    for i in *;do
+        "$@" "$i"
+    done
+}
