@@ -190,7 +190,7 @@ endif
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
-nnoremap <F9> :w<cr>:!python %<cr>
+nnoremap <F9> :w<cr>:!python3 %<cr>
 
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
