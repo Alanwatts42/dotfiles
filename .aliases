@@ -66,7 +66,7 @@ doainloopb () {
 #   it appears that `;` works to end each line
 #   as if it were typed into the shell and 
 #   executed with <return>
-git-up () {
+gitup () {
    git add --all;    
    git commit -m "$1"; 
    git push;
