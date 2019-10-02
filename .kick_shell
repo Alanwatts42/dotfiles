@@ -7,4 +7,7 @@ sshurl () {
     sh "$HOME"/_projects/lets_kick_shell/ssh-url.sh
 }
 
+chmodx () {
+    chmod +x "$1"
+}
 
