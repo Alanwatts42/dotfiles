@@ -3,6 +3,8 @@
 # This file adds shell scripts to path so I can execute them like commands
 # without needing to explictly type out their full path or ".sh" etc.
 
-ssh-url () {
-    sh $HOME/_projects/lets_kick_shell/ssh-url.sh
+sshurl () {
+    sh "$HOME"/_projects/lets_kick_shell/ssh-url.sh
 }
+
+
