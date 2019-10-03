@@ -202,4 +202,7 @@ alias ecm="ecm-compress"
 alias firefox="firefox"
 alias emustation="emulationstation"
 alias xkbind="xbindkeys --key"
-
+alias imageview="gpicview"
+alias pictureview="gpicview"
+alias picview="gpicview"
+alias qpdf="qpdfview"
