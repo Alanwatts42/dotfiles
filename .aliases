@@ -168,6 +168,9 @@ alias gpull="git pull"
 
 # Emulation & Games - Last but not least
 alias vidgames="emulationstation"
+alias emustation="emulationstation"
+alias emu="emulationstation"
+alias videogames="emulationstation"
 
 # Python
 alias python="python3"
@@ -200,7 +203,6 @@ alias ecm="ecm-compress"
 
 # --Applications--
 alias firefox="firefox"
-alias emustation="emulationstation"
 alias xkbind="xbindkeys --key"
 alias imageview="gpicview"
 alias pictureview="gpicview"
