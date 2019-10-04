@@ -87,6 +87,9 @@ alias lsa="ls -apw 110 --group-directories-first"
 alias lsg="ls -GAp --group-directories-first"
 alias lsd="ls -plax --group-directories-first"
 alias lsg="ls -a | grep"
+alias lsm="ls -t" # order by recently modified -r = most recent first
+alias lsr="ls -tr" # order by recently modified -tr = most recent last
+alias lsi="ls -lhtr" # informative ordered list
 
 # Apt or apt-get shortcuts for convenience
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade"
