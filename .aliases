@@ -196,13 +196,15 @@ alias youtube-dlu="youtube-dl -U"  #update
 
 # wget
 alias wget="wget -c -t 99 --retry-connrefused"
+alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
+
 
 # curl
 alias curl="curl -retry 99 --retry-connrefused"
 
 # ecm
 alias unecm="ecm-uncompress"
-alias ecm="ecm-compress"
+# alias ecm="ecm-compress"
 
 # --Applications--
 alias firefox="firefox"
