@@ -80,6 +80,10 @@ gitsync () {
    git push;
 }
 
+
+# Get missing gpg keys
+alias getkeys="sudo launchpad-getkeys"
+
 # Terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
