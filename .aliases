@@ -81,6 +81,9 @@ gitsync () {
 }
 
 
+# gksu replacement
+alias gksu="gedit admin://"
+
 # Get missing gpg keys
 alias getkeys="sudo launchpad-getkeys"
 
