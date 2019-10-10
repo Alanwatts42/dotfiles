@@ -80,6 +80,8 @@ gitsync () {
    git push;
 }
 
+# switch x-session manager (i.e. gnome to lxde to lxqt etc.)
+alias switchxmanager='sudo update-alternatives --config x-session-manager'
 
 # gksu replacement
 alias gksu="gedit admin://"
