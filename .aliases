@@ -101,10 +101,10 @@ alias lsr="ls -tr" # order by recently modified -tr = most recent last
 alias lsi="ls -lhtr" # informative ordered list
 
 # Apt or apt-get shortcuts for convenience
-alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade"
-alias aptgo="sudo apt-get"
+alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade -y"
+alias aptg="sudo apt-get"
 alias aptinstall="sudo apt-get -f install"
-alias aptgoup="sudo apt update && sudo apt upgrade"
+alias aptup="sudo apt update && sudo apt upgrade"
 alias aptgin="sudo apt-get install"
 alias aptseek="sudo apt search"
 alias aptpurge="sudo apt-get purge"
