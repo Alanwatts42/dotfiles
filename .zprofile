@@ -5,6 +5,11 @@
 # executes before .zshrc on zsh startup
 # useful for environment variables, and other 
 # options important for the actual shell.
+
+# fix for snap install issue - apps should now show in launcher
+emulate sh -c 'source /etc/profile'
+
+
 #
 # History Configuration >>
 # ---------------------
