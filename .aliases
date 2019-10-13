@@ -137,7 +137,7 @@ alias xbright="xrandr --output eDP-1 --brightness 1"
 
 # Wifi operations via the terminal - very long, very specific, aliases therefore very necessary
 alias wifi-go="sudo nmcli dev wifi connect"
-alias mifi="sudo nmcli dev wifi connect MY_EX-WIFI_GOT_THE_HOUSE password amqv294#"
+alias mifi="sudo nmcli dev wifi connect the_very_small_array password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
 
 # Pip, pipenv, and python
