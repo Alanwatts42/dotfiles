@@ -118,6 +118,11 @@ alias aptmylistgrep="sudo apt list --installed | grep"
 alias aptbiglistgrep="sudo apt list | grep"
 alias aptbiglistvim="vim <(sudo apt list)"
 alias apshow="apt show"
+
+# splash screens
+alias splashscreensearch="apt-cache search plymouth-theme"
+alias splashscreenchange="sudo update-alternatives --config default.plymouth"
+
 # clear screen
 alias clr="clear"
 alias cls="clear"
