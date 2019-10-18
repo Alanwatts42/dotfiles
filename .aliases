@@ -122,6 +122,7 @@ alias apshow="apt show"
 # splash screens
 alias splashscreensearch="apt-cache search plymouth-theme"
 alias splashscreenchange="sudo update-alternatives --config default.plymouth"
+alias updatebootimage="sudo update-initramfs -u"
 
 # clear screen
 alias clr="clear"
