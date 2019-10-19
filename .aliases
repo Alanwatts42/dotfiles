@@ -19,8 +19,14 @@
 # Functions:
 # ----------
 
+## wget --no-check-certificate
+wgetnc () {
+   wget -c -t 99 --retry-connrefused "$1" --no-check-certificate
+}
+
+
 ## it's called wificonnect, you get one guess what it does
-wificonnect () {
+wificonnect () { 
     sudo nmcli dev wifi connect "$1" password "$2"
 }
 
