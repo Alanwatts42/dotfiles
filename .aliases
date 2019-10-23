@@ -19,13 +19,11 @@
 # Functions:
 # ----------
 
-
 ## time-delayed resume operation (after ctrl-z)
 resumeafter () {
-    sleep "$1"m && fg
     echo "resuming process after ${1} minutes"
+    sleep "$1"m && fg
 }
-
 
 ## wget --no-check-certificate
 wgetnc () {
