@@ -19,6 +19,13 @@
 # Functions:
 # ----------
 
+
+## time-delayed resume operation (after ctrl-z)
+resumeafter () {
+    sleep "$1"m && fg
+}
+
+
 ## wget --no-check-certificate
 wgetnc () {
    wget -c -t 99 --retry-connrefused "$1" --no-check-certificate
