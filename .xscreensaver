@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for evan on Sat Oct 12 15:32:28 2019.
+# Written by xscreensaver-demo 5.36 for evan on Thu Oct 24 02:53:47 2019.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	1:30:00
@@ -35,7 +35,7 @@ chooseRandomImages: True
 imageDirectory:	/home/evan/Pictures/Backgrounds
 
 mode:		one
-selected:	82
+selected:	184
 
 textMode:	literal
 textLiteral:	Boldly go where no man has gone before
