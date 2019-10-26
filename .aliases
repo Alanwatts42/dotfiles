@@ -31,7 +31,7 @@ romdlpsx () {
 
 romdldc () {
     cd ~/RetroPie/roms/dreamcast || exit;
-    if wget -c -t 99 --retry-connrefused "$1" --no-check-certificate;then
+    if wget -c -t 999 --retry-connrefused "$1" --no-check-certificate;then
         ripsaw
     else 
         echo "unable to download dreamcast rom, no need to execute ripsaw"    
@@ -47,7 +47,7 @@ resumeafter () {
 
 ## wget --no-check-certificate
 wgetnc () {
-   wget -c -t 99 --retry-connrefused "$1" --no-check-certificate
+   wget -c -t 999 --retry-connrefused "$1" --no-check-certificate
 }
 
 
@@ -242,7 +242,7 @@ alias youtube-dlx="youtube-dl -i -R 99 --yes-playlist  --verbose"  #ignore error
 alias youtube-dlu="youtube-dl -U"  #update
 
 # wget
-alias wget="wget -c -t 99 --retry-connrefused"
+alias wget="wget -c -t 999 --retry-connrefused"
 alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
 
 
