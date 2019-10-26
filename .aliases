@@ -1,3 +1,4 @@
+#!/bin/bash
 #                           **ALIASES**  
 #                           -----------  
 ## Evan Sherwood
@@ -20,13 +21,22 @@
 # ----------
 
 romdlpsx () {
-    cd ~/RetroPie/roms/psx;
-    wget -c -t 99 --retry-connrefused "$1" --no-check-certificate
+    cd ~/RetroPie/roms/psx || exit;
+    if wget -c -t 99 --retry-connrefused "$1" --no-check-certificate;then
+        ripsaw
+    else
+        echo "unable to download psx rom, no need to execute ripsaw"
+    fi
 }
 
 romdldc () {
-    cd ~/RetroPie/roms/dreamcast;
-    wget -c -t 99 --retry-connrefused "$1" --no-check-certificate
+    cd ~/RetroPie/roms/dreamcast || exit;
+    if wget -c -t 99 --retry-connrefused "$1" --no-check-certificate;then
+        ripsaw
+    else 
+        echo "unable to download dreamcast rom, no need to execute ripsaw"    
+    fi
+
 }
 
 ## time-delayed resume operation (after ctrl-z)
@@ -74,7 +84,7 @@ hush () {
 # item in that list in other words, loop through working directory and make each file executable.
 doainloopb () {
     for i in $1;do
-        $@ $i
+        "$@" "$i"
     done
 }
 
@@ -220,7 +230,7 @@ alias py="python3"
 alias sync-dfs="~/sync.sh"
 
 # Custom Shell Commands
-alias lets_kick_shell="vim $HOME/.kick_shell"
+alias lets_kick_shell='vim "$HOME"/.kick_shell'
 
 # --Utilities--
 # qutebrowser (start with debug features on)
