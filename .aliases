@@ -20,23 +20,22 @@
 # Functions:
 # ----------
 
-romdlpsx () {
+wgetpsx () {
     cd ~/RetroPie/roms/psx || exit;
-    if wget -c -t 99 --retry-connrefused "$1" --no-check-certificate;then
+    if wget -c -t 99 --retry-connrefused "$@" --no-check-certificate;then
         ripsaw
     else
-        echo "unable to download psx rom, no need to execute ripsaw"
+        echo "download incomplete, ripsaw did not run"
     fi
 }
 
-romdldc () {
+wgetdc () {
     cd ~/RetroPie/roms/dreamcast || exit;
-    if wget -c -t 999 --retry-connrefused "$1" --no-check-certificate;then
+    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
         ripsaw
     else 
-        echo "unable to download dreamcast rom, no need to execute ripsaw"    
+        echo "download incomplete, ripsaw did not run"    
     fi
-
 }
 
 ## time-delayed resume operation (after ctrl-z)
@@ -47,7 +46,11 @@ resumeafter () {
 
 ## wget --no-check-certificate
 wgetnc () {
-   wget -c -t 999 --retry-connrefused "$1" --no-check-certificate
+    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
+        ripsaw
+    else
+        echo "download incomplete, ripsaw did not run"
+    fi
 }
 
 
