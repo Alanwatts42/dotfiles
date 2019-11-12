@@ -65,18 +65,20 @@ shinstall () {
 
 ## pipe terminal output to vim
 vimget () {
+    # shellcheck disable=SC2039
     vim <("$@")
 }
 ## pipe terminal output to less text viewer
 lessget () {
-    less -f <("$@")
+    # shellcheck disable=SC2039
+    less -f <('$@')
 }
 ## copy the contents of a text file to the clipboard
 clipfile () {
     xclip -i -selection c "$1"
 }
 #
-## run something with no terimal output (quietly)
+## run something with no terminal output (quietly)
 hush () {
     "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
 }
