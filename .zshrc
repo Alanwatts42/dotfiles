@@ -88,6 +88,7 @@ setopt AUTO_CD
 # Sources >>
 source ~/.aliases
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 # Tilix config >
@@ -97,7 +98,7 @@ fi
 
 # Custom shell commands >
 # to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
-if [ -f "$HOME/.kick_shell" ] 
+if [ -f "~/.kick_shell" ] 
 then
-    source "$HOME/.kick_shell"
+    source ~/.kick_shell
 fi
