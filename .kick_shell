@@ -18,9 +18,9 @@ applist () {
 }
 
 upinstall () {
-    sudo apt-get update;
-    sudo apt-get upgrade;
-    sudo apt-get install "$@" --install-suggests
+    sudo apt-get update -y;
+    sudo apt-get upgrade -y;
+    sudo apt-get install "$@" --install-suggests -y
 }
 
 
