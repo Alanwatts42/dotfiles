@@ -118,6 +118,8 @@ Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
 Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
 Plug 'WolfgangMehner/c-support'  " Tools for C coding
 Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
+Plug 'vim-scripts/a.vim' " Fast switch between source & header 
+
 
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
