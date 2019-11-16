@@ -42,8 +42,9 @@ else
 endif
 
 " tmux color issue fix
-" if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux'  ) let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux')
+"\ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum 
+"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum
 " endif
 
 
@@ -63,35 +64,35 @@ call plug#begin(bundle)
 
 """ == Development Environment and Enhancements ==
 Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
-Plug 'tpope/vim-surround'  " easy manipulation of surround chars
-Plug 'tomtom/tcomment_vim' " use gcc to comment/uncomment text under cursor
-Plug 'tpope/vim-commentary'  " tpope doesn't write docs, docs write themselves out of fear.
+Plug 'tpope/vim-surround'   " easy manipulation of surround chars
+Plug 'tomtom/tcomment_vim'  " use gcc to comment/uncomment text under cursor
+Plug 'tpope/vim-commentary' " tpope doesn't write docs, docs write themselves out of fear.
 Plug 'somini/vim-autoclose' " Auto-close when using grouping symbols i.e.'(), [], {}, '', '
 Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
 Plug 'PyCQA/pylint'         " Python linter
 
 """ == Javascript ==
-Plug 'w0rp/ale'    " javascript linter
+Plug 'w0rp/ale'             " javascript linter
 Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
 
 """ == General Functionality ==
-Plug 'ctrlpvim/ctrlp.vim'  " Fuzzy finder (files, mru, etc)
-Plug 'mbbill/undotree'  " Undo history tool
+Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
+Plug 'mbbill/undotree'      " Undo history tool
 Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
 
 """ == Look & Feel ==
-Plug 'flazz/vim-colorschemes' " change colorshemes easier
-Plug 'vim-airline/vim-airline' " operative word 'line'
-Plug 'vim-airline/vim-airline-themes'  " Enables themes for vim-airline
-Plug 'christophermca/meta5'  " meta5 colorscheme
+Plug 'flazz/vim-colorschemes'           " change colorshemes easier
+Plug 'vim-airline/vim-airline'          " operative word 'line'
+Plug 'vim-airline/vim-airline-themes'   " Enables themes for vim-airline
+Plug 'christophermca/meta5'             " meta5 colorscheme
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'Lokaltog/powerline' " tabline tool
+Plug 'Lokaltog/powerline'               " tabline tool
 
 """ == Git and Version Control ==
-Plug 'tpope/vim-fugitive' " git wrapper - 'git commit'=':Gcommit'
-Plug 'tpope/vim-rhubarb' " something to do with git, I honestly forgot
-Plug 'junegunn/gv.vim' " diff tool - requires vim-fugitive to run
-Plug 'sodapopcan/vim-twiggy' " branch manager for git repositories
+Plug 'tpope/vim-fugitive'      " git wrapper - 'git commit'=':Gcommit'
+Plug 'tpope/vim-rhubarb'       " I honestly forgot what this is
+Plug 'junegunn/gv.vim'         " diff tool - requires vim-fugitive to run
+Plug 'sodapopcan/vim-twiggy'   " branch manager for git repositories
 Plug 'airblade/vim-gitgutter'  " excellent document diff tool
 Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
@@ -102,17 +103,17 @@ Plug 'tomtom/tlib_vim'                    " dependencies #2
 Plug 'honza/vim-snippets'                 " snippets repo
 
 """ == Markup/Markdown ==
-Plug 'mitsuhiko/vim-sparkup'        " Sparkup(XML/jinja/htlm-django/etc.) 
-Plug 'Rykka/riv.vim'                " ReStructuredText plugin
-Plug 'plasticboy/vim-markdown' " markdown handling in vim 
-Plug 'godlygeek/tabular' " vim-markdown needs this to run
+Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
+Plug 'Rykka/riv.vim'               " ReStructuredText plugin
+Plug 'plasticboy/vim-markdown'     " markdown handling in vim 
+Plug 'godlygeek/tabular'           " vim-markdown needs this to run
 
 """ == Python ==
 Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
 Plug 'scrooloose/syntastic'        " Syntax checking plugin for Vim
 Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
 Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
-Plug 'majutsushi/tagbar'    " depends='apt install exuberant-ctags'
+Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
 
 " == C Programming/Dev Support ==
 Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
@@ -123,7 +124,7 @@ Plug 'vim-scripts/a.vim' " Fast switch between source & header
 
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
-" Plug 'Valloric/YouCompleteMe'     " Complicated linter
+Plug 'Valloric/YouCompleteMe'     " Complicated linter
 " Plug 'tpope/vim-commentary'        " Comment stuff out
 " Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
 " Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
@@ -192,6 +193,7 @@ endif
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
+
 nnoremap <F9> :w<cr>:!python3 %<cr>
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
@@ -567,4 +569,4 @@ let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python3']
 " let g:ycm_confirm_extra_conf=0
 
 " nmap <leader>g :YcmCompleter GoTo<CR>
-" nmap <leader>d :YcmCompleter GoToDefinition<CR>
+nmap <leader>d :YcmCompleter GoToDefinition<CR>
