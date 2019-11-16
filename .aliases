@@ -19,6 +19,10 @@
 # Functions:
 # ----------
 
+hush () {
+    "$1" >/dev/null 2>&1
+}
+
 wgetpsx () {
     cd ~/RetroPie/roms/psx || exit;
     if wget -c -t 99 --retry-connrefused "$@" --no-check-certificate;then
