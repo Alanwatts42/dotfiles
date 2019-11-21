@@ -193,8 +193,8 @@ endif
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
-
 nnoremap <F9> :w<cr>:!python3 %<cr>
+
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
 
@@ -233,9 +233,14 @@ endfunction
 
 command! -complete=file -nargs=* RunJS call s:RunShellCommand('node '.<q-args>)
 
-
 " set nodejs config file '~/.npmrc' to *.ini filetype
 autocmd BufRead,BufNewFile ~/.npmrc setf dosini 
+
+
+" ==Shell-Scripting==
+" Remap <F8> to execute shell script
+nnoremap <F8> :w<cr>:!./%<cr>
+
 
 " ==Templates==
 " Shell Scripts '*.sh' files

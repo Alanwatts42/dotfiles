@@ -64,7 +64,8 @@ wificonnect () {
 
 ## run install using synaptic and treat suggestions as dependencies
 shinstall () { 
-    sudo apt-get -fm install "$1" --install-suggests -y
+    sudo apt-get update && sudo apt-get dist-upgrade --fix-missing -y;
+    sudo apt-get -fm install "$@" --install-suggests -y
 }
 
 ## pipe terminal output to vim
