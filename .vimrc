@@ -239,7 +239,7 @@ autocmd BufRead,BufNewFile ~/.npmrc setf dosini
 
 " ==Shell-Scripting==
 " Remap <F8> to execute shell script
-nnoremap <F8> :w<cr>:!./%<cr>
+nnoremap <F8> <cr>:!./%<cr>
 
 
 " ==Templates==
