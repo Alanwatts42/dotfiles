@@ -23,6 +23,19 @@ hush () {
     "$1" >/dev/null 2>&1
 }
 
+eyewget () {
+    wget -m -np -c -R "index.html*" "$@"
+}
+
+
+badzshhistoryfix () {
+    mv .zsh_history .zsh_history_bad;
+    strings .zsh_history_bad > .zsh_history;
+    fc -R .zsh_history;
+    echo ".zsh_history should be fixed now"
+}
+
+
 wgetpsx () {
     cd ~/RetroPie/roms/psx || exit;
     if wget -c -t 99 --retry-connrefused "$@" --no-check-certificate;then
