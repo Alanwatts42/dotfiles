@@ -32,7 +32,7 @@ wget -m -np -c -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux
 }
 
 eyeallgames () {
-wget -m -np -c -U -r "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/*"
+wget -m -np -cr -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/"
 }
 
 badzshhistoryfix () {
