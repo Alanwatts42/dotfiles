@@ -24,9 +24,16 @@ hush () {
 }
 
 eyewget () {
-    wget -m -np -c -R "index.html*" "$@"
+    wget -m -np -c -U "eye01" -R "index.html*" "$@"
 }
 
+eyelnxgame () {
+wget -m -np -c -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/$1"
+}
+
+eyeallgames () {
+wget -m -np -c -U -r "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/*"
+}
 
 badzshhistoryfix () {
     mv .zsh_history .zsh_history_bad;
