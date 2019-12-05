@@ -471,9 +471,11 @@ nnoremap <F5> :UndotreeToggle<CR>
 
 "" -TagBar settings-
 let g:tagbar_autofocus=0
-let g:tagbar_width=42
+let g:tagbar_width=27
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
+nmap <F7> :TagBarToggle<CR>
+
 
 "" -NERDTree settings-
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
