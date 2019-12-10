@@ -28,7 +28,7 @@ eyewget () {
 }
 
 wgame () {
-wget -m -np -c -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/$1"
+wget -m -np -nd -c -U "eye01" -R "index.html*" 'http://the-eye.eu/public/Games/Linux/"$@"'
 }
 
 eyeallgames () {
