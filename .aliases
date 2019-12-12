@@ -111,10 +111,20 @@ hush () {
 # doainloopb [for each part of iterable] "$1" [run command] "$2"
 # example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
 # item in that list in other words, loop through working directory and make each file executable.
-doainloopb () {
-    for i in $1;do
-        "$@" "$i"
+forloop () {
+    
+    echo enter file extension of files in "$(pwd)" to loop through
+    read -r f
+    
+    echo now enter the operation to perform on each loop
+    read -r o
+    
+    for i in *."$f";do
+        "$o" "$i"
     done
+    
+    echo it is done! Now look upon what your foolishness has wrought!
+    ls
 }
 
 # trying to automate: 
