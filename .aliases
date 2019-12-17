@@ -28,11 +28,11 @@ eyewget () {
 }
 
 wgame () {
-wget -m -np -nd -c -U "eye01" -R "index.html*" 'http://the-eye.eu/public/Games/Linux/"$@"'
+    wget -m -np -nd -c -U "eye01" -R "index.html*" 'http://the-eye.eu/public/Games/Linux/"$@"'
 }
 
 eyeallgames () {
-wget -m -np -cr -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/"
+    wget -m -np -cr -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/"
 }
 
 badzshhistoryfix () {
@@ -114,13 +114,13 @@ hush () {
 forloop () {
     
     echo enter file extension of files in "$(pwd)" to loop through
-    read -r f
+    read -r ext 
     
     echo now enter the operation to perform on each loop
-    read -r o
+    read -r op
     
-    for i in *."$f";do
-        "$o" "$i"
+    for i in *."$ext";do
+        "$op" "$i"
     done
     
     echo it is done! Now look upon what your foolishness has wrought!
@@ -157,10 +157,10 @@ alias switchxmanager='sudo update-alternatives --config x-session-manager'
 # gksu replacement
 alias gksu="gedit admin://"
 
-# Get missing gpg keys
+# get missing gpg keys
 alias getkeys="sudo launchpad-getkeys"
 
-# Terminal navigation
+# terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
 alias lsa="ls -apw 110 --group-directories-first"
@@ -171,7 +171,7 @@ alias lsm="ls -t" # order by recently modified -r = most recent first
 alias lsr="ls -tr" # order by recently modified -tr = most recent last
 alias lsi="ls -lhtr" # informative ordered list
 
-# Apt or apt-get shortcuts for convenience
+# apt or apt-get shortcuts for convenience
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade -y"
 alias aptg="sudo apt-get"
 alias aptinstall="sudo apt-get -f install"
@@ -180,6 +180,7 @@ alias aptgin="sudo apt-get install"
 alias aptseek="sudo apt search"
 alias aptpurge="sudo apt-get purge"
 alias aptremove="sudo apt-get remove"
+
 # add/remove repositories
 alias aptaddrepo="sudo add-apt-repository"
 alias aptrmrepo="sudo add-apt-repository --remove"
@@ -208,11 +209,9 @@ alias vi="vim"
 alias nvi="nvim"
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
-alias xlight="xrandr --output eDP-1 --brightness"
-alias xdim="xrandr --output eDP-1 --brightness 0.65"
-alias xbright="xrandr --output eDP-1 --brightness 1"
+alias brightlvl="lxqt-config-brightness edp1 -s"
 
-# Wifi operations via the terminal - very long, very specific, aliases therefore very necessary
+# Wifi operations via the terminal
 alias wifi-go="sudo nmcli dev wifi connect"
 alias mifi="sudo nmcli dev wifi connect the_very_small_array password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
