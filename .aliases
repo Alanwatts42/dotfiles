@@ -160,6 +160,9 @@ alias gksu="gedit admin://"
 # get missing gpg keys
 alias getkeys="sudo launchpad-getkeys"
 
+# tilix quake mode
+alias tilix="tilix --quake"
+
 # terminal navigation
 alias ls="ls -a --color=auto"
 alias lss='ls'
