@@ -19,6 +19,10 @@
 # Functions:
 # ----------
 
+aptsearchnew () {
+    apt search "$1" | grep -v "[installed]"
+}
+
 hush () {
     "$1" >/dev/null 2>&1
 }
