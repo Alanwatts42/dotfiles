@@ -19,6 +19,12 @@
 # Functions:
 # ----------
 
+suinstall () {
+    echo "alright, installing...";
+    sudo apt-get update && sudo apt-get dist-upgrade;
+    sudo apt-get install "$1"
+}
+
 aptsearchnew () {
     apt search "$1" | grep -v "[installed]"
 }
