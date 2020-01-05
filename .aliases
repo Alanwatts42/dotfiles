@@ -15,7 +15,6 @@
 # Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
 
 
-
 # Functions:
 # ----------
 
@@ -160,6 +159,11 @@ gitsync () {
    git commit -m "minor edits"; 
    git push;
 }
+
+
+
+# make file executable
+alias chmodx="sudo chmod +x"
 
 # switch x-session manager (i.e. gnome to lxde to lxqt etc.)
 alias switchxmanager='sudo update-alternatives --config x-session-manager'
