@@ -1,11 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 # Custom commands
 # This file adds shell scripts to path so I can execute them like commands
 # without needing to explictly type out their full path or ".sh" etc.
 
-chmodx () {
-    chmod +x "$1"
-}
+
 
 lswalk () {
     for i in *;do
