@@ -318,7 +318,7 @@ noremap Y y$
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
-set clipboard=unnamed
+set clipboard=unnamedplus
 " About clipboard modifications:
 " <leader>y or 'leader+y' should copy to system clipboard
 " <F2> toggles 'paste mode', helps paste into vim
