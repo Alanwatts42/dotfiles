@@ -162,8 +162,13 @@ gitsync () {
 
 
 
+
+## Permissions
 # make file executable
 alias chmodx="sudo chmod +x"
+
+# check octal '3 digit format' permissions for any file or directory
+alias statca="sudo stat -c %a"
 
 # switch x-session manager (i.e. gnome to lxde to lxqt etc.)
 alias switchxmanager='sudo update-alternatives --config x-session-manager'
