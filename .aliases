@@ -98,15 +98,15 @@ shinstall () {
 }
 
 ## pipe terminal output to vim
-vimget () {
-    # shellcheck disable=SC2039
-    vim <("$@")
-}
+# vimget () {
+#     # shellcheck disable=SC2039
+#     # vim <("$@")
+# }
 ## pipe terminal output to less text viewer
-lessget () {
-    # shellcheck disable=SC2039
-    less -f <('$@')
-}
+# lessget () {
+#     # shellcheck disable=SC2039
+#     less -f <('$@')
+# }
 ## copy the contents of a text file to the clipboard
 clipfile () {
     xclip -i -selection c "$1"
