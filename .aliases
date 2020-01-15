@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bashk
 #                           **ALIASES**  
 ## Evan Sherwood
 ## evan.sherwood@keemail.me
@@ -162,7 +162,6 @@ gitsync () {
 
 
 
-
 ## Permissions
 # make file executable
 alias chmodx="sudo chmod +x"
@@ -238,15 +237,23 @@ alias wifi-go="sudo nmcli dev wifi connect"
 alias mifi="sudo nmcli dev wifi connect the_very_small_array password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
 
-# Pip, pipenv, and python
+
+## Python
+# bpython specialized python3 interpreter
+alias bpython="bpython3"
+alias bpy="bpython3"
+alias python3="bpython3"
+alias py="bpython3"
+
+# Pip, pipenv, and virtual environments
 alias pipinstall="sudo pip3 --user install"
 alias pipenv="python3 -m pipenv"
 alias ppvg="python3 -m pipenv graph"
-alias ppvin="python3 -m pipenv install"
-alias ppvcheck="python3 -m pipenv check"
-alias ppvsync="python3 -m pipenv sync"
-alias ppvupdate="python3 -m pipenv update"
-alias pipenvshell="python3 -m pipenv shell"
+alias ppvin="python3 -m --user pipenv install"
+alias ppvcheck="python3 -m --user pipenv check"
+alias ppvsync="python3 -m --user pipenv sync"
+alias ppvupdate="python3 -m --user pipenv update"
+alias pipenvshell="python3 -m --user pipenv shell"
 
 # --Git--
 # start a working area
@@ -283,8 +290,8 @@ alias emu="emulationstation"
 alias videogames="emulationstation"
 
 # Python
-alias python="python3"
-alias py="python3"
+alias python="bpython3"
+alias py="bpython3"
 
 # Custom Scripts
 alias sync-dfs="~/sync.sh"
