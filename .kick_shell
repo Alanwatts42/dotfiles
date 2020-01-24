@@ -1,24 +1,191 @@
 #!/usr/bin/sh
-# Custom commands
-# This file adds shell scripts to path so I can execute them like commands
-# without needing to explictly type out their full path or ".sh" etc.
 
+#This file has the exact same function as '~/.aliases'. However, I found much of what I
+#initially put into the 'aliases' file weren't actually aliases, but mostly functions. 
+#Therefore, I created this file for any data structures that can be called from the 
+#terminal (like aliases) but which are not aliases. This helped me significantly de-
+#clutter my extremely long and confusing '~/.aliases' file, now more true to it's name. 
 
+#In order for this file to work as intended, it must be sourced a shell. For example, to 
+#source it to zsh and bash, I used the same method for both files and both shells:
+#adding 'export "~/path/to/file"' to a new line in both '~/.bashrc' and '~/.zshrc'). 
+#There are multiple ways of accomplishing this, and if in doubt always refer to the 
+#appropriate documentation, but this method should work for most GNU shells.
 
-lswalk () {
+# Walk through a directory running a command "$@" on each item "$i" individually.
+floopwalk () {
     for i in *;do
         "$@" "$i"
     done
 }
 
+# List all packages known to synaptic 'apt' and show those matching search pattern "@"
 applist () {
     apt list | grep "$@"
 }
 
+# Update, upgrade, then install new package as well as any related packages suggested by synaptic
 upinstall () {
     sudo apt-get update -y;
     sudo apt-get upgrade -y;
     sudo apt-get install "$@" --install-suggests -y
 }
 
+# Update, upgrade, and then install a package via apt-get
+suinstall () {
+    echo "alright, installing...";
+    sudo apt-get update && sudo apt-get dist-upgrade;
+    sudo apt-get install "$1"
+}
+
+# Search all packages known to synaptic for pattern "$1", but exclude any that have already been installed. (May not differentiate i386 & x86_64)
+aptsearchnew () {
+    apt search "$1" | grep -v "[installed]"
+}
+
+# Sends any output of command "$1" to /dev/null, effectively running it silently.
+hush () {
+    "$1" >/dev/null 2>&1
+}
+
+# Download file from 'the-eye.eu' site directory structure without having to provide the full url. Side effect is that file will be nested in multiple dirs.
+eyewget () {
+    wget -m -np -c -U "eye01" -R "index.html*" "$@"
+}
+
+# Download game from 'the-eye.eu', same side effect applies.
+wgame () {
+    wget -m -np -nd -c -U "eye01" -R "index.html*" 'http://the-eye.eu/public/Games/Linux/"$@"'
+}
+
+# Download all games in a directory of 'the-eye.eu', same side effect applies.
+eyeallgames () {
+    wget -m -np -cr -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/"
+}
+
+# Shortcut for fix procedure for common issue with '.zsh_history' if it gets corrupted
+badzshhistoryfix () {
+    mv .zsh_history .zsh_history_bad;
+    strings .zsh_history_bad > .zsh_history;
+    fc -R .zsh_history;
+    echo ".zsh_history should be fixed now"
+}
+
+# Download psx rom from url to the correct retropie directory and if download is successful, unarchive it with ripsaw.
+wgetpsx () {
+    cd ~/RetroPie/roms/psx || exit;
+    if wget -c -t 99 --retry-connrefused "$@" --no-check-certificate;then
+        ripsaw
+    else
+        echo "download incomplete, ripsaw did not run"
+    fi
+}
+
+# Same as wgetpsx but for dreamcast roms
+wgetdc () {
+    cd ~/RetroPie/roms/dreamcast || exit;
+    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
+        ripsaw
+    else 
+        echo "download incomplete, ripsaw did not run"    
+    fi
+}
+
+## time-delayed resume operation (after ctrl-z)
+resumeafter () {
+    echo "resuming process after ${1} minutes"
+    sleep "$1"m && fg
+}
+
+## wget --no-check-certificate
+wgetnc () {
+    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
+        ripsaw
+    else
+        echo "download incomplete, ripsaw did not run"
+    fi
+}
+
+
+## it's called wificonnect, you get one guess what it does
+wificonnect () { 
+    sudo nmcli dev wifi connect "$1" password "$2"
+}
+
+## run install using synaptic and treat suggestions as dependencies
+shinstall () { 
+    sudo apt-get update && sudo apt-get dist-upgrade --fix-missing -y;
+    sudo apt-get -fm install "$@" --install-suggests -y
+}
+
+## pipe terminal output to vim
+# vimget () {
+#     # shellcheck disable=SC2039
+#     # vim <("$@")
+# }
+## pipe terminal output to less text viewer
+# lessget () {
+#     # shellcheck disable=SC2039
+#     less -f <('$@')
+# }
+
+## copy the contents of a text file to the clipboard
+clipfile () {
+    xclip -i -selection c "$1"
+}
+
+## run something with no terminal output (quietly)
+hush () {
+    "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
+}
+
+# doainloopb [for each part of iterable] "$1" [run command] "$2"
+# example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
+# item in that list in other words, loop through working directory and make each file executable.
+forloop () {
+    echo enter file extension of files in "$(pwd)" to loop through
+    read -r ext 
+    echo now enter the operation to perform on each loop
+    read -r op
+    for i in *."$ext";do
+        "$op" "$i"
+    done
+    echo it is done! Now look upon what your foolishness has wrought!
+    ls
+}
+
+# trying to automate: 
+#   git add --all <return>; 
+#   git commit -m 'message' <return>; 
+#   git push <return>;
+# challenge: executing each line 
+#   individually within the function.
+# solution: ending each 'line' with a `;`
+#   it appears that `;` works to end each line
+#   as if it were typed into the shell and 
+#   executed with <return>
+gitup () {
+   git add --all;    
+   git commit -m "$1"; 
+   git push;
+}
+
+# quickly add all changes and push to remote
+# with generic commit message 'minor edits'
+gitsync () {
+   git add --all;    
+   git commit -m "minor edits"; 
+   git push;
+}
+
+
+# Clear out any unnecessary or chached packages, then update and upgrade. A good general update function.
+aptsweep () {
+    sudo apt-get check;
+    sudo apt-get clean;
+    sudo apt-get autoclean;
+    sudo apt-get autoremove -y;
+    sudo apt-get update;
+    sudo apt-get dist-upgrade -y;
+}
 
