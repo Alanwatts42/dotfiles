@@ -10,166 +10,7 @@
 
 # Bash aliases - examples found in /usr/share/doc/bash-doc/examples
 
-# Functions - similar to aliases, but can have things like parameters/variables
-
-# Example function - "apt-grab <program> = "sudo apt-get -f install <program> --install-suggests"
-
-
-# Functions:
-# ----------
-
-suinstall () {
-    echo "alright, installing...";
-    sudo apt-get update && sudo apt-get dist-upgrade;
-    sudo apt-get install "$1"
-}
-
-aptsearchnew () {
-    apt search "$1" | grep -v "[installed]"
-}
-
-hush () {
-    "$1" >/dev/null 2>&1
-}
-
-eyewget () {
-    wget -m -np -c -U "eye01" -R "index.html*" "$@"
-}
-
-wgame () {
-    wget -m -np -nd -c -U "eye01" -R "index.html*" 'http://the-eye.eu/public/Games/Linux/"$@"'
-}
-
-eyeallgames () {
-    wget -m -np -cr -U "eye01" -R "index.html*" "http://the-eye.eu/public/Games/Linux/"
-}
-
-badzshhistoryfix () {
-    mv .zsh_history .zsh_history_bad;
-    strings .zsh_history_bad > .zsh_history;
-    fc -R .zsh_history;
-    echo ".zsh_history should be fixed now"
-}
-
-
-wgetpsx () {
-    cd ~/RetroPie/roms/psx || exit;
-    if wget -c -t 99 --retry-connrefused "$@" --no-check-certificate;then
-        ripsaw
-    else
-        echo "download incomplete, ripsaw did not run"
-    fi
-}
-
-wgetdc () {
-    cd ~/RetroPie/roms/dreamcast || exit;
-    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
-        ripsaw
-    else 
-        echo "download incomplete, ripsaw did not run"    
-    fi
-}
-
-## time-delayed resume operation (after ctrl-z)
-resumeafter () {
-    echo "resuming process after ${1} minutes"
-    sleep "$1"m && fg
-}
-
-## wget --no-check-certificate
-wgetnc () {
-    if wget -c -t 999 --retry-connrefused "$@" --no-check-certificate;then
-        ripsaw
-    else
-        echo "download incomplete, ripsaw did not run"
-    fi
-}
-
-
-## it's called wificonnect, you get one guess what it does
-wificonnect () { 
-    sudo nmcli dev wifi connect "$1" password "$2"
-}
-
-## run install using synaptic and treat suggestions as dependencies
-shinstall () { 
-    sudo apt-get update && sudo apt-get dist-upgrade --fix-missing -y;
-    sudo apt-get -fm install "$@" --install-suggests -y
-}
-
-## pipe terminal output to vim
-# vimget () {
-#     # shellcheck disable=SC2039
-#     # vim <("$@")
-# }
-## pipe terminal output to less text viewer
-# lessget () {
-#     # shellcheck disable=SC2039
-#     less -f <('$@')
-# }
-## copy the contents of a text file to the clipboard
-clipfile () {
-    xclip -i -selection c "$1"
-}
-#
-## run something with no terminal output (quietly)
-hush () {
-    "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
-}
-
-# doainloopb [for each part of iterable] "$1" [run command] "$2"
-# example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
-# item in that list in other words, loop through working directory and make each file executable.
-forloop () {
-    
-    echo enter file extension of files in "$(pwd)" to loop through
-    read -r ext 
-    
-    echo now enter the operation to perform on each loop
-    read -r op
-    
-    for i in *."$ext";do
-        "$op" "$i"
-    done
-    
-    echo it is done! Now look upon what your foolishness has wrought!
-    ls
-}
-
-# trying to automate: 
-#   git add --all <return>; 
-#   git commit -m 'message' <return>; 
-#   git push <return>;
-# challenge: executing each line 
-#   individually within the function.
-# solution: ending each 'line' with a `;`
-#   it appears that `;` works to end each line
-#   as if it were typed into the shell and 
-#   executed with <return>
-gitup () {
-   git add --all;    
-   git commit -m "$1"; 
-   git push;
-}
-
-# quickly add all changes and push to remote
-# with generic commit message 'minor edits'
-gitsync () {
-   git add --all;    
-   git commit -m "minor edits"; 
-   git push;
-}
-
-
-aptsweep () {
-    sudo apt-get check;
-    sudo apt-get clean;
-    sudo apt-get autoclean;
-    sudo apt-get autoremove -y;
-    sudo apt-get update;
-    sudo apt-get dist-upgrade -y;
-}
-
+# Functions - Moved all functions that used to be here to .kick_shell
 
 ## Permissions
 # make file executable
@@ -234,9 +75,10 @@ alias cx="clear -x"
 # super user
 alias su="sudo"
 # open and edit with vi improved a.k.a. vim 8
-alias vi="vim"
-# open and edit with neovim
-alias nvi="nvim"
+# using neovim more, so vim command is now alias for nvim; 'vi' can be used for classic vim
+alias vim="nvim" # neovim
+alias nvi="nvim" # neovim
+alias vi="vim"   # vim
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
