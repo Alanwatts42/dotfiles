@@ -92,9 +92,11 @@ alias wifi-scan="sudo nmcli dev wifi"
 ## Python
 # bpython specialized python3 interpreter
 alias bpython="bpython3"
+alias bp3="bpython3"
+alias bpy3="bpython3"
 alias bpy="bpython3"
-alias python3="bpython3"
-alias py="bpython3"
+alias bp="bpython3"
+
 
 # Pip, pipenv, and virtual environments
 alias pipinstall="sudo pip3 --user install"
