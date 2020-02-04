@@ -194,6 +194,7 @@ endif
 " ==Python Plugin Options==
 " Run python code in current file with F9
 nnoremap <F9> :w<cr>:!python3 %<cr>
+nnoremap <F8> :w<cr>:!pipenv run python3 %<cr>
 
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
@@ -239,7 +240,7 @@ autocmd BufRead,BufNewFile ~/.npmrc setf dosini
 
 " ==Shell-Scripting==
 " Remap <F8> to execute shell script
-nnoremap <F8> <cr>:!./%<cr>
+" nnoremap <F8> <cr>:!./%<cr>
 
 
 " ==Templates==
