@@ -60,10 +60,10 @@ endif
 " Points to the dir where plugins managed by the plugin handler are kept.
 " By default should be $HOME/.vim/bundle
 
-call plug#begin(bundle)
+call plug#begin()
 
 """ == Development Environment and Enhancements ==
-Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
+" Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
 Plug 'tpope/vim-surround'   " easy manipulation of surround chars
 Plug 'tomtom/tcomment_vim'  " use gcc to comment/uncomment text under cursor
 Plug 'tpope/vim-commentary' " tpope doesn't write docs, docs write themselves out of fear.
@@ -72,8 +72,8 @@ Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
 Plug 'PyCQA/pylint'         " Python linter
 
 """ == Javascript ==
-Plug 'w0rp/ale'             " javascript linter
-Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
+" Plug 'w0rp/ale'             " javascript linter
+" Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
 
 """ == General Functionality ==
 Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
@@ -81,9 +81,9 @@ Plug 'mbbill/undotree'      " Undo history tool
 Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
 
 """ == Look & Feel ==
-Plug 'flazz/vim-colorschemes'           " change colorshemes easier
-Plug 'vim-airline/vim-airline'          " operative word 'line'
-Plug 'vim-airline/vim-airline-themes'   " Enables themes for vim-airline
+ Plug 'flazz/vim-colorschemes'           " change colorshemes easier
+" Plug 'vim-airline/vim-airline'          " operative word 'line'
+" Plug 'vim-airline/vim-airline-themes'   " Enables themes for vim-airline
 Plug 'christophermca/meta5'             " meta5 colorscheme
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Lokaltog/powerline'               " tabline tool
@@ -97,10 +97,10 @@ Plug 'airblade/vim-gitgutter'  " excellent document diff tool
 Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ == Snippets ==
-Plug 'garbas/vim-snipmate'                " Snippets manager
-Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
-Plug 'tomtom/tlib_vim'                    " dependencies #2
-Plug 'honza/vim-snippets'                 " snippets repo
+" Plug 'garbas/vim-snipmate'                " Snippets manager
+" Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
+" Plug 'tomtom/tlib_vim'                    " dependencies #2
+" Plug 'honza/vim-snippets'                 " snippets repo
 
 """ == Markup/Markdown ==
 Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
@@ -116,20 +116,20 @@ Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
 
 " == C Programming/Dev Support ==
-Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
-Plug 'WolfgangMehner/c-support'  " Tools for C coding
-Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
-Plug 'vim-scripts/a.vim' " Fast switch between source & header 
+" Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
+" Plug 'WolfgangMehner/c-support'  " Tools for C coding
+" Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
+" Plug 'vim-scripts/a.vim' " Fast switch between source & header 
 
 
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
-Plug 'Valloric/YouCompleteMe'     " Complicated linter
-" Plug 'tpope/vim-commentary'        " Comment stuff out
+" Plug 'Valloric/YouCompleteMe'     " Complicated linter
+Plug 'tpope/vim-commentary'        " Comment stuff out
 " Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
 " Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
 " Plug 'jalvesaq/vimcmdline'  " run code on external terminal
-" Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
+Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 call plug#end() 
 
