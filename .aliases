@@ -90,7 +90,7 @@ alias wifi-scan="sudo nmcli dev wifi"
 
 
 ## Python
-# bpython specialized python3 interpreter
+# bpython third-party python3 interpreter with hinting
 alias bpython="bpython3"
 alias bp3="bpython3"
 alias bpy3="bpython3"
@@ -143,8 +143,8 @@ alias emu="emulationstation"
 alias videogames="emulationstation"
 
 # Python
-alias python="bpython3"
-alias py="bpython3"
+py3="python3"
+py="python3"
 
 # Custom Scripts
 alias sync-dfs="~/sync.sh"
