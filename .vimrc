@@ -62,6 +62,10 @@ endif
 
 call plug#begin()
 
+""" == New Plugin Testing Area ==
+Plug 'mileszs/ack.vim'
+""" if it works, it can be permanently added to the appropriate list below
+
 """ == Development Environment and Enhancements ==
 " Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
 Plug 'tpope/vim-surround'   " easy manipulation of surround chars
@@ -79,6 +83,7 @@ Plug 'PyCQA/pylint'         " Python linter
 Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
 Plug 'mbbill/undotree'      " Undo history tool
 Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
+
 
 """ == Look & Feel ==
  Plug 'flazz/vim-colorschemes'           " change colorshemes easier
@@ -114,6 +119,7 @@ Plug 'scrooloose/syntastic'        " Syntax checking plugin for Vim
 Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
 Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
+Plug 'tpope/vim-commentary'        " Comment stuff out
 
 " == C Programming/Dev Support ==
 " Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
@@ -125,7 +131,6 @@ Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
 " Plug 'Valloric/YouCompleteMe'     " Complicated linter
-Plug 'tpope/vim-commentary'        " Comment stuff out
 " Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
 " Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
 " Plug 'jalvesaq/vimcmdline'  " run code on external terminal
@@ -148,17 +153,17 @@ colorscheme meta5
 let g:airline_theme='lucius'
 
 " == C-tools ==
-let g:C_UseTool_cmake   = 'yes'
-let g:C_UseTool_doxygen = 'yes'
+" let g:C_UseTool_cmake   = 'yes'
+" let g:C_UseTool_doxygen = 'yes'
 
 " == Ulti-snips ==
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+" let g:UltiSnipsEditSplit="vertical"
 
 " == Asynccomplete ==
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -255,6 +260,23 @@ endif
 
 " fix for ale disappearing cursor issue on lines where error was found
 let g:ale_echo_cursor = 0
+
+
+" === Ack.vim ===
+" comprehensive text search tool ack - also usable for similar tool ag
+
+" if ag is installed, switches functionality to ag rather than ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+" add '--nogroup --nocolor --column' to limit displayed results
+let g:ackprg = 'ag --vimgrep'
+
+
+
+
+
 
 " ===========================
 " ==Useful General Settings==
