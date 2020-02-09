@@ -200,7 +200,7 @@ endif
 " Run python code in current file with F9
 nnoremap <F9> :w<cr>:!python3 %<cr>
 nnoremap <F8> :w<cr>:!pipenv run python3 %<cr>
-nnoremap <F10> :w<cr>:!sudo chmod -x %;./%<cr>
+nnoremap <F10> :w<cr>:!./%<cr>
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
 
