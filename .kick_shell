@@ -13,6 +13,13 @@
 #appropriate documentation, but this method should work for most GNU shells.
 
 # Walk through a directory running a command "$@" on each item "$i" individually.
+
+
+setgov ()
+{
+    echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor 
+}
+
 floopwalk () {
     for i in *;do
         "$@" "$i"
