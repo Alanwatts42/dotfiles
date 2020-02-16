@@ -76,6 +76,8 @@ alias cx="clear -x"
 alias su="sudo"
 # open and edit with vi improved a.k.a. vim 8
 # using neovim more, so vim command is now alias for nvim; 'vi' can be used for classic vim
+alias suvim="sudo nvim" # neovim with super-user authority
+alias svim="sudo nvim"  # neovim with super-user authority
 alias vim="nvim" # neovim
 alias nvi="nvim" # neovim
 alias vi="vim"   # vim
