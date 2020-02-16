@@ -187,14 +187,14 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " -Language Server Protocol-
-if executable('pyls')
-    " pip install python-language-server
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'pyls',
-        \ 'cmd': {server_info->['pyls']},
-        \ 'whitelist': ['python'],
-        \ })
-endif
+" if executable('pyls')
+"     " pip install python-language-server
+"     au User lsp_setup call lsp#register_server({
+"         \ 'name': 'pyls',
+"         \ 'cmd': {server_info->['pyls']},
+"         \ 'whitelist': ['python'],
+"         \ })
+" endif
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
@@ -207,7 +207,7 @@ nnoremap <F10> :w<cr>:python3 -i %<cr>
 " -Python-mode-
 " set syntastic to log the output of the linter to vim messages (accessible
 " with :mes
-let g:syntastic_debug = 3
+" let g:syntastic_debug = 3
 
 
 " ==Javascript==
@@ -531,10 +531,10 @@ let g:pymode_doc=1
 let g:pymode_doc_bind='K'
 
 " lints
-let g:pymode_lint=0
+let g:pymode_lint=1
 
 " virtualenv
-let g:pymode_virtualenv=1
+let g:pymode_virtualenv=0
 
 " breakpoints
 let g:pymode_breakpoint=1
