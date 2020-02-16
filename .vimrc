@@ -199,7 +199,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " ==Python Plugin Options==
 " Run python code in current file with F9
 nnoremap <F9> :w<cr>:!python3 %<cr>
-nnoremap <F8> :w<cr>:!python3 pipenv run python3 %<cr>
+nnoremap <F8> :w<cr>:!python3 -m pipenv run python3 %<cr>
 nnoremap <F10> :w<cr>:python3 -i %<cr>
 " -Pipenv-Integration-
 " let pipenv_venv_path = system('pipenv --venv')
