@@ -1,5 +1,5 @@
-""                     Vi(m) 8 config file `~/.vimrc` 
-""                    -------------------------------
+""                  Vi(m) [NeoVim] config file `~/.vimrc` 
+""                 ----------------------------------------
 ""
 "" Evan Sherwood
 "" evan.sherwood@keemail.me
