@@ -494,7 +494,7 @@ nnoremap <F5> :UndotreeToggle<CR>
 
 "" -TagBar settings-
 let g:tagbar_autofocus=0
-let g:tagbar_width=18
+let g:tagbar_width=22
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
 nmap <F7> :TagBarToggle<CR>
