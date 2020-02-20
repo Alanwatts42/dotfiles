@@ -247,3 +247,7 @@ fi
 export SHELLCHECK_OPTS='--shell=bash --exclude=SC2016,SC2035'
 
 # export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
