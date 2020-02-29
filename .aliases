@@ -3,14 +3,19 @@
 ## Evan Sherwood
 ## evan.sherwood@keemail.me
 
+# Functions - Moved all functions that used to be here to .kick_shell
+
 # Reference(s): 
 # -------------
 
 # <https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts>
 
-# Bash aliases - examples found in /usr/share/doc/bash-doc/examples
 
-# Functions - Moved all functions that used to be here to .kick_shell
+# Shell aliases - examples found in /usr/share/doc/bash-doc/examples
+
+
+## Steam
+alias steam="sudo /usr/lib/steam/steam.sh"
 
 ## Permissions
 # make file executable
