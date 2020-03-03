@@ -89,6 +89,9 @@ alias vi="vim"   # vim
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
+alias brightness="lxqt-config-brightness edp1 -s"
+alias brightnessmax="lxqt-config-brightness edp1 -s 99"
+alias brightnessmin="lxqt-config-brightness edp1 -s 60"
 
 # Wifi operations via the terminal
 alias wifi-go="sudo nmcli dev wifi connect"
