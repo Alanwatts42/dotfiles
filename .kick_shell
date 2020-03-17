@@ -15,21 +15,33 @@
 # Walk through a directory running a command "$@" on each item "$i" individually.
 
 
+#### HARDWARE CONTROL - i.e. CPU SPEED SCALING, VOLUME, BRIGHTNESS, ETC. ####
+
+# CPU scaling - set a limit on CPU clock speed (usually only to save power).
 setgov ()
 {
     echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor 
 }
 
-floopwalk () {
-    for i in *;do
-        "$@" "$i"
-    done
-}
+# Loops over every item in the current dir and executes user input operation(s) "$@"
+# xloopallx () {
+#     printf "Run what?\n\n"
+#     read @
+#     printf "\n\nExecute '$@' on ALL items in directory: '$(pwd)'?\n\n"
+#     read cmdgo
+#     if [cmdgo != "n"]
+#     for i in *;do
+#         "$@" "$i"
+#     done
+# }
+
+#### SYNAPTIC PACKAGE MANAGER -AKA- 'APT' and/or 'APT-GET' ####
 
 # List all packages known to synaptic 'apt' and show those matching search pattern "@"
 applist () {
     apt list | grep "$@"
 }
+
 
 # Update, upgrade, then install new package as well as any related packages suggested by synaptic
 upinstall () {
@@ -50,6 +62,12 @@ aptsearchnew () {
     apt search "$1" | grep -v "[installed]"
 }
 
+# i386 Install - an easy way to install the i386 version of anything on apt
+# Note: Takes a single string as input, can't use "$@" due to the ":i386" part
+apt386 () {
+    sudo apt-get update -y;
+    sudo apt-get install "$1":i386 --install-suggests -y
+}
 # Sends any output of command "$1" to /dev/null, effectively running it silently.
 hush () {
     "$1" >/dev/null 2>&1

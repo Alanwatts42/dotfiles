@@ -9,6 +9,7 @@
 # -------------
 
 # <https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts>
+# rbisfile3
 
 
 # Shell aliases - examples found in /usr/share/doc/bash-doc/examples
@@ -48,6 +49,9 @@ alias lsr="ls -tr" # order by recently modified -tr = most recent last
 alias lsi="ls -lhtr" # informative ordered list
 
 # apt or apt-get shortcuts for convenience
+
+
+
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade -y"
 alias aptg="sudo apt-get"
 alias aptinstall="sudo apt-get -f install"
