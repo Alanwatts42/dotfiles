@@ -68,6 +68,7 @@ aptsearchnew () {
 # Note: Takes a single string as input, can't use "$@" due to the ":i386" part
 install86 () {
     sudo apt-get update -y;
+    sudo apt-get install "$1" --install-suggests -y;
     sudo apt-get install "$1":i386 --install-suggests -y
 }
 
