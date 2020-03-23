@@ -77,6 +77,19 @@ install86 () {
 #                         Downloads (wget & curl)
 #############################################################################
 
+# Download a link with wget and then unzip it with 'unzip'
+wgetzip () {
+    wget "$1";
+    if [ "$(unzip "$1")" ];then
+        echo unzipping...;else
+        if [ "$(7z x "$i")" ];then
+            echo unarchiving with 7z...;else
+                echo file type not zip or 7z, use other method
+        fi
+    fi
+}
+
+
 
 # Sends any output of command "$1" to /dev/null, effectively running it silently.
 hush () {
