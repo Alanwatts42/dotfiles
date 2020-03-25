@@ -10,6 +10,56 @@
 
 
 #############################################################################
+#                           System Utilities
+#############################################################################
+
+
+# kill zombie processes - finds processes that should have been killed but are still alive
+killzombies () {
+    DFZ=$(ps axo stat,ppid,pid,comm | grep -w defunct);
+    if sudo kill -9 "$DFZ";then
+        echo "Zombie process(es) have been killed";else
+            echo "I guess it didn't work, maybe no zombies?"
+    fi
+}
+
+
+# doainloopb [for each part of iterable] "$1" [run command] "$2"
+# example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
+# item in that list in other words, loop through working directory and make each file executable.
+forloop () {
+    echo enter file extension of files in "$(pwd)" to loop through
+    read -r ext 
+    echo now enter the operation to perform on each loop
+    read -r op
+    for i in *."$ext";do
+        "$op" "$i"
+    done
+    echo it is done! Now look upon what your foolishness has wrought!
+    ls
+}
+
+
+## run something with no terminal output (quietly)
+hush () {
+    "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
+}
+
+
+## copy the contents of a text file to the clipboard
+clipfile () {
+    xclip -i -selection c "$1"
+}
+
+# Shortcut for fix procedure for common issue with '.zsh_history' if it gets corrupted
+badzshhistoryfix () {
+    mv .zsh_history .zsh_history_bad;
+    strings .zsh_history_bad > .zsh_history;
+    fc -R .zsh_history;
+    echo ".zsh_history should be fixed now"
+}
+
+#############################################################################
 #                           Hardware Utilities
 #############################################################################
 
@@ -179,44 +229,11 @@ gitsync () {
 #                           Miscellaneous Scripting                    
 #############################################################################
 
-# doainloopb [for each part of iterable] "$1" [run command] "$2"
-# example: doainloopb ls chmod +x  =  list contents of current directory and run chmod +x on each 
-# item in that list in other words, loop through working directory and make each file executable.
-forloop () {
-    echo enter file extension of files in "$(pwd)" to loop through
-    read -r ext 
-    echo now enter the operation to perform on each loop
-    read -r op
-    for i in *."$ext";do
-        "$op" "$i"
-    done
-    echo it is done! Now look upon what your foolishness has wrought!
-    ls
-}
-
-
-## run something with no terminal output (quietly)
-hush () {
-    "$1" >/dev/null #"$2" >&"$1" (std.err to /dev/null)
-}
-
-
-## copy the contents of a text file to the clipboard
-clipfile () {
-    xclip -i -selection c "$1"
-}
-
-# Shortcut for fix procedure for common issue with '.zsh_history' if it gets corrupted
-badzshhistoryfix () {
-    mv .zsh_history .zsh_history_bad;
-    strings .zsh_history_bad > .zsh_history;
-    fc -R .zsh_history;
-    echo ".zsh_history should be fixed now"
-}
+# [put new misc functions here]
 
 
 ##############################################################################
-#                           Inactive or Unfinished
+#                           Inactive or Unfinispuhed
 ##############################################################################
 
 # # pipe terminal output to vim
