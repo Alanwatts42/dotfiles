@@ -87,9 +87,10 @@ alias su="sudo"
 # using neovim more, so vim command is now alias for nvim; 'vi' can be used for classic vim
 alias suvim="sudo nvim" # neovim with super-user authority
 alias svim="sudo nvim"  # neovim with super-user authority
-alias vim="nvim" # neovim
-alias nvi="nvim" # neovim
-alias vi="vim"   # vim
+alias vim="nvim"  # neovim
+alias nvi="nvim"  # neovim
+alias vi="vim"    # vim
+alias ogvim="vim" # differentiates classic vim from nvim due to vim=nvim alias
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
