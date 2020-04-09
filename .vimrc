@@ -120,8 +120,10 @@ Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
 Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
 Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
 Plug 'tpope/vim-commentary'        " Comment stuff out
+Plug 'alvan/vim-indexer'           " ctags generation with project management
 
 " == C Programming/Dev Support ==
+Plug 'tpope/vim-dispatch'          " build and test dispatcher
 " Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
 " Plug 'WolfgangMehner/c-support'  " Tools for C coding
 " Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
