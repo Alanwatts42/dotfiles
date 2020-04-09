@@ -87,7 +87,7 @@ alias su="sudo"
 # using neovim more, so vim command is now alias for nvim; 'vi' can be used for classic vim
 alias suvim="sudo nvim" # neovim with super-user authority
 alias svim="sudo nvim"  # neovim with super-user authority
-alias neovim="nvim"  # neovim
+# alias vim="nvim"  # neovim
 alias nvi="nvim"  # neovim
 alias vi="vim"    # vim
 alias ogvim="vim" # differentiates classic vim from nvim due to vim=nvim alias
