@@ -11,7 +11,7 @@ let autoload = '~/.config/nvim/autoload'
 if empty(autoload)
     silent !curl -fLo plug --create-dirs \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     autocmd VimEnter * PlaugInstall --sync | source %
-endift
+endif
 
 """ === Plugins ===
 """ Formula to add a plugin = Plug 'foo/bar' (in single quotes)
@@ -558,4 +558,5 @@ let g:syntastic_python_checkers=['flake8', 'python3']
 " let g:ycm_confirm_extra_conf=0
 
 " nmap <leader>g :YcmCompleter GoTo<CR>
-nmap <leader>d :YcmCompleter GoToDefinition<CR>
+" nmap <leader>d :YcmCompleter GoToDefinition<CR>
+
