@@ -218,15 +218,23 @@ gitup () {
 
 # quickly add all changes and push to remote
 # with generic commit message 'minor edits'
-gitsync () {
-   git add --all;    
-   git commit -m "minor edits"; 
-   git push;
+gitsync () 
+{
+    while read -r 'Enter commit message: ' message; do
+        if [ -z "$message" ]; then
+            echo "nope you have to enter a commit message. Try again, stupid."
+            break
+        fi
+        echo 'Excellent, initiating git commit and push-->';
+        git add --all;
+        git commit -m "$message" && git push;
+        echo 'Git repository updated successfully with your message: \""${message}"\", have a wonderful goddamn day'
+    done
 }
 
 
 #############################################################################
-#                           Miscellaneous Scripting                    
+#                       "    Miscellaneous Scripting                    
 #############################################################################
 
 # [put new misc functions here]

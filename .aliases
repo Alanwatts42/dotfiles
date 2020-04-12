@@ -11,16 +11,15 @@
 # -------------
 ## <a href='https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts'> stackoverflow thread </a>
 ## Ubuntu 18.04 default bash alias examples: '/usr/share/doc/bash-doc/examples'
----------------------------------------------------------------------
+#--------------------------------------------------------------------
 #Alias#Template#(ignore the [#--->]'s)
 #--->## Major Subject
 #---># minor subject
 #--->alias example="bash commands here -x"
----------------------------------------------------------------------
+#--------------------------------------------------------------------
 ##############################ALIASES################################ 
 ###############################BEGIN################################# 
 ###############################BELOW################################# 
-
 
 ## Steam
 alias steam="sudo /usr/lib/steam/steam.sh"
@@ -96,7 +95,7 @@ alias vim="nvim"        # neovim
 alias nvi="nvim"        # neovim
 alias suvim="sudo nvim" # neovim with super-user authority
 alias svim="sudo nvim"  # neovim with super-user authority
-alias nvimrc="nvim ~/.config/nvim/init.vim" # nvim's .vimrc equivalent
+alias envimrc="nvim ~/.config/nvim/init.vim" # nvim's .vimrc equivalent
 
 ## Hardware Utilities
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
@@ -110,8 +109,8 @@ alias mifi="sudo nmcli dev wifi connect the_very_small_array password amqv294#"
 alias wifi-scan="sudo nmcli dev wifi"
 
 ## Python3 and Interpreters
-py3="python3"
-py="python3"
+alias py3="python3"
+alias py="python3"
 # bpython third-party python3 interpreter with hinting
 alias bpython="bpython3"
 alias bp3="bpython3"
@@ -203,3 +202,7 @@ alias okview="okular"    # excellent all-file viewer
 alias okuview="okular"    # excellent all-file viewer
 alias kview="okular"    # excellent all-file viewer
 alias fileview="okular"    # excellent all-file viewer
+
+###
+
+

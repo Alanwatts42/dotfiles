@@ -1,54 +1,17 @@
-""                  Vi(m) [NeoVim] config file `~/.vimrc` 
+""                             Vi(m) [NeoVim] 
 ""                 ----------------------------------------
 ""
 "" Evan Sherwood
 "" evan.sherwood@keemail.me
 ""
-set nocompatible    " not compatible with vi, required for certain options
-""
-augroup myvimrc
-    au!
-    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC| if has('gui_running') | so $MYVIMRC | endif
-augroup END
-""
-"" Allows the same .vimrc file to be used on both Windows and Linux (WSL) 
-"" defines variable called home, varies based on OS directory system 
-if has("win32")
-  let dotvim = 'C:\Users\evan\vimfiles\'
-else
-  let dotvim = "~/.vim/"
-endif
-""
-let bundle = dotvim."bundle"
-let autoload = dotvim."autoload"
-""
-"" Install vim-plug on first time opening vim with this .vimrc.
-"" Also re-installs vim-plug if missing for whatever reason.
-if has("win32")
-	if empty(autoload)
-		md \vimfiles\autoload
-		$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-		(New-Object Net.WebClient).DownloadFile(
-			$uri,
-			$ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(	"~\vimfiles\autoload\plug.vim"
-			)
-		)
-	endif
-else
-  if empty(autoload)
-    silent !curl -fLo plug --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-  endif
-endif
+set nocompatible    " Required for certain options
 
-" tmux color issue fix
-" if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux')
-"\ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum 
-"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum
-" endif
+let autoload = '~/.config/nvim/autoload'
 
-
-" <https://vi.stackexchange.com/questions/10708/no-syntax-highlighting-in-tmux>
+if empty(autoload)
+    silent !curl -fLo plug --create-dirs \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlaugInstall --sync | source %
+endift
 
 """ === Plugins ===
 """ Formula to add a plugin = Plug 'foo/bar' (in single quotes)
@@ -56,9 +19,6 @@ endif
 """ :PlugInstall! - Sometimes you have to yell
 """ :PlugUpdate - Expand or die
 """ :PlugClean - You don't wanna start getting mold in there
-
-" Points to the dir where plugins managed by the plugin handler are kept.
-" By default should be $HOME/.vim/bundle
 
 call plug#begin()
 
@@ -76,14 +36,14 @@ Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
 Plug 'PyCQA/pylint'         " Python linter
 
 """ == Javascript ==
-" Plug 'w0rp/ale'             " javascript linter
-" Plug 'prettier/vim-prettier', { 'do': 'npm install' } " see https://github.com/prettier/vim-prettier 
+Plug 'w0rp/ale'  " javascript linter
+Plug 'prettier/vim-prettier', { 'do': 'npm install' } " javascript syntax highlighting
 
 """ == General Functionality ==
 Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
 Plug 'mbbill/undotree'      " Undo history tool
 Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
-
+Plug 'tpope/vim-eunuch'     " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 """ == Look & Feel ==
  Plug 'flazz/vim-colorschemes'           " change colorshemes easier
@@ -102,10 +62,10 @@ Plug 'airblade/vim-gitgutter'  " excellent document diff tool
 Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ == Snippets ==
-" Plug 'garbas/vim-snipmate'                " Snippets manager
+Plug 'garbas/vim-snipmate'                " Snippets manager
 " Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
 " Plug 'tomtom/tlib_vim'                    " dependencies #2
-" Plug 'honza/vim-snippets'                 " snippets repo
+Plug 'honza/vim-snippets'                 " snippets repo
 
 """ == Markup/Markdown ==
 Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
@@ -128,14 +88,12 @@ Plug 'alvan/vim-indexer'           " ctags generation with project management
 " Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
 " Plug 'vim-scripts/a.vim' " Fast switch between source & header 
 
-
 " ==Temporarily-offline=
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
 " Plug 'Valloric/YouCompleteMe'     " Complicated linter
-" Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
-" Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
+Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
+Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
 " Plug 'jalvesaq/vimcmdline'  " run code on external terminal
-Plug 'tpope/vim-eunuch' " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 call plug#end() 
 
@@ -322,8 +280,8 @@ set number
 let g:mapleader=','
 
 " Quickly edit/source .vimrc
-noremap <Leader>ve :edit $HOME/.vimrc<CR>
-noremap <Leader>vs :source $HOME/.vimrc<CR>
+" noremap <Leader>ve :edit $HOME/.vimrc<CR>
+" noremap <Leader>vs :source $HOME/.vimrc<CR>
 
 
 """ --Clipboard--
