@@ -86,15 +86,15 @@ alias updatebootimage="sudo update-initramfs -u"
 ## Vim and Nvim ##
 # vim
 alias vi="vim"           # classic vim
-alias ogvim="vim"        # classic vim alias - due to vim=nvim alias
+alias govim="vim"        # classic vim alias - due to vim=nvim alias
 alias svi="sudo vim"     # su classic vim
-alias ogvimrc="~/.vimrc" # original vim config file location
+alias govimrc="vim ~/.vimrc" # original vim config file location
 # nvim (neovim)
 alias vim="nvim"        # neovim
 alias nvi="nvim"        # neovim
 alias suvim="sudo nvim" # neovim with super-user authority
 alias svim="sudo nvim"  # neovim with super-user authority
-alias nvimrc="~/.config/nvim/init.vim" # nvim's .vimrc equivalent
+alias nvimrc="nvim ~/.config/nvim/init.vim" # nvim's .vimrc equivalent
 
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
