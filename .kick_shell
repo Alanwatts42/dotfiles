@@ -16,7 +16,7 @@
 
 # kill zombie processes - finds processes that should have been killed but are still alive
 killzombies () {
-    DFZ=$(ps axo stat,ppid,pid,comm | grep -w defunct);
+    DFZ=$(ps axo stat,ppid,pid,comm | pgrep -w defunct);
     if sudo kill -9 "$DFZ";then
         echo "Zombie process(es) have been killed";else
             echo "I guess it didn't work, maybe no zombies?"
@@ -220,25 +220,19 @@ gitup () {
 # with generic commit message 'minor edits'
 gitsync () 
 {
-    while read -r 'Enter commit message: ' message; do
-        if [ -z "$message" ]; then
-            echo "nope you have to enter a commit message. Try again, stupid."
-            break
-        fi
-        echo 'Excellent, initiating git commit and push-->';
-        git add --all;
-        git commit -m "$message" && git push;
-        echo 'Git repository updated successfully with your message: \""${message}"\", have a wonderful goddamn day'
+    while read -r 'Enter commit message: ' MESSAGE [ -z "$MESSAGE" ] ; do
+        echo "Nope, it can't be blank. Try again."
     done
+        echo 'Excellent, initiating git commit and push-->'
+        git add --all && git commit -m "$MESSAGE" && git push
+        echo 'Git repository updated successfully with your message: ${MESSAGE}, have a wonderful goddamn day'
 }
-
 
 #############################################################################
 #                       "    Miscellaneous Scripting                    
 #############################################################################
 
 # [put new misc functions here]
-
 
 ##############################################################################
 #                           Inactive or Unfinispuhed

@@ -63,9 +63,13 @@ Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ == Snippets ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
-" Plug 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
-" Plug 'tomtom/tlib_vim'                    " dependencies #2
-Plug 'honza/vim-snippets'                 " snippets repo
+Plug 'MarcWeber/vim-addon-mw-utils'       " Snippets dependencies
+Plug 'tomtom/tlib_vim'                    " Snippets dependencies
+Plug 'garbas/vim-snipmate'                " Snippets dependencies
+Plug 'honza/vim-snippets'                 " Snippets dependencies
+""" Snip Libraries
+Plug 'SirVer/ultisnips' 
+
 
 """ == Markup/Markdown ==
 Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
@@ -89,12 +93,12 @@ Plug 'alvan/vim-indexer'           " ctags generation with project management
 " Plug 'vim-scripts/a.vim' " Fast switch between source & header 
 
 " ==Temporarily-offline=
-" Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
-" Plug 'Valloric/YouCompleteMe'     " Complicated linter
+Plug 'Valloric/YouCompleteMe'     " Complicated linter
 Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
 Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
-" Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+Plug 'jalvesaq/vimcmdline'  " run code on external terminal
 
+" Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
 call plug#end() 
 
 filetype plugin indent on 
@@ -102,6 +106,13 @@ filetype plugin indent on
 syntax enable
 
 set termguicolors
+
+
+""" == Untisnips Settings ==
+let g:UltiSnipsExpandTrigger="<leader>c"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 
 """ == Colorscheme ==
 " main colorscheme
@@ -125,14 +136,14 @@ let g:airline_theme='lucius'
 " let g:UltiSnipsEditSplit="vertical"
 
 " == Asynccomplete ==
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+" inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 " -Force refresh completion-
-imap <c-space> <Plug>(asyncomplete_force_refresh)
+" imap <c-space> <Plug>(asyncomplete_force_refresh)
 " -Alternate auto-popup config-
-let g:asyncomplete_auto_popup = 0
+" let g:asyncomplete_auto_popup = 0
 
 function! s:check_back_space() abort
     let col = col('.') - 1
