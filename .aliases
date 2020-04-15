@@ -156,10 +156,12 @@ alias gpush="git push"
 alias gpull="git pull"
 
 ## Emulation & Games
-alias vidgames="emulationstation"
-alias emustation="emulationstation"
-alias emu="emulationstation"
-alias videogames="emulationstation"
+alias emulationstation="emulationstation --max-vram=0"
+alias vidgames="emulationstation --max-vram=0"
+alias emustation="emulationstation --max-vram=0"
+alias emu="emulationstation --max-vram=0"
+alias videogames="emulationstation --max-vram=0"
+alias emuscrape="emulationstation --scrape"
 
 ## Custom Scripts & Shortcuts
 alias sync-dfs="~/sync.sh"
