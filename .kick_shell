@@ -79,6 +79,12 @@ setgov ()
 #                         Software Updates (apt-get)
 #############################################################################
 
+
+aptgetinstall () {
+    sudo apt-get install "$@" --install-suggests -y
+}
+    
+    
 # Clear out any unnecessary or chached packages, then update and upgrade. A good general update function.
 aptsweep () {
     sudo apt-get check;

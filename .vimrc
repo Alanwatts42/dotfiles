@@ -10,7 +10,7 @@ let autoload = '~/.config/nvim/autoload'
 
 if empty(autoload)
     silent !curl -fLo plug --create-dirs \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    autocmd VimEnter * PlaugInstall --sync | source %
+    autocmd VimEnter * PlugInstall --sync | source %
 endif
 
 """ === Plugins ===
@@ -23,7 +23,7 @@ endif
 call plug#begin()
 
 """ == New Plugin Testing Area ==
-Plug 'mileszs/ack.vim'
+"Plug 'mileszs/ack.vim'
 """ if it works, it can be permanently added to the appropriate list below
 
 """ == Development Environment and Enhancements ==
@@ -59,7 +59,7 @@ Plug 'tpope/vim-rhubarb'       " I honestly forgot what this is
 Plug 'junegunn/gv.vim'         " diff tool - requires vim-fugitive to run
 Plug 'sodapopcan/vim-twiggy'   " branch manager for git repositories
 Plug 'airblade/vim-gitgutter'  " excellent document diff tool
-Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
+"Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ == Snippets ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
@@ -68,7 +68,7 @@ Plug 'tomtom/tlib_vim'                    " Snippets dependencies
 Plug 'garbas/vim-snipmate'                " Snippets dependencies
 Plug 'honza/vim-snippets'                 " Snippets dependencies
 """ Snip Libraries
-Plug 'SirVer/ultisnips' 
+"Plug 'SirVer/ultisnips' 
 
 
 """ == Markup/Markdown ==
@@ -93,10 +93,10 @@ Plug 'alvan/vim-indexer'           " ctags generation with project management
 " Plug 'vim-scripts/a.vim' " Fast switch between source & header 
 
 " ==Temporarily-offline=
-Plug 'Valloric/YouCompleteMe'     " Complicated linter
-Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
-Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
-Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+"Plug 'Valloric/YouCompleteMe'     " Complicated linter
+"Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
+"Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
+"Plug 'jalvesaq/vimcmdline'  " run code on external terminal
 
 " Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
 call plug#end() 
@@ -120,7 +120,7 @@ set t_co=256
 colorscheme meta5
 
 " --vim-airline theme--
-let g:airline_theme='lucius'
+" let g:airline_theme='lucius'
 
 " == C-tools ==
 " let g:C_UseTool_cmake   = 'yes'
@@ -136,26 +136,40 @@ let g:airline_theme='lucius'
 " let g:UltiSnipsEditSplit="vertical"
 
 " == Asynccomplete ==
-" inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+" Note - added `#`s before #"\<C-n>" #: #"\<Tab>" remove #s 
+" before quotes to restore previous functionality
+"
+" inoremap <expr> <Tab>   pumvisible() ? #"\<C-n>" : #"\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? #"\<C-p>" : #"\<S-Tab>"
+" inoremap <expr> <cr>    pumvisible() ? #"\<C-y>" : #"\<cr>"
+
 
 " -Force refresh completion-
 " imap <c-space> <Plug>(asyncomplete_force_refresh)
 " -Alternate auto-popup config-
 " let g:asyncomplete_auto_popup = 0
 
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
 
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ asyncomplete#force_refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
+"############################################################
+" ### EDIT ### 06202020
+" Commented out below with `#"` along left side, remove `#"` to
+" restore previous functionality
+"############################################################
+"#function! s:check_back_space() abort
+"#    let col = col('.') - 1
+"#    return !col || getline('.')[col - 1]  =~ '\s'
+"#endfunction
+"############################################################
+"############################################################
+" ### EDIT ### 06202020
+" Commented out below with `#` before `"\<C-n>"`, `"\<TAB>"`, and `"\<C-p>"` so remove `#` to restore previous functionality
+"############################################################
+"#inoremap <silent><expr> <TAB>
+"#  \ pumvisible() ? #"\<C-n>" :
+"#  \ <SID>check_back_space() ? #"\<TAB>" :
+"#  \ asyncomplete#force_refresh()
+"#inoremap <expr><S-TAB> pumvisible() ? #"\<C-p>" : #"\<C-h>"
+"##############################################################
 " -Language Server Protocol-
 " if executable('pyls')
 "     " pip install python-language-server
@@ -165,6 +179,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 "         \ 'whitelist': ['python'],
 "         \ })
 " endif
+"############################################################
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
@@ -177,7 +192,7 @@ nnoremap <F10> :w<cr>:python3 -i %<cr>
 " -Python-mode-
 " set syntastic to log the output of the linter to vim messages (accessible
 " with :mes
-" let g:syntastic_debug = 3
+let g:syntastic_debug = 3
 
 
 " ==Javascript==

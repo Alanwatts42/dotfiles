@@ -1,30 +1,27 @@
 #!/bin/bash
-#                           **ALIASES**  
-# Author:
-# --------
-# Evan Sherwood
-# evan.sherwood@keemail.me
+##--------------------------## ALIASES ##----------------------------##
 
-## Functions -> '$HOME/.kick_shell'
+# Author:   Evan Sherwood
+# Email:    evan.sherwood@keemail.me
 
-## Reference(s): 
-# -------------
-## <a href='https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts'> stackoverflow thread </a>
-## Ubuntu 18.04 default bash alias examples: '/usr/share/doc/bash-doc/examples'
-#--------------------------------------------------------------------
-#Alias#Template#(ignore the [#--->]'s)
-#--->## Major Subject
-#---># minor subject
-#--->alias example="bash commands here -x"
-#--------------------------------------------------------------------
-##############################ALIASES################################ 
-###############################BEGIN################################# 
-###############################BELOW################################# 
+# Customer shell functions are now found in this file:  $HOME/.kick_shell
 
-## Steam
+
+## References/Sources ##
+##--------------------##
+
+# <a href='https://stackoverflow.com/questions/5240755/how-to-use-aliases-defined-in-bashrc-in-other-scripts'> stackoverflow thread </a>
+# Ubuntu 18.04 default bash alias examples: '/usr/share/doc/bash-doc/examples'
+
+
+## Steam ##
+##-------##
 alias steam="sudo /usr/lib/steam/steam.sh"
 
-## Permissions
+
+## Permissions/Filesystem ##
+##------------------------##
+
 # make file executable
 alias chmodx="sudo chmod +x"
 # check octal '3 digit format' permissions for any file or directory
@@ -36,11 +33,17 @@ alias gksu="gedit admin://"
 # get missing gpg keys
 alias getkeys="sudo launchpad-getkeys"
 
-## Tilix
+
+## Tilix ##
+##-------##
+
 # quake dropdown mode
 alias tilix="tilix --quake"
 
-## General Filesystem Navigation
+
+## General Filesystem Navigation ##
+##-------------------------------##
+
 # ls dir listing
 alias ls="ls -a --color=auto"
 alias lss='ls'
@@ -51,15 +54,20 @@ alias lsg="ls -a | grep"
 alias lsm="ls -t" # order by recently modified -r = most recent first
 alias lsr="ls -tr" # order by recently modified -tr = most recent last
 alias lsi="ls -lhtr" # informative ordered list
+
 # clear screen
 alias clr="clear"
 alias cls="clear"
 alias cs="clear"
 alias cx="clear -x"
+
 # super user
 alias su="sudo"
 
-## Package Managers
+
+## Package Managers ##
+##------------------##
+
 # apt or apt-get shortcuts for convenience
 alias aptgup="sudo apt-get update && sudo apt-get dist-upgrade -y"
 alias aptg="sudo apt-get"
@@ -84,25 +92,32 @@ alias splashscreensearch="apt-cache search plymouth-theme"
 alias splashscreenchange="sudo update-alternatives --config default.plymouth"
 alias updatebootimage="sudo update-initramfs -u"
 
-## Vim and Nvim
-# vim
-alias vi="vim"           # classic vim
-alias govim="vim"        # classic vim alias - due to vim=nvim alias
-alias svi="sudo vim"     # su classic vim
-alias govimrc="vim ~/.vimrc" # original vim config file location
-# nvim (neovim)
-alias vim="nvim"        # neovim
-alias nvi="nvim"        # neovim
-alias suvim="sudo nvim" # neovim with super-user authority
-alias svim="sudo nvim"  # neovim with super-user authority
-alias envimrc="nvim ~/.config/nvim/init.vim" # nvim's .vimrc equivalent
 
-## Hardware Utilities
+## Applications ##
+##--------------##
+
+# Vim/Neovim
+alias vim="nvim"                # If vim == neovim aliases refer to: nvim, else: vim
+alias vi="vim"          
+alias svi="sudo vim"
+alias svim="sudo vim"
+alias suvim="sudo vim"  
+alias sudovim="sudo vim"
+# Edit Vim/Nvim Config 
+alias vimconfig ="vim ~/.config/nvim/init.vim"  # nvim's .vimrc equivalent
+alias editvimrc="vim ~/.vimrc"                  # original vim config file location
+
+
+
+## Hardware Controls & Utilities ##
+##-------------------------------##
+
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
 alias brightness="lxqt-config-brightness edp1 -s"
 alias brightnessmax="lxqt-config-brightness edp1 -s 99"
 alias brightnessmin="lxqt-config-brightness edp1 -s 60"
+
 # Wifi operations via the terminal
 alias wifi-go="sudo nmcli dev wifi connect"
 alias mifi="sudo nmcli dev wifi connect the_very_small_array password amqv294#"
@@ -111,12 +126,14 @@ alias wifi-scan="sudo nmcli dev wifi"
 ## Python3 and Interpreters
 alias py3="python3"
 alias py="python3"
+
 # bpython third-party python3 interpreter with hinting
 alias bpython="bpython3"
 alias bp3="bpython3"
 alias bpy3="bpython3"
 alias bpy="bpython3"
 alias bp="bpython3"
+
 # pip, pipenv, and virtual environments
 alias pipinstall="sudo pip3 --user install"
 alias pipenv="python3 -m pipenv"
@@ -127,11 +144,15 @@ alias ppvsync="python3 -m --user pipenv sync"
 alias ppvupdate="python3 -m --user pipenv update"
 alias pipenvshell="python3 -m --user pipenv shell"
 
-## Git
-# start a working area
+
+## Git ##
+##-----##
+
+# start a new repository
 alias ginit="git init"
+# clone existing remote repository
 alias gclone="git clone"
-# work on the current change
+# work on the current commit
 alias gadd="git add"
 alias gmv="git mv"
 alias greset="git reset"
@@ -163,28 +184,43 @@ alias emu="emulationstation --max-vram=0"
 alias videogames="emulationstation --max-vram=0"
 alias emuscrape="emulationstation --scrape"
 
-## Custom Scripts & Shortcuts
+
+## Custom Scripts & Shortcuts ##
+##----------------------------##
+
+# run sync.sh script
 alias sync-dfs="~/sync.sh"
+
 # custom bash functions
 alias lets_kick_shell='vim "$HOME"/.kick_shell'
 
-## OS Utilities
+
+## Internet Utilities ##
+##--------------------##
+
 # qutebrowser (start with debug features on)
 alias qtbrowse="qutebrowser --debug --debug"
+
 # youtube-dl
 alias youtube-dll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-filenames -R 99 --max-filesize 2000m --max-downloads 50 --verbose"
 alias youtube-dlx="youtube-dl -i -R 99 --yes-playlist  --verbose"  #ignore errors
 alias youtube-dlu="youtube-dl -U"  #update
+
 # wget
 alias wget="wget -c -t 999 --retry-connrefused"
 alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
+
 # curl
 alias curl="curl -retry 99 --retry-connrefused"
+
 # ecm
 alias unecm="ecm-uncompress"
 #alias ecm="ecm-compress"
 
-## Applications
+
+## Pictures ##
+##----------##
+
 #alias xkbind="xbindkeys --key"  # x keybind customizer
 alias imageview="gpicview"   # picture viewer
 alias pictureview="gpicview" # picture viewer
@@ -204,7 +240,4 @@ alias okview="okular"    # excellent all-file viewer
 alias okuview="okular"    # excellent all-file viewer
 alias kview="okular"    # excellent all-file viewer
 alias fileview="okular"    # excellent all-file viewer
-
-###
-
 
