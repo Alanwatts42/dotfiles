@@ -1,4 +1,4 @@
-"                             Vi(m) [NeoVim] 
+"                            Vi(m) [NeoVim] 
 "                 ----------------------------------------
 "
 " Evan Sherwood
@@ -14,8 +14,6 @@ if empty(autoload)
     autocmd VimEnter * PlugInstall --sync | source %
 endif
 
-""" === Plugins ===
-""" Formula to add a plugin = Plug 'foo/bar' (in single quotes)
 """ :PlugInstall - Install the damn things
 """ :PlugInstall! - Sometimes you have to yell
 """ :PlugUpdate - Expand or die
@@ -26,19 +24,28 @@ call plug#begin()
 """ == New Plugin Testing Area ==
 "Plug 'mileszs/ack.vim'
 """ if it works, it can be permanently added to the appropriate list below
+""" == Python Development Environment and Enhancements ==
+Plug 'alvan/vim-indexer'            " ctags generation with project management
+Plug 'majutsushi/tagbar'            " depends='apt install exuberant-ctags'
+Plug 'PyCQA/pylint'                 " Python linter
+" Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
+Plug 'scrooloose/syntastic'         " Syntax checking plugin for Vim
+Plug 'fisadev/FixedTaskList.vim'    " pending tasks list
+Plug 'rosenfeld/conque-term'        " run buffers in sub-shells
+Plug 'python-rope/ropevim'          " Updated version of 'rope-vim' py docs lookup
+Plug 'davidhalter/jedi-vim'         " python linter
 
-""" == Development Environment and Enhancements ==
-" Plug 'python-rope/ropevim'  " Updated version of 'rope-vim' py docs lookup
-Plug 'tpope/vim-surround'   " easy manipulation of surround chars
-Plug 'tomtom/tcomment_vim'  " use gcc to comment/uncomment text under cursor
-Plug 'tpope/vim-commentary' " tpope doesn't write docs, docs write themselves out of fear.
-Plug 'somini/vim-autoclose' " Auto-close when using grouping symbols i.e.'(), [], {}, '', '
-Plug 'FooSoft/vim-argwrap'  " Rearrange args within () using <leader><a>
-Plug 'PyCQA/pylint'         " Python linter
+""" == Coding Style & Formatting Utilities ==
+Plug 'tpope/vim-surround'           " easy manipulation of surround chars
+Plug 'tpope/vim-commentary'         " Comment stuff out
+Plug 'tomtom/tcomment_vim'          " use gcc to comment/uncomment text under cursor
+Plug 'tpope/vim-commentary'         " tpope doesn't write docs, docs write themselves out of fear.
+Plug 'somini/vim-autoclose'         " Auto-close when using grouping symbols i.e.'(), [], {}, '', '
+Plug 'FooSoft/vim-argwrap'          " Rearrange args within () using <leader><a>
 
 """ == Javascript ==
-Plug 'w0rp/ale'  " javascript linter
-Plug 'prettier/vim-prettier', { 'do': 'npm install' } " javascript syntax highlighting
+Plug 'w0rp/ale'                                         " javascript linter
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }   " javascript syntax highlighting
 
 """ == General Functionality ==
 Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
@@ -47,9 +54,7 @@ Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim
 Plug 'tpope/vim-eunuch'     " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
 
 """ == Look & Feel ==
- Plug 'flazz/vim-colorschemes'           " change colorshemes easier
-" Plug 'vim-airline/vim-airline'          " operative word 'line'
-" Plug 'vim-airline/vim-airline-themes'   " Enables themes for vim-airline
+Plug 'flazz/vim-colorschemes'           " change colorshemes easier
 Plug 'christophermca/meta5'             " meta5 colorscheme
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Lokaltog/powerline'               " tabline tool
@@ -60,7 +65,7 @@ Plug 'tpope/vim-rhubarb'       " I honestly forgot what this is
 Plug 'junegunn/gv.vim'         " diff tool - requires vim-fugitive to run
 Plug 'sodapopcan/vim-twiggy'   " branch manager for git repositories
 Plug 'airblade/vim-gitgutter'  " excellent document diff tool
-"Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
+Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
 
 """ == Snippets ==
 Plug 'garbas/vim-snipmate'                " Snippets manager
@@ -71,42 +76,34 @@ Plug 'honza/vim-snippets'                 " Snippets dependencies
 """ Snip Libraries
 "Plug 'SirVer/ultisnips' 
 
-
 """ == Markup/Markdown ==
-Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
+" Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
 Plug 'Rykka/riv.vim'               " ReStructuredText plugin
 Plug 'plasticboy/vim-markdown'     " markdown handling in vim 
 Plug 'godlygeek/tabular'           " vim-markdown needs this to run
 
-""" == Python ==
-Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
-Plug 'scrooloose/syntastic'        " Syntax checking plugin for Vim
-Plug 'fisadev/FixedTaskList.vim'   " pending tasks list
-Plug 'rosenfeld/conque-term'       " run buffers in sub-shells
-Plug 'majutsushi/tagbar'           " depends='apt install exuberant-ctags'
-Plug 'tpope/vim-commentary'        " Comment stuff out
-Plug 'alvan/vim-indexer'           " ctags generation with project management
-
 " == C Programming/Dev Support ==
-" Plug 'WolfgangMehner/vim-plugins'  " C-support, matlab, perl, etc.
-" Plug 'WolfgangMehner/c-support'  " Tools for C coding
-" Plug 'OmniSharp/omnisharp-vim' " Adds C# IDE features to Vim
-" Plug 'vim-scripts/a.vim' " Fast switch between source & header 
+" Plug 'WolfgangMehner/vim-plugins'     " C-support, matlab, perl, etc.
+" Plug 'WolfgangMehner/c-support'       " Tools for C coding
+" Plug 'OmniSharp/omnisharp-vim'        " Adds C# IDE features to Vim
+" Plug 'vim-scripts/a.vim'              " Fast switch between source & header 
 
 " ==Temporarily-offline=
-"Plug 'Valloric/YouCompleteMe'     " Complicated linter
-"Plug 'plytophogy/vim-virtualenv'    " required for vim-pipenv
-"Plug 'PieterjanMontens/vim-pipenv'  " integrates vim/pipenv
-"Plug 'jalvesaq/vimcmdline'  " run code on external terminal
+" Plug 'Valloric/YouCompleteMe'          " complicated linter
+" Plug 'jalvesaq/vimcmdline'             " run code on external terminal
+" Plug 'powerman/vim-plugin-viewdoc'    
+Plug 'jmcantrell/vim-virtualenv'        " virtualenv integration
+Plug 'PieterjanMontens/vim-pipenv'      " pipenv integration
 
-" Plug 'powerman/vim-plugin-viewdoc'  " MANPAGER = vim
+
 call plug#end() 
 
 filetype plugin indent on 
-
 syntax enable
-
 set termguicolors
+
+
+
 
 
 """ == Untisnips Settings ==
@@ -119,9 +116,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " main colorscheme
 set t_co=256
 colorscheme meta5
-
-" --vim-airline theme--
-" let g:airline_theme='lucius'
 
 " == C-tools ==
 " let g:C_UseTool_cmake   = 'yes'
@@ -180,20 +174,38 @@ colorscheme meta5
 "         \ 'whitelist': ['python'],
 "         \ })
 " endif
-"############################################################
+" ############################################################
 
 " ==Python Plugin Options==
 " Run python code in current file with F9
 nnoremap <F9> :w<cr>:!python3 %<cr>
 nnoremap <F8> :w<cr>:!python3 -m pipenv run python3 %<cr>
 nnoremap <F10> :w<cr>:python3 -i %<cr>
+
 " -Pipenv-Integration-
-" let pipenv_venv_path = system('pipenv --venv')
+let pipenv_venv_path = system('pipenv --venv')
 
 " -Python-mode-
 " set syntastic to log the output of the linter to vim messages (accessible
 " with :mes
-let g:syntastic_debug = 3
+" let g:syntastic_debug = 3
+
+" -Ropevim-
+" let ropevim_vim_completion=1
+" let ropevim_enable_shortcuts=1
+" let ropevim_goto_def_newwin=1
+
+
+" ==Jedi==
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_stubs_command = "<leader>s"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
+let g:jedi#completions_enabled = 1
 
 
 " ==Javascript==
@@ -209,7 +221,7 @@ function! s:RunShellCommand(cmdline)
       if word[0] =~ '\v[%#<]'
         let word = expand(word)
       endif
-      let word = shellescape(word, 1)
+      let word = shellescape(word, 0)
     endif
     call add(words, word)
   endfor
@@ -228,11 +240,9 @@ command! -complete=file -nargs=* RunJS call s:RunShellCommand('node '.<q-args>)
 " set nodejs config file '~/.npmrc' to *.ini filetype
 autocmd BufRead,BufNewFile ~/.npmrc setf dosini 
 
-
 " ==Shell-Scripting==
-" Remap <F8> to execute shell script
-" nnoremap <F8> <cr>:!./%<cr>
-
+" Remap <leader>e to execute shell script
+nnoremap <leader>e <cr>:!./%<cr>
 
 " ==Templates==
 " Shell Scripts '*.sh' files
@@ -247,10 +257,8 @@ endif
 " fix for ale disappearing cursor issue on lines where error was found
 let g:ale_echo_cursor = 0
 
-
 " === Ack.vim ===
 " comprehensive text search tool ack - also usable for similar tool ag
-
 " if ag is installed, switches functionality to ag rather than ack
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -258,10 +266,6 @@ endif
 
 " add '--nogroup --nocolor --column' to limit displayed results
 let g:ackprg = 'ag --vimgrep'
-
-
-
-
 
 
 " ===========================
@@ -287,17 +291,10 @@ set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.pdf
 set wildignore+=*/.git*,*.tar,*.zip
 set wildmenu
 set wildmode=longest:full,list:full
-set autoread            " refresh if changed
-set confirm             " confirm changed files
-set noautowrite         " never autowrite
-set linebreak           " don't cut words on wrap
 set list                " displaying listchars
-set mouse=a             " disable mouse
 
 " Use utf-8 encoding
 set encoding=utf-8
-set number
-
 
 " ----------------------
 " -Keyboard-Cartography-
@@ -310,9 +307,12 @@ let g:mapleader=','
 " noremap <Leader>ve :edit $HOME/.vimrc<CR>
 " noremap <Leader>vs :source $HOME/.vimrc<CR>
 
+" Quickly edit/source init.vim
+noremap <Leader>nve :edit $HOME/.config/nvim/init.vim<CR>
+noremap <Leader>nvs :source $HOME/.config/nvim/init.vim<CR>
 
-""" --Clipboard--
 
+" ```--Clipboard-- ```
 " Fixing Vim's clipboard (as much as possible)
 " X11 keyboard fix - <Leader>y, p, Y, P = copy, paste to/from X11 clipboard
 " Same modification should also work the same way on Win32/MacOS
@@ -354,11 +354,9 @@ vnoremap <Leader>rc y:$s/<C-r>"/
 " Toggle relativenumber
 nnoremap <Leader>rnn :set relativenumber!<CR>
 
-
 " --Screen-Splitting--
 " :sp <path to file you want to split screen with (vertically)
 " i.e. :sp ~/.vimrc to split the screen with the .vimrc
-
 " Split Direction
 set splitbelow                  " splits go below w/focus
 set splitright                  " vsplits go right w/focus
@@ -369,10 +367,8 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-
 "" --Indent, Type-Setting Options--
-
-" <ctrl-e> jumps to the end of the line in insert mode
+" `ctrl+e` jumps to the end of the line in insert mode
 inoremap <C-e> <C-o>$
 
 " Misc lines and splits
@@ -383,8 +379,10 @@ set nolist                      " displaying listchars
 set ww=<,>,h,l  " ww = commands allowed to 'wrap' around EOL
 
 " --Text-folding setting--
-set foldmethod=marker
-set foldopen=hor
+" set foldmethod=indent
+" set foldopen=all
+
+
 
 " Sounds & Other Peripheral Functions
 set noeb  " Attempt to silence error dings for console vim
@@ -462,28 +460,28 @@ endif
 """ ===Plugin Settings & Reference===
 
 " -C-Sharp Asynchronous Server interactions-
-let g:OmniSharp_server_stdio = 1
+" let g:OmniSharp_server_stdio = 1
 
 " -Vim-Argwrap-
 nnoremap <silent> <leader>a :ArgWrap<CR>  
 
 "" -Syntastic-
-noremap <silent><Leader>le :Errors<CR>  
-noremap <silent><Leader>lc :lclose<CR>  
+nnoremap <silent><Leader>le :Errors<CR>  
+nnoremap <silent><Leader>lc :lclose<CR>  
 
 "" -Rope-Vim-
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
+nnoremap <leader>j :RopeGotoDefinition<CR>
+nnoremap <leader>r :RopeRename<CR>
 
 "" -Undotree-
-nnoremap <F5> :UndotreeToggle<CR>
+" nnoremap <F5> :UndotreeToggle<CR>
 
 "" -TagBar settings-
 let g:tagbar_autofocus=0
 let g:tagbar_width=20
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
-nmap <F7> :TagBarToggle<CR>
+nnoremap <leader>t :TagBarToggle<CR>
 
 
 "" -NERDTree settings-
@@ -500,51 +498,52 @@ let g:riv_disable_folding=1
 
 "" -Python Plugin settings-
 " python executables for different plugins
-let g:pymode_python='python3'
-let g:syntastic_python_python_exec='python3'
+" let g:pymode_python='python3'
+" let g:syntastic_python_pymode_exec='/usr/bin/python3'
 
 " rope
-let g:pymode_rope=0
-let g:pymode_rope_completion=0
-let g:pymode_rope_complete_on_dot=0
-let g:pymode_rope_auto_project=0
-let g:pymode_rope_enable_autoimport=0
-let g:pymode_rope_autoimport_generate=0
-let g:pymode_rope_guess_project=0
+" let g:pymode_rope=0
+" let g:pymode_rope_completion=0
+" let g:pymode_rope_complete_on_dot=0
+" let g:pymode_rope_auto_project=0
+" let g:pymode_rope_enable_autoimport=0
+" let g:pymode_rope_autoimport_generate=0
+" let g:pymode_rope_guess_project=0
 
 " documentation
-let g:pymode_doc=1
-let g:pymode_doc_bind='K'
+" let g:pymode_doc=1
+" let g:pymode_doc_bind='K'
 
 " lints
-let g:pymode_lint=1
+" let g:pymode_lint=0
+" let g:pymode_lint_on_write=0
 
 " virtualenv
-let g:pymode_virtualenv=0
+" let g:pymode_virtualenv=1
 
 " breakpoints
-let g:pymode_breakpoint=1
-let g:pymode_breakpoint_key='<leader>b'
+" let g:pymode_breakpoint=1
+" let g:pymode_breakpoint_key='<leader>b'
 
 " syntax highlight
-let g:pymode_syntax=1
-let g:pymode_syntax_slow_sync=1
-let g:pymode_syntax_all=1
-let g:pymode_syntax_print_as_function=g:pymode_syntax_all
-let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
-let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
-let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
-let g:pymode_syntax_highlight_self=g:pymode_syntax_all
-let g:pymode_syntax_indent_errors=g:pymode_syntax_all
-let g:pymode_syntax_string_formatting=g:pymode_syntax_all
-let g:pymode_syntax_space_errors=g:pymode_syntax_all
-let g:pymode_syntax_string_format=g:pymode_syntax_all
-let g:pymode_syntax_string_templates=g:pymode_syntax_all
-let g:pymode_syntax_doctests=g:pymode_syntax_all
-let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
-let g:pymode_syntax_builtin_types=g:pymode_syntax_all
-let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
-let g:pymode_syntax_docstrings=g:pymode_syntax_all
+" let g:pymode_syntax=1
+" let g:pymode_syntax_slow_sync=1
+" let g:pymode_syntax_all=1
+" let g:pymode_syntax_print_as_function=g:pymode_syntax_all
+" let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
+" let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
+" let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
+" let g:pymode_syntax_highlight_self=g:pymode_syntax_all
+" let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+" let g:pymode_syntax_string_formatting=g:pymode_syntax_all
+" let g:pymode_syntax_space_errors=g:pymode_syntax_all
+" let g:pymode_syntax_string_format=g:pymode_syntax_all
+" let g:pymode_syntax_string_templates=g:pymode_syntax_all
+" let g:pymode_syntax_doctests=g:pymode_syntax_all
+" let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
+" let g:pymode_syntax_builtin_types=g:pymode_syntax_all
+" let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
+" let g:pymode_syntax_docstrings=g:pymode_syntax_all
 
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
@@ -555,15 +554,6 @@ augroup vimrc_autocmds
     autocmd FileType python,rst,c,cpp set colorcolumn=80
 augroup END
 
-" code folding
-let g:pymode_folding=0
-
-" pep8 indents
-let g:pymode_indent=1
-
-" code running
-let g:pymode_run=1
-let g:pymode_run_bind='<F5>'
 
 " syntastic
 let g:syntastic_always_populate_loc_list=1
@@ -578,12 +568,4 @@ let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers=['flake8', 'python3']
 
-" YouCompleteMe
-" set completeopt-=preview
-
-" let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
-" let g:ycm_confirm_extra_conf=0
-
-" nmap <leader>g :YcmCompleter GoTo<CR>
-" nmap <leader>d :YcmCompleter GoToDefinition<CR>
 
