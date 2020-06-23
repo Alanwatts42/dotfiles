@@ -1,18 +1,20 @@
-"                            Vi(m) [NeoVim] 
-"                 ----------------------------------------
+" ===  Vim/Nvim Config File == ['~/.config/nvim/init.vim'|~/.vimrc'] ==
 "
-" Evan Sherwood
-" evan.sherwood@keemail.me
-"
-"
+"`Author:  Evan Sherwood`
+"`Email: ` evan.sherwood@keemail.me`
+"`Github:  https://github.com/Alanwatts42`
+"----------------------------------------
+
 set nocompatible    " Required for certain options
 
-let autoload = '~/.config/nvim/autoload'
+let autoload = '~/.config/nvim/autoload'  " Points to autoload directory
 
-if empty(autoload)
+if empty(autoload)  " If autoload directory empty, install vim-plug
     silent !curl -fLo plug --create-dirs \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     autocmd VimEnter * PlugInstall --sync | source %
 endif
+
+"----------------------------------------
 
 """ :PlugInstall - Install the damn things
 """ :PlugInstall! - Sometimes you have to yell
@@ -21,372 +23,130 @@ endif
 
 call plug#begin()
 
-""" == New Plugin Testing Area ==
-"Plug 'mileszs/ack.vim'
-""" if it works, it can be permanently added to the appropriate list below
-""" == Python Development Environment and Enhancements ==
-Plug 'alvan/vim-indexer'            " ctags generation with project management
-Plug 'majutsushi/tagbar'            " depends='apt install exuberant-ctags'
-Plug 'PyCQA/pylint'                 " Python linter
-" Plug 'python-mode/python-mode', { 'for': 'python3', 'branch': 'develop' }
-Plug 'scrooloose/syntastic'         " Syntax checking plugin for Vim
-Plug 'fisadev/FixedTaskList.vim'    " pending tasks list
-Plug 'rosenfeld/conque-term'        " run buffers in sub-shells
-Plug 'python-rope/ropevim'          " Updated version of 'rope-vim' py docs lookup
-Plug 'davidhalter/jedi-vim'         " python linter
+" Coding/Programming
+Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
+Plug 'somini/vim-autoclose'
+Plug 'FooSoft/vim-argwrap'
+" Python
+Plug 'davidhalter/jedi-vim'
+Plug 'jmcantrell/vim-virtualenv'        
+Plug 'PieterjanMontens/vim-pipenv'      
 
-""" == Coding Style & Formatting Utilities ==
-Plug 'tpope/vim-surround'           " easy manipulation of surround chars
-Plug 'tpope/vim-commentary'         " Comment stuff out
-Plug 'tomtom/tcomment_vim'          " use gcc to comment/uncomment text under cursor
-Plug 'tpope/vim-commentary'         " tpope doesn't write docs, docs write themselves out of fear.
-Plug 'somini/vim-autoclose'         " Auto-close when using grouping symbols i.e.'(), [], {}, '', '
-Plug 'FooSoft/vim-argwrap'          " Rearrange args within () using <leader><a>
+" Extra Vim functionality
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-eunuch'
+Plug 'ctrlpvim/ctrlp.vim'   
 
-""" == Javascript ==
-Plug 'w0rp/ale'                                         " javascript linter
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }   " javascript syntax highlighting
-
-""" == General Functionality ==
-Plug 'ctrlpvim/ctrlp.vim'   " Fuzzy finder (files, mru, etc)
-Plug 'mbbill/undotree'      " Undo history tool
-Plug 'scrooloose/nerdtree'  " manage files and navigate dirs within vim 
-Plug 'tpope/vim-eunuch'     " UNIX shell command helpers, e.g. sudo, chmod, remove etc.
-
-""" == Look & Feel ==
-Plug 'flazz/vim-colorschemes'           " change colorshemes easier
-Plug 'christophermca/meta5'             " meta5 colorscheme
+" Look & Feel
+Plug 'flazz/vim-colorschemes'
+Plug 'christophermca/meta5'
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'Lokaltog/powerline'               " tabline tool
+Plug 'Lokaltog/powerline'
 
-""" == Git and Version Control ==
-Plug 'tpope/vim-fugitive'      " git wrapper - 'git commit'=':Gcommit'
-Plug 'tpope/vim-rhubarb'       " I honestly forgot what this is
-Plug 'junegunn/gv.vim'         " diff tool - requires vim-fugitive to run
-Plug 'sodapopcan/vim-twiggy'   " branch manager for git repositories
-Plug 'airblade/vim-gitgutter'  " excellent document diff tool
-Plug 'christoomey/vim-conflicted' " tool for merge & rebase conflicts
+" Git/Version-Control
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'christoomey/vim-conflicted'
 
-""" == Snippets ==
-Plug 'garbas/vim-snipmate'                " Snippets manager
-Plug 'MarcWeber/vim-addon-mw-utils'       " Snippets dependencies
-Plug 'tomtom/tlib_vim'                    " Snippets dependencies
-Plug 'garbas/vim-snipmate'                " Snippets dependencies
-Plug 'honza/vim-snippets'                 " Snippets dependencies
-""" Snip Libraries
-"Plug 'SirVer/ultisnips' 
-
-""" == Markup/Markdown ==
-" Plug 'mitsuhiko/vim-sparkup'       " Sparkup(XML/jinja/htlm-django/etc.) 
-Plug 'Rykka/riv.vim'               " ReStructuredText plugin
-Plug 'plasticboy/vim-markdown'     " markdown handling in vim 
-Plug 'godlygeek/tabular'           " vim-markdown needs this to run
-
-" == C Programming/Dev Support ==
-" Plug 'WolfgangMehner/vim-plugins'     " C-support, matlab, perl, etc.
-" Plug 'WolfgangMehner/c-support'       " Tools for C coding
-" Plug 'OmniSharp/omnisharp-vim'        " Adds C# IDE features to Vim
-" Plug 'vim-scripts/a.vim'              " Fast switch between source & header 
-
-" ==Temporarily-offline=
-" Plug 'Valloric/YouCompleteMe'          " complicated linter
-" Plug 'jalvesaq/vimcmdline'             " run code on external terminal
-" Plug 'powerman/vim-plugin-viewdoc'    
-Plug 'jmcantrell/vim-virtualenv'        " virtualenv integration
-Plug 'PieterjanMontens/vim-pipenv'      " pipenv integration
-
+" Markup/Markdown
+Plug 'Rykka/riv.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
 
 call plug#end() 
+"----------------------------------------
 
 filetype plugin indent on 
-syntax enable
+
+" Look & Feel
+syntax enable			" Syntax Highlighting On
 set termguicolors
+set t_co=256			" 256 Colors
+colorscheme meta5		" Colorscheme
+"----------------------------------------
 
+" General Settings
 
-
-
-
-""" == Untisnips Settings ==
-let g:UltiSnipsExpandTrigger="<leader>c"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-
-""" == Colorscheme ==
-" main colorscheme
-set t_co=256
-colorscheme meta5
-
-" == C-tools ==
-" let g:C_UseTool_cmake   = 'yes'
-" let g:C_UseTool_doxygen = 'yes'
-
-" == Ulti-snips ==
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-
-" == Asynccomplete ==
-" Note - added `#`s before #"\<C-n>" #: #"\<Tab>" remove #s 
-" before quotes to restore previous functionality
-"
-" inoremap <expr> <Tab>   pumvisible() ? #"\<C-n>" : #"\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? #"\<C-p>" : #"\<S-Tab>"
-" inoremap <expr> <cr>    pumvisible() ? #"\<C-y>" : #"\<cr>"
-
-
-" -Force refresh completion-
-" imap <c-space> <Plug>(asyncomplete_force_refresh)
-" -Alternate auto-popup config-
-" let g:asyncomplete_auto_popup = 0
-
-
-"############################################################
-" ### EDIT ### 06202020
-" Commented out below with `#"` along left side, remove `#"` to
-" restore previous functionality
-"############################################################
-"#function! s:check_back_space() abort
-"#    let col = col('.') - 1
-"#    return !col || getline('.')[col - 1]  =~ '\s'
-"#endfunction
-"############################################################
-"############################################################
-" ### EDIT ### 06202020
-" Commented out below with `#` before `"\<C-n>"`, `"\<TAB>"`, and `"\<C-p>"` so remove `#` to restore previous functionality
-"############################################################
-"#inoremap <silent><expr> <TAB>
-"#  \ pumvisible() ? #"\<C-n>" :
-"#  \ <SID>check_back_space() ? #"\<TAB>" :
-"#  \ asyncomplete#force_refresh()
-"#inoremap <expr><S-TAB> pumvisible() ? #"\<C-p>" : #"\<C-h>"
-"##############################################################
-" -Language Server Protocol-
-" if executable('pyls')
-"     " pip install python-language-server
-"     au User lsp_setup call lsp#register_server({
-"         \ 'name': 'pyls',
-"         \ 'cmd': {server_info->['pyls']},
-"         \ 'whitelist': ['python'],
-"         \ })
-" endif
-" ############################################################
-
-" ==Python Plugin Options==
-" Run python code in current file with F9
-nnoremap <F9> :w<cr>:!python3 %<cr>
-nnoremap <F8> :w<cr>:!python3 -m pipenv run python3 %<cr>
-nnoremap <F10> :w<cr>:python3 -i %<cr>
-
-" -Pipenv-Integration-
-let pipenv_venv_path = system('pipenv --venv')
-
-" -Python-mode-
-" set syntastic to log the output of the linter to vim messages (accessible
-" with :mes
-" let g:syntastic_debug = 3
-
-" -Ropevim-
-" let ropevim_vim_completion=1
-" let ropevim_enable_shortcuts=1
-" let ropevim_goto_def_newwin=1
-
-
-" ==Jedi==
-let g:jedi#goto_command = "<leader>d"
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_stubs_command = "<leader>s"
-let g:jedi#goto_definitions_command = ""
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#completions_enabled = 1
-
-
-" ==Javascript==
-autocmd BufWritePre *.js :normal gggqG
-command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
-function! s:RunShellCommand(cmdline)
-  let isfirst = 1
-  let words = []
-  for word in split(a:cmdline)
-    if isfirst
-      let isfirst = 0  " don't change first word (shell command)
-    else
-      if word[0] =~ '\v[%#<]'
-        let word = expand(word)
-      endif
-      let word = shellescape(word, 0)
-    endif
-    call add(words, word)
-  endfor
-  let expanded_cmdline = join(words)
-  botright new
-  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
-  call setline(1, 'You entered:  ' . a:cmdline)
-  call setline(2, 'Expanded to:  ' . expanded_cmdline)
-  call append(line('$'), substitute(getline(2), '.', '=', 'g'))
-  silent execute '$read !'. expanded_cmdline
-  1
-endfunction
-
-command! -complete=file -nargs=* RunJS call s:RunShellCommand('node '.<q-args>)
-
-" set nodejs config file '~/.npmrc' to *.ini filetype
-autocmd BufRead,BufNewFile ~/.npmrc setf dosini 
-
-" ==Shell-Scripting==
-" Remap <leader>e to execute shell script
-nnoremap <leader>e <cr>:!./%<cr>
-
-" ==Templates==
-" Shell Scripts '*.sh' files
-" Python files '*.py' files
-if has("autocmd")
-  augroup templates
-    autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
-    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
-  augroup END
-endif
-
-" fix for ale disappearing cursor issue on lines where error was found
-let g:ale_echo_cursor = 0
-
-" === Ack.vim ===
-" comprehensive text search tool ack - also usable for similar tool ag
-" if ag is installed, switches functionality to ag rather than ack
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
-" add '--nogroup --nocolor --column' to limit displayed results
-let g:ackprg = 'ag --vimgrep'
-
-
-" ===========================
-" ==Useful General Settings==
-" ===========================
-" Settings that will apply to all filetypes. Any filetype-specific
-" configurations (*.vim files inside the .vim/ftplugin directory)
-" would have these settings as a foundation, and there shouldn't be
-" many filetypes (if any) that require any of these to be turned off
-
-set title               " window title
-set vb t_vb=            " disable beep and flashing
-set showcmd             " show cmds being typed
-set number              " IDE style line numbering
-set ruler               " related to line numbering
-set sc                  " Display incomplete commands
-set matchtime=2         " time to blink match {}
-set matchpairs+=<:>     " for ci< or ci>
-set showmatch           " Auto-complete for brackets () [] {}
+set title               		" window title
+set vb t_vb=            		" disable beep and flashing
+set showcmd             		" show cmds being typed
+set number              		" IDE style line numbering
+set ruler               		" related to line numbering
+set sc                  		" Display incomplete commands
+set matchtime=2         		" time to blink match {}
+set matchpairs+=<:>     		" for ci< or ci>
+set showmatch           		" Auto-complete for brackets () [] {}
 set wildignore+=*.bak,*.swp,*.swo
 set wildignore+=*.a,*.o,*.so,*.pyc,*.class
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.pdf
 set wildignore+=*/.git*,*.tar,*.zip
 set wildmenu
 set wildmode=longest:full,list:full
-set list                " displaying listchars
+set list                		" displaying listchars
 
 " Use utf-8 encoding
 set encoding=utf-8
-
-" ----------------------
-" -Keyboard-Cartography-
-" ----------------------
-
+"
 " <leader> key mapping. I typically use comma or ','
 let g:mapleader=','
 
-" Quickly edit/source .vimrc
-" noremap <Leader>ve :edit $HOME/.vimrc<CR>
-" noremap <Leader>vs :source $HOME/.vimrc<CR>
-
-" Quickly edit/source init.vim
-noremap <Leader>nve :edit $HOME/.config/nvim/init.vim<CR>
-noremap <Leader>nvs :source $HOME/.config/nvim/init.vim<CR>
-
-
-" ```--Clipboard-- ```
-" Fixing Vim's clipboard (as much as possible)
-" X11 keyboard fix - <Leader>y, p, Y, P = copy, paste to/from X11 clipboard
-" Same modification should also work the same way on Win32/MacOS
-" src='https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim'
+" Clipboard Fixes
 nnoremap <Leader>y "*y
 nnoremap <Leader>p "*p
 nnoremap <Leader>Y "+y
 nnoremap <Leader>P "+p
-
-" Y (capital) now yanks from cursor position to end of current line 
+" Paste Mode F2
 noremap Y y$
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 set clipboard=unnamedplus
-" About clipboard modifications:
-" <leader>y or 'leader+y' should copy to system clipboard
-" <F2> toggles 'paste mode', helps paste into vim
-" Procedure for this: <F2>, <insert mode>, <paste>, <F2> again for paste mode off.
-" 'showmode' tells vim to display status of  'paste mode' (on or off)
-" 'set clipboard=unnamed', not sure what this does exactly, but also helps fix vim's clipboard.
-
 " Delete without copying what is being deleted to clipboard
-nnoremap <leader>d "_d
-xnoremap <leader>d "_d
-xnoremap <leader>p "_dP
+nnoremap <Leader>d "_d
+xnoremap <Leader>d "_d
+xnoremap <Leader>p "_dP
 
-
-""" --Search Options--
+" Search Options
 set incsearch               " searches as you type
 set matchtime=2             " time to blink match {}
 set matchpairs+=<:>         " for ci< or ci>
 set showmatch               " tmpjump to match-bracket
-
 " Find and replace all
 nnoremap <Leader>rc :%s/\<<C-r><C-w>\>/
 vnoremap <Leader>rc y:$s/<C-r>"/
 
-" Toggle relativenumber
-nnoremap <Leader>rnn :set relativenumber!<CR>
-
-" --Screen-Splitting--
-" :sp <path to file you want to split screen with (vertically)
-" i.e. :sp ~/.vimrc to split the screen with the .vimrc
-" Split Direction
+" Screen-Splitting
 set splitbelow                  " splits go below w/focus
 set splitright                  " vsplits go right w/focus
-
-" Split Navigation - Moving between splits (windows)
+" Easier Navigating Between Screens
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-"" --Indent, Type-Setting Options--
-" `ctrl+e` jumps to the end of the line in insert mode
+" Ctrl+E = Go to EOL in Insert Mode
 inoremap <C-e> <C-o>$
 
-" Misc lines and splits
+" Misc Lines and Splits
 set laststatus=2                " always show statusline
 set linebreak                   " don't cut words on wrap
 set listchars=tab:>\            " > to highlight <Tab>
 set nolist                      " displaying listchars
 set ww=<,>,h,l  " ww = commands allowed to 'wrap' around EOL
 
-" --Text-folding setting--
-" set foldmethod=indent
-" set foldopen=all
-
-
+" Text/Code Folding
+"set foldmethod=indent
+"set foldopen=all
 
 " Sounds & Other Peripheral Functions
 set noeb  " Attempt to silence error dings for console vim
 set ttyfast  " for faster redraws etc
+
 
 " Easy indent with >> or << with in visual mode
 vnoremap < <gv
@@ -400,15 +160,7 @@ set ru  " Show cursor position even if inactive
 set lazyredraw  " Makes Vim run a bit faster (in theory)
 set mouse=a  " Limited mouse functionality
 
-"" Wildmode/wildmenu command-line completion
-set wildignore+=*.bak,*.swp,*.swo
-set wildignore+=*.a,*.o,*.so,*.pyc,*.class
-set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.pdf
-set wildignore+=*/.git*,*.tar,*.zip
-set wildmenu
-set wildmode=longest:full,list:full
-
-" --saving/loading--
+" Saving/Loading
 set autoread                    " refresh if changed
 set confirm                     " confirm changed files
 set noautowrite                 " never autowrite
@@ -416,25 +168,7 @@ set nobackup                    " disable backups
 set nowritebackup               " no backup while editing
 set noswapfile                  " no swap files 
 
-" Markdown auto-format text as ```code snippet``` using tpope/surround 
-autocmd FileType md let b:surround_45 = "``` \r ```"
-" to surround with ```  ``` in a markdown file, use cmd='yss-'
-" 'b:surround_45' was used becuase ascii code for '-' is '45' other
-" ascii codes can be cound with ':echo char2nr("%c")' in vim
-
-""" Persistent undo. Requires Vim 7.3 {{{
-if has('persistent_undo') && exists('&undodir')
-    set undodir=$HOME/.vim/undo/    " where to store undofiles
-    set undofile                " enable undofile
-    set undolevels=500          " max undos stored
-    set undoreload=10000        " buffer stored undos
-endif
-
-" --Undo History--
-set hidden                      " buffer change, more undo
-set history=1000                " default 20
-
-""" ===Text formatting=== 
+" Text Formatting
 set autoindent                  " preserve indentation
 set backspace=indent,eol,start  " normal backspace
 set expandtab                   " indents <Tab> as spaces
@@ -450,122 +184,79 @@ set exrc                        " enable usage of additional vimrc files
 set secure                      " .vimrc files cannot execute/create files
 " set cursorline                  " shows line under the cursor
 
-""" ===gvim options===
+" Gvim Windows Fix
 if has('win32')  " if running windows will work, else will not work
     set guioptions-=m   " remove menubar set 
     guioptions-=T       " remove toolbar
     set guioptions-=r   " remove right scrollbar
 endif
 
-""" ===Plugin Settings & Reference===
+"----------------------------------------
 
-" -C-Sharp Asynchronous Server interactions-
-" let g:OmniSharp_server_stdio = 1
 
-" -Vim-Argwrap-
+" Coding/Programming
+
+" Python
+
+" Remapping F9 to save & run the current file with Python3
+nnoremap <F9> :w<cr>:!python3 %<cr>
+
+" Pipenv Path
+let pipenv_venv_path = system('pipenv --venv')
+
+" Jedi Config
+" Keys
+let g:jedi#goto_command="<leader>c"
+let g:jedi#goto_assignments_command="<leader>g"
+let g:jedi#goto_stubs_command="<leader>s"
+let g:jedi#goto_definitions_command=''
+let g:jedi#documentation_command="<K>"
+let g:jedi#usages_command="<leader>n"
+let g:jedi#completions_command="<c-n>"
+let g:jedi#rename_command="<leader>r"
+" Settings
+let g:jedi#completions_enabled=1
+let g:jedi#auto_initialization=1
+let g:jedi#auto_close_doc=1
+let g:jedi#popup_select_first=1
+let g:jedi#auto_vim_configuration=0
+
+
+" Shell-Scripting
+
+" Make Shell Scripts Executable with <leader>e
+nnoremap <leader>h<cr>:!sudo chmod +x %<cr>
+" Run Shell Scripts with <leader>e
+nnoremap <leader>e<cr>:!./%<cr>
+
+
+" Use Templates for *.sh and *.py files
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
+    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
+  augroup END
+endif
+"----------------------------------------
+
+" Plugin Settings
+
+
+" Argwrap - 'FooSoft/vim-argwrap'
 nnoremap <silent> <leader>a :ArgWrap<CR>  
 
-"" -Syntastic-
-nnoremap <silent><Leader>le :Errors<CR>  
-nnoremap <silent><Leader>lc :lclose<CR>  
-
-"" -Rope-Vim-
-nnoremap <leader>j :RopeGotoDefinition<CR>
-nnoremap <leader>r :RopeRename<CR>
-
-"" -Undotree-
-" nnoremap <F5> :UndotreeToggle<CR>
-
-"" -TagBar settings-
+" Tagbar - 'majutsushi/tagbar'
 let g:tagbar_autofocus=0
 let g:tagbar_width=20
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
 nnoremap <leader>t :TagBarToggle<CR>
 
-
-"" -NERDTree settings-
+" NERDTree - 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
 let NERDTreeWinSize=40   " size of NERDTree window
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 nmap " :NERDTreeToggle<CR>
 
-"" SnipMate settings
-let g:snippets_dir='~/.vim/vim-snippets/snippets'
-
-"" Riv.vim settings
+" Riv-Vim - 'Rykka/riv.vim'
 let g:riv_disable_folding=1
-
-"" -Python Plugin settings-
-" python executables for different plugins
-" let g:pymode_python='python3'
-" let g:syntastic_python_pymode_exec='/usr/bin/python3'
-
-" rope
-" let g:pymode_rope=0
-" let g:pymode_rope_completion=0
-" let g:pymode_rope_complete_on_dot=0
-" let g:pymode_rope_auto_project=0
-" let g:pymode_rope_enable_autoimport=0
-" let g:pymode_rope_autoimport_generate=0
-" let g:pymode_rope_guess_project=0
-
-" documentation
-" let g:pymode_doc=1
-" let g:pymode_doc_bind='K'
-
-" lints
-" let g:pymode_lint=0
-" let g:pymode_lint_on_write=0
-
-" virtualenv
-" let g:pymode_virtualenv=1
-
-" breakpoints
-" let g:pymode_breakpoint=1
-" let g:pymode_breakpoint_key='<leader>b'
-
-" syntax highlight
-" let g:pymode_syntax=1
-" let g:pymode_syntax_slow_sync=1
-" let g:pymode_syntax_all=1
-" let g:pymode_syntax_print_as_function=g:pymode_syntax_all
-" let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
-" let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
-" let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
-" let g:pymode_syntax_highlight_self=g:pymode_syntax_all
-" let g:pymode_syntax_indent_errors=g:pymode_syntax_all
-" let g:pymode_syntax_string_formatting=g:pymode_syntax_all
-" let g:pymode_syntax_space_errors=g:pymode_syntax_all
-" let g:pymode_syntax_string_format=g:pymode_syntax_all
-" let g:pymode_syntax_string_templates=g:pymode_syntax_all
-" let g:pymode_syntax_doctests=g:pymode_syntax_all
-" let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
-" let g:pymode_syntax_builtin_types=g:pymode_syntax_all
-" let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
-" let g:pymode_syntax_docstrings=g:pymode_syntax_all
-
-" highlight 'long' lines (>= 80 symbols) in python files
-augroup vimrc_autocmds
-    autocmd!
-    autocmd FileType python,rst,c,cpp highlight Excess ctermbg=DarkGrey guibg=White
-    autocmd FileType python,rst,c,cpp match Excess /\%81v.*/
-    " autocmd FileType python,rst,c,cpp set nowrap
-    autocmd FileType python,rst,c,cpp set colorcolumn=80
-augroup END
-
-
-" syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_enable_signs=1
-let g:syntastic_check_on_wq=1
-let g:syntastic_aggregate_errors=1
-let g:syntastic_loc_list_height=5
-let g:syntastic_error_symbol='X'
-let g:syntastic_style_error_symbol='X'
-let g:syntastic_warning_symbol='x'
-let g:syntastic_style_warning_symbol='x'
-let g:syntastic_python_checkers=['flake8', 'python3']
-
-
