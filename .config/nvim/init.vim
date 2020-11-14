@@ -1,4 +1,7 @@
-" == Vim/Nvim Config File == ['~/.config/nvim/init.vim'|~/.vimrc']
+"------------------------------------------
+"------------------------------------------
+"       === NEOVIM CONFIG FILE ===
+"------------------------------------------
 "------------------------------------------
 " Author: `Evan Sherwood`                 |
 "------------------------------------------
@@ -32,7 +35,11 @@ Plug 'scrooloose/syntastic'
 " Python
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'        
-Plug 'PieterjanMontens/vim-pipenv'      
+Plug 'PieterjanMontens/vim-pipenv'
+Plug 'zchee/deoplete-jedi'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline-themes'
 "----------------------------------------
 " Extra Vim functionality
 Plug 'scrooloose/nerdtree'
@@ -187,18 +194,20 @@ if has('win32')
     set guioptions-=r   " remove right scrollbar
 endif
 "----------------------------------------
-" Coding/Programming
 "----------------------------------------
-" Python
+" --Coding/Programming--
 "----------------------------------------
-" Remapping F9 to save & run the current file with Python3
+"----------------------------------------
+" python
+"----------------------------------------
+" remapping F9 to save & run the current file with Python3
 nnoremap <F9> :w<cr>:!python3 %<cr>
 "----------------------------------------
-" Pipenv Path
+" pipenv path
 let pipenv_venv_path = system('pipenv --venv')
 "----------------------------------------
-" Jedi Config
-" Keys
+" jedi config
+" --Keys--
 let g:jedi#goto_command="<leader>c"
 let g:jedi#goto_assignments_command="<leader>g"
 let g:jedi#goto_stubs_command="<leader>s"
@@ -207,13 +216,15 @@ let g:jedi#documentation_command="<K>"
 let g:jedi#usages_command="<leader>n"
 let g:jedi#completions_command="<c-n>"
 let g:jedi#rename_command="<leader>r"
-" Settings
-let g:jedi#completions_enabled=1
+" --Settings--
+" using deoplete for auto-complete so completions are turned off
+let g:jedi#completions_enabled=0
 let g:jedi#auto_initialization=1
 let g:jedi#auto_close_doc=1
 let g:jedi#popup_select_first=1
 let g:jedi#auto_vim_configuration=0
-"----------------------------------------
+" open the go-to function in split, not another buffer
+let g:jedi#use_splits_not_buffers = "right"  "----------------------------------------
 " Shell-Scripting
 "----------------------------------------
 " Make Shell Scripts Executable with <leader>e
@@ -244,6 +255,7 @@ nnoremap <leader>t :TagBarToggle<CR>
 " NERDTree - 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
 let NERDTreeWinSize=40   " size of NERDTree window
+let NERDTreeShowHidden=1
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 nmap " :NERDTreeToggle<CR>
 "----------------------------------------
@@ -262,3 +274,11 @@ let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers=['flake8', 'python3']
+"------------------------------------------
+" deoplete
+let g:deoplete#enable_at_startup = 1  " necessary for deoplete to run
+"---------------------------------------------------------
+" vim-airline
+let g:airline_theme='minimalist'  " sets theme for vim-airline
+
+

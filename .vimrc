@@ -488,8 +488,10 @@ nmap <F7> :TagBarToggle<CR>
 "" -NERDTree settings-
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
 let NERDTreeWinSize=40   " size of NERDTree window
+let NERDTreeShowHidden=1  " enables the 'show hidden files' option by default
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 nmap " :NERDTreeToggle<CR>
+" toggle NERDTree on and off with the " key
 
 "" SnipMate settings
 let g:snippets_dir='~/.vim/vim-snippets/snippets'
