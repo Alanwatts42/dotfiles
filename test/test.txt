@@ -1,0 +1,2 @@
+test for .gitignore to see what I can get to show up since it should ignore everything
+due to containing '*' under the list of items to ignore.

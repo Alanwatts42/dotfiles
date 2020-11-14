@@ -3,14 +3,7 @@
 # Since this repository is at $HOME directory, everything other
 # than what should be in the repo is ignored
 
-*
-~/*
-~/.viminfo
-~/.ssh/*
-~/.ssh
-~/id_rsa
-~/*.pub
-
+/*
 
 # ignore all files not listed below preceded with a '!'
 
@@ -24,64 +17,68 @@
 
 !.vimrc
 !.vim
+!.vim/autoload/*
 !.vim/ftplugin/python.vim
 !.vim/templates/skeleton.*
 !.vim/ftdetect/*.vim
 !.vim/autoload/*.vim
 
+!test
+!test.txt
+
 
 # nvim at ~/.config/nvim/ 
-!~/.config/nvim/init.vim
-!~/.config/nvim/ftplugin/python.vim
-!~/.config/nvim/templates/skeleton.*
-!~/.config/nvim/ftdetect/*.vim
-!~/.config/nvim/autoload/*.vim
-!~/.config/nvim/colors/*.vim
+# !~/.config/nvim/init.vim
+# !~/.config/nvim/ftplugin/python.vim
+# !~/.config/nvim/templates/skeleton.*
+# !~/.config/nvim/ftdetect/*.vim
+# !~/.config/nvim/autoload/*.vim
+# !~/.config/nvim/colors/*.vim
 
 
 # nvim at .config/nvim/
-!.config/nvim/init.vim
-!.config/nvim/autoload/*.vim
-!.config/nvim/ftdetect/*.vim
-!.config/nvim/templates/skeleton.*
-!.config/nvim/ftplugin/python.vim
+# !.config/nvim/init.vim
+# !.config/nvim/autoload/*.vim
+# !.config/nvim/ftdetect/*.vim
+# !.config/nvim/templates/skeleton.*
+# !.config/nvim/ftplugin/python.vim
 
 
 # terminal (bash and zsh) 
-!~/.bashrc
-!~/.purepower
-!~/.profile
-!~/.zplug
-!~/.zshrc
-!~/.zprofile
-!~/.aliases
-!~/.aliases-m
-!~/powerlevel10k/*
-!~/powerlevel10k
-!~/.kick_shell
-!~/.tmux.conf
+# !~/.bashrc
+# !~/.purepower
+# !~/.profile
+# !~/.zplug
+# !~/.zshrc
+# !~/.zprofile
+# !~/.aliases
+# !~/.aliases-m
+# !~/powerlevel10k/*
+# !~/powerlevel10k
+# !~/.kick_shell
+# !~/.tmux.conf
 
-!.bashrc
-!.purepower
-!.profile
-!.zplug
-!.zshrc
-!.zprofile
-!.aliases
-!.aliases-m
-!powerlevel10k/*
-!powerlevel10k
-!.kick_shell
-!.tmux.conf
+# !.bashrc
+# !.purepower
+# !.profile
+# !.zplug
+# !.zshrc
+# !.zprofile
+# !.aliases
+# !.aliases-m
+# !powerlevel10k/*
+# !powerlevel10k
+# !.kick_shell
+# !.tmux.conf
 
 
 # git
-!~/.gitignore
-!~/.gitconfig
-!.gitignore
-!.gitconfig
+# !~/.gitignore
+# !~/.gitconfig
+# !.gitignore
+# !.gitconfig
 
 
 # misc
-!~/crashlog-1.md
-!~/README
+# !~/crashlog-1.md
+# !~/README
