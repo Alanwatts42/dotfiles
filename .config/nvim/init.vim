@@ -279,6 +279,6 @@ let g:syntastic_python_checkers=['flake8', 'python3']
 let g:deoplete#enable_at_startup = 1  " necessary for deoplete to run
 "---------------------------------------------------------
 " vim-airline
-let g:airline_theme='minimalist'  " sets theme for vim-airline
+let g:airline_theme='monochrome'  " sets theme for vim-airline
 
 
