@@ -186,26 +186,31 @@ set scrolloff=10                " let 10 lines before cursor during scroll
 set exrc                        " enable usage of additional vimrc files
 set secure                      " .vimrc files cannot execute/create files
 "set cursorline                 " shows line under the cursor
-"----------------------------------------
+"-------------------------------------------------------------------
 " Gvim Windows Fix
 if has('win32')
     set guioptions-=m   " remove menubar set
     guioptions-=T       " remove toolbar
     set guioptions-=r   " remove right scrollbar
 endif
-"----------------------------------------
-"----------------------------------------
+"-------------------------------------------------------------------
+"-------------------------------------------------------------------
 " --Coding/Programming--
-"----------------------------------------
-"----------------------------------------
-" python
-"----------------------------------------
+"-------------------------------------------------------------------
+"-------------------------------------------------------------------
+" --Python--
+"-------------------------------------------------------------------
 " remapping F9 to save & run the current file with Python3
 nnoremap <F9> :w<cr>:!python3 %<cr>
-"----------------------------------------
+"-------------------------------------------------------------------
 " pipenv path
 let pipenv_venv_path = system('pipenv --venv')
-"----------------------------------------
+"-------------------------------------------------------------------
+" --HTML/Javascript--
+"-------------------------------------------------------------------
+" remapping F8 to open html file in firefox 
+nnoremap <F8> :w<cr>:!firefox %<cr>
+"-------------------------------------------------------------------
 " jedi config
 " --Keys--
 let g:jedi#goto_command="<leader>c"

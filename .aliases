@@ -207,7 +207,7 @@ alias youtube-dlx="youtube-dl -i -R 99 --yes-playlist  --verbose"  #ignore error
 alias youtube-dlu="youtube-dl -U"  #update
 
 # wget
-alias wget="wget -m -np -c -t 999 --retry-connrefused"
+alias wgetdl="wget -e robots=off -m -r  -np -c -t 999 --retry-connrefused"
 alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
 
 # curl
