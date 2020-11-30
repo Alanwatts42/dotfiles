@@ -32,6 +32,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'somini/vim-autoclose'
 Plug 'FooSoft/vim-argwrap'
 Plug 'scrooloose/syntastic'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Python
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'        
@@ -197,6 +198,13 @@ endif
 "-------------------------------------------------------------------
 " --Coding/Programming--
 "-------------------------------------------------------------------
+" COC completion plugin - neoclide/coc.nvim
+"------------------------------------------------------
+" path to nodejs binary
+let g:coc_node_path = '/usr/bin/nodejs'
+" -----------------------------------------------------
+
+
 "-------------------------------------------------------------------
 " --Python--
 "-------------------------------------------------------------------
