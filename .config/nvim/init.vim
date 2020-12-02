@@ -32,26 +32,29 @@ Plug 'tomtom/tcomment_vim'
 Plug 'somini/vim-autoclose'
 Plug 'FooSoft/vim-argwrap'
 Plug 'scrooloose/syntastic'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Python
-Plug 'davidhalter/jedi-vim'
-Plug 'jmcantrell/vim-virtualenv'        
-Plug 'PieterjanMontens/vim-pipenv'
+Plug 'davidhalter/jedi-vim' " code completion engine (python mainly)
+Plug 'ervandew/supertab' " allows completion with <tab> for jedi-vim
 Plug 'zchee/deoplete-jedi'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'vim-airline/vim-airline' 
-Plug 'vim-airline/vim-airline-themes'
-"----------------------------------------
+Plug 'jmcantrell/vim-virtualenv'        
+Plug 'PieterjanMontens/vim-pipenv'
+" Web Development
+Plug 'mattn/emmet-vim' " HTML editing tools
+
 " Extra Vim functionality
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-eunuch'
 Plug 'ctrlpvim/ctrlp.vim'   
+Plug 'easymotion/vim-easymotion' " Easier 'vi' navigation, any filetype 
 "----------------------------------------
 " Look & Feel
 Plug 'flazz/vim-colorschemes'
 Plug 'christophermca/meta5'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'Lokaltog/powerline'
+Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline-themes'
 "----------------------------------------
 " Git/Version-Control
 Plug 'tpope/vim-fugitive'
@@ -198,13 +201,6 @@ endif
 "-------------------------------------------------------------------
 " --Coding/Programming--
 "-------------------------------------------------------------------
-" COC completion plugin - neoclide/coc.nvim
-"------------------------------------------------------
-" path to nodejs binary
-let g:coc_node_path = '/usr/bin/nodejs'
-" -----------------------------------------------------
-
-
 "-------------------------------------------------------------------
 " --Python--
 "-------------------------------------------------------------------
@@ -221,7 +217,10 @@ nnoremap <F8> :w<cr>:!firefox %<cr>
 "-------------------------------------------------------------------
 " jedi config
 " --Keys--
-let g:jedi#goto_command="<leader>c"
+" Find the definition (assignment) of a given command, i.e. jump from 'foo' to foo=bar'.
+let g:jedi#goto_command="<leader>d" 
+" Similr to 'goto_command' above, but for function/class under cursor, i.e.
+" 'foo' jumps to 'class foo:' or 'def foo(bar):' (python3).
 let g:jedi#goto_assignments_command="<leader>g"
 let g:jedi#goto_stubs_command="<leader>s"
 let g:jedi#goto_definitions_command=''
@@ -231,16 +230,17 @@ let g:jedi#completions_command="<c-n>"
 let g:jedi#rename_command="<leader>r"
 " --Settings--
 " using deoplete for auto-complete so completions are turned off
-let g:jedi#completions_enabled=0
+let g:jedi#completions_enabled=1
 let g:jedi#auto_initialization=1
 let g:jedi#auto_close_doc=1
 let g:jedi#popup_select_first=1
-let g:jedi#auto_vim_configuration=0
+let g:jedi#auto_vim_configuration=1
 " open the go-to function in split, not another buffer
-let g:jedi#use_splits_not_buffers = "right"  "----------------------------------------
+let g:jedi#use_splits_not_buffers = "right"
+"----------------------------------------
 " Shell-Scripting
 "----------------------------------------
-" Make Shell Scripts Executable with <leader>e
+" Make Shell Scripts Executable with <leader>h
 nnoremap <leader>h<cr>:!sudo chmod +x %<cr>
 " Run Shell Scripts with <leader>e
 nnoremap <leader>e<cr>:!./%<cr>
@@ -248,12 +248,23 @@ nnoremap <leader>e<cr>:!./%<cr>
 " Use Templates for *.sh and *.py files
 if has("autocmd")
   augroup templates
-    autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
-    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
+    autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/template.sh
+    autocmd BufNewFile *.py 0r ~/.config/nvim/templates/template.py
+    autocmd BufNewFile *.js 0r ~/.config/nvim/templates/=template=.js
+    autocmd BufNewFile *.html 0r ~/.config/nvim/templates/=template=.html
+    autocmd BufNewFile *.md 0r ~/.config/nvim/templates/=template=.md
+    autocmd BufNewFile *.markdown 0r ~/.config/nvim/templates/=template=.markdown
+    autocmd BufNewFile *.travis.yml 0r ~/.config/nvim/templates/=template=.travis.yml
   augroup END
 endif
 "----------------------------------------
 " Plugin Settings
+"----------------------------------------
+" Easymotion - 'easymotion/vim-easymotion'
+map <Leader>s <Plug>(easymotion-prefix)
+"----------------------------------------
+" Emmet - 'mattn/emmet-vim' - HTML
+let g:user_emmet_expandabbr_key = '<C-a>,' " html expander bind to: <ctrl+a>
 "----------------------------------------
 " Argwrap - 'FooSoft/vim-argwrap'
 nnoremap <silent> <leader>a :ArgWrap<CR>  
@@ -263,7 +274,7 @@ let g:tagbar_autofocus=0
 let g:tagbar_width=20
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
-nnoremap <leader>t :TagBarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 "----------------------------------------
 " NERDTree - 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 
@@ -293,5 +304,6 @@ let g:deoplete#enable_at_startup = 1  " necessary for deoplete to run
 "---------------------------------------------------------
 " vim-airline
 let g:airline_theme='monochrome'  " sets theme for vim-airline
-
-
+"
+"
+"--------------[END OF CONFIG FILE]-------------------------
