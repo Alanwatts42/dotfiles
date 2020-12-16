@@ -12,7 +12,7 @@
 set nocompatible
 let autoload = '~/.config/nvim/autoload'                                  
 if empty(autoload)          
-    silent !curl -fLo plug --create-dirs \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    silent !wget 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' ~/.config/nvim/autoload/
     autocmd VimEnter * PlugInstall --sync | source %
 endif
 "----------------------------------------

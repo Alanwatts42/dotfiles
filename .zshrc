@@ -1,5 +1,10 @@
-#Prompt setup >>
+#Zplug setup >>
+if [[ ! -d ~/.zplug ]];then
+    git clone https://github.com/b4b4r07/zplug ~/.zplug
+fi
 
+
+#Prompt setup >>
 autoload -Uz promptinit
 promptinit
 prompt adam1
@@ -7,6 +12,7 @@ prompt adam1
 # Environment variables >>
 # Shellcheck (shell linter) overrides
 export SHELLCHECK_OPTS='--shell=sh --exclude=SC2016'
+
 
 # Vi style controls
 # EDITOR=vim
@@ -32,7 +38,10 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 
 # Look & Feel >>
-zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
+# zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
+zplug romkatv/powerlevel10k, as:theme, depth:1
+
+
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
