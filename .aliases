@@ -77,6 +77,7 @@ alias aptgin="sudo apt-get install"
 alias aptseek="sudo apt search"
 alias aptpurge="sudo apt-get purge"
 alias aptremove="sudo apt-get remove"
+alias aptdup="sudo aptitude update && sudo aptitude upgrade -y"
 # add/remove repositories
 alias aptaddrepo="sudo add-apt-repository"
 alias aptrmrepo="sudo add-apt-repository --remove"
@@ -97,16 +98,19 @@ alias updatebootimage="sudo update-initramfs -u"
 ##--------------##
 
 # Vim/Neovim
-alias vim="nvim"                # If vim == neovim aliases refer to: nvim, else: vim
+alias vim="nvim"                
 alias vi="vim"          
 alias svi="sudo vim"
-alias svim="sudo vim"
-alias suvim="sudo vim"  
-alias sudovim="sudo vim"
+alias svim="sudo nvim"
+alias suvim="sudo nvim"  
+alias sudovim="sudo nvim"
 # Edit Vim/Nvim Config 
-# alias vimconfig ="vim ~/.config/nvim/init.vim"  # nvim's .vimrc equivalent
-# alias editvimrc="vim ~/.vimrc"                  # original vim config file location
+# alias vimconfig ="nvim ~/.config/nvim/init.vim"  # nvim's .vimrc equivalent
+# alias editvimrc="nvim ~/.vimrc"                  # original vim config file location
 
+# tar unarchiver
+alias untar="tar -xvf"    # unarchive .tar
+alias untargz="tar -xzf"  # unarchive .tar.gz
 
 
 ## Hardware Controls & Utilities ##

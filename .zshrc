@@ -22,7 +22,7 @@ export SHELLCHECK_OPTS='--shell=sh --exclude=SC2016'
 
 
 # Vi style controls
-# EDITOR=vim
+EDITOR=nvim
 bindkey -v
 
 # set 256 color mode
@@ -46,8 +46,7 @@ zplug "zsh-users/zsh-autosuggestions"
 
 # Look & Feel >>
 # zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
-zplug romkatv/powerlevel10k, as:theme, depth:1
-
+zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 
 # Install packages that have not been installed yet
@@ -103,7 +102,7 @@ setopt AUTO_CD
 
 # Sources >>
 source ~/.aliases
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
