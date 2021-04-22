@@ -25,13 +25,14 @@ endif
 "----------------------------------------
 call plug#begin()
 " Coding/Programming
-Plug 'majutsushi/tagbar'
+Plug 'preservim/tagbar'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tomtom/tcomment_vim'
 Plug 'somini/vim-autoclose'
 Plug 'FooSoft/vim-argwrap'
 Plug 'scrooloose/syntastic'
+Plug 'rentalcustard/exuberant-ctags'
 " Python
 Plug 'davidhalter/jedi-vim' " code completion engine (python mainly)
 Plug 'ervandew/supertab' " allows completion with <tab> for jedi-vim
@@ -77,11 +78,11 @@ syntax enable			" Syntax Highlighting On
 set termguicolors
 set t_co=256			" 256 Colors
 colorscheme meta5		" Colorscheme
-"----------------------------------------
+"-----------------
 " General Settings
-"----------------------------------------
-set title               		                    " Window Title
-set noeb vb t_vb=            		                " No Error Bells
+"-----------------
+set title               		                 " Window Title
+set noeb vb t_vb=            		             " No Error Bells
 set showcmd             		                    " Show cmds being typed
 set number              		                    " IDE-Style line numbers
 set ruler               		                    " Line numbering
@@ -201,19 +202,28 @@ endif
 "-------------------------------------------------------------------
 " --Coding/Programming--
 "-------------------------------------------------------------------
+" -Exuberant Ctags-
+"-------------------------------------------------------------------
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags' 
+
+
 "-------------------------------------------------------------------
 " --Python--
 "-------------------------------------------------------------------
 " remapping F9 to save & run the current file with Python3
-nnoremap <F9> :w<cr>:!python3 %<cr>
+nnoremap <F9> :w<cr>:!ipython3 -m pdb %<cr>
+
 "-------------------------------------------------------------------
 " pipenv path
 let pipenv_venv_path = system('pipenv --venv')
 "-------------------------------------------------------------------
-" --HTML/Javascript--
 "-------------------------------------------------------------------
-" remapping F8 to open html file in firefox 
-nnoremap <F8> :w<cr>:!firefox %<cr>
+" remapping F8 to run python file in ipython3
+nnoremap <F8> :w<cr>:!konsole -e ipython3 %
+
+nnoremap <leader>P :!ipython3 %<cr>
+
+nnoremap <leader>p :!python3 %<cr>
 "-------------------------------------------------------------------
 " jedi config
 " --Keys--
@@ -243,7 +253,7 @@ let g:jedi#use_splits_not_buffers = "right"
 " Make Shell Scripts Executable with <leader>h
 nnoremap <leader>h<cr>:!sudo chmod +x %<cr>
 " Run Shell Scripts with <leader>e
-nnoremap <leader>e<cr>:!./%<cr>
+nnoremap <leader>S<cr>:!./%<cr>
 "----------------------------------------
 " Use Templates for *.sh and *.py files
 if has("autocmd")

@@ -213,6 +213,8 @@ alias youtube-dlu="youtube-dl -U"  #update
 # wget
 alias wgetdl="wget -e robots=off -m -r  -np -c -t 999 --retry-connrefused"
 alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
+alias wgettheeye='wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"'
+alias wgrab='wget -nd -v --tries=0 --retry-connrefused -nc -c -d --no-check-certificate'
 
 # curl
 alias curl="curl -retry 99 --retry-connrefused"

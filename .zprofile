@@ -25,14 +25,15 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 # ---------------------
 # Shellcheck (shell linter) overrides
 export SHELLCHECK_OPTS='--shell=zsh --exclude=SC2016 SC2035'
+# export CC="gcc -m32"
 #
 # Vim (off) >> 
 #
 # Brew >>
 # ----
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 # For compilers to find isl@0.18 you may need to set:
-  export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
-  export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
-# For pkg-config to find isl@0.18 you may need to set:
-  export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
+#   export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
+#   export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
+# # For pkg-config to find isl@0.18 you may need to set:
+#   export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
