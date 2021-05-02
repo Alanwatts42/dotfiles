@@ -24,29 +24,88 @@ endif
 "`:PlugClean!` - You don't wanna start getting mold in there
 "----------------------------------------
 call plug#begin()
-" Coding/Programming
-Plug 'preservim/tagbar'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'tomtom/tcomment_vim'
-Plug 'somini/vim-autoclose'
-Plug 'FooSoft/vim-argwrap'
-Plug 'scrooloose/syntastic'
-Plug 'rentalcustard/exuberant-ctags'
-" Python
-Plug 'davidhalter/jedi-vim' " code completion engine (python mainly)
-Plug 'ervandew/supertab' " allows completion with <tab> for jedi-vim
-Plug 'zchee/deoplete-jedi'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Coding/Programming --------
+Plug 'tpope/vim-surround'           " easy '[ ( 'surround' ) ]'
+Plug 'tpope/vim-commentary'         " easy comments
+Plug 'tomtom/tcomment_vim'          " <v><select>gcc comment selected text
+Plug 'somini/vim-autoclose'         " easy [](){}, etc.
+Plug 'FooSoft/vim-argwrap'          " <leader>a to change arg-wrap style
+Plug 'scrooloose/syntastic'         " syntax highlighting
+" snippets -----------------
+Plug 'SirVer/ultisnips'             " see 'snippets' dirs
+" virtualenv -------------------
 Plug 'jmcantrell/vim-virtualenv'        
 Plug 'PieterjanMontens/vim-pipenv'
-" Web Development
+" Web Development -------------------------
 Plug 'mattn/emmet-vim' " HTML editing tools
+" -NCM2-----------------------------------
+Plug 'ncm2/ncm2'                        " main ncm2 plugin
+" Plug 'dlang/dub'                      " dlang requirement
+" Plug 'dlang/dmd'                      " dlang requirement
+" Plug 'dlang/druntime'                 " dlang requirement
+" Plug 'dlang/phobos'                   " dlang requirement
+" Plug 'dlang/tools'                    " dlang requirement
+" Plug 'dlang/dlang.org'                " dlang requirement
+Plug 'roxma/nvim-yarp'                  " dlang requirement
 
+"----completion----------------------------------
+Plug 'Shougo/neoinclude'                " completion engine
+Plug 'prabirshrestha/asyncomplete.vim'  " Completion
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'Shougo/neosnippet.vim'
+" ------------------------------------------------
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-github'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-tagprefix'
+Plug 'filipekiss/ncm2-look.vim'
+Plug 'ncm2/ncm2-gtags'
+Plug 'ncm2/ncm2-syntax'
+Plug 'ncm2/ncm2-neoinclude'
+Plug 'wellle/tmux-complete.vim'
+Plug 'yuki-ycino/ncm2-dictionary'
+Plug 'fgrsnau/ncm2-aspell'
+Plug 'fgrsnau/ncm2-otherbuf'
+Plug 'loonies/ncm2-ledger'
+" Plug 'svermeulen/ncm2-yoink'            " yank history
+Plug 'TyberiusPrime/ncm2-bufline'       " line completion
+Plug 'ncm2/ncm2-cssomni'                " css
+Plug 'ncm2/ncm2-tern'                   " javascript
+Plug 'mhartington/nvim-typescript'      " typescript
+Plug 'ncm2/ncm2-jedi'                   " python
+Plug 'ncm2/ncm2-racer'                  " rust
+Plug 'ncm2/ncm2-pyclang'                " c/c++
+Plug 'lervag/vimtex'                    " LaTex
+Plug 'ncm2/ncm2-vim'                    " vimscript
+Plug 'ncm2/ncm2-go'                     " golang
+Plug 'phpactor/ncm2-phpactor'           " php
+Plug 'ObserverOfTime/ncm2-jc2'          " java
+Plug 'gaalcaras/ncm-R'                  " R
+Plug 'HiPhish/ncm2-vlime'               " Common Lisp
+Plug 'oncomouse/ncm2-biblatex'          " Markdown
+Plug 'VTimofeenko/ncm2-ebuild'          " Ebuilds
+" snippet integration
+Plug 'ncm2/ncm2-ultisnips'
+" subscope detection
+Plug 'ncm2/ncm2-html-subscope'
+Plug 'ncm2/ncm2-markdown-subscope'
+Plug 'ncm2/ncm2-rst-subscope'
+" utils
+Plug 'ncm2/ncm2-match-highlight'
+Plug 'ncm2/ncm2-highprio-pop'
+
+" additional python-related plugins
+Plug 'Yggdroot/indentLine'              " indent guide
+Plug 'w0rp/ale'                         " syntax check
+Plug 'Chiel92/vim-autoformat'           " autoformatter
+"----------------------------------------
 " Extra Vim functionality
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'              " file manager
 Plug 'tpope/vim-eunuch'
-Plug 'ctrlpvim/ctrlp.vim'   
+Plug 'ctrlpvim/ctrlp.vim'               " fuzzy file search
 Plug 'easymotion/vim-easymotion' " Easier 'vi' navigation, any filetype 
 "----------------------------------------
 " Look & Feel
@@ -61,15 +120,58 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'christoomey/vim-conflicted'
+Plug 'airblade/vim-gitgutter'               " diff tool
+Plug 'christoomey/vim-conflicted'           " conflict helper
 "----------------------------------------
 " Markup/Markdown
 Plug 'Rykka/riv.vim'
 Plug 'plasticboy/vim-markdown'
-Plug 'godlygeek/tabular'
+"----------------------------------------
+" Deprecated
+"----------------------------------------
+" Plug 'godlygeek/tabular'
+" Plug 'preservim/tagbar'
+" Plug 'rentalcustard/exuberant-ctags'
+" Python
+" Plug 'davidhalter/jedi-vim' " code completion engine (python mainly)
+" Plug 'ervandew/supertab' " allows completion with <tab> for jedi-vim
+" Plug 'zchee/deoplete-jedi'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 "----------------------------------------
 call plug#end() 
+"----------------------------------------
+" Asyncomplete
+if executable('pyls')
+    " pip install python-language-server
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'allowlist': ['python'],
+        \ })
+endif
+
+" NCM2
+augroup NCM2
+  autocmd!
+  " enable ncm2 for all buffers
+  autocmd BufEnter * call ncm2#enable_for_buffer()
+  " :help Ncm2PopupOpen for more information
+  set completeopt=noinsert,menuone,noselect
+  " When the <Enter> key is pressed while the popup menu is visible, it only
+  " hides the menu. Use this mapping to close the menu and also start a new line.
+  inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+  " uncomment this block if you use vimtex for LaTex
+  " autocmd Filetype tex call ncm2#register_source({
+  "           \ 'name': 'vimtex',
+  "           \ 'priority': 8,
+  "           \ 'scope': ['tex'],
+  "           \ 'mark': 'tex',
+  "           \ 'word_pattern': '\w+',
+  "           \ 'complete_pattern': g:vimtex#re#ncm2,
+  "           \ 'on_complete': ['ncm2#on_complete#omni', 'vimtex#complete#omnifunc'],
+  "           \ })
+augroup END
 "----------------------------------------
 filetype plugin indent on 
 "----------------------------------------
@@ -146,11 +248,20 @@ set laststatus=2                " always show statusline
 set linebreak                   " don't cut words on wrap
 set listchars=tab:>\            " > to highlight <Tab>
 set nolist                      " displaying listchars
-set ww=<,>,h,l                  " ww = commands that wrap around EOL
+set ww=<,>,h,l                  " ww=[commands that wrap around EOL]
 "----------------------------------------
 " Text/Code Folding
-"set foldmethod=indent
-"set foldopen=all
+"-----------------------------------------
+" set folding to manual - press <F9> to fold selected text
+set foldmethod=manual
+set foldopen=all
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+" select some lines and press <space> to fold those lines
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
 "----------------------------------------
 " Sounds & Other Peripheral Functions
 set noeb  " Attempt to silence error dings for console vim
@@ -204,14 +315,13 @@ endif
 "-------------------------------------------------------------------
 " -Exuberant Ctags-
 "-------------------------------------------------------------------
-let g:tagbar_ctags_bin = '/usr/local/bin/ctags' 
-
+" let g:tagbar_ctags_bin = '/usr/local/bin/ctags' 
 
 "-------------------------------------------------------------------
 " --Python--
 "-------------------------------------------------------------------
 " remapping F9 to save & run the current file with Python3
-nnoremap <F9> :w<cr>:!ipython3 -m pdb %<cr>
+" nnoremap <F9> :w<cr>:!ipython3 -m pdb %<cr>
 
 "-------------------------------------------------------------------
 " pipenv path
@@ -219,25 +329,24 @@ let pipenv_venv_path = system('pipenv --venv')
 "-------------------------------------------------------------------
 "-------------------------------------------------------------------
 " remapping F8 to run python file in ipython3
-nnoremap <F8> :w<cr>:!konsole -e ipython3 %
+" nnoremap <F8> :w<cr>:
 
+" run Python files with leader p
 nnoremap <leader>P :!ipython3 %<cr>
-
 nnoremap <leader>p :!python3 %<cr>
 "-------------------------------------------------------------------
 " jedi config
 " --Keys--
-" Find the definition (assignment) of a given command, i.e. jump from 'foo' to foo=bar'.
-let g:jedi#goto_command="<leader>d" 
-" Similr to 'goto_command' above, but for function/class under cursor, i.e.
+" jump from 'foo' to foo=bar'.
+let g:jedi#goto_command='<leader>d'
 " 'foo' jumps to 'class foo:' or 'def foo(bar):' (python3).
-let g:jedi#goto_assignments_command="<leader>g"
-let g:jedi#goto_stubs_command="<leader>s"
+let g:jedi#goto_assignments_command='<leader>g'
+let g:jedi#goto_stubs_command='<leader>s'
 let g:jedi#goto_definitions_command=''
-let g:jedi#documentation_command="<K>"
-let g:jedi#usages_command="<leader>n"
-let g:jedi#completions_command="<c-n>"
-let g:jedi#rename_command="<leader>r"
+let g:jedi#documentation_command='<K>'
+let g:jedi#usages_command='<leader>n'
+let g:jedi#completions_command='<c-n>'
+let g:jedi#rename_command='<leader>r'
 " --Settings--
 " using deoplete for auto-complete so completions are turned off
 let g:jedi#completions_enabled=1
@@ -251,7 +360,7 @@ let g:jedi#use_splits_not_buffers = "right"
 " Shell-Scripting
 "----------------------------------------
 " Make Shell Scripts Executable with <leader>h
-nnoremap <leader>h<cr>:!sudo chmod +x %<cr>
+nnoremap <leader>h :!sudo chmod +x %<cr>
 " Run Shell Scripts with <leader>e
 nnoremap <leader>S<cr>:!./%<cr>
 "----------------------------------------
@@ -265,6 +374,7 @@ if has("autocmd")
     autocmd BufNewFile *.md 0r ~/.config/nvim/templates/=template=.md
     autocmd BufNewFile *.markdown 0r ~/.config/nvim/templates/=template=.markdown
     autocmd BufNewFile *.travis.yml 0r ~/.config/nvim/templates/=template=.travis.yml
+    autocmd BufNewFile * 0r *
   augroup END
 endif
 "----------------------------------------
@@ -279,12 +389,12 @@ let g:user_emmet_expandabbr_key = '<C-a>,' " html expander bind to: <ctrl+a>
 " Argwrap - 'FooSoft/vim-argwrap'
 nnoremap <silent> <leader>a :ArgWrap<CR>  
 "----------------------------------------
-" Tagbar - 'majutsushi/tagbar'
-let g:tagbar_autofocus=0
-let g:tagbar_width=20
-autocmd BufEnter *.py :call tagbar#autoopen(0)
-autocmd BufWinLeave *.py :TagbarClose
-nnoremap <leader>t :TagbarToggle<CR>
+" " Tagbar - 'majutsushi/tagbar'
+" let g:tagbar_autofocus=0
+" let g:tagbar_width=20
+" autocmd BufEnter *.py :call tagbar#autoopen(0)
+" autocmd BufWinLeave *.py :TagbarClose
+" nnoremap <leader>t :TagbarToggle<CR>
 "----------------------------------------
 " NERDTree - 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']  " ignore files 

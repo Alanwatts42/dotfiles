@@ -1,10 +1,10 @@
 #!/bin/bash
-##--------------------------## ALIASES ##----------------------------##
+##-----------## ALIASES ##------------##
 
 # Author:   Evan Sherwood
 # Email:    evan.sherwood@keemail.me
 
-# Customer shell functions are now found in this file:  $HOME/.kick_shell
+# Custom shell functions are now found in '~/.functions'
 
 
 ## References/Sources ##
@@ -14,8 +14,28 @@
 # Ubuntu 18.04 default bash alias examples: '/usr/share/doc/bash-doc/examples'
 
 
+## Networking ##
+##------------##
+
+# nmtui
+alias wifimenu="nmtui"
+alias wifiui="nmtui"
+
+# ping
+alias pingg="ping 8.8.8.8 -c 4"
+
+# iwlist
+alias wifiscan="sudo iwlist wlp2s0 scan | grep -i ESSID"
+alias wificheck="sudo iw wlp2s0 link"
+
+# network-manager
+alias nmreboot="sudo service network-manager restart"
+
+
 ## Steam ##
 ##-------##
+
+# Steam - run from particular launcher
 alias steam="sudo /usr/lib/steam/steam.sh"
 
 
@@ -86,7 +106,10 @@ alias aptmylist="sudo apt list --installed"
 alias aptmylistgrep="sudo apt list --installed | grep"
 alias aptbiglistgrep="sudo apt list | grep"
 alias aptbiglistvim="vim <(sudo apt list)"
-alias apshow="apt show"
+alias aptshow="apt show"
+
+# Aptitude
+alias aptfix="sudo aptitude -o APT::Get::Fix-Missing=true install"
 
 ## Splash screens
 alias splashscreensearch="apt-cache search plymouth-theme"
@@ -100,22 +123,26 @@ alias updatebootimage="sudo update-initramfs -u"
 # Vim/Neovim
 alias vim="nvim"                
 alias vi="vim"          
-alias svi="sudo vim"
-alias svim="sudo nvim"
-alias suvim="sudo nvim"  
-alias sudovim="sudo nvim"
+# alias svi="sudo vim"
+# alias svim="sudo nvim"
+# alias suvim="sudo nvim"  
+# alias sudovim="sudo nvim"
+
+# sudo-edit - edit sensitive files with wihout fucking with it's permissions
+alias svim="sudo -e"
+
+
 # Edit Vim/Nvim Config 
 # alias vimconfig ="nvim ~/.config/nvim/init.vim"  # nvim's .vimrc equivalent
 # alias editvimrc="nvim ~/.vimrc"                  # original vim config file location
 
 # tar unarchiver
-alias untar="tar -xvf"    # unarchive .tar
-alias untargz="tar -xzf"  # unarchive .tar.gz
+alias untar="tar -xvf"   
+alias untargz="tar -xzf"  # unarchive .tar.gz   (may not need this one)
 
 
 ## Hardware Controls & Utilities ##
 ##-------------------------------##
-
 # Sets screen brightness for monitor i.e. backlight (number between 0 and 1)
 alias brightlvl="lxqt-config-brightness edp1 -s"
 alias brightness="lxqt-config-brightness edp1 -s"
@@ -211,10 +238,14 @@ alias youtube-dlx="youtube-dl -i -R 99 --yes-playlist  --verbose"  #ignore error
 alias youtube-dlu="youtube-dl -U"  #update
 
 # wget
+
+alias wget="wget -c -nc -t 0 --retry-connrefused"
 alias wgetdl="wget -e robots=off -m -r  -np -c -t 999 --retry-connrefused"
 alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
 alias wgettheeye='wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"'
 alias wgrab='wget -nd -v --tries=0 --retry-connrefused -nc -c -d --no-check-certificate'
+
+
 
 # curl
 alias curl="curl -retry 99 --retry-connrefused"

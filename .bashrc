@@ -237,18 +237,35 @@ retropie_welcome() {
     echo -e "\n$out"
 }
 
-# Source '~/.kick_shell' which is where I define custom shell commands
-if [ -f "$HOME/.kick_shell" ]
+# Source '~/.functions' which defines custom shell functions
+if [ -f "$HOME/.functions" ]
 then
     # shellcheck source=/dev/null
-    source "$HOME/.kick_shell"
+    source "$HOME/.functions"
 fi
 
 # Shellcheck overrides
 export SHELLCHECK_OPTS='--shell=bash --exclude=SC2016,SC2035'
+
 
 # export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/evan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/evan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/evan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/evan/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

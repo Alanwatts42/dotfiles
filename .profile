@@ -21,19 +21,32 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 
-
+# .aliases
 if [ -f "$HOME/.aliases" ]; then
     # shellcheck source=/dev/null
     . "$HOME"/.aliases
 fi
 
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+# .functions
+if [ -f "$HOME/.functions" ]; then
+    # shellcheck source=/dev/null
+    . "$HOME"/.functions
 fi
 
+
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
+if [ -d "$HOME/bin" ]; then
+    PATH="$HOME/bin:$PATH"
+
+fi
+
+# set PATH to include everything in ~/.local
+if [ -d "$HOME/.local" ]; then
+    PATH="$HOME/.local:$PATH"
+fi
+
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi

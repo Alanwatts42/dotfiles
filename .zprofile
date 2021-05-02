@@ -26,6 +26,12 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 # Shellcheck (shell linter) overrides
 export SHELLCHECK_OPTS='--shell=zsh --exclude=SC2016 SC2035'
 # export CC="gcc -m32"
+
+# Adding bash config files as well as .local/bin to PATH
+# export PATH='/home/evan/.local/bin:$PATH'
+# source '/home/evan/.bashrc'
+# source '/home/evan/.profile'
+
 #
 # Vim (off) >> 
 #

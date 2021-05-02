@@ -114,7 +114,7 @@ fi
 
 # Custom shell commands >
 # to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
-if [ -f ~/.kick_shell ] 
-then
-    source ~/.kick_shell
-fi
+# if [ -f ~/.kick_shell ] 
+# then
+#     source ~/.kick_shell
+# fi
