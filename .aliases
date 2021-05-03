@@ -120,6 +120,10 @@ alias updatebootimage="sudo update-initramfs -u"
 ## Applications ##
 ##--------------##
 
+# Tmux
+alias tmux='tmux -2'        # tmux 256 colors
+
+
 # Vim/Neovim
 alias vim="nvim"                
 alias vi="vim"          
