@@ -10,9 +10,9 @@
 " Github: `https://github.com/Alanwatts42`|
 "------------------------------------------
 set nocompatible
-let autoload = '~/.config/nvim/autoload'                                  
+let autoload = '/home/evan/.config/nvim/autoload/'                                  
 if empty(autoload)          
-    silent !wget 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' ~/.config/nvim/autoload/
+    silent !wget 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' '/home/evan/.config/nvim/autoload/'
     autocmd VimEnter * PlugInstall --sync | source %
 endif
 "----------------------------------------
@@ -23,7 +23,7 @@ endif
 "`:PlugClean` - You don't wanna start getting mold in there
 "`:PlugClean!` - You don't wanna start getting mold in there
 "----------------------------------------
-call plug#begin()
+call plug#begin('/home/evan/.config/nvim/plugged')
 " Coding/Programming --------
 Plug 'tpope/vim-surround'           " easy '[ ( 'surround' ) ]'
 Plug 'tpope/vim-commentary'         " easy comments
@@ -32,7 +32,7 @@ Plug 'somini/vim-autoclose'         " easy [](){}, etc.
 Plug 'FooSoft/vim-argwrap'          " <leader>a to change arg-wrap style
 Plug 'scrooloose/syntastic'         " syntax highlighting
 " snippets -----------------
-Plug 'SirVer/ultisnips'             " see 'snippets' dirs
+" Plug 'SirVer/ultisnips'             " see 'snippets' dirs
 " virtualenv -------------------
 Plug 'jmcantrell/vim-virtualenv'        
 Plug 'PieterjanMontens/vim-pipenv'
@@ -49,12 +49,12 @@ Plug 'ncm2/ncm2'                        " main ncm2 plugin
 Plug 'roxma/nvim-yarp'                  " dlang requirement
 
 "----completion----------------------------------
-Plug 'Shougo/neoinclude'                " completion engine
+" Plug 'Shougo/neoinclude'                " completion engine
 Plug 'prabirshrestha/asyncomplete.vim'  " Completion
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet.vim'
 " ------------------------------------------------
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
@@ -88,7 +88,7 @@ Plug 'HiPhish/ncm2-vlime'               " Common Lisp
 Plug 'oncomouse/ncm2-biblatex'          " Markdown
 Plug 'VTimofeenko/ncm2-ebuild'          " Ebuilds
 " snippet integration
-Plug 'ncm2/ncm2-ultisnips'
+" Plug 'ncm2/ncm2-ultisnips'
 " subscope detection
 Plug 'ncm2/ncm2-html-subscope'
 Plug 'ncm2/ncm2-markdown-subscope'
@@ -116,7 +116,8 @@ Plug 'Lokaltog/powerline'
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
 "----------------------------------------
-" Git/Version-Control
+" Git/Version-Control/n/]
+"
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
@@ -152,12 +153,12 @@ if executable('pyls')
 endif
 
 " NCM2
-augroup NCM2
-  autocmd!
-  " enable ncm2 for all buffers
-  autocmd BufEnter * call ncm2#enable_for_buffer()
+" augroup NCM2
+" autocmd!
+"   " enable ncm2 for all buffers
+  "autocmd BufEnter * call ncm2#enable_for_buffer()
   " :help Ncm2PopupOpen for more information
-  set completeopt=noinsert,menuone,noselect
+  " set completeopt=noinsert,menuone,noselect
   " When the <Enter> key is pressed while the popup menu is visible, it only
   " hides the menu. Use this mapping to close the menu and also start a new line.
   inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
@@ -171,7 +172,7 @@ augroup NCM2
   "           \ 'complete_pattern': g:vimtex#re#ncm2,
   "           \ 'on_complete': ['ncm2#on_complete#omni', 'vimtex#complete#omnifunc'],
   "           \ })
-augroup END
+" augroup END
 "----------------------------------------
 filetype plugin indent on 
 "----------------------------------------
@@ -328,12 +329,12 @@ endif
 let pipenv_venv_path = system('pipenv --venv')
 "-------------------------------------------------------------------
 "-------------------------------------------------------------------
-" remapping F8 to run python file in ipython3
-" nnoremap <F8> :w<cr>:
+" remapping F4 to run current file interactively in bpython3
+nnoremap <F4> :w<cr>:!tilix -e bpython3 -i % &<cr>
 
 " run Python files with leader p
 nnoremap <leader>P :!ipython3 %<cr>
-nnoremap <leader>p :!python3 %<cr>
+nnoremap <leader>p :!bpython3 %<cr>
 "-------------------------------------------------------------------
 " jedi config
 " --Keys--
@@ -367,14 +368,14 @@ nnoremap <leader>S<cr>:!./%<cr>
 " Use Templates for *.sh and *.py files
 if has("autocmd")
   augroup templates
-    autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/template.sh
-    autocmd BufNewFile *.py 0r ~/.config/nvim/templates/template.py
-    autocmd BufNewFile *.js 0r ~/.config/nvim/templates/=template=.js
-    autocmd BufNewFile *.html 0r ~/.config/nvim/templates/=template=.html
-    autocmd BufNewFile *.md 0r ~/.config/nvim/templates/=template=.md
-    autocmd BufNewFile *.markdown 0r ~/.config/nvim/templates/=template=.markdown
-    autocmd BufNewFile *.travis.yml 0r ~/.config/nvim/templates/=template=.travis.yml
-    autocmd BufNewFile * 0r *
+    autocmd BufNewFile *.sh 0r /home/evan/.config/nvim/templates/template.sh
+    autocmd BufNewFile *.py 0r /home/evan/.config/nvim/templates/template.py
+    autocmd BufNewFile *.js 0r /home/evan/.config/nvim/templates/template.js
+    autocmd BufNewFile *.html 0r /home/evan/.config/nvim/templates/template.html
+    autocmd BufNewFile *.css 0r /home/evan/.config/nvim/templates/template.css
+    autocmd BufNewFile *.md 0r /home/evan/.config/nvim/templates/template.md
+    autocmd BufNewFile *.markdown 0r /home/evan/.config/nvim/templates/template.md
+    " autocmd BufNewFile *.travis.yml 0r /home/evan/.config/nvim/templates/template.travis.yml
   augroup END
 endif
 "----------------------------------------

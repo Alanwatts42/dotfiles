@@ -50,3 +50,28 @@ fi
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.config/nvim/" ]; then
+    PATH="$HOME/.config/nvim/:$PATH"
+fi
+
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.config/nvim/autoload/dein/" ]; then
+    PATH="$HOME/.config/nvim/autoload/dein/:$PATH"
+fi
+
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.config/nvim/autoload/dein/repos/github.com/Shougo/" ]; then
+    PATH="$HOME/.config/nvim/autoload/dein/repos/github.com/Shougo/:$PATH"
+fi
+
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.config/nvim/autoload/dein/repos/github.com/Shougo/dein.vim" ]; then
+    PATH="$HOME/.config/nvim/autoload/dein/repos/github.com/Shougo/dein.vim:$PATH"
+fi
+
+

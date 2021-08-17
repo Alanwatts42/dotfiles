@@ -102,7 +102,7 @@ setopt AUTO_CD
 
 # Sources >>
 source ~/.aliases
-source ~/.functions
+# source ~/.functions
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
