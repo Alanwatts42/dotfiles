@@ -187,6 +187,12 @@ alias pipenvshell="python3 -m --user pipenv shell"
 ## Git ##
 ##-----##
 
+# Git repository update function
+function gitup() {
+   git add --all;
+   git commit -m "$1";
+   git push;
+}
 # start a new repository
 alias ginit="git init"
 # clone existing remote repository
