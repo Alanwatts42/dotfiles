@@ -5,7 +5,7 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
+# --- end of p10k prompt setup ---
 
 
 #Zplug setup >>
@@ -13,11 +13,10 @@ if [[ ! -d ~/.zplug ]];then
     git clone https://github.com/b4b4r07/zplug ~/.zplug
 fi
 
-
 #Prompt setup >>
-autoload -Uz promptinit
-promptinit
-prompt adam1
+# autoload -Uz promptinit
+# promptinit
+# prompt adam1
 
 # Environment variables >>
 # Shellcheck (shell linter) overrides
@@ -29,14 +28,16 @@ EDITOR=nvim
 bindkey -v
 
 # set 256 color mode
-export TERM=xterm-256color
+# export TERM=rxvt-unicode-256color
 
 # Zplug >>
 # Zplug auto-install check
 if [[ ! -d ~/.zplug ]];then
-  git clone https://github.com/zplug/zplug ~/.zplug 
-  source ~/.zplug/init.zsh && zplug update --self
+  git clone https://github.com/zplug/zplug ~/.zplug;
+  source ~/.zplug/init.zsh; 
+  zplug update --self
 fi
+
 # Essential for zplug to work
 source ~/.zplug/init.zsh
 
@@ -48,8 +49,8 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 
 # Look & Feel >>
-# zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
-zplug "romkatv/powerlevel10k", as:theme, depth:1
+zplug "romkatv/powerlevel10k", from:oh-my-zsh, as:theme
+# zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 
 # Install packages that have not been installed yet
@@ -63,18 +64,17 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
-
+# end of zplug config
 
 # Formatting & Completion >>
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.zsh_history
+HISTFILE="~/.zsh_history"
 
 # Use modern completion system
 autoload -Uz compinit
 compinit
-
 
 # `ls` colors
 d="~/.dircolors"
@@ -106,14 +106,15 @@ setopt AUTO_CD
 # Sources >>
 source ~/.aliases
 # source ~/.functions
-# source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zplug/repos/romkatv/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize Powerlevel10k, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
 # Tilix config >
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte*.sh
-fi
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#        source /etc/profile.d/vte*.sh
+#fi
 
 # Custom shell commands >
 # to add custom cmds, run `let's kick shell` or edit $HOME/.kick_shell'  
@@ -121,8 +122,3 @@ fi
 # then
 #     source ~/.kick_shell
 # fi
-
-
-# Helps tmux startup command for zsh
-#if [ "$TMUX" = "" ]; then tmux; fi
-
