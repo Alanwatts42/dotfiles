@@ -7,3 +7,6 @@
 [submodule "nvim-config_-_lazier-than-thou"]
 	path = nvim-config_-_lazier-than-thou
 	url = https://github.com/Alanwatts42/nvim-config_-_lazier-than-thou.git
+[submodule ".config/nvim-config_-_lazier-than-thou"]
+	path = .config/nvim-config_-_lazier-than-thou
+	url = https://github.com/Alanwatts42/nvim-config_-_lazier-than-thou.git
