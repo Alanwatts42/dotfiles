@@ -4,3 +4,6 @@
 [submodule ".zplug"]
 	path = .zplug
 	url = git@github.com:zplug/zplug.git
+[submodule "nvim-config_-_lazier-than-thou"]
+	path = nvim-config_-_lazier-than-thou
+	url = https://github.com/Alanwatts42/nvim-config_-_lazier-than-thou.git
