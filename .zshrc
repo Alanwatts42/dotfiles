@@ -1,29 +1,51 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# confirmations, etc.) must go above this block; everything else may go below
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/dotfiles/:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/dotfiles/.oh-my-zsh"
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="igorsilva"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# internal theme options: #
+# -----------------------
+# nicoulaj
+# half-life
+# norm
+# peepcode
+# phillips
+# terminalparty 
+# theunraveler
+# tjkirch
+# tonotdo
+# wedisagree
+# wezm
+# wezm+
+# wuffers
+# zhann
 
+# Set elessar as theme
+# if  [ $ZSH_THEME == "" ]  && [[ ! -f $ZSH_CUSTOM/themes/elessar*.zsh-theme ]];then
+#     wget "https://raw.githubusercontent.com/fjpalacios/elessar-theme/master/elessar.zsh-theme" "$ZSH_CUSTOM/themes/elessar.zsh-theme"
+# fi
+
+# Set lambda-gitster as theme
+# if  [ $ZSH_THEME == "" ] && [[ ! -f "$ZSH_CUSTOM/themes/lambda-gitster.zsh-theme" ]];then
+#     wget "https://github.com/ergenekonyigit/lambda-gitster/blob/main/lambda-gitster.zsh-theme" "$ZSH_CUSTOM/themes/lambda-gitster.zsh-theme"
+# fi
+
+# ZSH_THEME_RANDOM_CANDIDATES=( "igorsilva" "limbda-gitster" )
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -68,10 +90,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# ZSH_CUSTOM=$ZSH/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -83,9 +105,25 @@ plugins=(
     kitty
     vi-mode
     colorize
+    zsh-interactive-cd
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-navigation-tools
+    ubuntu
+    github
+    vi-mode
+    urltools
+    vim-interaction
+    python
+    virtualenv
+    safe-paste
 )
+
+
+custom_plugins=(
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,7 +135,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
+if [[ -n $SSH_CONNECTION ]];then
   export EDITOR='vim'
 else
   export EDITOR='mvim'
@@ -105,29 +143,46 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
-
-
 export TERM=xterm-256color
-
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
 # the $ZSH_CUSTOM folder, with .zsh extension. Examples:
 # export ZSH_CUSTOM = $ZSH/.oh-my-zsh/custom
-source $ZSH_CUSTOM/aliases.zsh
+# source $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 # source $HOME/.aliases
+
+if [[ ! -f $ZSH_CUSTOM/aliases.zsh ]]; then
+    sudo ln $HOME/.aliases $ZSH_CUSTOM/aliases.zsh
+    source $ZSH_CUSTOM/aliases.zsh
+else
+    source $ZSH_CUSTOM/aliases.zsh
+fi
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+for p in $custom_plugins;do
+    if [[ ! -d $ZSH_CUSTOM/plugins/"$p" ]];then
+        git clone https://github.com/zsh-users/"$p".git $ZSH_CUSTOM/plugins/"$p"
+        source $ZSH_CUSTOM/plugins/"$p"
+    else
+        source $ZSH_CUSTOM/plugins/"$p"
+    fi
+done
 
 
-# Use modern completion system
-# autoload -Uz compinit
-# compinit
+
+
+
+# typewritten theme setup
+# fpath+=$ZSH_CUSTOM/themes/typewritten
+# autoload -Uz promptinit; promptinit
+# prompt typewritten
 
 # `ls` colors
 d="~/.dircolors"
@@ -158,5 +213,22 @@ setopt AUTO_CD
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/evan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/evan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/evan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/evan/miniconda3/bin:$PATH"
+    fi
+fi
+
+unset __conda_setup
+# <<< conda initialize <<<
+
