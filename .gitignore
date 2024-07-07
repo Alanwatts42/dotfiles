@@ -3,28 +3,28 @@
 # Since this repository is at $HOME directory, everything other
 # than what should be in the repo is ignored
 
-/*
+# /*
 
 # ignore all files not listed below preceded with a '!'
 
 # vim at ~/.vimrc and ~/.vim
-!~/.vimrc
-!~/.vim
-!~/.vim/ftplugin/python.vim
-!~/.vim/templates/skeleton.*
-!~/.vim/ftdetect/*.vim
-!~/.vim/autoload/*.vim
-
-!.vimrc
-!.vim
-!.vim/autoload/*
-!.vim/ftplugin/python.vim
-!.vim/templates/skeleton.*
-!.vim/ftdetect/*.vim
-!.vim/autoload/*.vim
-
-!test
-!test.txt
+# !~/.vimrc
+# !~/.vim
+# !~/.vim/ftplugin/python.vim
+# !~/.vim/templates/skeleton.*
+# !~/.vim/ftdetect/*.vim
+# !~/.vim/autoload/*.vim
+#
+# !.vimrc
+# !.vim
+# !.vim/autoload/*
+# !.vim/ftplugin/python.vim
+# !.vim/templates/skeleton.*
+# !.vim/ftdetect/*.vim
+# !.vim/autoload/*.vim
+#
+# !test
+# !test.txt
 
 
 # nvim at ~/.config/nvim/ 
