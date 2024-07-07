@@ -1,62 +1,19 @@
-# ZSH CONFIGURATION FILE
-# -----------------------
 
-# [Evan Sherwood]("https://github.com/Alanwatts42")
-# [Dotfiles Repository]("https://github.com/Alanwatts42/dotfiles.git")
-# [LinkedIn]("https://www.linkedin.com/in/evan-sherwood-3a7a9744/")
-# ---------------------------------------------------------------------
+# Expand path to include dotfiles
+# export PATH=$HOME/dotfiles:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Enable .oh-my-zsh features, plugins, etc.
-source $ZSH/oh-my-zsh.sh
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/dotfiles/.oh-my-zsh"
 
-# Enable Powerlevel10k instant prompt. (put close to top of ~/.zshrc).
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
+# Path to custom directory in .oh-my-zsh
+export ZSH_CUSTOM="$ZSH/custom"
 
+# Enable .oh-my-zsh
+source "$ZSH/oh-my-zsh.sh"
 
-
-# Theme - Can be an internal theme on below list or external custom url
-# ZSH_THEME=random will rotate theme between candidate list below
-# ZSH_THEME_RANDOM_CANDIDATES=( "half-life" "nicoulaj" "norm" "igorsilva" )
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="igorsilva"
 
-# My favorite internal (pre-installed) themes
-# [All internal themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
-# -------------------------------------------
-# nicoulaj
-# half-life
-# norm
-# peepcode
-# phillips
-# terminalparty 
-# theunraveler
-# tjkirch
-# tonotdo
-# wedisagree
-# wezm
-# wezm+
-# wuffers
-# zhann 
-
-
-## FORMATTING/AUTO-UPDATE OPTIONS
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Change format of timestamp for shell history
-# Formats "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd" or custom w/strftime.
-# (see 'man strftime' for custom formatting options)
-HIST_STAMPS="mm/dd/yyyy"
-
-# Optional custom location of 'custom' (not currently used in my config)
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-
-## ZSH PLUGINS
-# Standard: "$ZSH/plugins/", Custom: "$ZSH_CUSTOM/plugins/"
-# --------------------------------------------------------
-
-# Active plugins
 plugins=(
     git
     kitty
@@ -64,21 +21,29 @@ plugins=(
     colorize
     zsh-autosuggestions
     zsh-syntax-highlighting
+    python
+    safe-paste
+    vim-interaction
+    github
+    ubuntu
 )
 
+# User configuration
 
-# ENVIRONMENT VARIABLES & SOURCED FILES
-# -------------------------------------
+# Prompt setup
+autoload -Uz promptinit
+promptinit
 
-# $PATH compatibility with bash
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-# ZSH (should always point to path of .oh-my-zsh installation)
-export ZSH="$HOME/dotfiles/.oh-my-zsh"
-# Path to man files
-export MANPATH="/usr/local/man:$MANPATH"
 
-# Language environment path
-export LANG=en_US.UTF-8
+# auto suggest
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=""
+
+# starting dir
+# cd ~/repos
+
+# Set 256 color terminal mode
+export TERM=xterm-256color
+
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -87,18 +52,43 @@ else
   export EDITOR='nvim'
 fi
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
+# use vim keybindings
+bindkey -v
 
-# Default terminal application (xterm-256color allows 256 colors)
-export TERM=xterm-256color
+# Source all of my alias docs
+source "$ZSH_CUSTOM/aliases.zsh"
+source "$HOME/.aliases"
+source "$HOME/.aliases-m"
 
-# Path to Alias files. Run `alias` to list all active aliases.
-source $ZSH_CUSTOM/aliases.zsh
-source $HOME/.aliases
-source $HOME/.aliases-m
+# # NVM config sources
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Use modern completion system
+#-------- Global Alias {{{
+# globalias() {
+#   if [[ $LBUFFER =~ '[a-zA-Z0-9]+$' ]]; then
+#     zle _expand_alias
+#     zle expand-word
+#   fi
+#   zle self-insert
+# }
+# zle -N globalias
+# bindkey " " globalias                 # space key to expand globalalias
+# # bindkey "^ " magic-space            # control-space to bypass completion
+# bindkey "^[[Z" magic-space            # shift-tab to bypass completion
+# bindkey -M isearch " " magic-space    # normal space during searches
+# . $HOME/.aliases
+# #}}}
+#
+# SPACESHIP_PROMPT_ADD_NEWLINE="true"
+# SPACESHIP_CHAR_SYMBOL="⚡"
+
+# Turn off power status when using spaceship prompt
+# export SPACESHIP_BATTERY_SHOW=false
+
+
+# Ume modern completion system
 autoload -Uz compinit
 compinit
 
@@ -107,7 +97,7 @@ compinit
 # ----------------------
 
 # `ls` colors
-d="~/.dircolors"
+d="$HOME/.dircolors"
 test -r $d && eval "$(dircolors $d)"
 
 zstyle ':completion:*' auto-description 'specify: %d'
@@ -136,7 +126,19 @@ setopt histignorealldups sharehistory
 # Typing directory name automatically cd's into it
 setopt AUTO_CD
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# (Only works if using powerlevel10k theme)
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-# [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/evan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/evan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/evan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/evan/miniconda3/bin:$PATH"
+    fi
+fi
+
+unset __conda_setup
+# <<< conda initialize <<<
