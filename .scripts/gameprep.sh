@@ -13,7 +13,7 @@ printf "\n\n zip files unzipped, creating symlinks...\n\n"
 
 # creating symlinks to put games in GOG_Games directory in all wine prefixes
 
-prefixes=("$HOME/Games/lutris/gog/homeworld-remastered-collection", "$HOME/.wine")
+prefixes=("/home/evan/Games/lutris/gog/homeworld-remastered-collection", "/home/evan/.wine")
 
 # Make sure current directory is still $HOME/Games/pc
 cd "$HOME"/Games/pc/;
