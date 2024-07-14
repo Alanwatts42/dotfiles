@@ -28,3 +28,5 @@ Tmux | .tmux.conf | A terminal multiplexer, which I have set to run as the first
 <br>
 <br>
 
+
+#TODO: Centralize other config files not necessarily found in $HOME directory within dotfiles repository. I'm symlinking most of these to $HOME anyway, so if there are other configs anywhere else in the filesystem I want to keep I might as well make sure they get backed up along with these.
