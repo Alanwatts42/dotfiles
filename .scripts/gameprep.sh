@@ -24,6 +24,11 @@ for i in *;do
     done
 done
 
+
+# symlinks for .wine
+for i in *;do sudo ln -s $(pwd)/"$i" $HOME/.wine/drive_c/GOG_Games/"$i";done
+
+
 # Symlinks finished message followed by script finished message
 printf "\n\n Symlinks created, games accessible from wine prefixes\n\n";
 printf "\n\n All processes finished. Games prepared!!!\n\n";

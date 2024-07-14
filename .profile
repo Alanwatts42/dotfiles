@@ -19,3 +19,6 @@ fi
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+export WINEPREFIXES="/home/evan/.local/share/wineprefixes"
+
