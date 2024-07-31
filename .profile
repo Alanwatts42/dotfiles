@@ -22,3 +22,7 @@ fi
 
 export WINEPREFIXES="/home/evan/.local/share/wineprefixes"
 
+# Fix error on nvim plugin install which required "deno" command
+export PATH=~/.deno/bin/deno:$PATH
+export DENO_INSTALL="/home/evan/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
