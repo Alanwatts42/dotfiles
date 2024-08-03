@@ -32,11 +32,9 @@ alias wificheck="sudo iw wlp2s0 link"
 alias nmreboot="sudo service network-manager restart"
 
 
-## Steam ##
-##-------##
-
+# Steam
 # Steam - run from particular launcher
-alias steam="sudo /usr/lib/steam/steam.sh"
+# alias steam="sudo /usr/lib/steam/steam.sh"
 
 
 ## Permissions/Filesystem ##
@@ -246,18 +244,33 @@ alias lets_kick_shell='vim "$HOME"/.kick_shell'
 # qutebrowser (start with debug features on)
 alias qtbrowse="qutebrowser --debug --debug"
 
+
+# Download Tools #
+# -------------- #
+
 # youtube-dl
-alias youtube-dll="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-filenames -R 99 --max-filesize 2000m --max-downloads 50 --verbose"
-alias youtube-dlx="youtube-dl -i -R 99 --yes-playlist  --verbose"  #ignore errors
-alias youtube-dlu="youtube-dl -U"  #update
+# ----------
+# tool for downloading youtube videos as video or audio files
+# ------------------------------------------------------------
+# download youtube video and convert to mp4 video file
+alias ytdlvideo="youtube-dl --geo-bypass --merge-output-format mp4 --restrict-filenames -R 99 --max-filesize 2000m --max-downloads 50 --verbose"
+# download and convert youtube playlist to mp3 audio file
+alias ytdlplaylist="youtube-dl -i -R 99 --yes-playlist -x   --verbose"  # Download youtube playlist, the -i -R 99 params vastly increases number of errors software will tolerate before giving up on the download, good for bad connections and/or very large downloads. 
+alias ytdlupdate="youtube-dl -U"  #update
+# download and convert youtube video to mp3 audio file
+alias ytdlsong="youtube-dl --extract-audio --audio-format mp3 --no-playlist"
+alias ytdlmp3="youtube-dl --extract-audio --audio-format mp3 --no-playlist"
+alias ytdlalbum="youtube-dl --extract-audio --audio-format mp3"
+alias ytdlsongs="youtube-dl --extract-audio --audio-format mp3"
+alias ytdlsonglist="youtube-dl --extract-audio --audio-format mp3"
+
 
 # wget
 
-# alias wget="wget -c -t 0 --retry-connrefused"
-# alias wgetdl="wget -e robots=off -m -r  -np -c -t 999 --retry-connrefused"
+alias wget="wget -c -t 0 --retry-connrefused"
+alias wgetdl="wget -e robots=off -m -r  -np -c -t 999 --retry-connrefused"
 # alias wgetu="wget --user-agent='Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52'"
-# alias wgettheeye='wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"wget -m -np -c -U "eye02" -w 2 -R "index.html*" "https://the-eye.eu/public/Games/Linux/"'
-# alias wgrab='wget -nd -v --tries=0 --retry-connrefused -nc -c -d --no-check-certificate'
+alias wgrab='wget -nd -v --tries=0 --retry-connrefused -nc -c -d --no-check-certificate'
 
 
 
